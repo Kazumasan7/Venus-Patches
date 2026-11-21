@@ -21906,11 +21906,12 @@
         return next.length > RTR_TEXT ? text : next;
     }
     // text with every rule of that kind applied, in order.
-    function rtrApply(text, kind) {
+    // skipSent: leave out the rules that already changed this text when it was sent (your own messages), so nothing is replaced twice.
+    function rtrApply(text, kind, skipSent) {
         if (typeof text !== "string" || !text || text.length > RTR_TEXT) return text;
         let out = text;
         const list = rtrList();
-        for (let i = 0; i < list.length; i++) { const rule = list[i]; if (rule.on && rule[kind]) out = rtrOne(out, rule); }
+        for (let i = 0; i < list.length; i++) { const rule = list[i]; if (rule.on && rule[kind] && !(skipSent && rule.outgoing)) out = rtrOne(out, rule); }
         return out;
     }
     function rtrActive(kind) { return enabled("textReplace") && rtrList().some(rule => rule.on && rule[kind]); }
@@ -21968,7 +21969,8 @@
         let message = row.message;
         try {
             if (kinds && typeof message.content === "string") {
-                const content = rtrApply(message.content, "shown");
+                const me = currentUser(), mine = !!(me && message.author && message.author.id === me.id);
+                const content = rtrApply(message.content, "shown", mine);
                 if (content !== message.content) message = copyWith(message, "content", content);
             }
             if (embeds && Array.isArray(message.embeds) && message.embeds.length) {
