@@ -2363,6 +2363,11 @@
     "Where": "وين تشتغل",
     "You can have up to 100 rules.": "تكدر تسوي لحد 100 قاعدة.",
     "Your clipboard has no rules. Copy some first.": "الحافظة ماكو بيها قواعد. انسخ شوية أول.",
-    "Your own rules, or rules exported from Aliucord's TextReplace.": "قواعدك أنت، أو قواعد مصدّرة من TextReplace بـ Aliucord."
+    "Your own rules, or rules exported from Aliucord's TextReplace.": "قواعدك أنت، أو قواعد مصدّرة من TextReplace بـ Aliucord.",
+    "Changed before it is sent, so everyone sees the new words. Turn on only this one to change what you send.": "تنبدل قبل ما تنرسل، فالكل يشوف الكلمات الجديدة. شغّل هذا الخيار بس إذا تريد تغيّر اللي ترسله.",
+    "Changes how messages look on this phone only. Nobody else sees it.": "تغيّر شكل الرسائل على هذا الجهاز بس. محد ثاني يشوفها.",
+    "Same as Shown, for the titles and texts of embeds.": "مثل المعروضة، بس لعناوين ونصوص الإمبدات.",
+    "For everyone to see the new words, turn on Outgoing and turn off Shown and Embeds.": "حتى الكل يشوف الكلمات الجديدة، شغّل المرسلة وطفّي المعروضة والإمبدات.",
+    "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find.": "القاعدة تشتغل وين ما جانت داخل النص، حتى وسط كلمة ثانية. حتى تشتغل على الرسالة كلها بس، شغّل Regex واكتب ^الكلمة$ بحقل ابحث عن."
   }
 }

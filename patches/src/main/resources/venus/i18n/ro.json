@@ -2172,6 +2172,11 @@
     "Where": "Where",
     "You can have up to 100 rules.": "You can have up to 100 rules.",
     "Your clipboard has no rules. Copy some first.": "Your clipboard has no rules. Copy some first.",
-    "Your own rules, or rules exported from Aliucord's TextReplace.": "Your own rules, or rules exported from Aliucord's TextReplace."
+    "Your own rules, or rules exported from Aliucord's TextReplace.": "Your own rules, or rules exported from Aliucord's TextReplace.",
+    "Changed before it is sent, so everyone sees the new words. Turn on only this one to change what you send.": "Changed before it is sent, so everyone sees the new words. Turn on only this one to change what you send.",
+    "Changes how messages look on this phone only. Nobody else sees it.": "Changes how messages look on this phone only. Nobody else sees it.",
+    "Same as Shown, for the titles and texts of embeds.": "Same as Shown, for the titles and texts of embeds.",
+    "For everyone to see the new words, turn on Outgoing and turn off Shown and Embeds.": "For everyone to see the new words, turn on Outgoing and turn off Shown and Embeds.",
+    "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find.": "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find."
   }
 }
