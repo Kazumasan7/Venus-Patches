@@ -68,6 +68,12 @@ You can also import `patches-<version>.mpp` from [Releases](https://github.com/V
 | | HypeSquad house | Join or leave a HypeSquad house |
 | | Custom idle time | Choose when you go Idle, or never |
 | | Mutual group DMs | Group DMs you share with someone, on their profile |
+| | Custom status presets | Save custom statuses as presets and set one with a single tap. |
+| | Better role menu | Hold a role on a profile to copy its color or open its icon. |
+| | Showmeyourname | Choose which name you see for everyone: username, display name, friend nickname or server nickname, and where. |
+| | DM categories | Make your own categories for DMs and group DMs. Hold a chat and tap Set Category to sort it into your own categories (based on DMCategories from zt64's Aliucord plugins) |
+| | Markdown bar | A bar above the keyboard with buttons for bold, italic, headings, lists, quotes, links and code |
+| | Show permissions | What someone can do in a server, from the menu on their profile |
 | | Platform spoof | Show as desktop, web or console. **Against Discord's rules, may risk your account** |
 | **Servers** | Read all button | Mark everything as read in one tap |
 | | Show hidden channels | Shows channels you can't open, with a lock |
@@ -94,8 +100,10 @@ You can also import `patches-<version>.mpp` from [Releases](https://github.com/V
 | | Keep Bluetooth audio clear in calls | Keeps headphones in music quality during calls |
 | | Voice channel options | Join volume, audio output, join chimes and a goodbye sound |
 | | Fake deafen | Look deafened while still hearing the call (by maayan080) |
+| | Restart button | A Restart Discord button in Venus settings and in Discord's Settings (based on RestartButton from zt64's Aliucord plugins) |
+| | Show my token | Copy or view your own account token, with warnings (based on Token by Vendicated) |
 
-Venus settings also have **Language** (30 languages), **Backup and restore**, and **About** with debug logs and a crash screen.
+Venus settings also have **Language** (31 languages, including Arabic), **Backup and restore**, and **About** with debug logs and a crash screen.
 
 ### Custom branding
 

@@ -173,6 +173,40 @@
       "options": []
     },
     {
+      "name": "Better role menu",
+      "description": "Hold a role on a profile to copy its color or open its icon.",
+      "default": true,
+      "category": "Features",
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.discord",
+          "name": "Discord",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#5865F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "351.11 - Stable",
+              "versionCodes": {
+                "ARM64_V8A": 351011,
+                "ARMEABI_V7A": 351011,
+                "X86_64": 351011,
+                "X86": 351011
+              },
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Bring back Tenor GIFs",
       "description": "Tenor GIFs show in Discord's GIF picker again, mixed with Discord's own or on their own. Inspired by BringBackTenor by Livie.",
       "default": true,
@@ -555,6 +589,40 @@
       "options": []
     },
     {
+      "name": "Custom status presets",
+      "description": "Save custom statuses as presets and set one with a single tap.",
+      "default": true,
+      "category": "Features",
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.discord",
+          "name": "Discord",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#5865F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "351.11 - Stable",
+              "versionCodes": {
+                "ARM64_V8A": 351011,
+                "ARMEABI_V7A": 351011,
+                "X86_64": 351011,
+                "X86": 351011
+              },
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Custom themes",
       "description": "Install color themes from a link and switch between them. Works with Revenge and Vendetta themes.",
       "default": true,
@@ -771,6 +839,40 @@
       "dependencies": [
         "BytecodePatch",
         "RawResourcePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.discord",
+          "name": "Discord",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#5865F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "351.11 - Stable",
+              "versionCodes": {
+                "ARM64_V8A": 351011,
+                "ARMEABI_V7A": 351011,
+                "X86_64": 351011,
+                "X86": 351011
+              },
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "DM categories",
+      "description": "Sort your DMs into your own categories: hold a chat and tap Set Category.",
+      "default": true,
+      "category": "Features",
+      "dependencies": [
+        "BytecodePatch"
       ],
       "compatiblePackages": [
         {
@@ -1582,6 +1684,40 @@
       "options": []
     },
     {
+      "name": "Markdown bar",
+      "description": "A bar above the keyboard with buttons for bold, italic, headings, lists, quotes, links, code and more.",
+      "default": true,
+      "category": "Features",
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.discord",
+          "name": "Discord",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#5865F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "351.11 - Stable",
+              "versionCodes": {
+                "ARM64_V8A": 351011,
+                "ARMEABI_V7A": 351011,
+                "X86_64": 351011,
+                "X86": 351011
+              },
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Material You colors",
       "description": "Colors Discord to match your wallpaper, in light and dark. Wallpaper colors need Android 12 or newer.",
       "default": true,
@@ -1923,6 +2059,40 @@
       "options": []
     },
     {
+      "name": "Restart button",
+      "description": "Adds a Restart Discord button in Venus settings and in Discord's Settings.",
+      "default": true,
+      "category": "Features",
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.discord",
+          "name": "Discord",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#5865F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "351.11 - Stable",
+              "versionCodes": {
+                "ARM64_V8A": 351011,
+                "ARMEABI_V7A": 351011,
+                "X86_64": 351011,
+                "X86": 351011
+              },
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Send Nitro stickers and emojis as links",
       "description": "Sends Nitro emojis and stickers as links that show as the image.",
       "default": true,
@@ -2161,6 +2331,40 @@
       "options": []
     },
     {
+      "name": "Show my token",
+      "description": "Copy or view your own account token, with warnings. Never share it.",
+      "default": true,
+      "category": "Features",
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.discord",
+          "name": "Discord",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#5865F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "351.11 - Stable",
+              "versionCodes": {
+                "ARM64_V8A": 351011,
+                "ARMEABI_V7A": 351011,
+                "X86_64": 351011,
+                "X86": 351011
+              },
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Show owner and mod tags",
       "description": "Shows an Owner, Admin, Manager or Mod tag next to people's names in chat. Based on StaffTag by mwittrien.",
       "default": true,
@@ -2195,8 +2399,76 @@
       "options": []
     },
     {
+      "name": "Show permissions",
+      "description": "See what a person is allowed to do in a server, from the menu on their profile.",
+      "default": true,
+      "category": "Features",
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.discord",
+          "name": "Discord",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#5865F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "351.11 - Stable",
+              "versionCodes": {
+                "ARM64_V8A": 351011,
+                "ARMEABI_V7A": 351011,
+                "X86_64": 351011,
+                "X86": 351011
+              },
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Show timeout duration",
       "description": "A tag next to timed-out people says how long until they can talk again. Based on ShowTimeoutDuration by Ven.",
+      "default": true,
+      "category": "Features",
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.discord",
+          "name": "Discord",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#5865F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "351.11 - Stable",
+              "versionCodes": {
+                "ARM64_V8A": 351011,
+                "ARMEABI_V7A": 351011,
+                "X86_64": 351011,
+                "X86": 351011
+              },
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Showmeyourname",
+      "description": "Choose which name you see for everyone: username, display name, friend nickname or server nickname, and where.",
       "default": true,
       "category": "Features",
       "dependencies": [
