@@ -22027,9 +22027,11 @@
         const content = el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:12}},
             el(RN.View, {style:{gap:8}}, rtrField(ui, "from", rule.from, from => set({from}), tr("Find"), RTR_FROM), rtrField(ui, "to", rule.to, to => set({to}), tr("Replace with"), RTR_TO)),
             broken ? footnote("broken", "That isn't a valid regex.") : null,
+            footnote("anywhere", "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find."),
             Switch ? el(Group, {key:"how"}, toggle("regex", "Regex", "Read Find as a regular expression. Use $1 in Replace with for a group."), toggle("ignoreCase", "Ignore case")) : null,
-            Switch ? el(Group, {key:"where", title:tr("Where")}, toggle("outgoing", "Outgoing", "Messages you send or edit are changed for real."),
-                toggle("shown", "Shown", "Messages in chat look different on this phone only."), toggle("embeds", "Embeds", "Titles and texts of embeds look different on this phone only.")) : null,
+            Switch ? el(Group, {key:"where", title:tr("Where")}, toggle("outgoing", "Outgoing", "Changed before it is sent, so everyone sees the new words. Turn on only this one to change what you send."),
+                toggle("shown", "Shown", "Changes how messages look on this phone only. Nobody else sees it."), toggle("embeds", "Embeds", "Same as Shown, for the titles and texts of embeds.")) : null,
+            footnote("everyone", "For everyone to see the new words, turn on Outgoing and turn off Shown and Embeds."),
             Row ? el(Group, {key:"actions"}, el(Row, {key:"save", label:tr("Save"), icon:rowIcon(7144, "CircleCheckIcon"), disabled:!rule.from || broken, onPress:save}),
                 old ? el(Row, {key:"remove", label:tr("Delete rule"), icon:rowIcon(5148, "TrashIcon"), variant:"danger", onPress:remove}) : null) : null);
         return serverEditScroll(ui, header, content);
