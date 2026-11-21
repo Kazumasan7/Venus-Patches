@@ -76,7 +76,7 @@ private val runtimeAssets = rawResourcePatch {
             "{picker:$pickerSelected,voice:$voiceSelected,copyBios:$copyBiosSelected," +
                 "favouriteAnything:$favouriteAnythingSelected,freeNitro:$freeNitroSelected," +
                 listOf("noTyping", "quickDelete", "noDelete", "jumpToTop", "hiddenChannels", "pastelize", "platformIndicators", "reviewDB", "readAll", "quests", "badges", "systemFont",
-                    "systemEmoji", "gestures", "validUser", "youBarSettings", "splitMessages", "translate", "userNotif", "accountSwitcher", "appIcons", "nitroThemes", "customThemes", "materialYou", "iconPacks", "messageHighlight", "serverInfo", "serverEdit", "fixEmbeds", "tenorGifs", "hideBlocked", "bulkDelete", "experiments", "cleanChannels", "noHandsfree", "voiceOptions", "anonFiles", "staffTag", "removedAlerts", "fullImages", "hideAnything", "alwaysTrust", "noConfirmPin", "clickableMentions", "expandBar", "quietReplies", "silentLeave", "guildLurk", "compressUploads", "timeoutDuration", "dndBanners", "landscapeFull", "voiceDownload", "cloneExpressions", "listenAlong", "silentEdit", "silentDelete", "localEdit", "hypeSquad", "customIdle", "mutualGroupDMs", "fastDeleteChannels", "pauseInvites", "platformSpoof", "backgroundMedia", "viewRaw", "fakeDeafen")
+                    "systemEmoji", "gestures", "validUser", "youBarSettings", "splitMessages", "translate", "userNotif", "accountSwitcher", "appIcons", "nitroThemes", "customThemes", "materialYou", "iconPacks", "messageHighlight", "serverInfo", "serverEdit", "fixEmbeds", "tenorGifs", "hideBlocked", "bulkDelete", "experiments", "cleanChannels", "noHandsfree", "voiceOptions", "anonFiles", "staffTag", "removedAlerts", "fullImages", "hideAnything", "alwaysTrust", "noConfirmPin", "clickableMentions", "expandBar", "quietReplies", "silentLeave", "guildLurk", "compressUploads", "timeoutDuration", "dndBanners", "landscapeFull", "voiceDownload", "cloneExpressions", "listenAlong", "silentEdit", "silentDelete", "localEdit", "hypeSquad", "customIdle", "mutualGroupDMs", "fastDeleteChannels", "pauseInvites", "platformSpoof", "backgroundMedia", "viewRaw", "fakeDeafen", "showPerms", "markdownBar", "showMeYourName", "betterRoleContext", "customStatusPresets", "restartButton", "showToken", "dmCategories")
                     .joinToString(",") { "$it:${it in additionalSelections}" } + "}"
         )
         asset.writeText(selected)
@@ -364,6 +364,38 @@ val customIdle = bundledPlugin("customIdle", "Custom idle time",
 @Suppress("unused")
 val mutualGroupDMs = bundledPlugin("mutualGroupDMs", "Mutual group DMs",
     "Profiles show the group DMs you share with that person.")
+
+@Suppress("unused")
+val showPerms = bundledPlugin("showPerms", "Show permissions",
+    "See what a person is allowed to do in a server, from the menu on their profile.")
+
+@Suppress("unused")
+val customStatusPresets = bundledPlugin("customStatusPresets", "Custom status presets",
+    "Save custom statuses as presets and set one with a single tap.")
+
+@Suppress("unused")
+val betterRoleContext = bundledPlugin("betterRoleContext", "Better role menu",
+    "Hold a role on a profile to copy its color or open its icon.")
+
+@Suppress("unused")
+val showMeYourName = bundledPlugin("showMeYourName", "Showmeyourname",
+    "Choose which name you see for everyone: username, display name, friend nickname or server nickname, and where.")
+
+@Suppress("unused")
+val dmCategories = bundledPlugin("dmCategories", "DM categories",
+    "Sort your DMs into your own categories: hold a chat and tap Set Category.")
+
+@Suppress("unused")
+val restartButton = bundledPlugin("restartButton", "Restart button",
+    "Adds a Restart Discord button in Venus settings and in Discord's Settings.")
+
+@Suppress("unused")
+val showToken = bundledPlugin("showToken", "Show my token",
+    "Copy or view your own account token, with warnings. Never share it.")
+
+@Suppress("unused")
+val markdownBar = bundledPlugin("markdownBar", "Markdown bar",
+    "A bar above the keyboard with buttons for bold, italic, headings, lists, quotes, links, code and more.")
 
 @Suppress("unused")
 val fastDeleteChannels = bundledPlugin("fastDeleteChannels", "Fast delete channels",
