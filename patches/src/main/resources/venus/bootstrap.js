@@ -65,6 +65,7 @@
     if (features.showPerms) selectModules([7158]);
     if (features.betterRoleContext) selectModules([7158, 7167]);
     if (features.customStatusPresets) selectModules([10842]);
+    if (features.textReplace) selectModules([7445, 8013]);
     if (features.dmCategories) selectModules([17165, 2068, 1392, 10596, 17174, 17160]);
     if (features.showMeYourName) selectModules([14015, 5509, 5883, 12827, 10523, 11163, 5502, 7635, 8150]);
     if (features.markdownBar) selectModules([12337, 12818, 12848]);
@@ -104,7 +105,7 @@
         accountSwitcher:false, accountSwitcherYouBar:true, accountSwitcherShare:false, accountSwitcherNotify:true, appIcons:false, nitroThemes:false, customThemes:false, customThemesBackground:true, materialYou:false, materialYouColor:"wallpaper", materialYouTint:"balanced",
         iconPacks:false, iconPacksTheme:true,
         messageHighlight:false, messageHighlightThickness:2, messageHighlightBrightness:50, messageHighlightPingColor:"default", serverInfo:false, serverInfoFriends:true, serverEdit:false,
-        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
+        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", textReplace:false, textReplaceRules:"[]", restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
         hypeSquad:false, customIdle:false, customIdleMinutes:10, pauseInvites:false, fastDeleteChannels:false, fastDeleteChannelsConfirm:true, fastDeleteChannelsMenu:true, mutualGroupDMs:false, platformSpoof:false, platformSpoofDevice:"desktop" };
     // The settings every feature starts from, for Reset to defaults on the Backup page.
     let DEFAULT_SETTINGS = null;
@@ -122,7 +123,7 @@
             accountSwitcher: false, accountSwitcherYouBar: true, accountSwitcherShare: false, accountSwitcherNotify: true, appIcons: false, nitroThemes: false, customThemes: false, customThemesBackground: true, materialYou: false, materialYouColor: "wallpaper", materialYouTint: "balanced",
             iconPacks: false, iconPacksTheme: true,
             messageHighlight: false, messageHighlightThickness: 2, messageHighlightBrightness: 50, messageHighlightPingColor: "default", serverInfo: false, serverInfoFriends: true, serverEdit: false,
-            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
+            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", textReplace: false, textReplaceRules: "[]", restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
             hypeSquad: false, customIdle: false, customIdleMinutes: 10, pauseInvites: false, fastDeleteChannels: false, fastDeleteChannelsConfirm: true, fastDeleteChannelsMenu: true, mutualGroupDMs: false, platformSpoof: false, platformSpoofDevice: "desktop"
         }));
     }
@@ -474,6 +475,7 @@
         if (key === "showMeYourNameOrder") return smynOrderText(value);
         if (key === "showMeYourNameCustom") return smynCustomText(value);
         if (key === "customStatusPresetsList") return cspText(value);
+        if (key === "textReplaceRules") return rtrText(value);
         if (key === "dmCategoriesList") return dmcText(value);
         if (key === "showMeYourNameMode") return value === "all" || value === "first" ? value : undefined;
         if (key === "hiddenFeatures") return hiddenFeaturesText(value);
@@ -520,7 +522,7 @@
             settings.readAllMode = value; dirty.add(key); save(); notify(key); return true;
         }
         // Showmeyourname: the order of the four names and how many to show are text settings, not switches.
-        if (key === "showMeYourNameOrder" || key === "showMeYourNameMode" || key === "showMeYourNameCustom" || key === "customStatusPresetsList" || key === "dmCategoriesList") {
+        if (key === "showMeYourNameOrder" || key === "showMeYourNameMode" || key === "showMeYourNameCustom" || key === "customStatusPresetsList" || key === "dmCategoriesList" || key === "textReplaceRules") {
             const clean = acceptedSetting(key, value);
             if (clean === undefined) return false;
             if (settings[key] === clean && status.storage !== "loading" && status.storage !== "waiting") return true;
@@ -1199,7 +1201,7 @@
     const featureFor = key => {
         const cached = featureTable[key];
         if (cached !== undefined) return cached;
-        return featureTable[key] = key === "reviewWarning" ? "reviewDB" : key === "emojis" || key === "stickers" || key === "hyperlinks" ? "freeNitro" : /^noDelete[A-Z]/.test(key) ? "noDelete" : /^pi[A-Z]/.test(key) ? "platformIndicators" : key === "pastelAll" || key === "pastelContent" ? "pastelize" : key === "readAllMode" ? "readAll" : /^compressUploads[A-Z]/.test(key) ? "compressUploads" : /^quests[A-Z]/.test(key) ? "quests" : /^badges[A-Z]/.test(key) ? "badges" : /^gesture[A-Z]/.test(key) ? "gestures" : /^translate[A-Z]/.test(key) ? "translate" : /^removedAlerts[A-Z]/.test(key) ? "removedAlerts" : /^userNotif[A-Z]/.test(key) ? "userNotif" : /^accountSwitcher[A-Z]/.test(key) ? "accountSwitcher" : /^hiddenChannels[A-Z]/.test(key) ? "hiddenChannels" : /^customThemes[A-Z]/.test(key) ? "customThemes" : /^materialYou[A-Z]/.test(key) ? "materialYou" : /^iconPacks[A-Z]/.test(key) ? "iconPacks" : /^messageHighlight[A-Z]/.test(key) ? "messageHighlight" : /^serverInfo[A-Z]/.test(key) ? "serverInfo" : /^fixEmbeds[A-Z]/.test(key) ? "fixEmbeds" : /^tenorGifs[A-Z]/.test(key) ? "tenorGifs" : /^hideBlocked[A-Z]/.test(key) ? "hideBlocked" : /^bulkDelete[A-Z]/.test(key) ? "bulkDelete" : /^expandBar[A-Z]/.test(key) ? "expandBar" : key === "systemFontSource" ? "systemFont" : key === "systemEmojiSource" ? "systemEmoji" : /^cleanChannels[A-Z]/.test(key) ? "cleanChannels" : /^voiceOptions[A-Z]/.test(key) ? "voiceOptions" : /^anonFiles[A-Z]/.test(key) ? "anonFiles" : /^staffTag[A-Z]/.test(key) ? "staffTag" : /^fullImages[A-Z]/.test(key) ? "fullImages" : /^alwaysTrust[A-Z]/.test(key) ? "alwaysTrust" : /^quietReplies[A-Z]/.test(key) ? "quietReplies" : /^viewRaw[A-Z]/.test(key) ? "viewRaw" : /^hideAnything[A-Z]/.test(key) ? "hideAnything" : /^guildLurk[A-Z]/.test(key) ? "guildLurk" : /^customIdle[A-Z]/.test(key) ? "customIdle" : /^fastDeleteChannels[A-Z]/.test(key) ? "fastDeleteChannels" : /^platformSpoof[A-Z]/.test(key) ? "platformSpoof" : /^silentEdit[A-Z]/.test(key) ? "silentEdit" : /^localEdit[A-Z]/.test(key) ? "localEdit" : /^listenAlong[A-Z]/.test(key) ? "listenAlong" : /^backgroundMedia[A-Z]/.test(key) ? "backgroundMedia" : /^fakeDeafen[A-Z]/.test(key) ? "fakeDeafen" : /^showMeYourName[A-Z]/.test(key) ? "showMeYourName" : /^customStatusPresets[A-Z]/.test(key) ? "customStatusPresets" : /^restartButton[A-Z]/.test(key) ? "restartButton" : /^showToken[A-Z]/.test(key) ? "showToken" : /^dmCategories[A-Z]/.test(key) ? "dmCategories" : /^showPerms[A-Z]/.test(key) ? "showPerms" : key;
+        return featureTable[key] = key === "reviewWarning" ? "reviewDB" : key === "emojis" || key === "stickers" || key === "hyperlinks" ? "freeNitro" : /^noDelete[A-Z]/.test(key) ? "noDelete" : /^pi[A-Z]/.test(key) ? "platformIndicators" : key === "pastelAll" || key === "pastelContent" ? "pastelize" : key === "readAllMode" ? "readAll" : /^compressUploads[A-Z]/.test(key) ? "compressUploads" : /^quests[A-Z]/.test(key) ? "quests" : /^badges[A-Z]/.test(key) ? "badges" : /^gesture[A-Z]/.test(key) ? "gestures" : /^translate[A-Z]/.test(key) ? "translate" : /^removedAlerts[A-Z]/.test(key) ? "removedAlerts" : /^userNotif[A-Z]/.test(key) ? "userNotif" : /^accountSwitcher[A-Z]/.test(key) ? "accountSwitcher" : /^hiddenChannels[A-Z]/.test(key) ? "hiddenChannels" : /^customThemes[A-Z]/.test(key) ? "customThemes" : /^materialYou[A-Z]/.test(key) ? "materialYou" : /^iconPacks[A-Z]/.test(key) ? "iconPacks" : /^messageHighlight[A-Z]/.test(key) ? "messageHighlight" : /^serverInfo[A-Z]/.test(key) ? "serverInfo" : /^fixEmbeds[A-Z]/.test(key) ? "fixEmbeds" : /^tenorGifs[A-Z]/.test(key) ? "tenorGifs" : /^hideBlocked[A-Z]/.test(key) ? "hideBlocked" : /^bulkDelete[A-Z]/.test(key) ? "bulkDelete" : /^expandBar[A-Z]/.test(key) ? "expandBar" : key === "systemFontSource" ? "systemFont" : key === "systemEmojiSource" ? "systemEmoji" : /^cleanChannels[A-Z]/.test(key) ? "cleanChannels" : /^voiceOptions[A-Z]/.test(key) ? "voiceOptions" : /^anonFiles[A-Z]/.test(key) ? "anonFiles" : /^staffTag[A-Z]/.test(key) ? "staffTag" : /^fullImages[A-Z]/.test(key) ? "fullImages" : /^alwaysTrust[A-Z]/.test(key) ? "alwaysTrust" : /^quietReplies[A-Z]/.test(key) ? "quietReplies" : /^viewRaw[A-Z]/.test(key) ? "viewRaw" : /^hideAnything[A-Z]/.test(key) ? "hideAnything" : /^guildLurk[A-Z]/.test(key) ? "guildLurk" : /^customIdle[A-Z]/.test(key) ? "customIdle" : /^fastDeleteChannels[A-Z]/.test(key) ? "fastDeleteChannels" : /^platformSpoof[A-Z]/.test(key) ? "platformSpoof" : /^silentEdit[A-Z]/.test(key) ? "silentEdit" : /^localEdit[A-Z]/.test(key) ? "localEdit" : /^listenAlong[A-Z]/.test(key) ? "listenAlong" : /^backgroundMedia[A-Z]/.test(key) ? "backgroundMedia" : /^fakeDeafen[A-Z]/.test(key) ? "fakeDeafen" : /^showMeYourName[A-Z]/.test(key) ? "showMeYourName" : /^customStatusPresets[A-Z]/.test(key) ? "customStatusPresets" : /^restartButton[A-Z]/.test(key) ? "restartButton" : /^showToken[A-Z]/.test(key) ? "showToken" : /^dmCategories[A-Z]/.test(key) ? "dmCategories" : /^showPerms[A-Z]/.test(key) ? "showPerms" : /^textReplace[A-Z]/.test(key) ? "textReplace" : key;
     };
     // Section titles are read whenever Discord draws the list, so they follow the language too. "Venus" is a name.
     function section(label, keys) {
@@ -1235,7 +1237,7 @@
         youBarSettings:[7368, "SettingsIcon"], quests:[13929, "QuestsIcon"],
         badges:[9211, "TrophyIcon"], userNotif:[9045, "BellIcon"], accountSwitcher:[8489, "GroupIcon"], appIcons:[8506, "AppsIcon"],
         compressUploads:[11636, "FileUpIcon"], customThemes:[16412, "EyeDropperIcon"], iconPacks:[11449, "ImageSparkleIcon"], messageHighlight:[17627, "PaintbrushThinIcon"], serverInfo:[5145, "CircleInformationIcon"], serverEdit:[10023, "PencilIcon"], fixEmbeds:[13836, "EmbedIcon"], tenorGifs:[10051, "GifIcon"], nitroThemes:[11733, "SparklesIcon"], materialYou:[16320, "PaintPaletteIcon"], hideBlocked:[11619, "ChatShieldIcon"], bulkDelete:[7144, "CircleCheckIcon"], experiments:[16650, "BeakerIcon"], cleanChannels:[12158, "MagicWandIcon"], noHandsfree:[13214, "HeadphonesIcon"], voiceOptions:[8501, "VoiceNormalIcon"], staffTag:[10563, "CrownIcon"], removedAlerts:[5135, "UserMinusIcon"], hideAnything:[10561, "XLargeIcon"], fullImages:[12328, "ImagesIcon"], alwaysTrust:[10733, "ShieldIcon"], noConfirmPin:[10641, "PinIcon"], clickableMentions:[8490, "AtIcon"], expandBar:[16089, "FullscreenEnterIcon"], quietReplies:[10654, "BellSlashIcon"], viewRaw:[12003, "FileIcon"], timeoutDuration:[5150, "ClockIcon"], dndBanners:[13603, "BellZIcon"], voiceDownload:[5143, "DownloadIcon"], cloneExpressions:[11657, "ImagePlusIcon"], listenAlong:[13214, "HeadphonesIcon"], backgroundMedia:[8674, "PlayIcon"], landscapeFull:[16089, "FullscreenEnterIcon"], silentLeave:[11384, "DoorExitIcon"], guildLurk:[6929, "EyeIcon"], silentEdit:[13745, "PencilSparkleIcon"], silentDelete:[5148, "TrashIcon"], localEdit:[10023, "PencilIcon"],
-        hypeSquad:[18747, "HomeIcon"], customIdle:[14205, "UserClockIcon"], pauseInvites:[8676, "PauseIcon"], fastDeleteChannels:[18679, "ChannelListIcon"], mutualGroupDMs:[8489, "GroupIcon"], showPerms:[10733, "ShieldIcon"], markdownBar:[8480, "TextIcon"], showMeYourName:[8640, "UserIcon"], betterRoleContext:[8895, "ShieldUserIcon"], customStatusPresets:[9252, "ReactionIcon"], platformSpoof:[5133, "UserPlatformIcon"], restartButton:[11632, "RetryIcon"], showToken:[8495, "LockIcon"], dmCategories:[9365, "TagIcon"]};
+        hypeSquad:[18747, "HomeIcon"], customIdle:[14205, "UserClockIcon"], pauseInvites:[8676, "PauseIcon"], fastDeleteChannels:[18679, "ChannelListIcon"], mutualGroupDMs:[8489, "GroupIcon"], showPerms:[10733, "ShieldIcon"], markdownBar:[8480, "TextIcon"], showMeYourName:[8640, "UserIcon"], betterRoleContext:[8895, "ShieldUserIcon"], customStatusPresets:[9252, "ReactionIcon"], textReplace:[18573, "ArrowsLeftRightIcon"], platformSpoof:[5133, "UserPlatformIcon"], restartButton:[11632, "RetryIcon"], showToken:[8495, "LockIcon"], dmCategories:[9365, "TagIcon"]};
     const venusIcons = new Map();
     function venusIcon(id, name, fallback) {
         const slot = id + ":" + name;
@@ -1294,6 +1296,7 @@
         fastDeleteChannels:["Delete channel", "Fast delete", "Remove channel", "Skip confirmation"],
         mutualGroupDMs:["Mutual group DMs", "Shared groups", "Mutual groups", "Group chats"],
         showPerms:["Show permissions", "Permissions", "Perms", "Roles", "Admin", "Moderator", "Member", "Server"],
+        textReplace:["Text replace", "Replace", "Find and replace", "Words", "Autocorrect", "Regex", "Links", "Swap"],
         customStatusPresets:["Custom status presets", "Status", "Custom status", "Presets", "Emoji status", "Saved statuses"],
         restartButton:["Restart button", "Restart", "Reload", "Reopen", "Close app", "Refresh"],
         showToken:["Show my token", "Token", "Auth", "Login", "Copy token", "Account", "Password"],
@@ -1811,6 +1814,7 @@
         toggle("people", "mutualGroupDMs", "Mutual group DMs", "Profiles show the group DMs you share with that person.");
         withOptions("people", "showPerms", "VENUS_SHOWPERMS", "Show permissions", "See what a person is allowed to do in a server, from the menu on their profile.", "Show permissions", ShowPermsSettings);
         withOptions("people", "betterRoleContext", "VENUS_BETTERROLE", "Better role menu", "Hold a role on a profile to copy its color or open its icon.", "Better role menu", BetterRoleMenuSettings);
+        withOptions("messages", "textReplace", "VENUS_TEXTREPLACE", "Text replace", "Swap words or links for others automatically, in messages you send and in messages you read.", "Text replace", TextReplaceSettings);
         withOptions("people", "customStatusPresets", "VENUS_STATUSPRESETS", "Custom status presets", "Save custom statuses as presets and set one with a single tap.", "Custom status presets", CustomStatusPresetsSettings);
         withOptions("people", "dmCategories", "VENUS_DMCATEGORIES", "DM categories", "Sort your DMs into your own categories: hold a chat and tap Set Category.", "DM categories", DmCategoriesSettings);
         withOptions("people", "showMeYourName", "VENUS_SHOWMEYOURNAME", "Showmeyourname", "Choose which name you see for everyone: username, display name, friend nickname or server nickname, and where.", "Showmeyourname", ShowMeYourNameSettings);
@@ -8633,9 +8637,9 @@
             }
         });
     }
-    function messageRow(orig, self, args) { const row = features.localEdit ? localEditRow(args[0]) : args[0]; return messageRowResult(orig.call(self, row), row); }
+    function messageRow(orig, self, args) { let row = features.localEdit ? localEditRow(args[0]) : args[0]; if (features.textReplace) row = rtrRow(row); return messageRowResult(orig.call(self, row), row); }
     // generate(row) is called once per chat row as you scroll: skip the arguments object (2.3x).
-    messageRow.call1 = (orig, self, row) => { if (features.localEdit) row = localEditRow(row); return messageRowResult(orig.call(self, row), row); };
+    messageRow.call1 = (orig, self, row) => { if (features.localEdit) row = localEditRow(row); if (features.textReplace) row = rtrRow(row); return messageRowResult(orig.call(self, row), row); };
     function messageRowResult(result, row) {
         if (!result || !row || row.rowType !== 1 || !result.message) return result;
         const pastelOn = enabled("pastelize"), translateOn = enabled("translate"), noDeleteOn = enabled("noDelete"), highlightOn = enabled("messageHighlight"), bulkOn = features.bulkDelete && bulkDelete.active;
@@ -21849,6 +21853,227 @@
             footnote("how", "Hold a chat in your DM list and tap Set Category. You can also pick chats here."),
             footnote("note", "The chats of a category move together to the top of your list.")]);
     }
+    // Text replace: rules that swap words, links or patterns for others. "Outgoing" changes what you send (and edit) for real, through
+    // sendMessage and editMessage (7445). "Shown" and "Embeds" change only how messages and their embeds look on this phone, in the row
+    // builder (8013); the messages themselves are not touched. A rule is {id, from, to, regex, ignoreCase, outgoing, shown, embeds, on};
+    // rules exported from Aliucord's TextReplace (fromInput, replacement, isRegex, matchUnsent, matchSent, matchEmbeds) are read too.
+    const RTR_MAX = 100, RTR_FROM = 200, RTR_TO = 500, RTR_TEXT = 20000;
+    function rtrFlag(value, fallback) { return typeof value === "boolean" ? value : fallback; }
+    function rtrText(value) {
+        let raw = null;
+        try { raw = typeof value === "string" ? JSON.parse(value) : null; } catch (_) {}
+        if (!Array.isArray(raw)) return undefined;
+        const out = [], seen = new Set();
+        raw.forEach(item => {
+            if (out.length >= RTR_MAX || !item || typeof item !== "object") return;
+            const from = typeof (item.from != null ? item.from : item.fromInput) === "string" ? (item.from != null ? item.from : item.fromInput).slice(0, RTR_FROM) : "";
+            const toValue = item.to != null ? item.to : item.replacement, to = typeof toValue === "string" ? toValue.slice(0, RTR_TO) : "";
+            if (!from) return;
+            let id = typeof item.id === "string" && /^[a-z0-9]{4,12}$/.test(item.id) ? item.id : "";
+            while (!id || seen.has(id)) id = Math.random().toString(36).slice(2, 8);
+            seen.add(id);
+            out.push({id, from, to, regex:rtrFlag(item.regex != null ? item.regex : item.isRegex, false), ignoreCase:rtrFlag(item.ignoreCase, true),
+                outgoing:rtrFlag(item.outgoing != null ? item.outgoing : item.matchUnsent, true), shown:rtrFlag(item.shown != null ? item.shown : item.matchSent, true),
+                embeds:rtrFlag(item.embeds != null ? item.embeds : item.matchEmbeds, true), on:item.on !== false});
+        });
+        return JSON.stringify(out);
+    }
+    const rtrCache = {text:null, list:[]}, rtrCompiled = new Map();
+    function rtrList() {
+        if (rtrCache.text === settings.textReplaceRules) return rtrCache.list;
+        let list = [];
+        try { const parsed = JSON.parse(settings.textReplaceRules); if (Array.isArray(parsed)) list = parsed; } catch (_) {}
+        rtrCache.text = settings.textReplaceRules; rtrCache.list = list;
+        return list;
+    }
+    function rtrSave(list) { return setSetting("textReplaceRules", JSON.stringify(list)); }
+    // A rule as a RegExp, or null when its pattern isn't one. Compiled once per version of the rule.
+    function rtrRegExp(rule) {
+        const key = rule.id + "\u0001" + rule.from + "\u0001" + (rule.regex ? 1 : 0) + (rule.ignoreCase ? 1 : 0);
+        if (rtrCompiled.has(key)) return rtrCompiled.get(key);
+        let re = null;
+        try { re = new RegExp(rule.regex ? rule.from : rule.from.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g" + (rule.ignoreCase ? "i" : "")); } catch (_) { re = null; }
+        if (rtrCompiled.size > 300) rtrCompiled.clear();
+        rtrCompiled.set(key, re);
+        return re;
+    }
+    function rtrOne(text, rule) {
+        const re = rtrRegExp(rule);
+        if (!re) return text;
+        re.lastIndex = 0;
+        // Aliucord's replacements are Java-style: ${name} for a named group.
+        const next = rule.regex ? text.replace(re, rule.to.replace(/\$\{(\w+)\}/g, "$<$1>")) : text.replace(re, () => rule.to);
+        return next.length > RTR_TEXT ? text : next;
+    }
+    // text with every rule of that kind applied, in order.
+    function rtrApply(text, kind) {
+        if (typeof text !== "string" || !text || text.length > RTR_TEXT) return text;
+        let out = text;
+        const list = rtrList();
+        for (let i = 0; i < list.length; i++) { const rule = list[i]; if (rule.on && rule[kind]) out = rtrOne(out, rule); }
+        return out;
+    }
+    function rtrActive(kind) { return enabled("textReplace") && rtrList().some(rule => rule.on && rule[kind]); }
+    function rtrSend(orig, self, args) {
+        const message = args[1];
+        if (!message || typeof message.content !== "string" || !message.content || !rtrActive("outgoing")) return orig.apply(self, args);
+        const content = rtrApply(message.content, "outgoing");
+        // A rule that would leave nothing to send is skipped, so the message isn't lost.
+        if (content === message.content || !content.trim()) return orig.apply(self, args);
+        const next = Array.from(args); next[1] = Object.assign({}, message, {content});
+        return orig.apply(self, next);
+    }
+    function rtrEdit(orig, self, args) {
+        const edit = args[2];
+        if (!edit || typeof edit.content !== "string" || !edit.content || !rtrActive("outgoing")) return orig.apply(self, args);
+        const content = rtrApply(edit.content, "outgoing");
+        if (content === edit.content || !content.trim()) return orig.apply(self, args);
+        const next = Array.from(args); next[2] = Object.assign({}, edit, {content});
+        return orig.apply(self, next);
+    }
+    // One embed with its texts replaced, or the same embed when nothing changed.
+    function rtrEmbed(embed) {
+        if (!embed || typeof embed !== "object") return embed;
+        let out = embed;
+        ["rawTitle", "rawDescription"].forEach(key => {
+            if (typeof out[key] !== "string") return;
+            const next = rtrApply(out[key], "embeds");
+            if (next !== out[key]) out = copyWith(out, key, next);
+        });
+        if (Array.isArray(out.fields)) {
+            let changed = false;
+            const fields = out.fields.map(field => {
+                if (!field || typeof field !== "object") return field;
+                let item = field;
+                ["rawName", "rawValue"].forEach(key => {
+                    if (typeof item[key] !== "string") return;
+                    const next = rtrApply(item[key], "embeds");
+                    if (next !== item[key]) { item = copyWith(item, key, next); changed = true; }
+                });
+                return item;
+            });
+            if (changed) out = copyWith(out, "fields", fields);
+        }
+        return out;
+    }
+    const rtrRows = new WeakMap();
+    // A chat row whose message reads with the rules applied. The same row comes back while the rules and the message stay the same,
+    // so a list that draws a row again only when it changes keeps working.
+    function rtrRow(row) {
+        if (!row || row.rowType !== 1 || !row.message || !enabled("textReplace")) return row;
+        const kinds = rtrActive("shown"), embeds = rtrActive("embeds");
+        if (!kinds && !embeds) return row;
+        const hit = rtrRows.get(row);
+        if (hit && hit.rules === settings.textReplaceRules) return hit.row;
+        let message = row.message;
+        try {
+            if (kinds && typeof message.content === "string") {
+                const content = rtrApply(message.content, "shown");
+                if (content !== message.content) message = copyWith(message, "content", content);
+            }
+            if (embeds && Array.isArray(message.embeds) && message.embeds.length) {
+                const list = message.embeds.map(rtrEmbed);
+                if (list.some((embed, index) => embed !== message.embeds[index])) message = copyWith(message, "embeds", list);
+            }
+        } catch (_) { message = row.message; }
+        const out = message === row.message ? row : copyWith(row, "message", message);
+        rtrRows.set(row, {rules:settings.textReplaceRules, row:out});
+        return out;
+    }
+    function rtrNew() {
+        return {id:Math.random().toString(36).slice(2, 8), from:"", to:"", regex:false, ignoreCase:true, outgoing:true, shown:true, embeds:true, on:true};
+    }
+    function rtrFlags(rule) {
+        const bits = [];
+        if (rule.regex) bits.push(tr("Regex"));
+        if (rule.outgoing) bits.push(tr("Outgoing"));
+        if (rule.shown) bits.push(tr("Shown"));
+        if (rule.embeds) bits.push(tr("Embeds"));
+        return bits.join(" · ");
+    }
+    function rtrShort(text, max) { const one = String(text).replace(/\s+/g, " "); return one.length > max ? one.slice(0, max - 1) + "…" : one; }
+    const RTR_SHEET = "VenusTextReplace";
+    function rtrOpen(id) {
+        const ui = reviewUI();
+        if (!enabled("textReplace") || !React || !RN || typeof ui.showSheet !== "function") return;
+        try { ui.showSheet({key:RTR_SHEET, content:el(TextReplaceSheet, {id}), stackingBehavior:"stack"}); } catch (_) {}
+    }
+    function rtrField(ui, key, value, change, placeholder, max) {
+        return ui.TextInput ? el(ui.TextInput, {key, value, onChange:v => change(String(v == null ? "" : v)), placeholder, maxLength:max, autoCorrect:false, autoCapitalize:"none"}) :
+            el(RN.TextInput, {key, value, onChangeText:change, placeholder, maxLength:max, autoCorrect:false, autoCapitalize:"none", style:{fontSize:16, padding:12, color:"#f2f3f5"}});
+    }
+    // The editor of one rule: what to find, what to put, and where it applies.
+    function TextReplaceSheet(props) {
+        useSettings("textReplace");
+        const ui = reviewUI(), Group = ui.TableRowGroup || RN.View, Row = ui.TableRow, Switch = ui.TableSwitchRow;
+        const old = rtrList().find(rule => rule.id === props.id) || null;
+        const [rule, setRule] = React.useState(() => old ? Object.assign({}, old) : rtrNew());
+        if (!React || !RN) return null;
+        const close = () => hideReviewSheet(ui, RTR_SHEET), set = patch => setRule(Object.assign({}, rule, patch));
+        const broken = !!rule.from && rule.regex && !rtrRegExp(Object.assign({}, rule, {id:"check"}));
+        const save = () => {
+            if (!rule.from || broken) return;
+            haptic("SELECTION");
+            const list = rtrList().slice(), at = list.findIndex(item => item.id === rule.id);
+            if (at >= 0) list[at] = rule; else if (list.length >= RTR_MAX) { reviewToast(ui, "You can have up to 100 rules.", venusIcon(6573, "CircleXIcon")); return; } else list.push(rule);
+            reviewToast(ui, rtrSave(list) ? "Rule saved" : "Couldn't save the rule", venusIcon(7144, "CircleCheckIcon"));
+            close();
+        };
+        const remove = () => { haptic("IMPACT_LIGHT"); rtrSave(rtrList().filter(item => item.id !== rule.id)); close(); };
+        const header = ui.Header ? el(ui.Header, {title:tr(old ? "Edit rule" : "New rule"), trailing:ui.Close ? el(ui.Close, {onPress:close}) : undefined}) : null;
+        const toggle = (key, label, hint) => Switch ? el(Switch, {key, label:tr(label), subLabel:hint ? tr(hint) : undefined, value:!!rule[key], onValueChange:value => set({[key]:!!value})}) : null;
+        const content = el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:12}},
+            el(RN.View, {style:{gap:8}}, rtrField(ui, "from", rule.from, from => set({from}), tr("Find"), RTR_FROM), rtrField(ui, "to", rule.to, to => set({to}), tr("Replace with"), RTR_TO)),
+            broken ? footnote("broken", "That isn't a valid regex.") : null,
+            Switch ? el(Group, {key:"how"}, toggle("regex", "Regex", "Read Find as a regular expression. Use $1 in Replace with for a group."), toggle("ignoreCase", "Ignore case")) : null,
+            Switch ? el(Group, {key:"where", title:tr("Where")}, toggle("outgoing", "Outgoing", "Messages you send or edit are changed for real."),
+                toggle("shown", "Shown", "Messages in chat look different on this phone only."), toggle("embeds", "Embeds", "Titles and texts of embeds look different on this phone only.")) : null,
+            Row ? el(Group, {key:"actions"}, el(Row, {key:"save", label:tr("Save"), icon:rowIcon(7144, "CircleCheckIcon"), disabled:!rule.from || broken, onPress:save}),
+                old ? el(Row, {key:"remove", label:tr("Delete rule"), icon:rowIcon(5148, "TrashIcon"), variant:"danger", onPress:remove}) : null) : null);
+        return serverEditScroll(ui, header, content);
+    }
+    function rtrImport() {
+        const ui = reviewUI(), clip = ui.clipboard || RN && RN.Clipboard;
+        if (!clip || typeof clip.getString !== "function") return;
+        Promise.resolve().then(() => clip.getString()).then(text => {
+            const parsed = typeof text === "string" ? rtrText(text.trim()) : undefined, add = parsed ? JSON.parse(parsed) : [];
+            if (!add.length) { showProblem("Couldn't import", tr("Your clipboard has no rules. Copy some first.")); return; }
+            const list = rtrList().slice(), ids = new Set(list.map(rule => rule.id));
+            add.forEach(rule => { if (list.length >= RTR_MAX) return; while (ids.has(rule.id)) rule.id = Math.random().toString(36).slice(2, 8); ids.add(rule.id); list.push(rule); });
+            rtrSave(list);
+            reviewToast(ui, "Rules imported", venusIcon(7144, "CircleCheckIcon"));
+        }).catch(() => showProblem("Couldn't import", tr("Your clipboard has no rules. Copy some first.")));
+    }
+    function rtrExport() {
+        const ui = reviewUI(), clip = ui.clipboard || RN && RN.Clipboard;
+        try { clip.setString(JSON.stringify(rtrList())); } catch (_) { return; }
+        reviewToast(ui, "Rules copied", venusIcon(7144, "CircleCheckIcon"));
+    }
+    function TextReplaceSettings() {
+        useSettings("textReplace");
+        useSettings("textReplaceRules");
+        const ui = reviewUI();
+        const [sample, setSample] = React.useState("");
+        if (!React || !RN) return null;
+        const on = enabled("textReplace"), Group = ui.TableRowGroup || RN.View, Row = ui.TableRow, Text = inspectedExport(5187, "Text");
+        const list = rtrList();
+        const rows = Row ? list.map(rule => el(Row, {key:rule.id, label:rtrShort(rule.from, 40) || "…",
+            subLabel:rule.regex && !rtrRegExp(rule) ? tr("Invalid regex") : "→ " + (rtrShort(rule.to, 40) || tr("(nothing)")) + "\n" + (rule.on ? rtrFlags(rule) : tr("Off")),
+            icon:rowIcon(18573, "ArrowsLeftRightIcon"), onPress:() => { haptic("SELECTION"); rtrOpen(rule.id); }})) : [];
+        const shownText = sample ? rtrApply(sample, "outgoing") : "";
+        return settingsBody(ui, [
+            !on ? offCard("status", venusIcon(18573, "ArrowsLeftRightIcon"), "textReplace") : null,
+            rows.length ? el(Group, {key:"rules", title:tr("Rules")}, rows) : footnote("none", "No rules yet. Add one to start."),
+            Row ? el(Group, {key:"actions"}, el(Row, {key:"add", label:tr("Add rule"), icon:rowIcon(10621, "PlusLargeIcon"), onPress:() => { haptic("SELECTION"); rtrOpen(null); }}),
+                el(Row, {key:"import", label:tr("Import from clipboard"), subLabel:tr("Your own rules, or rules exported from Aliucord's TextReplace."), icon:rowIcon(6393, "ClipboardListIcon"), onPress:rtrImport}),
+                list.length ? el(Row, {key:"export", label:tr("Copy rules"), icon:rowIcon(5141, "CopyIcon"), onPress:rtrExport}) : null) : null,
+            el(RN.View, {key:"try", style:{gap:8}}, groupTitle("tryTitle", "Try it"),
+                el(RN.View, {style:{paddingHorizontal:16, gap:8}}, rtrField(ui, "sample", sample, setSample, tr("Type a message to test"), 300),
+                    sample ? (Text ? el(Text, {variant:"text-md/medium", color:"text-default"}, shownText || "​") : el(RN.Text, {style:{color:"#dbdee1", fontSize:15}}, shownText || "​")) : null)),
+            footnote("out", "Outgoing rules change the message you send. Others see the new words."),
+            footnote("shown", "Shown and Embeds only change how messages look on this phone."),
+            footnote("order", "Rules run from the top down, each on the result of the one before.")]);
+    }
     // Better role menu's page: a little profile that plays what the feature does (hold a role, tap Copy Role Color).
     const ROLE_PREVIEW_COLOR = "#e67e22";
     function RoleMenuPreview(props) {
@@ -24270,7 +24495,7 @@
             case 1266: if (features.pastelize) pastelHash = typeof exports === "function" ? exports : exports.default; return exports;
             case 2128: if (features.pastelize) guildMembers = exports.default; if (features.timeoutDuration && exports && exports.default) timeoutTag.members = exports.default; return exports;
             case 8013:
-                if ((features.pastelize || features.noDelete || features.translate || features.messageHighlight || features.bulkDelete || features.staffTag || features.timeoutDuration || features.voiceDownload || features.localEdit) && exports.default && exports.default.prototype)
+                if ((features.pastelize || features.noDelete || features.translate || features.messageHighlight || features.bulkDelete || features.textReplace || features.staffTag || features.timeoutDuration || features.voiceDownload || features.localEdit) && exports.default && exports.default.prototype)
                     hookExport(exports.default.prototype, "generate", messageRow);
                 return exports;
             case 5207: if (features.platformIndicators || features.userNotif) { presenceStore = exports.default; if (features.userNotif) userNotifSeedStatuses(); } return exports;
@@ -24544,6 +24769,11 @@
                 if (features.fixEmbeds) {
                     actions = hookExport(actions, "sendMessage", fixEmbedsSend);
                     actions = hookExport(actions, "editMessage", fixEmbedsEdit);
+                }
+                // Outermost of all: what you type is replaced first, so the hooks above see the final words.
+                if (features.textReplace) {
+                    actions = hookExport(actions, "sendMessage", rtrSend);
+                    actions = hookExport(actions, "editMessage", rtrEdit);
                 }
                 msgActions = actions;
                 return replaceValue(exports, "default", actions);
