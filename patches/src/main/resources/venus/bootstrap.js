@@ -62,6 +62,12 @@
     if (features.pauseInvites) selectModules([17433, 2090, 4845, 1087]);
     if (features.fastDeleteChannels) selectModules([10596, 5400, 1128, 2068, 4845, 1087]);
     if (features.mutualGroupDMs) selectModules([14197, 2068, 1392, 1114]);
+    if (features.showPerms) selectModules([7158]);
+    if (features.betterRoleContext) selectModules([7158, 7167]);
+    if (features.customStatusPresets) selectModules([10842]);
+    if (features.dmCategories) selectModules([17165, 2068, 1392, 10596, 17174, 17160]);
+    if (features.showMeYourName) selectModules([14015, 5509, 5883, 12827, 10523, 11163, 5502, 7635, 8150]);
+    if (features.markdownBar) selectModules([12337, 12818, 12848]);
     if (features.platformSpoof) selectModules([14713]);
     if (features.guildLurk) targetModules[13422] = 1;
     if (features.quietReplies) selectModules([1392, 5532, 9990]);
@@ -98,7 +104,7 @@
         accountSwitcher:false, accountSwitcherYouBar:true, accountSwitcherShare:false, accountSwitcherNotify:true, appIcons:false, nitroThemes:false, customThemes:false, customThemesBackground:true, materialYou:false, materialYouColor:"wallpaper", materialYouTint:"balanced",
         iconPacks:false, iconPacksTheme:true,
         messageHighlight:false, messageHighlightThickness:2, messageHighlightBrightness:50, messageHighlightPingColor:"default", serverInfo:false, serverInfoFriends:true, serverEdit:false,
-        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, language:"auto", hiddenFeatures:"",
+        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
         hypeSquad:false, customIdle:false, customIdleMinutes:10, pauseInvites:false, fastDeleteChannels:false, fastDeleteChannelsConfirm:true, fastDeleteChannelsMenu:true, mutualGroupDMs:false, platformSpoof:false, platformSpoofDevice:"desktop" };
     // The settings every feature starts from, for Reset to defaults on the Backup page.
     let DEFAULT_SETTINGS = null;
@@ -116,7 +122,7 @@
             accountSwitcher: false, accountSwitcherYouBar: true, accountSwitcherShare: false, accountSwitcherNotify: true, appIcons: false, nitroThemes: false, customThemes: false, customThemesBackground: true, materialYou: false, materialYouColor: "wallpaper", materialYouTint: "balanced",
             iconPacks: false, iconPacksTheme: true,
             messageHighlight: false, messageHighlightThickness: 2, messageHighlightBrightness: 50, messageHighlightPingColor: "default", serverInfo: false, serverInfoFriends: true, serverEdit: false,
-            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, language: "auto", hiddenFeatures: "",
+            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
             hypeSquad: false, customIdle: false, customIdleMinutes: 10, pauseInvites: false, fastDeleteChannels: false, fastDeleteChannelsConfirm: true, fastDeleteChannelsMenu: true, mutualGroupDMs: false, platformSpoof: false, platformSpoofDevice: "desktop"
         }));
     }
@@ -221,7 +227,7 @@
     }
     // The language of Venus settings. English is built in; every other one is a file in the patched APK
     // (assets/venus/i18n), read once when it's first needed, so none of them slows down Discord's start.
-    const UI_LANGUAGES = [["en","English","English"],["bg","\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438","Bulgarian"],["cs","\u010ce\u0161tina","Czech"],
+    const UI_LANGUAGES = [["en","English","English"],["ar","\u0627\u0644\u0639\u0631\u0628\u064a\u0629","Arabic"],["bg","\u0411\u044a\u043b\u0433\u0430\u0440\u0441\u043a\u0438","Bulgarian"],["cs","\u010ce\u0161tina","Czech"],
         ["da","Dansk","Danish"],["de","Deutsch","German"],["el","\u0395\u03bb\u03bb\u03b7\u03bd\u03b9\u03ba\u03ac","Greek"],["es","Espa\u00f1ol","Spanish"],
         ["fi","Suomi","Finnish"],["fr","Fran\u00e7ais","French"],["hi","\u0939\u093f\u0928\u094d\u0926\u0940","Hindi"],["hr","Hrvatski","Croatian"],
         ["hu","Magyar","Hungarian"],["id","Bahasa Indonesia","Indonesian"],["it","Italiano","Italian"],["ja","\u65e5\u672c\u8a9e","Japanese"],
@@ -275,6 +281,7 @@
         switch (code) {
             case "ja": case "ko": case "zh-CN": case "zh-TW": case "th": case "vi": case "id": return "other";
             case "fr": case "pt-BR": case "hi": return n <= 1 ? "one" : "other";
+            case "ar": return n === 0 ? "zero" : n === 1 ? "one" : n === 2 ? "two" : h >= 3 && h <= 10 ? "few" : h >= 11 ? "many" : "other";
             case "ru": case "uk": return d === 1 && h !== 11 ? "one" : few ? "few" : "many";
             case "hr": return d === 1 && h !== 11 ? "one" : few ? "few" : "other";
             case "pl": return n === 1 ? "one" : few ? "few" : "many";
@@ -464,6 +471,11 @@
         if (key === "customIdleMinutes") return customIdleValue(value);
         if (key === "platformSpoofDevice") return SPOOF_DEVICES.includes(value) ? value : undefined;
         if (key === "backgroundMediaSkip") return [5, 10, 15, 30].includes(value) ? value : undefined;
+        if (key === "showMeYourNameOrder") return smynOrderText(value);
+        if (key === "showMeYourNameCustom") return smynCustomText(value);
+        if (key === "customStatusPresetsList") return cspText(value);
+        if (key === "dmCategoriesList") return dmcText(value);
+        if (key === "showMeYourNameMode") return value === "all" || value === "first" ? value : undefined;
         if (key === "hiddenFeatures") return hiddenFeaturesText(value);
         if (key === "hideAnythingSpots") return hideSpotsText(value);
         if (key === "materialYouColor") return myIsColor(value) ? value.toLowerCase() : undefined;
@@ -506,6 +518,13 @@
             if (!READ_ALL_MODES.includes(value)) return false;
             if (settings.readAllMode === value && status.storage !== "loading" && status.storage !== "waiting") return true;
             settings.readAllMode = value; dirty.add(key); save(); notify(key); return true;
+        }
+        // Showmeyourname: the order of the four names and how many to show are text settings, not switches.
+        if (key === "showMeYourNameOrder" || key === "showMeYourNameMode" || key === "showMeYourNameCustom" || key === "customStatusPresetsList" || key === "dmCategoriesList") {
+            const clean = acceptedSetting(key, value);
+            if (clean === undefined) return false;
+            if (settings[key] === clean && status.storage !== "loading" && status.storage !== "waiting") return true;
+            settings[key] = clean; dirty.add(key); save(); notify(key); return true;
         }
         if (key === "gestureOwn") {
             if (!GESTURE_OWN_MODES.includes(value)) return false;
@@ -1180,7 +1199,7 @@
     const featureFor = key => {
         const cached = featureTable[key];
         if (cached !== undefined) return cached;
-        return featureTable[key] = key === "reviewWarning" ? "reviewDB" : key === "emojis" || key === "stickers" || key === "hyperlinks" ? "freeNitro" : /^noDelete[A-Z]/.test(key) ? "noDelete" : /^pi[A-Z]/.test(key) ? "platformIndicators" : key === "pastelAll" || key === "pastelContent" ? "pastelize" : key === "readAllMode" ? "readAll" : /^compressUploads[A-Z]/.test(key) ? "compressUploads" : /^quests[A-Z]/.test(key) ? "quests" : /^badges[A-Z]/.test(key) ? "badges" : /^gesture[A-Z]/.test(key) ? "gestures" : /^translate[A-Z]/.test(key) ? "translate" : /^removedAlerts[A-Z]/.test(key) ? "removedAlerts" : /^userNotif[A-Z]/.test(key) ? "userNotif" : /^accountSwitcher[A-Z]/.test(key) ? "accountSwitcher" : /^hiddenChannels[A-Z]/.test(key) ? "hiddenChannels" : /^customThemes[A-Z]/.test(key) ? "customThemes" : /^materialYou[A-Z]/.test(key) ? "materialYou" : /^iconPacks[A-Z]/.test(key) ? "iconPacks" : /^messageHighlight[A-Z]/.test(key) ? "messageHighlight" : /^serverInfo[A-Z]/.test(key) ? "serverInfo" : /^fixEmbeds[A-Z]/.test(key) ? "fixEmbeds" : /^tenorGifs[A-Z]/.test(key) ? "tenorGifs" : /^hideBlocked[A-Z]/.test(key) ? "hideBlocked" : /^bulkDelete[A-Z]/.test(key) ? "bulkDelete" : /^expandBar[A-Z]/.test(key) ? "expandBar" : key === "systemFontSource" ? "systemFont" : key === "systemEmojiSource" ? "systemEmoji" : /^cleanChannels[A-Z]/.test(key) ? "cleanChannels" : /^voiceOptions[A-Z]/.test(key) ? "voiceOptions" : /^anonFiles[A-Z]/.test(key) ? "anonFiles" : /^staffTag[A-Z]/.test(key) ? "staffTag" : /^fullImages[A-Z]/.test(key) ? "fullImages" : /^alwaysTrust[A-Z]/.test(key) ? "alwaysTrust" : /^quietReplies[A-Z]/.test(key) ? "quietReplies" : /^viewRaw[A-Z]/.test(key) ? "viewRaw" : /^hideAnything[A-Z]/.test(key) ? "hideAnything" : /^guildLurk[A-Z]/.test(key) ? "guildLurk" : /^customIdle[A-Z]/.test(key) ? "customIdle" : /^fastDeleteChannels[A-Z]/.test(key) ? "fastDeleteChannels" : /^platformSpoof[A-Z]/.test(key) ? "platformSpoof" : /^silentEdit[A-Z]/.test(key) ? "silentEdit" : /^localEdit[A-Z]/.test(key) ? "localEdit" : /^listenAlong[A-Z]/.test(key) ? "listenAlong" : /^backgroundMedia[A-Z]/.test(key) ? "backgroundMedia" : /^fakeDeafen[A-Z]/.test(key) ? "fakeDeafen" : key;
+        return featureTable[key] = key === "reviewWarning" ? "reviewDB" : key === "emojis" || key === "stickers" || key === "hyperlinks" ? "freeNitro" : /^noDelete[A-Z]/.test(key) ? "noDelete" : /^pi[A-Z]/.test(key) ? "platformIndicators" : key === "pastelAll" || key === "pastelContent" ? "pastelize" : key === "readAllMode" ? "readAll" : /^compressUploads[A-Z]/.test(key) ? "compressUploads" : /^quests[A-Z]/.test(key) ? "quests" : /^badges[A-Z]/.test(key) ? "badges" : /^gesture[A-Z]/.test(key) ? "gestures" : /^translate[A-Z]/.test(key) ? "translate" : /^removedAlerts[A-Z]/.test(key) ? "removedAlerts" : /^userNotif[A-Z]/.test(key) ? "userNotif" : /^accountSwitcher[A-Z]/.test(key) ? "accountSwitcher" : /^hiddenChannels[A-Z]/.test(key) ? "hiddenChannels" : /^customThemes[A-Z]/.test(key) ? "customThemes" : /^materialYou[A-Z]/.test(key) ? "materialYou" : /^iconPacks[A-Z]/.test(key) ? "iconPacks" : /^messageHighlight[A-Z]/.test(key) ? "messageHighlight" : /^serverInfo[A-Z]/.test(key) ? "serverInfo" : /^fixEmbeds[A-Z]/.test(key) ? "fixEmbeds" : /^tenorGifs[A-Z]/.test(key) ? "tenorGifs" : /^hideBlocked[A-Z]/.test(key) ? "hideBlocked" : /^bulkDelete[A-Z]/.test(key) ? "bulkDelete" : /^expandBar[A-Z]/.test(key) ? "expandBar" : key === "systemFontSource" ? "systemFont" : key === "systemEmojiSource" ? "systemEmoji" : /^cleanChannels[A-Z]/.test(key) ? "cleanChannels" : /^voiceOptions[A-Z]/.test(key) ? "voiceOptions" : /^anonFiles[A-Z]/.test(key) ? "anonFiles" : /^staffTag[A-Z]/.test(key) ? "staffTag" : /^fullImages[A-Z]/.test(key) ? "fullImages" : /^alwaysTrust[A-Z]/.test(key) ? "alwaysTrust" : /^quietReplies[A-Z]/.test(key) ? "quietReplies" : /^viewRaw[A-Z]/.test(key) ? "viewRaw" : /^hideAnything[A-Z]/.test(key) ? "hideAnything" : /^guildLurk[A-Z]/.test(key) ? "guildLurk" : /^customIdle[A-Z]/.test(key) ? "customIdle" : /^fastDeleteChannels[A-Z]/.test(key) ? "fastDeleteChannels" : /^platformSpoof[A-Z]/.test(key) ? "platformSpoof" : /^silentEdit[A-Z]/.test(key) ? "silentEdit" : /^localEdit[A-Z]/.test(key) ? "localEdit" : /^listenAlong[A-Z]/.test(key) ? "listenAlong" : /^backgroundMedia[A-Z]/.test(key) ? "backgroundMedia" : /^fakeDeafen[A-Z]/.test(key) ? "fakeDeafen" : /^showMeYourName[A-Z]/.test(key) ? "showMeYourName" : /^customStatusPresets[A-Z]/.test(key) ? "customStatusPresets" : /^restartButton[A-Z]/.test(key) ? "restartButton" : /^showToken[A-Z]/.test(key) ? "showToken" : /^dmCategories[A-Z]/.test(key) ? "dmCategories" : /^showPerms[A-Z]/.test(key) ? "showPerms" : key;
     };
     // Section titles are read whenever Discord draws the list, so they follow the language too. "Venus" is a name.
     function section(label, keys) {
@@ -1216,7 +1235,7 @@
         youBarSettings:[7368, "SettingsIcon"], quests:[13929, "QuestsIcon"],
         badges:[9211, "TrophyIcon"], userNotif:[9045, "BellIcon"], accountSwitcher:[8489, "GroupIcon"], appIcons:[8506, "AppsIcon"],
         compressUploads:[11636, "FileUpIcon"], customThemes:[16412, "EyeDropperIcon"], iconPacks:[11449, "ImageSparkleIcon"], messageHighlight:[17627, "PaintbrushThinIcon"], serverInfo:[5145, "CircleInformationIcon"], serverEdit:[10023, "PencilIcon"], fixEmbeds:[13836, "EmbedIcon"], tenorGifs:[10051, "GifIcon"], nitroThemes:[11733, "SparklesIcon"], materialYou:[16320, "PaintPaletteIcon"], hideBlocked:[11619, "ChatShieldIcon"], bulkDelete:[7144, "CircleCheckIcon"], experiments:[16650, "BeakerIcon"], cleanChannels:[12158, "MagicWandIcon"], noHandsfree:[13214, "HeadphonesIcon"], voiceOptions:[8501, "VoiceNormalIcon"], staffTag:[10563, "CrownIcon"], removedAlerts:[5135, "UserMinusIcon"], hideAnything:[10561, "XLargeIcon"], fullImages:[12328, "ImagesIcon"], alwaysTrust:[10733, "ShieldIcon"], noConfirmPin:[10641, "PinIcon"], clickableMentions:[8490, "AtIcon"], expandBar:[16089, "FullscreenEnterIcon"], quietReplies:[10654, "BellSlashIcon"], viewRaw:[12003, "FileIcon"], timeoutDuration:[5150, "ClockIcon"], dndBanners:[13603, "BellZIcon"], voiceDownload:[5143, "DownloadIcon"], cloneExpressions:[11657, "ImagePlusIcon"], listenAlong:[13214, "HeadphonesIcon"], backgroundMedia:[8674, "PlayIcon"], landscapeFull:[16089, "FullscreenEnterIcon"], silentLeave:[11384, "DoorExitIcon"], guildLurk:[6929, "EyeIcon"], silentEdit:[13745, "PencilSparkleIcon"], silentDelete:[5148, "TrashIcon"], localEdit:[10023, "PencilIcon"],
-        hypeSquad:[18747, "HomeIcon"], customIdle:[14205, "UserClockIcon"], pauseInvites:[8676, "PauseIcon"], fastDeleteChannels:[18679, "ChannelListIcon"], mutualGroupDMs:[8489, "GroupIcon"], platformSpoof:[5133, "UserPlatformIcon"]};
+        hypeSquad:[18747, "HomeIcon"], customIdle:[14205, "UserClockIcon"], pauseInvites:[8676, "PauseIcon"], fastDeleteChannels:[18679, "ChannelListIcon"], mutualGroupDMs:[8489, "GroupIcon"], showPerms:[10733, "ShieldIcon"], markdownBar:[8480, "TextIcon"], showMeYourName:[8640, "UserIcon"], betterRoleContext:[8895, "ShieldUserIcon"], customStatusPresets:[9252, "ReactionIcon"], platformSpoof:[5133, "UserPlatformIcon"], restartButton:[11632, "RetryIcon"], showToken:[8495, "LockIcon"], dmCategories:[9365, "TagIcon"]};
     const venusIcons = new Map();
     function venusIcon(id, name, fallback) {
         const slot = id + ":" + name;
@@ -1274,6 +1293,14 @@
         pauseInvites:["Pause invites", "Invites", "Lock invites", "Raid", "Security"],
         fastDeleteChannels:["Delete channel", "Fast delete", "Remove channel", "Skip confirmation"],
         mutualGroupDMs:["Mutual group DMs", "Shared groups", "Mutual groups", "Group chats"],
+        showPerms:["Show permissions", "Permissions", "Perms", "Roles", "Admin", "Moderator", "Member", "Server"],
+        customStatusPresets:["Custom status presets", "Status", "Custom status", "Presets", "Emoji status", "Saved statuses"],
+        restartButton:["Restart button", "Restart", "Reload", "Reopen", "Close app", "Refresh"],
+        showToken:["Show my token", "Token", "Auth", "Login", "Copy token", "Account", "Password"],
+        dmCategories:["DM categories", "Categories", "Folders", "Groups", "Direct messages", "Organize", "Labels", "DMs"],
+        betterRoleContext:["Better role menu", "Roles", "Role color", "Copy color", "Role icon", "Role menu", "Hex"],
+        showMeYourName:["Showmeyourname", "Names", "Nickname", "Display name", "Username", "Friend nickname", "Server nickname", "Rename"],
+        markdownBar:["Markdown bar", "Markdown", "Formatting", "Bold", "Italic", "Heading", "Header", "List", "Quote", "Link", "Spoiler", "Code", "Toolbar", "Subtext"],
         backgroundMedia:["Background", "Picture in picture", "PiP", "Voice messages", "Audio", "Videos", "Lock screen", "Notification", "Screen off", "Skip buttons", "Bluetooth"],
         platformSpoof:["Platform spoof", "Device", "Mobile", "Desktop", "Web", "Console", "Fake platform"],
         guildLurk:["GuildLurk", "Guild lurk", "Lurk", "Lurker", "Preview", "Invite link", "Server ID"],
@@ -1763,6 +1790,7 @@
         withOptions("messages", "backgroundMedia", "VENUS_BACKGROUNDMEDIA", "Keep media playing", "Voice messages and audio keep playing when you leave Discord or turn off the screen, and videos pop out into a small window.", "Keep media playing", BackgroundMediaSettings);
         toggle("messages", "dndBanners", "Banners in Do Not Disturb", "New messages still pop up at the top while you're on Do Not Disturb, without a sound.");
         toggle("sending", "clickableMentions", "Tap mentions to open profiles", "Tap an @mention in the message bar to see who it is.");
+        toggle("sending", "markdownBar", "Markdown bar", "A bar above the keyboard with buttons for bold, italic, headings, lists, quotes, links, code and more.");
         withOptions("sending", "expandBar", "VENUS_EXPANDBAR", "Expand the message bar", "A button in the corner of the message bar opens it up tall, so you can see more of what you type.", "Expand message bar", ExpandBarSettings);
         // People
         withOptions("people", "pastelize", "VENUS_PASTELIZE", "Pastel name colors", "Names without a role color get a soft pastel one.", "Pastel names",
@@ -1781,6 +1809,11 @@
         withOptions("people", "customIdle", "VENUS_CUSTOMIDLE", "Custom idle time", "Choose when Discord sets you to Idle, or never.", "Idle time", CustomIdleSettings);
         withOptions("people", "platformSpoof", "VENUS_PLATFORMSPOOF", "Platform spoof", "Show as desktop, web or console instead of mobile. Discord doesn't allow this.", "Platform spoof", PlatformSpoofSettings);
         toggle("people", "mutualGroupDMs", "Mutual group DMs", "Profiles show the group DMs you share with that person.");
+        withOptions("people", "showPerms", "VENUS_SHOWPERMS", "Show permissions", "See what a person is allowed to do in a server, from the menu on their profile.", "Show permissions", ShowPermsSettings);
+        withOptions("people", "betterRoleContext", "VENUS_BETTERROLE", "Better role menu", "Hold a role on a profile to copy its color or open its icon.", "Better role menu", BetterRoleMenuSettings);
+        withOptions("people", "customStatusPresets", "VENUS_STATUSPRESETS", "Custom status presets", "Save custom statuses as presets and set one with a single tap.", "Custom status presets", CustomStatusPresetsSettings);
+        withOptions("people", "dmCategories", "VENUS_DMCATEGORIES", "DM categories", "Sort your DMs into your own categories: hold a chat and tap Set Category.", "DM categories", DmCategoriesSettings);
+        withOptions("people", "showMeYourName", "VENUS_SHOWMEYOURNAME", "Showmeyourname", "Choose which name you see for everyone: username, display name, friend nickname or server nickname, and where.", "Showmeyourname", ShowMeYourNameSettings);
         toggle("people", "silentLeave", "Leave group DMs silently", "Leave group DMs without the \"left the group\" message.");
         withOptions("messages", "silentEdit", "VENUS_SILENTEDIT", "Edit without the (edited) mark", "Only works when your message is the latest in the chat. Others see a new message, not an edit.", "Silent edit", SilentEditSettings);
         toggle("messages", "silentDelete", "Delete without a trace", "Blanks your message before deleting it, so message loggers have nothing to keep.");
@@ -1794,6 +1827,8 @@
         // Servers
         withOptions("servers", "readAll", "VENUS_READALL", "Read all button", "A button that marks servers and DMs as read.", "Read all", ReadAllSettings);
         withOptions("servers", "hiddenChannels", "VENUS_HIDDENCHANNELS", "Show hidden channels", "Channels you can't open show with a lock. Messages stay hidden.", "Hidden channels", HiddenChannelsSettings);
+        withOptions("advanced", "restartButton", "VENUS_RESTARTBUTTON", "Restart button", "Adds a Restart Discord button in Venus settings and in Discord's Settings.", "Restart button", RestartButtonSettings);
+        withOptions("advanced", "showToken", "VENUS_SHOWTOKEN", "Show my token", "Copy or view your own account token, with warnings. Never share it.", "Show my token", TokenSettings);
         withOptions("advanced", "viewRaw", "VENUS_VIEWRAW", "View raw data", "Hold a message, channel, server, person or role to see its raw data and copy it.", "View raw data", ViewRawSettings);
         withOptions("servers", "serverInfo", "VENUS_SERVERINFO", "Server info", "Hold a server's icon to see its details, boosts and friends there.", "Server info", ServerInfoSettings);
         withOptions("servers", "serverEdit", "VENUS_SERVEREDIT", "Edit servers locally", "Give any server your own name and icon. Only you see them.", "Edit servers", ServerEditSettings);
@@ -21047,12 +21082,21 @@
                 const id = String(role.id), guildId = props.guildId ? String(props.guildId) : "";
                 openViewRaw({kind:"role", id, guildId:rawId(guildId) ? guildId : "", role});
             };
+            // Holding a chip Discord gave no menu to (Developer Mode off): Better role menu opens the same small menu itself.
+            const holdRole = function () {
+                if (!enabled("betterRoleContext")) { openRaw(); return; }
+                const sheet = inspectedExport(7167, "showSimpleActionSheet");
+                if (typeof sheet !== "function") { openRaw(); return; }
+                haptic("IMPACT_LIGHT");
+                viewRawRole = {guildId:props.guildId, role};
+                try { sheet({key:"RoleItem", options:[]}); } finally { viewRawRole = null; }
+            };
             let done = false;
             const tree = cloneTree(out, (node, nodeProps) => {
                 if (done || !("onLongPress" in nodeProps) || !("onPress" in nodeProps)) return nodeProps;
                 done = true;
                 const press = nodeProps.onLongPress;
-                if (typeof press !== "function") return Object.assign({}, nodeProps, {onLongPress:openRaw});
+                if (typeof press !== "function") return Object.assign({}, nodeProps, {onLongPress:holdRole});
                 return Object.assign({}, nodeProps, {onLongPress:function () {
                     viewRawRole = {guildId:props.guildId, role};
                     try { return press.apply(this, arguments); } finally { viewRawRole = null; }
@@ -21066,9 +21110,9 @@
             // content, so holding a role shows the same pressed highlight.
             const Highlight = inspectedExport(6462, "PressableHighlight");
             if (Highlight && out && typeof out === "object" && out.props && (out.type === RN.View || typeof out.type === "string")) {
-                return el(Highlight, {onLongPress:openRaw, accessibilityRole:"button", style:out.props.style}, out.props.children);
+                return el(Highlight, {onLongPress:holdRole, accessibilityRole:"button", style:out.props.style}, out.props.children);
             }
-            return el(RN.Pressable, {onLongPress:openRaw, delayLongPress:350, accessible:false, style:state => state && state.pressed ? {opacity:0.6} : null}, out);
+            return el(RN.Pressable, {onLongPress:holdRole, delayLongPress:350, accessible:false, style:state => state && state.pressed ? {opacity:0.6} : null}, out);
         };
     }
     function viewRawRoleList(type) {
@@ -21078,17 +21122,822 @@
     }
     function viewRawRolesCard(orig, self, args) {
         const rendered = orig.apply(self, args);
-        if (!enabled("viewRaw") || !settings.viewRawRoles || !React || !rendered) return rendered;
+        if (!(enabled("viewRaw") && settings.viewRawRoles || enabled("betterRoleContext")) || !React || !rendered) return rendered;
         return viewRawSwap(rendered, p => "guildMemberRoleIds" in p, viewRawRoleList, 0);
+    }
+    function roleCopy(text, toast) {
+        try { (reviewUI().clipboard || RN.Clipboard).setString(text); reviewToast(reviewUI(), toast, venusIcon(5141, "CopyIcon")); } catch (_) {}
+    }
+    // The role's color as #rrggbb, or "" for a role with no color.
+    function roleColorText(role) {
+        if (typeof role.colorString === "string" && /^#[0-9a-f]{6}$/i.test(role.colorString)) return role.colorString.toLowerCase();
+        return typeof role.color === "number" && role.color > 0 ? "#" + (role.color >>> 0).toString(16).padStart(6, "0") : "";
+    }
+    // Custom status presets: statuses you saved, listed under the Custom Status editor (EditCustomStatusWithPreview, 10842) and on this
+    // plugin's page. A preset is {text, emoji:{id, name}}, kept as text on this phone. Tapping one sets it through Discord's own
+    // setCustomStatus (10846), the same call the editor's Save makes; the current status is read from CustomStatusSetting (2044).
+    const CSP_MAX = 30;
+    function cspText(value) {
+        let raw = null;
+        try { raw = typeof value === "string" ? JSON.parse(value) : null; } catch (_) {}
+        if (!Array.isArray(raw)) return undefined;
+        const out = [];
+        raw.slice(0, CSP_MAX).forEach(item => {
+            if (!item || typeof item !== "object") return;
+            const text = typeof item.text === "string" ? item.text.replace(/\s+/g, " ").trim().slice(0, 128) : "";
+            const emoji = item.emoji && typeof item.emoji === "object" ? {id:/^\d{5,25}$/.test(String(item.emoji.id || "")) ? String(item.emoji.id) : null,
+                name:typeof item.emoji.name === "string" ? item.emoji.name.slice(0, 64) : null} : null;
+            const has = emoji && (emoji.id || emoji.name);
+            if (!text && !has) return;
+            if (out.some(other => other.text === text && JSON.stringify(other.emoji || null) === JSON.stringify(has ? emoji : null))) return;
+            out.push({text, emoji:has ? emoji : null});
+        });
+        return JSON.stringify(out);
+    }
+    function cspList() {
+        try { const list = JSON.parse(settings.customStatusPresetsList); return Array.isArray(list) ? list : []; } catch (_) { return []; }
+    }
+    function cspSave(list) { return setSetting("customStatusPresetsList", JSON.stringify(list)); }
+    // The status that is set right now, as a preset, or null when there is none.
+    function cspCurrent() {
+        try {
+            const setting = inspectedExport(2044, "CustomStatusSetting"), now = setting && typeof setting.getSetting === "function" ? setting.getSetting() : null;
+            if (!now) return null;
+            const text = typeof now.text === "string" ? now.text.trim() : "", id = now.emojiId && String(now.emojiId) !== "0" ? String(now.emojiId) : null;
+            const name = typeof now.emojiName === "string" && now.emojiName ? now.emojiName : null;
+            if (!text && !id && !name) return null;
+            return {text, emoji:id || name ? {id, name} : null};
+        } catch (_) { return null; }
+    }
+    function cspApply(preset) {
+        try {
+            const set = inspectedExport(10846, "default"), values = inspectedExport(10843, "ClearAfterValues");
+            if (typeof set !== "function") return false;
+            const emoji = preset.emoji && (preset.emoji.id || preset.emoji.name) ? {id:preset.emoji.id || null, name:preset.emoji.name || null} : null;
+            set({text:preset.text || "", emojiInfo:emoji, clearAfter:values ? values.DONT_CLEAR : undefined, analyticsLocations:[], createdAtMs:Date.now()});
+            return true;
+        } catch (_) { return false; }
+    }
+    function cspAdd(preset) {
+        const list = cspList(), key = JSON.stringify(preset);
+        if (list.some(other => JSON.stringify({text:other.text, emoji:other.emoji || null}) === key)) return "same";
+        list.push(preset);
+        return cspSave(list) ? "ok" : "failed";
+    }
+    function useCspStyles() {
+        return useThemed("cspChips", c => ({chip:{flexDirection:"row", alignItems:"center", gap:6, borderRadius:16, borderWidth:1, paddingHorizontal:12, paddingVertical:7,
+                maxWidth:"100%", borderColor:c.BORDER_SUBTLE || "#ffffff1f", backgroundColor:c.CARD_BACKGROUND_DEFAULT || "#2b2d31"},
+            strong:{backgroundColor:c.BACKGROUND_BRAND || "#5865f2", borderColor:c.BACKGROUND_BRAND || "#5865f2"},
+            fab:{width:56, height:56, borderRadius:28, alignItems:"center", justifyContent:"center", backgroundColor:c.BACKGROUND_BRAND || "#5865f2", elevation:6,
+                shadowColor:"#000000", shadowOpacity:0.3, shadowRadius:6, shadowOffset:{width:0, height:3}}, fabIcon:{color:c.CONTROL_BRAND_FOREGROUND_NEW || c.WHITE || "#ffffff"}, text:{color:c.TEXT_DEFAULT || "#dbdee1", fontSize:14},
+            strongText:{color:c.CONTROL_BRAND_FOREGROUND_NEW || c.WHITE || "#ffffff", fontSize:14, fontWeight:"600"}, muted:{color:c.TEXT_MUTED || "#949ba4", fontSize:12}}),
+            {chip:{flexDirection:"row", alignItems:"center", gap:6, borderRadius:16, borderWidth:1, paddingHorizontal:12, paddingVertical:7, maxWidth:"100%", borderColor:"#ffffff1f", backgroundColor:"#2b2d31"},
+             strong:{backgroundColor:"#5865f2", borderColor:"#5865f2"},
+             fab:{width:56, height:56, borderRadius:28, alignItems:"center", justifyContent:"center", backgroundColor:"#5865f2", elevation:6,
+                shadowColor:"#000000", shadowOpacity:0.3, shadowRadius:6, shadowOffset:{width:0, height:3}}, fabIcon:{color:"#ffffff"}, text:{color:"#dbdee1", fontSize:14}, strongText:{color:"#ffffff", fontSize:14, fontWeight:"600"}, muted:{color:"#949ba4", fontSize:12}});
+    }
+    function CspEmoji(props) {
+        const emoji = props.emoji;
+        if (!emoji) return null;
+        if (emoji.id) return el(RN.Image, {source:{uri:"https://cdn.discordapp.com/emojis/" + emoji.id + ".png?size=48"}, style:{width:20, height:20}});
+        return emoji.name ? el(RN.Text, {style:{fontSize:16}}, emoji.name) : null;
+    }
+    function CspSection(props) {
+        useSettings("customStatusPresetsList");
+        const s = useCspStyles();
+        if (!React || !RN) return null;
+        const Press = RN.Pressable || RN.TouchableOpacity || RN.View, ui = reviewUI(), list = cspList();
+        const tap = preset => {
+            haptic("SELECTION");
+            const done = cspApply(preset);
+            reviewToast(ui, done ? "Status set" : "Couldn't set the status", venusIcon(7144, "CircleCheckIcon"));
+            // On Discord's own screen the box still shows the old text, so close it once the status is set.
+            if (done && !props.page) setTimeout(() => { try { typeof props.close === "function" ? props.close() : null; } catch (_) {} }, 250);
+        };
+        const remove = (preset, index) => {
+            haptic("IMPACT_LIGHT");
+            const drop = () => { const next = cspList(); next.splice(index, 1); cspSave(next); };
+            const use = () => tap(preset);
+            // Discord's own small menu, so it takes the colors of the theme in use.
+            const sheet = inspectedExport(7167, "showSimpleActionSheet");
+            if (typeof sheet === "function") {
+                try { sheet({key:"VenusPreset", options:[{label:tr("Use preset"), icon:venusIcon(7144, "CircleCheckIcon"), onPress:use},
+                    {label:tr("Remove preset"), icon:venusIcon(5148, "TrashIcon"), onPress:drop}]}); return; } catch (_) {}
+            }
+            drop();
+        };
+        const saveCurrent = () => {
+            haptic("SELECTION");
+            const now = cspCurrent();
+            if (!now) { reviewToast(ui, "Nothing to save. Set a status first.", venusIcon(7144, "CircleCheckIcon")); return; }
+            reviewToast(ui, cspAdd(now) === "failed" ? "Couldn't save the preset" : "Preset saved", venusIcon(7144, "CircleCheckIcon"));
+        };
+        const chips = list.map((preset, index) => el(Press, {key:index + ":" + preset.text, onPress:() => tap(preset), onLongPress:() => remove(preset, index), delayLongPress:350,
+            accessibilityRole:"button", accessibilityLabel:preset.text || (preset.emoji && preset.emoji.name) || tr("Preset"), style:s.chip},
+            el(CspEmoji, {emoji:preset.emoji}), preset.text ? el(RN.Text, {style:s.text, numberOfLines:1}, preset.text) : null));
+        if (props.page) chips.push(el(Press, {key:"save", onPress:saveCurrent, accessibilityRole:"button", style:[s.chip, s.strong]}, el(RN.Text, {style:s.strongText}, "+ " + tr("Save current status"))));
+        return el(RN.View, {key:"venus-presets", style:{paddingHorizontal:props.page ? 0 : 16, paddingVertical:12, gap:10}},
+            props.page ? null : el(RN.Text, {style:[s.muted, {fontWeight:"700"}]}, tr("Presets").toUpperCase()),
+            chips.length ? el(RN.View, {style:{flexDirection:"row", flexWrap:"wrap", gap:8}}, chips) : null,
+            el(RN.Text, {style:s.muted}, tr(props.page ? (list.length ? "Tap a preset to use it. Hold one to remove it." : "Set a status, then tap Save current status to keep it as a preset.") :
+                list.length ? "Tap a preset to use it. Hold one for more. Type a status and hold the save button to keep it." : "Type a status, then hold the save button to keep it as a preset.")));
+    }
+    // The Custom Status editor. Its default export only builds a Navigator whose `screens` hold the real screen as a `render`
+    // component (a ScrollView of the preview, the text box and the buttons), so that render is wrapped, once per function so
+    // React keeps the same component, and the presets go at the end of what it draws. A round save button floats at the corner
+    // while there is something typed; holding it keeps the status in the box (the box's text and emoji are read from what the screen draws).
+    let cspOpen = false;
+    // The status in the box: its text is the string-valued input the screen draws, its emoji the first emoji object it hands down.
+    function cspRead(tree) {
+        let text = null, emoji = null;
+        try {
+            cloneTree(tree, (node, props) => {
+                if (text === null && typeof props.value === "string" && "maxLength" in props && (props.onChange || props.onChangeText)) text = props.value;
+                const e = props.emoji;
+                if (!emoji && e && typeof e === "object" && (e.id || e.name || e.surrogates)) emoji = {id:e.id ? String(e.id) : null, name:e.name || e.surrogates || null};
+                return props;
+            }, 0);
+        } catch (_) {}
+        return {text:text ? text.replace(/\s+/g, " ").trim() : "", emoji};
+    }
+    function CspFab(props) {
+        const s = useCspStyles();
+        if (!RN) return null;
+        const Press = RN.Pressable || RN.TouchableOpacity || RN.View, Icon = venusIcon(12367, "SaveIcon"), ui = reviewUI();
+        const hold = () => {
+            haptic("IMPACT_MEDIUM");
+            const done = cspAdd({text:props.text, emoji:props.emoji});
+            reviewToast(ui, done === "ok" ? "Preset saved" : done === "same" ? "That preset is already saved" : "Couldn't save the preset", venusIcon(7144, "CircleCheckIcon"));
+        };
+        const tap = () => { haptic("SELECTION"); reviewToast(ui, "Hold to save as a preset", venusIcon(7144, "CircleCheckIcon")); };
+        return el(RN.View, {pointerEvents:"box-none", style:{position:"absolute", right:20, bottom:28}},
+            el(Press, {onPress:tap, onLongPress:hold, delayLongPress:350, accessibilityRole:"button", accessibilityLabel:tr("Save as a preset"), style:s.fab}, el(Icon, {size:"md", color:s.fabIcon.color})));
+    }
+    const cspWrapped = new WeakMap();
+    // Navigator calls screen.render(route.params, navigation), which returns an element of the real screen component. That
+    // component is the one wrapped: it draws a ScrollView, and the presets are added at the end of the ScrollView's children.
+    function cspInner(Screen) {
+        let wrapped = cspWrapped.get(Screen);
+        if (wrapped) return wrapped;
+        wrapped = function (props) {
+            const out = Screen(props);
+            try {
+                if (!enabled("customStatusPresets") || !out || !out.props) return out;
+                const close = () => { if (props && typeof props.onClose === "function") props.onClose(); else if (props && props.navigation && typeof props.navigation.pop === "function") props.navigation.pop(); };
+                const kids = [].concat(out.props.children == null ? [] : out.props.children, [el(CspSection, {key:"venus-presets", close})]);
+                const body = React.cloneElement(out, Object.assign({}, out.props, {children:kids})), now = cspRead(out);
+                return el(RN.View, {style:{flex:1}}, body, now.text || now.emoji ? el(CspFab, {key:"venus-fab", text:now.text, emoji:now.emoji}) : null);
+            } catch (_) { return out; }
+        };
+        try { wrapped.displayName = "VenusStatusPresets"; } catch (_) {}
+        cspWrapped.set(Screen, wrapped);
+        return wrapped;
+    }
+    function cspScreen(render) {
+        return function () {
+            const out = render.apply(this, arguments);
+            try {
+                if (out && out.type && typeof out.type === "function") return React.createElement(cspInner(out.type), Object.assign({key:out.key}, out.props));
+            } catch (_) {}
+            return out;
+        };
+    }
+    const cspRenders = new WeakMap();
+    function cspRender(render) {
+        let wrapped = cspRenders.get(render);
+        if (!wrapped) { wrapped = cspScreen(render); cspRenders.set(render, wrapped); }
+        return wrapped;
+    }
+    function cspModal(orig, self, args) {
+        React.useEffect(() => { return () => { cspOpen = false; }; }, []);
+        const rendered = orig.apply(self, args);
+        if (!enabled("customStatusPresets") || !React || !rendered) return rendered;
+        cspOpen = true;
+        try {
+            return cloneTree(rendered, (node, props) => {
+                const screens = props.screens;
+                if (!screens || typeof screens !== "object") return props;
+                const fix = item => item && typeof item.render === "function" ? Object.assign({}, item, {render:cspRender(item.render)}) : item;
+                const next = Array.isArray(screens) ? screens.map(fix) : Object.keys(screens).reduce((out, key) => { out[key] = fix(screens[key]); return out; }, {});
+                return Object.assign({}, props, {screens:next});
+            }, 0);
+        } catch (_) { return rendered; }
+    }
+    // The page: the same presets, and a way to write one by hand.
+    function CspAddForm() {
+        const ui = reviewUI(), Group = ui.TableRowGroup || RN.View, Row = ui.TableRow;
+        const [text, setText] = React.useState(""), [emoji, setEmoji] = React.useState("");
+        const field = (key, value, change, placeholder, max) => ui.TextInput ? el(ui.TextInput, {key, value, onChange:v => change(String(v || "")), placeholder, maxLength:max, autoCorrect:false}) :
+            el(RN.TextInput, {key, value, onChangeText:change, placeholder, maxLength:max, style:{fontSize:16, padding:12, color:"#f2f3f5"}});
+        const add = () => {
+            const name = emoji.trim(), preset = {text:text.trim(), emoji:name ? {id:null, name} : null};
+            if (!preset.text && !preset.emoji) return;
+            haptic("SELECTION");
+            const done = cspAdd(JSON.parse(cspText(JSON.stringify([preset])))[0] || preset);
+            reviewToast(ui, done === "ok" ? "Preset saved" : done === "same" ? "That preset is already saved" : "Couldn't save the preset", venusIcon(7144, "CircleCheckIcon"));
+            if (done === "ok") { setText(""); setEmoji(""); }
+        };
+        return el(RN.View, {key:"add", style:{gap:12}}, groupTitle("addTitle", "Add a preset"),
+            el(RN.View, {style:{paddingHorizontal:16, gap:8}}, field("text", text, setText, tr("Status text"), 128), field("emoji", emoji, setEmoji, tr("Emoji (optional)"), 16)),
+            Row ? el(Group, {key:"addRow"}, el(Row, {key:"add", label:tr("Add preset"), icon:rowIcon(10621, "PlusLargeIcon"), onPress:add})) : null);
+    }
+    function CustomStatusPresetsSettings() {
+        useSettings("customStatusPresets");
+        useSettings("customStatusPresetsList");
+        const ui = reviewUI();
+        if (!React || !RN) return null;
+        const on = enabled("customStatusPresets");
+        return settingsBody(ui, [
+            !on ? offCard("status", venusIcon(9252, "ReactionIcon"), "customStatusPresets") : null,
+            el(RN.View, {key:"list", style:{gap:4}}, groupTitle("listTitle", "Your presets"), el(CspSection, {page:true})),
+            el(CspAddForm, {key:"form"}),
+            footnote("where", "Your presets also show at the bottom of Discord's Custom Status screen. Tap one to set it, or hold it to remove it."),
+            footnote("clear", "A preset sets your status without an expiry, so it stays until you change it.")]);
+    }
+    // Restart button, Show my token and DM categories: ports of the Aliucord plugins RestartButton, Token and DMCategories.
+    // Restart reopens Discord the way Unlock experiments does (BundleUpdaterManager.reload), after saving the Venus settings.
+    function restartNow() {
+        const native = RN && RN.NativeModules && RN.NativeModules.BundleUpdaterManager;
+        if (!native || typeof native.reload !== "function") { showProblem("Couldn't restart Discord", tr("This version of Discord can't be restarted from here.")); return; }
+        if (!files) { native.reload(); return; }
+        Promise.resolve().then(() => files.writeFile("documents", PREFS, settingsSnapshot(), "utf8")).then(() => native.reload(),
+            () => showProblem("Couldn't restart Discord", tr("Your settings couldn't be saved, so Discord didn't restart. Try again in a moment.")));
+    }
+    function restartAsk() {
+        haptic("IMPACT_MEDIUM");
+        if (!settings.restartButtonConfirm) { restartNow(); return; }
+        confirmAction("Restart Discord?", "Discord closes and opens again. Your Venus settings are saved first.", "Restart", restartNow);
+    }
+    function RestartButtonSettings() {
+        useSettings("restartButton");
+        useSettings("restartButtonConfirm");
+        const ui = reviewUI();
+        if (!React || !RN) return null;
+        const on = enabled("restartButton"), Group = ui.TableRowGroup || RN.View, Switch = ui.TableSwitchRow;
+        return settingsBody(ui, [
+            !on ? offCard("status", venusIcon(11632, "RetryIcon"), "restartButton") : null,
+            el(Group, {key:"restart"}, actionRow(ui, "now", "Restart Discord", "Closes Discord and opens it again.", restartAsk, !on, false, rowIcon(11632, "RetryIcon"))),
+            el(Group, {key:"options", title:tr("Options")},
+                switchRow(Switch, "restartButtonConfirm", "Ask first", "Show \"Are you sure?\" before restarting.", rowIcon(7144, "CircleCheckIcon"))),
+            footnote("where", "Restart Discord also shows at the top of Discord's Settings.")]);
+    }
+    // Your own token, read from the same token store the account switcher uses (1113). It is only copied or shown when you ask.
+    function tokenActive() {
+        try {
+            const raw = global.__r && global.__r(1113);
+            const tokens = raw && typeof raw.getToken === "function" ? raw : raw && raw.default && typeof raw.default.getToken === "function" ? raw.default : null;
+            const value = tokens ? tokens.getToken() : null;
+            return typeof value === "string" && value ? value : null;
+        } catch (_) { return null; }
+    }
+    function tokenB64(text) {
+        const set = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+        let out = "";
+        for (let i = 0; i < text.length; i += 3) {
+            const hasB = i + 1 < text.length, hasC = i + 2 < text.length;
+            const n = (text.charCodeAt(i) << 16) | ((hasB ? text.charCodeAt(i + 1) : 0) << 8) | (hasC ? text.charCodeAt(i + 2) : 0);
+            out += set.charAt((n >> 18) & 63) + set.charAt((n >> 12) & 63) + (hasB ? set.charAt((n >> 6) & 63) : "") + (hasC ? set.charAt(n & 63) : "");
+        }
+        return out;
+    }
+    // A token-shaped joke: your ID in base64, then random characters. It is not your token and does nothing.
+    function tokenFake() {
+        const me = currentId();
+        if (!me) return null;
+        const pool = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789_-";
+        const pick = count => { let out = ""; for (let i = 0; i < count; i++) out += pool.charAt(Math.floor(Math.random() * pool.length)); return out; };
+        return tokenB64(String(me)) + "." + pick(6) + "." + pick(27);
+    }
+    function tokenCopy(kind) {
+        const text = kind === "fake" ? tokenFake() : tokenActive();
+        if (!text) { reviewToast(reviewUI(), "Couldn't get the token", venusIcon(6573, "CircleXIcon")); return; }
+        roleCopy(text, kind === "fake" ? "Fake token copied" : "Token copied");
+    }
+    function TokenSettings() {
+        useSettings("showToken");
+        useSettings("showTokenConfirm");
+        const ui = reviewUI();
+        const [shown, setShown] = React.useState(false);
+        if (!React || !RN) return null;
+        const on = enabled("showToken"), Group = ui.TableRowGroup || RN.View, Switch = ui.TableSwitchRow, Text = inspectedExport(5187, "Text");
+        const ask = (title, body, button, run) => { haptic("IMPACT_LIGHT"); if (settings.showTokenConfirm) confirmAction(title, body, button, run); else run(); };
+        const copy = () => ask("Copy your token?", "Anyone with your token can use your account. Only paste it somewhere you trust.", "Copy", () => tokenCopy("real"));
+        const reveal = () => { if (shown) { setShown(false); return; } ask("Show your token?", "Anyone who sees your token can take over your account. Make sure nobody is looking at your screen.", "Show", () => setShown(true)); };
+        const value = shown ? tokenActive() : null;
+        return settingsBody(ui, [
+            !on ? offCard("status", venusIcon(8495, "LockIcon"), "showToken") : null,
+            el(Group, {key:"token", title:tr("Your token")},
+                actionRow(ui, "copy", "Copy my token", "Copies it to your clipboard. Never share it.", copy, !on, false, rowIcon(5141, "CopyIcon")),
+                actionRow(ui, "show", shown ? "Hide my token" : "Show my token", "Shows it on this page. Make sure nobody is looking.", reveal, !on,
+                    false, rowIcon(shown ? 6927 : 6929, shown ? "EyeSlashIcon" : "EyeIcon"))),
+            shown && on ? el(RN.View, {key:"value", style:{paddingHorizontal:16}}, Text ? el(Text, {variant:"text-sm/medium", color:"text-default", selectable:true}, value || tr("Couldn't get the token")) :
+                el(RN.Text, {selectable:true, style:{color:"#dbdee1", fontSize:14}}, value || tr("Couldn't get the token"))) : null,
+            el(Group, {key:"fake", title:tr("Fake token")},
+                actionRow(ui, "fake", "Copy a fake token", "Looks real but does nothing. Fun to paste in a chat.", () => { haptic("SELECTION"); tokenCopy("fake"); }, !on, false, rowIcon(5141, "CopyIcon"))),
+            el(Group, {key:"options", title:tr("Options")},
+                switchRow(Switch, "showTokenConfirm", "Ask before copying or showing", "Shows a warning before your token is copied or shown.", rowIcon(7144, "CircleCheckIcon"))),
+            footnote("note", "Your token is like a password. Discord never asks for it. If it leaks, change your password to make the old token stop working.")]);
+    }
+    // DM categories: your own labels for DMs and group DMs. A category is {id, name, color, channels:[channel ids]}, kept as text on this phone.
+    // A DM row (MessagesItemChannelContent 17165, the one Platform indicators already uses) gets the category name beside its mute icon.
+    const DMC_MAX = 20, DMC_CHANNELS = 300, DMC_COLORS = ["#5865f2", "#3ba55d", "#faa61a", "#ed4245", "#eb459e", "#9b59b6", "#1abc9c", "#80848e"];
+    function dmcNewId(taken) {
+        for (let i = 0; i < 50; i++) {
+            const id = Math.random().toString(36).slice(2, 8);
+            if (id.length >= 3 && !taken.has(id)) return id;
+        }
+        return "c" + Date.now().toString(36);
+    }
+    function dmcText(value) {
+        let raw = null;
+        try { raw = typeof value === "string" ? JSON.parse(value) : null; } catch (_) {}
+        if (!Array.isArray(raw)) return undefined;
+        const out = [], ids = new Set(), used = new Set();
+        raw.slice(0, DMC_MAX).forEach(item => {
+            if (!item || typeof item !== "object") return;
+            const name = typeof item.name === "string" ? item.name.replace(/\s+/g, " ").trim().slice(0, 32) : "";
+            if (!name) return;
+            let id = typeof item.id === "string" && /^[a-z0-9]{3,16}$/.test(item.id) ? item.id : "";
+            if (!id || ids.has(id)) id = dmcNewId(ids);
+            ids.add(id);
+            const color = typeof item.color === "string" && /^#[0-9a-f]{6}$/i.test(item.color) ? item.color.toLowerCase() : DMC_COLORS[0];
+            const channels = [];
+            (Array.isArray(item.channels) ? item.channels : []).forEach(channel => {
+                const text = String(channel);
+                if (/^\d{5,25}$/.test(text) && !used.has(text) && channels.length < DMC_CHANNELS) { used.add(text); channels.push(text); }
+            });
+            out.push({id, name, color, channels, collapsed:item.collapsed === true});
+        });
+        return JSON.stringify(out);
+    }
+    function dmcList() {
+        try { const list = JSON.parse(settings.dmCategoriesList); return Array.isArray(list) ? list : []; } catch (_) { return []; }
+    }
+    function dmcSave(list) { return setSetting("dmCategoriesList", JSON.stringify(list)); }
+    // Channel id -> category, rebuilt only when the saved text changes, so drawing hundreds of rows costs one lookup each.
+    const dmcCache = {text:null, map:new Map()};
+    function dmcMap() {
+        if (dmcCache.text === settings.dmCategoriesList) return dmcCache.map;
+        const map = new Map();
+        dmcList().forEach(category => { if (category && Array.isArray(category.channels)) category.channels.forEach(channel => map.set(String(channel), category)); });
+        dmcCache.text = settings.dmCategoriesList; dmcCache.map = map;
+        return map;
+    }
+    function dmcAdd(text) {
+        const name = String(text || "").replace(/\s+/g, " ").trim().slice(0, 32);
+        if (!name) return "empty";
+        const list = dmcList();
+        if (list.length >= DMC_MAX) return "full";
+        if (list.some(item => item.name.toLowerCase() === name.toLowerCase())) return "same";
+        list.push({id:dmcNewId(new Set(list.map(item => item.id))), name, color:DMC_COLORS[list.length % DMC_COLORS.length], channels:[]});
+        return dmcSave(list) ? "ok" : "failed";
+    }
+    // A chat is in one category at most: adding it here takes it out of any other.
+    function dmcToggle(categoryId, channelId) {
+        const list = dmcList(), id = String(channelId), target = list.find(item => item.id === categoryId);
+        if (!target) return false;
+        const had = target.channels.indexOf(id) >= 0;
+        list.forEach(item => { item.channels = item.channels.filter(other => other !== id); });
+        if (!had) target.channels.push(id);
+        return dmcSave(list);
+    }
+    function dmcChannels() {
+        let list = [];
+        try { list = channelStore && typeof channelStore.getSortedPrivateChannels === "function" ? channelStore.getSortedPrivateChannels() : []; } catch (_) { list = []; }
+        return Array.isArray(list) ? list.filter(channel => channel && channel.id && (channel.type === 1 || channel.type === 3)).slice(0, 300) : [];
+    }
+    function dmcName(channel) {
+        if (channel.name) return String(channel.name);
+        const names = (channel.recipients || []).map(id => { const user = userStore && userStore.getUser(id); return user && (user.globalName || user.username); }).filter(Boolean);
+        return names.length ? names.join(", ") : tr("Direct message");
+    }
+    function dmcRow(orig, self, args) { if (React) useSettings("dmCategoriesList"); return dmcRowDone(orig.apply(self, args), args[0]); }
+    dmcRow.call1 = (orig, self, props) => { if (React) useSettings("dmCategoriesList"); return dmcRowDone(orig.call(self, props), props); };
+    dmcRow.call2 = (orig, self, props, ref) => { if (React) useSettings("dmCategoriesList"); return dmcRowDone(orig.call(self, props, ref), props); };
+    function dmcRowDone(tree, props) {
+        const channel = props && props.channel;
+        if (!enabled("dmCategories") || !settings.dmCategoriesChip || !React || !RN || !tree || !channel || !channel.id) return tree;
+        const category = dmcMap().get(String(channel.id));
+        if (!category) return tree;
+        const isIcon = child => child && child.props && "muted" in child.props && "selected" in child.props && "blocked" in child.props;
+        const chip = el(RN.View, {key:"venus-dmc", style:{flexDirection:"row", alignItems:"center", marginRight:4, maxWidth:96}},
+            el(RN.View, {style:{width:8, height:8, borderRadius:4, marginRight:4, backgroundColor:category.color}}),
+            el(RN.Text, {numberOfLines:1, style:{flexShrink:1, color:category.color, fontSize:11, fontWeight:"600"}}, category.name));
+        let added = false;
+        const next = cloneTree(tree, (node, p) => {
+            if (added || node.type === RN.Text) return p;
+            const children = Array.isArray(p.children) ? p.children : [p.children];
+            if (!children.some(isIcon)) return p;
+            added = true;
+            return Object.assign({}, p, {children:children.concat(chip)});
+        }, 0, () => added);
+        return added ? next : tree;
+    }
+    // Hold a chat in your DM list and tap Set Category: a row in the channel's hold menu (10596, the menu View raw data also uses).
+    const DMC_SHEET = "VenusDmCategories";
+    function dmcAddWith(text, channelId) {
+        const name = String(text || "").replace(/\s+/g, " ").trim().slice(0, 32);
+        if (!name) return "empty";
+        const list = dmcList();
+        if (list.length >= DMC_MAX) return "full";
+        if (list.some(item => item.name.toLowerCase() === name.toLowerCase())) return "same";
+        const id = String(channelId);
+        list.forEach(item => { item.channels = item.channels.filter(other => other !== id); });
+        list.push({id:dmcNewId(new Set(list.map(item => item.id))), name, color:DMC_COLORS[list.length % DMC_COLORS.length], channels:[id]});
+        return dmcSave(list) ? "ok" : "failed";
+    }
+    function dmcOpenSheet(channelId) {
+        const ui = reviewUI();
+        if (!enabled("dmCategories") || !React || !RN || typeof ui.showSheet !== "function") return;
+        try { ui.showSheet({key:DMC_SHEET, content:el(DmcSheet, {channelId}), stackingBehavior:"stack"}); } catch (_) {}
+    }
+    function DmcSheet(props) {
+        useSettings("dmCategoriesList");
+        const ui = reviewUI();
+        const [creating, setCreating] = React.useState(false), [text, setText] = React.useState("");
+        if (!React || !RN) return null;
+        const Group = ui.TableRowGroup || RN.View, Row = ui.TableRow, id = String(props.channelId);
+        const close = () => hideReviewSheet(ui, DMC_SHEET);
+        const list = dmcList(), current = dmcMap().get(id) || null;
+        const header = ui.Header ? el(ui.Header, {title:tr(creating ? "Create Category" : "Categories"), trailing:ui.Close ? el(ui.Close, {onPress:close}) : undefined}) : null;
+        if (creating) {
+            const confirm = () => {
+                const done = dmcAddWith(text, id);
+                if (done === "empty") return;
+                haptic("SELECTION");
+                if (done === "ok") { reviewToast(ui, "Category created", venusIcon(7144, "CircleCheckIcon")); close(); return; }
+                reviewToast(ui, done === "same" ? "That category already exists" : done === "full" ? "You can have up to 20 categories." : "Couldn't save the category", venusIcon(6573, "CircleXIcon"));
+            };
+            const input = ui.TextInput ? el(ui.TextInput, {key:"name", value:text, onChange:v => setText(String(v || "")), placeholder:tr("Category name"), maxLength:32, autoCorrect:false, autoFocus:true}) :
+                el(RN.TextInput, {key:"name", value:text, onChangeText:setText, placeholder:tr("Category name"), maxLength:32, autoFocus:true, style:{fontSize:16, padding:12, color:"#f2f3f5"}});
+            return serverEditScroll(ui, header, el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:16}},
+                footnote("ask", "Enter a name for the category"), input,
+                Row ? el(Group, {key:"actions"}, el(Row, {key:"confirm", label:tr("Confirm"), icon:rowIcon(7144, "CircleCheckIcon"), onPress:confirm}),
+                    el(Row, {key:"cancel", label:tr("Cancel"), onPress:() => { setCreating(false); setText(""); }})) : null));
+        }
+        const pick = item => {
+            haptic("SELECTION");
+            const had = !!current && current.id === item.id;
+            const done = dmcToggle(item.id, id);
+            reviewToast(ui, done ? (had ? "Removed from the category" : "Added to the category") : "Couldn't save the category", done ? venusIcon(7144, "CircleCheckIcon") : venusIcon(6573, "CircleXIcon"));
+            if (done) close();
+        };
+        const rows = Row ? list.map(item => el(Row, {key:item.id, label:(current && current.id === item.id ? "\u2713 " : "") + item.name,
+            subLabel:pl(item.channels.length, "{n} chat", "{n} chats"), icon:rowIcon(9365, "TagIcon"), onPress:() => pick(item)})) : [];
+        const content = el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:16}},
+            rows.length ? el(Group, {key:"list"}, rows) : null,
+            Row ? el(Group, {key:"create"}, el(Row, {key:"create", label:tr("Create Category"), icon:rowIcon(10621, "PlusLargeIcon"), onPress:() => { haptic("SELECTION"); setCreating(true); }}),
+                current ? el(Row, {key:"remove", label:tr("Remove from category"), icon:rowIcon(5148, "TrashIcon"), variant:"danger", onPress:() => pick(current)}) : null) : null);
+        return serverEditScroll(ui, header, content);
+    }
+    const dmcSheet = sheetInnerHook(function (tree, props) {
+        if (!enabled("dmCategories") || !React || !tree || !props) return tree;
+        const channelId = props.channelId || props.channel && props.channel.id;
+        if (!channelId) return tree;
+        const channel = channelStore && typeof channelStore.getChannel === "function" ? channelStore.getChannel(String(channelId)) : null;
+        if (!channel || channel.guild_id || (channel.type !== 1 && channel.type !== 3)) return tree;
+        return sheetAddRow(tree, props, "venus-dm-category", tr("Set Category"), venusIcon(9365, "TagIcon"), () => dmcOpenSheet(String(channel.id)), "ChannelLongPress-" + channelId);
+    });
+    // What Discord's Messages list is built from (useMessagesData 17174), described without any names or text, so the grouped list can be
+    // written against its real shape. Only the first few calls are looked at, and nothing leaves the phone unless you paste it.
+    const dmcShape = {calls:0, text:""};
+    function dmcDescribe(value, depth) {
+        if (value === null) return "null";
+        if (value === undefined) return "undefined";
+        const kind = typeof value;
+        if (kind === "number") return Number.isInteger(value) && Math.abs(value) < 100 ? String(value) : "num";
+        if (kind === "string") return "str(" + value.length + ")";
+        if (kind === "boolean") return String(value);
+        if (kind === "function") return "fn";
+        if (depth >= 4) return kind === "object" ? "{...}" : kind;
+        if (Array.isArray(value)) return "[" + value.length + (value.length ? ": " + value.slice(0, 2).map(item => dmcDescribe(item, depth + 1)).join(" | ") : "") + "]";
+        return "{" + Object.keys(value).slice(0, 24).map(key => { let part; try { part = value[key]; } catch (_) {} return key + "=" + dmcDescribe(part, depth + 1); }).join(", ") + "}";
+    }
+    // The Messages list: useMessagesData (17174) returns {channels:[{channelId, lastMessageId, isFavorite, isRequest}], sections:[count per
+    // section: favorites, channels, ...], dataKey}. Chats of a category are moved together above the rest. Once the rows are known to take a
+    // channelId (dmcRowItem saw one), a divider item goes between the categories and the rest, and with "Show category headers" on every
+    // category also gets a header item. Both are channels entries whose channelId starts with venus-dmc:, drawn by DmcHeaderRow.
+    const DMC_HEADER = "venus-dmc:";
+    const dmcData = {rows:false, tail:null, sepSeen:false, results:new WeakMap(), lists:new WeakMap()};
+    function dmcHash(text) { let h = 0; for (let i = 0; i < text.length; i++) h = (h * 31 + text.charCodeAt(i)) | 0; return (h >>> 0).toString(36); }
+    function dmcCollapse(categoryId) {
+        const list = dmcList(), item = list.find(other => other.id === categoryId);
+        if (!item) return false;
+        item.collapsed = !item.collapsed;
+        return dmcSave(list);
+    }
+    const DMC_LINE_FALLBACK = "rgba(156,160,171,0.55)";
+    function useDmcLine() {
+        return useThemed("dmcLine2", c => ({line:{height:1, backgroundColor:c.BORDER_STRONG || c.BORDER_SUBTLE || DMC_LINE_FALLBACK},
+            abs:{position:"absolute", left:16, right:16, bottom:0, height:1, backgroundColor:c.BORDER_STRONG || c.BORDER_SUBTLE || DMC_LINE_FALLBACK}}),
+            {line:{height:1, backgroundColor:DMC_LINE_FALLBACK}, abs:{position:"absolute", left:16, right:16, bottom:0, height:1, backgroundColor:DMC_LINE_FALLBACK}});
+    }
+    function dmcSetTail(tail) {
+        if (dmcData.tail === tail) return;
+        dmcData.tail = tail;
+        // Rows already on screen are told, so the old last chat loses its line and the new one gets it.
+        later(() => notify("dmCategoriesList"), 0);
+    }
+    function dmcGroup(result) {
+        const channels = result && result.channels, sections = result && result.sections;
+        if (!Array.isArray(channels) || !Array.isArray(sections) || sections[1] !== channels.length) return result;
+        const categories = dmcList();
+        if (!categories.length) return result;
+        const divide = dmcData.rows, headers = !!settings.dmCategoriesHeaders && divide;
+        const text = settings.dmCategoriesList + "|" + (headers ? "h" : "g") + (divide ? "d" : "");
+        const cached = dmcData.results.get(result);
+        if (cached && cached.text === text) { dmcSetTail(cached.tail); return cached.out; }
+        let entry = dmcData.lists.get(channels);
+        if (!entry || entry.text !== text) {
+            const map = dmcMap(), groups = new Map(), rest = [];
+            channels.forEach(item => {
+                const category = item && !item.isFavorite && !item.isRequest ? map.get(String(item.channelId)) : null;
+                if (!category) { rest.push(item); return; }
+                const list = groups.get(category.id);
+                if (list) list.push(item); else groups.set(category.id, [item]);
+            });
+            if (!groups.size) entry = {text, changed:false};
+            else {
+                const ordered = [];
+                categories.forEach(category => {
+                    const items = groups.get(category.id);
+                    if (!items) return;
+                    if (headers) ordered.push({channelId:DMC_HEADER + category.id, lastMessageId:"0", isFavorite:false, isRequest:false});
+                    if (!(headers && category.collapsed)) items.forEach(item => ordered.push(item));
+                });
+                // The line between the categories and the other chats is drawn under the last chat (or header) of the categories, by
+                // that row itself (DmcRowShell), so it doesn't depend on an extra list item being drawn.
+                const last = ordered[ordered.length - 1], tail = rest.length && last ? String(last.channelId) : null;
+                // A divider item between the categories and the rest, drawn like a header. Until one has really been drawn, the last row
+                // of the categories draws the line itself (DmcRowShell), so there is a line either way.
+                if (divide && rest.length) ordered.push({channelId:DMC_HEADER + "sep", lastMessageId:"0", isFavorite:false, isRequest:false});
+                rest.forEach(item => ordered.push(item));
+                const next = sections.slice();
+                next[1] = ordered.length;
+                entry = {text, changed:true, ordered, sections:next, tail};
+            }
+            dmcData.lists.set(channels, entry);
+        }
+        dmcSetTail(entry.changed ? entry.tail : null);
+        if (!entry.changed) return result;
+        const out = Object.assign({}, result, {channels:entry.ordered, sections:entry.sections,
+            dataKey:typeof result.dataKey === "string" ? result.dataKey + ":" + dmcHash(text) : result.dataKey});
+        dmcData.results.set(result, {text, out, tail:entry.tail});
+        return out;
+    }
+    function dmcDataCapture(orig, self, args) {
+        useSettings("dmCategoriesList");
+        useSettings("dmCategoriesHeaders");
+        const out = orig.apply(self, args);
+        if (dmcShape.calls < 4) {
+            dmcShape.calls++;
+            try { const text = ("args " + dmcDescribe(args[0], 0) + "\nresult " + dmcDescribe(out, 0)).slice(0, 6000); if (text.length > dmcShape.text.length) dmcShape.text = text; } catch (_) {}
+        }
+        return enabled("dmCategories") ? dmcGroup(out) : out;
+    }
+    // A header or divider drawn in place of a channel row. Every row goes through a child component (dmcPlain) from its first draw, so a
+    // recycled list cell that moves between a header and a chat never changes how many hooks one component runs.
+    function DmcHeaderRow(props) {
+        useSettings("dmCategoriesList");
+        const line = useDmcLine(), isSep = props.categoryId === "sep";
+        React.useEffect(() => {
+            if (isSep && !dmcData.sepSeen) { dmcData.sepSeen = true; later(() => notify("dmCategoriesList"), 0); }
+        }, [isSep]);
+        if (!RN) return null;
+        const Press = RN.Pressable || RN.TouchableOpacity || RN.View;
+        if (isSep) return el(RN.View, {pointerEvents:"none", style:{height:"100%", minHeight:28, justifyContent:"center", marginHorizontal:16}}, el(RN.View, {style:line.line}));
+        const category = dmcList().find(item => item.id === props.categoryId);
+        if (!category) return null;
+        const open = !category.collapsed, underline = dmcData.tail === props.id && category.collapsed && !dmcData.sepSeen;
+        return el(Press, {onPress:() => { haptic("SELECTION"); dmcCollapse(category.id); }, accessibilityRole:"button", accessibilityLabel:category.name,
+            style:{height:"100%", minHeight:40, justifyContent:"flex-end", paddingHorizontal:16, paddingBottom:6, borderBottomWidth:underline ? 1 : 0, borderBottomColor:DMC_LINE_FALLBACK}},
+            el(RN.View, {style:{flexDirection:"row", alignItems:"center", gap:6}},
+                el(RN.Text, {style:{color:category.color, fontSize:12, fontWeight:"700"}}, open ? "\u25BE" : "\u25B8"),
+                el(RN.Text, {numberOfLines:1, style:{flexShrink:1, color:category.color, fontSize:12, fontWeight:"700", letterSpacing:0.6}}, category.name.toUpperCase())));
+    }
+    const dmcPlain = new WeakMap();
+    // Every chat row goes through this, so a row can tell whether it is the last one of the categories and draw the line under itself.
+    function DmcRowShell(props) {
+        useSettings("dmCategoriesList");
+        const s = useDmcLine();
+        const row = el(props.Plain, props.rowProps);
+        if (!RN || !enabled("dmCategories") || dmcData.tail !== props.id || dmcData.sepSeen) return row;
+        return el(RN.View, {style:{flex:1}}, row, el(RN.View, {pointerEvents:"none", style:s.abs}));
+    }
+    function dmcRowItem(orig, self, args) {
+        const props = args[0], id = props && typeof props.channelId === "string" ? props.channelId : null;
+        if (id === null || !React) return orig.apply(self, args);
+        if (!dmcData.rows) { dmcData.rows = true; later(() => notify("dmCategoriesList"), 0); }
+        if (id.indexOf(DMC_HEADER) === 0) return el(DmcHeaderRow, {key:"venus-dmc-header", categoryId:id.slice(DMC_HEADER.length), id});
+        let Plain = dmcPlain.get(orig);
+        if (!Plain) { Plain = React.forwardRef((p, r) => orig(p, r)); dmcPlain.set(orig, Plain); }
+        return el(DmcRowShell, {Plain, id, rowProps:args[1] ? Object.assign({}, props, {ref:args[1]}) : props});
+    }
+    function dmcRows(exports) {
+        let out = exports;
+        ["MessagesItemChannelFast", "MessagesItemChannelFlash", "MessagesItemChannelLegend"].forEach(name => { if (out && out[name]) out = hookComponent(out, dmcRowItem, name); });
+        return out;
+    }
+    function dmcProbe() {
+        let enums = "";
+        try { const data = global.__r(17174); enums = "sections " + JSON.stringify(data.MessagesDataSections) + "\nheader " + JSON.stringify(data.MessagesDataHeader); } catch (_) {}
+        return "restart " + JSON.stringify(restartDiag) + "\nmessages data calls " + dmcShape.calls + "\nuseMessagesData\n" + enums + "\n" + (dmcShape.text || "(open the Messages tab first, then copy again)");
+    }
+    // Restart Discord at the top of the Settings screen, opposite its title: the root Settings list (SettingsList 15733) sets its screen's
+    // headerRight through the navigation it already has (useNavigation 1505).
+    function RestartHeaderButton() {
+        const Press = RN.Pressable || RN.TouchableOpacity || RN.View, Icon = venusIcon(11632, "RetryIcon");
+        return el(Press, {onPress:() => restartAsk(), hitSlop:10, accessibilityRole:"button", accessibilityLabel:tr("Restart Discord"), style:{paddingHorizontal:12, paddingVertical:8}}, el(Icon, {size:"md"}));
+    }
+    const restartDiag = {List:{calls:0, root:0}, Searchable:{calls:0, root:0}, nav:0, setOptions:0, applied:0, error:"", routes:[], sample:""};
+    // Does this list hold Discord's own Settings rows (a section with ACCOUNT)? Looked for in the props, a few levels in.
+    function settingsHasAccount(value, depth) {
+        if (!value || typeof value !== "object" || depth > 3) return false;
+        if (Array.isArray(value)) return value.some(item => item && typeof item === "object" && (Array.isArray(item.settings) ? item.settings.includes("ACCOUNT") : settingsHasAccount(item, depth + 1)));
+        return ["node", "sections", "config", "settings"].some(key => settingsHasAccount(value[key], depth + 1));
+    }
+    function settingsHeaderHook(name) {
+        return function settingsHeaderRestart(orig, self, args) {
+            const useNav = inspectedExport(1505, "useNavigation");
+            let nav = null;
+            try { if (typeof useNav === "function") nav = useNav(); } catch (_) {}
+            useSettings("restartButton");
+            const props = args[0] || {}, root = settingsHasAccount(props, 0), on = root && enabled("restartButton"), diag = restartDiag[name];
+            diag.calls++;
+            if (root) diag.root++;
+            if (nav) restartDiag.nav++;
+            if (nav && typeof nav.setOptions === "function") restartDiag.setOptions++;
+            if (!root && !restartDiag.sample) try { restartDiag.sample = name + " " + dmcDescribe(props, 1).slice(0, 500); } catch (_) {}
+            try {
+                const state = nav && typeof nav.getState === "function" ? nav.getState() : null, route = state && state.routes && state.routes[state.index];
+                if (route && typeof route.name === "string" && restartDiag.routes.indexOf(route.name) < 0 && restartDiag.routes.length < 8) restartDiag.routes.push(route.name);
+            } catch (_) {}
+            if (React) React.useLayoutEffect(() => {
+                if (!root || !nav || typeof nav.setOptions !== "function") return undefined;
+                try { nav.setOptions({headerRight:on ? () => el(RestartHeaderButton) : undefined}); if (on) restartDiag.applied++; } catch (error) { restartDiag.error = String(error && error.message || error).slice(0, 120); }
+                return () => { try { nav.setOptions({headerRight:undefined}); } catch (_) {} };
+            }, [root, on, nav]);
+            return orig.apply(self, args);
+        };
+    }
+    const settingsHeaderList = settingsHeaderHook("List"), settingsHeaderSearchable = settingsHeaderHook("Searchable");
+    function DmCategoriesSettings() {
+        useSettings("dmCategories");
+        useSettings("dmCategoriesList");
+        useSettings("dmCategoriesChip");
+        useSettings("dmCategoriesHeaders");
+        const ui = reviewUI();
+        const [editing, setEditing] = React.useState(null), [text, setText] = React.useState("");
+        if (!React || !RN) return null;
+        const on = enabled("dmCategories"), Group = ui.TableRowGroup || RN.View, Row = ui.TableRow, Switch = ui.TableSwitchRow, Press = RN.Pressable || RN.TouchableOpacity || RN.View;
+        const list = dmcList(), current = editing ? list.find(item => item.id === editing) : null;
+        const field = (key, value, change, placeholder, max) => ui.TextInput ? el(ui.TextInput, {key, value, onChange:v => change(String(v || "")), placeholder, maxLength:max, autoCorrect:false}) :
+            el(RN.TextInput, {key, value, onChangeText:change, placeholder, maxLength:max, style:{fontSize:16, padding:12, color:"#f2f3f5"}});
+        const toast = (message, icon) => reviewToast(ui, message, icon || venusIcon(7144, "CircleCheckIcon"));
+        if (current) {
+            const channels = dmcChannels();
+            const rename = () => {
+                const clean = text.replace(/\s+/g, " ").trim().slice(0, 32);
+                if (!clean || clean === current.name) return;
+                const next = dmcList(), item = next.find(other => other.id === current.id);
+                if (!item) return;
+                if (next.some(other => other.id !== item.id && other.name.toLowerCase() === clean.toLowerCase())) { toast("That category already exists", venusIcon(6573, "CircleXIcon")); return; }
+                item.name = clean; haptic("SELECTION");
+                toast(dmcSave(next) ? "Category renamed" : "Couldn't save the category");
+            };
+            const recolor = color => {
+                const next = dmcList(), item = next.find(other => other.id === current.id);
+                if (!item || item.color === color) return;
+                item.color = color; haptic("SELECTION"); dmcSave(next);
+            };
+            const drop = () => confirmAction("Delete category?", "The chats stay where they are. Only the category goes.", "Delete category",
+                () => { dmcSave(dmcList().filter(other => other.id !== current.id)); setEditing(null); setText(""); });
+            const swatches = el(RN.View, {key:"swatches", style:{flexDirection:"row", flexWrap:"wrap", gap:10, paddingHorizontal:16}},
+                DMC_COLORS.map(color => el(Press, {key:color, onPress:() => recolor(color), accessibilityRole:"button", accessibilityLabel:color,
+                    style:{width:34, height:34, borderRadius:17, backgroundColor:color, borderWidth:current.color === color ? 3 : 0, borderColor:"#ffffff"}})));
+            return settingsBody(ui, [
+                el(Group, {key:"back"}, actionRow(ui, "back", "Back to categories", null, () => { setEditing(null); setText(""); })),
+                el(RN.View, {key:"name", style:{gap:12}}, groupTitle("nameTitle", "Category name"),
+                    el(RN.View, {style:{paddingHorizontal:16}}, field("name", text, setText, tr("Category name"), 32)),
+                    Row ? el(Group, {key:"renameRow"}, el(Row, {key:"rename", label:tr("Rename"), icon:rowIcon(10023, "PencilIcon"), onPress:rename})) : null),
+                el(RN.View, {key:"color", style:{gap:12}}, groupTitle("colorTitle", "Color"), swatches),
+                el(RN.View, {key:"chats", style:{gap:4}}, groupTitle("chatsTitle", "Pick the chats"),
+                    channels.length ? el(Group, {key:"chatRows"}, channels.map(channel => el(Row, {key:String(channel.id),
+                        label:(current.channels.indexOf(String(channel.id)) >= 0 ? "\u2713 " : "") + dmcName(channel),
+                        onPress:() => { haptic("SELECTION"); dmcToggle(current.id, channel.id); }}))) : footnote("none", "No chats yet")),
+                footnote("how", "Tap a chat to add it to this category or take it out. A chat can only be in one category."),
+                el(Group, {key:"danger"}, actionRow(ui, "delete", "Delete category", null, drop, false, true, rowIcon(5148, "TrashIcon")))]);
+        }
+        const add = () => {
+            const done = dmcAdd(text);
+            if (done === "empty") return;
+            haptic("SELECTION");
+            if (done === "ok") { setText(""); toast("Category added"); return; }
+            toast(done === "same" ? "That category already exists" : done === "full" ? "You can have up to 20 categories." : "Couldn't save the category", venusIcon(6573, "CircleXIcon"));
+        };
+        const open = item => { haptic("SELECTION"); setEditing(item.id); setText(item.name); };
+        return settingsBody(ui, [
+            !on ? offCard("status", venusIcon(9365, "TagIcon"), "dmCategories") : null,
+            list.length ? el(Group, {key:"list", title:tr("Categories")}, list.map(item => el(Row, {key:item.id, label:item.name,
+                subLabel:pl(item.channels.length, "{n} chat", "{n} chats"), icon:rowIcon(9365, "TagIcon"), onPress:() => open(item)}))) : null,
+            el(RN.View, {key:"add", style:{gap:12}}, groupTitle("addTitle", "Add a category"),
+                el(RN.View, {style:{paddingHorizontal:16}}, field("new", text, setText, tr("Category name"), 32)),
+                Row ? el(Group, {key:"addRow"}, el(Row, {key:"add", label:tr("Add category"), icon:rowIcon(10621, "PlusLargeIcon"), onPress:add})) : null),
+            el(Group, {key:"options", title:tr("Options")},
+                switchRow(Switch, "dmCategoriesHeaders", "Show category headers", "Puts a header above each category's chats. Tap it to fold them.", rowIcon(9365, "TagIcon")),
+                switchRow(Switch, "dmCategoriesChip", "Show the category on each chat", "Writes the category name next to the chat in your DM list.", rowIcon(8471, "ChatIcon"))),
+            footnote("how", "Hold a chat in your DM list and tap Set Category. You can also pick chats here."),
+            footnote("note", "The chats of a category move together to the top of your list.")]);
+    }
+    // Better role menu's page: a little profile that plays what the feature does (hold a role, tap Copy Role Color).
+    const ROLE_PREVIEW_COLOR = "#e67e22";
+    function RoleMenuPreview(props) {
+        useSettings("betterRoleContext");
+        const s = useChatPreviewStyles(), k = usePreviewChrome(), on = !!props.on;
+        const blank = {menu:false, held:false, copied:false, pulse:null};
+        const [state, setState] = React.useState(blank);
+        const update = change => setState(st => Object.assign({}, st, change));
+        const story = useStory(on, () => [
+            [0, () => setState(blank), tr("A person's roles, on their profile")],
+            [1400, () => update({pulse:{who:"chip", id:"hold"}, held:true}), tr("You hold a role")],
+            [700, () => update({menu:true})],
+            [1000, () => {}, tr("The menu now has Copy Role Color, View Role Icon and Edit Role")],
+            [1800, () => update({pulse:{who:"color", id:"tap"}}), tr("Tap Copy Role Color")],
+            [600, () => update({menu:false, held:false, copied:true}), tr("The color is copied: {color}", {color:ROLE_PREVIEW_COLOR})],
+            [800, () => {}]], []);
+        const Press = RN.View;
+        const chip = (key, label, color, held) => el(RN.View, {key, style:[{flexDirection:"row", alignItems:"center", gap:6, borderRadius:8, borderWidth:1,
+                borderColor:k.card.borderColor, paddingHorizontal:8, paddingVertical:5}, held ? k.selected : null]},
+            el(RN.View, {style:{width:12, height:12, borderRadius:6, backgroundColor:color}}),
+            el(RN.Text, {style:[s.text, {fontSize:13, lineHeight:16}]}, label), tapRipple(state.pulse, key, {left:"30%", top:-2}));
+        const Copy = venusIcon(5141, "CopyIcon"), Pencil = venusIcon(10023, "PencilIcon"), Image = venusIcon(11657, "ImagePlusIcon");
+        const rows = [["id", Copy, tr("Copy Role ID")], ["color", Copy, tr("Copy Role Color")], ["icon", Image, tr("View Role Icon")], ["edit", Pencil, tr("Edit Role")]];
+        const sheet = on && state.menu ? el(RN.View, {key:"overlay", style:[k.scrim, {position:"absolute", left:0, right:0, top:0, bottom:0, justifyContent:"flex-end"}]},
+            el(RN.View, {style:{flex:1}}),
+            popIn("sheet", el(RN.View, {key:"sheet", style:[k.sheet, {marginTop:6}]},
+                el(RN.View, {style:{alignSelf:"center", width:36, height:4, borderRadius:2, backgroundColor:"#80848e66", marginBottom:8}}),
+                el(RN.View, {style:[k.sheetRow, {marginHorizontal:16, marginBottom:8, borderRadius:16, overflow:"hidden"}]},
+                    rows.map(([key, Icon, label], i) => el(RN.View, {key, style:[{flexDirection:"row", alignItems:"center", gap:12, paddingHorizontal:16, height:44},
+                            i ? {borderTopWidth:1, borderTopColor:k.sheetRow.borderColor} : null]},
+                        el(Icon, {size:"sm", color:k.icon.color}), el(RN.Text, {style:[s.text, {fontSize:15, fontWeight:"500"}]}, label), tapRipple(state.pulse, key, {left:8, top:5}))))))) : null;
+        const toast = on && state.copied ? popIn("toast", el(RN.View, {key:"toast", style:{position:"absolute", left:0, right:0, bottom:10, alignItems:"center"}},
+            el(RN.View, {style:[k.card, {flexDirection:"row", alignItems:"center", gap:8, borderWidth:1, borderRadius:20, paddingHorizontal:14, paddingVertical:8}]},
+                el(Copy, {size:"xs", color:k.icon.color}), el(RN.Text, {style:[s.text, {fontSize:14}]}, tr("Copied"))))) : null;
+        return el(RN.View, {key:"preview"}, previewScreen(s, "preview", "Role menu preview",
+            [el(RN.View, {key:"stage", style:{height:230, overflow:"hidden", paddingHorizontal:16, paddingTop:12, gap:10}},
+                el(RN.Text, {style:[s.muted, {fontWeight:"700"}]}, tr("Roles").toUpperCase()),
+                el(RN.View, {style:{flexDirection:"row", flexWrap:"wrap", gap:8}},
+                    chip("chip", "Moderator", ROLE_PREVIEW_COLOR, on && state.held), chip("member", "Member", "#80848e", false), chip("artist", "Artist", "#eb459e", false)),
+                sheet, toast)],
+            {header:previewHeader(k, {title:"Lucía", leading:el(RN.View, {style:{width:2}}), icons:[]}), footer:on ? storyStrip(k, s, story) : null}));
+    }
+    function BetterRoleMenuSettings() {
+        useSettings("betterRoleContext");
+        const ui = reviewUI();
+        if (!React || !RN) return null;
+        const on = enabled("betterRoleContext");
+        return settingsBody(ui, [
+            !on ? offCard("status", venusIcon(8895, "ShieldUserIcon"), "betterRoleContext") : null,
+            el(RoleMenuPreview, {key:"preview", on}),
+            footnote("copy", "Copy Role Color only shows for a role that has a color, and View Role Icon only for one with an icon."),
+            footnote("edit", "Edit Role only shows if you can manage roles in that server.")]);
+    }
+    // Edit Role: only for someone who can manage roles here. It asks Discord's server settings to open on that role (8910 open).
+    function roleCanEdit(guildId, role) {
+        try {
+            if (!rawId(guildId) || !role || String(role.id) === String(guildId) || role.managed) return false;
+            const me = currentUser(), info = me && showPermsList(guildId, me.id);
+            return !!info && (info.owner || info.admin || info.granted.includes("MANAGE_ROLES"));
+        } catch (_) { return false; }
+    }
+    function roleEditOpen(guildId, roleId) {
+        try {
+            const actions = inspectedExport(8910, "default");
+            if (actions && typeof actions.open === "function") actions.open(guildId, "ROLES", roleId);
+        } catch (_) {}
     }
     function viewRawSimpleSheet(orig, self, args) {
         const ctx = viewRawRole, params = args[0];
-        if (!ctx || !params || params.key !== "RoleItem" || !Array.isArray(params.options) || !enabled("viewRaw") || !settings.viewRawRoles) return orig.apply(self, args);
+        const raw = enabled("viewRaw") && settings.viewRawRoles, better = enabled("betterRoleContext");
+        if (!ctx || !params || params.key !== "RoleItem" || !Array.isArray(params.options) || !(raw || better)) return orig.apply(self, args);
         viewRawRole = null;
-        const id = String(ctx.role.id), guildId = ctx.guildId ? String(ctx.guildId) : "";
-        const option = {label:tr("View raw data"), icon:params.options.some(o => o && o.icon) ? venusIcon(12003, "FileIcon") : undefined, onPress:() => later(() => openViewRaw({kind:"role", id, guildId:rawId(guildId) ? guildId : "", role:ctx.role}), 60)};
+        const id = String(ctx.role.id), guildId = ctx.guildId ? String(ctx.guildId) : "", role = ctx.role;
+        const icon = params.options.some(o => o && o.icon);
+        const extra = [], native = params.options.length;
+        // Better role menu: Discord's own menu has Copy Role ID (and the icon when there is one). Without Developer Mode it has nothing.
+        if (better) {
+            if (!native) extra.push({label:tr("Copy Role ID"), icon:icon ? venusIcon(5141, "CopyIcon") : undefined, onPress:() => later(() => roleCopy(id, "Copied"), 60)});
+            const color = roleColorText(role);
+            if (color) extra.push({label:tr("Copy Role Color"), icon:icon ? venusIcon(5141, "CopyIcon") : undefined, onPress:() => later(() => roleCopy(color, "Copied"), 60)});
+            if (native < 2 && typeof role.icon === "string" && /^[\w-]{3,64}$/.test(role.icon))
+                extra.push({label:tr("View Role Icon"), icon:icon ? venusIcon(12003, "FileIcon") : undefined, onPress:() => later(() => openLink("https://cdn.discordapp.com/role-icons/" + id + "/" + role.icon + ".png?size=512"), 60)});
+        }
+        if (better && roleCanEdit(guildId, role))
+            extra.push({label:tr("Edit Role"), icon:icon ? venusIcon(10023, "PencilIcon") : undefined, onPress:() => later(() => roleEditOpen(guildId, id), 60)});
+        if (raw) extra.push({label:tr("View raw data"), icon:icon ? venusIcon(12003, "FileIcon") : undefined, onPress:() => later(() => openViewRaw({kind:"role", id, guildId:rawId(guildId) ? guildId : "", role}), 60)});
+        if (!extra.length) return orig.apply(self, args);
         const next = Array.from(args);
-        next[0] = Object.assign({}, params, {options:params.options.concat([option])});
+        next[0] = Object.assign({}, params, {options:params.options.concat(extra)});
         return orig.apply(self, next);
     }
     const VIEW_RAW_SAMPLE = "{\n  \"id\": \"1234567890123456789\",\n  \"type\": 0,\n  \"content\": \"Hello!\",\n  \"author\": {\n    \"username\": \"sam\",\n    \"globalName\": \"Sam\"\n  }\n}";
@@ -21160,6 +22009,603 @@
         const content = el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:16}}, rows.length ? el(Group, {key:"list"}, rows) :
             footnote("none", "You don't share any group DMs."));
         return serverEditScroll(ui, header, content);
+    }
+    // Show permissions: a card under the roles on a profile (UserProfileRolesCard, 7158) lists what that person's roles let them do
+    // in the server, with a button for the full list. The server owner and anyone with Administrator have every permission.
+    // Only server-wide role permissions are counted, not channel overrides.
+    const SHOW_PERMS_SHEET = "VenusShowPerms";
+    // Showmeyourname: one name for each person, picked from the four Discord keeps (server nickname, friend nickname, display name,
+    // username) in the order you choose, and only in the places you choose. Discord asks for a name in many places: NicknameUtils
+    // (5509) getName/useName for most, useMessageAuthor (5883) for the name above a message and in a reply. A place is told apart by
+    // a short "where am I" note (smyn.where) set while that part of Discord draws: the typing line (12827), the member list
+    // (10523, 11163), the text parser for mentions (7635, 5502) and the message row (8150). Anything without a note is "Other".
+    // A hook always runs Discord's own function first, so Discord's hooks keep the same order when a setting changes.
+    const SMYN_SOURCES = ["custom", "server", "friend", "display", "username"];
+        const SMYN_LABELS = {custom:["Custom name", "The name you gave them in this menu."], server:["Server nickname", "The nickname someone has in this server."], friend:["Friend nickname", "The nickname you gave them."],
+        display:["Display name", "The name they chose for their account."], username:["Username", "The name they signed up with."]};
+    const SMYN_PLACES = [["Messages", "Messages", "The name above a message.", 9641, "PaperIcon"], ["Replies", "Replies", "The name in the line above a reply.", 8489, "GroupIcon"],
+        ["Members", "Member list", "Names in the list of people in a server or group.", 9545, "ServerIcon"], ["Mentions", "Mentions", "@names inside messages.", 8490, "AtIcon"],
+        ["Typing", "Typing indicator", "Who is typing.", 13747, "KeyboardIcon"], ["Other", "Anywhere else", "Everywhere else Discord shows a name.", 8480, "TextIcon"]];
+    const smyn = {where:"", content:false, stores:null, customText:null, customMap:{}};
+    function smynOrderText(value) {
+        const list = typeof value === "string" ? value.split(",").map(item => item.trim()).filter((item, i, all) => SMYN_SOURCES.includes(item) && all.indexOf(item) === i) : [];
+        SMYN_SOURCES.forEach(item => { if (!list.includes(item)) { if (item === "custom") list.unshift(item); else list.push(item); } });
+        return list.join(",");
+    }
+    // Names you gave people yourself, kept on this phone as text: {"<user id>": "<name>"}.
+    const SMYN_CUSTOM_MAX = 1000;
+    function smynCustomText(value) {
+        let raw = null;
+        try { raw = typeof value === "string" ? JSON.parse(value) : null; } catch (_) {}
+        if (!raw || typeof raw !== "object" || Array.isArray(raw)) return undefined;
+        const out = {};
+        Object.keys(raw).slice(0, SMYN_CUSTOM_MAX).forEach(id => {
+            const name = typeof raw[id] === "string" ? raw[id].replace(/\s+/g, " ").trim().slice(0, 32) : "";
+            if (/^\d{17,20}$/.test(id) && name) out[id] = name;
+        });
+        return JSON.stringify(out);
+    }
+    function smynCustomMap() {
+        const text = settings.showMeYourNameCustom;
+        if (smyn.customText !== text) { smyn.customText = text; try { smyn.customMap = JSON.parse(text) || {}; } catch (_) { smyn.customMap = {}; } }
+        return smyn.customMap;
+    }
+    function smynCustomSet(userId, name) {
+        const map = Object.assign({}, smynCustomMap()), clean = String(name || "").replace(/\s+/g, " ").trim().slice(0, 32);
+        if (clean) map[userId] = clean; else delete map[userId];
+        return setSetting("showMeYourNameCustom", JSON.stringify(map));
+    }
+    function smynStores() {
+        if (!smyn.stores) smyn.stores = {users:inspectedExport(1392, "default"), friends:inspectedExport(4855, "default"), members:inspectedExport(2128, "default"), channels:inspectedExport(2068, "default")};
+        return smyn.stores;
+    }
+    function smynOn(place) { return !!(enabled("showMeYourName") && settings["showMeYourName" + place]); }
+    function smynGuildOf(channelOrId) {
+        try {
+            const channel = channelOrId && typeof channelOrId === "object" ? channelOrId : channelOrId ? smynStores().channels.getChannel(channelOrId) : null;
+            return channel && channel.guild_id || null;
+        } catch (_) { return null; }
+    }
+    // The names a person has, in your order, for the sources you left on: [[source, name], ...].
+    function smynList(user, guildId) {
+        if (!user || typeof user !== "object" || !user.id) return [];
+        const stores = smynStores();
+        let full = user;
+        try { full = stores.users && stores.users.getUser && stores.users.getUser(user.id) || user; } catch (_) {}
+        const order = smynOrderText(settings.showMeYourNameOrder).split(","), found = [], seen = [];
+        for (let i = 0; i < order.length; i++) {
+            if (!settings["showMeYourNameUse" + order[i].charAt(0).toUpperCase() + order[i].slice(1)]) continue;
+            let value;
+            try {
+                if (order[i] === "custom") value = smynCustomMap()[user.id];
+                else if (order[i] === "server") value = guildId && stores.members && stores.members.getNick ? stores.members.getNick(guildId, user.id) : null;
+                else if (order[i] === "friend") value = stores.friends && stores.friends.getNickname ? stores.friends.getNickname(user.id) : null;
+                else if (order[i] === "display") value = full.globalName || user.globalName || full.global_name || user.global_name;
+                else value = full.username || user.username;
+            } catch (_) { value = null; }
+            if (typeof value !== "string" || !value.trim()) continue;
+            const key = value.trim().toLowerCase();
+            if (seen.includes(key)) continue;
+            seen.push(key);
+            found.push([order[i], value]);
+        }
+        return found;
+    }
+    // The text to show for one person, or null when none of the names exists. "all": the first plain, the others after it, like
+    // Nick [Display name] (@username); "first": just the first one.
+    function smynName(user, guildId) {
+        const list = smynList(user, guildId);
+        if (!list.length) return null;
+        if (settings.showMeYourNameMode !== "all") return list[0][1];
+        return list.map(([source, value], index) => index === 0 ? value : source === "display" ? "[" + value + "]" : source === "username" ? "(@" + value + ")" : "(" + value + ")").join(" ");
+    }
+    // NicknameUtils getName / useName (guildId, channelId, user).
+    function smynNicknameName(orig, self, args) {
+        const base = orig.apply(self, args);
+        try {
+            if (!smynOn(smyn.where || "Other")) return base;
+            const name = smynName(args[2], args[0] || smynGuildOf(args[1]));
+            return name === null ? base : name;
+        } catch (_) { return base; }
+    }
+    // Names above messages and in replies: the author object carries the name as `nick`.
+    function smynAuthor(place, kind) {
+        return (orig, self, args) => {
+            const previous = smyn.where;
+            smyn.where = kind && smyn.content ? "Replies" : kind ? "Messages" : place;
+            let author;
+            try { author = orig.apply(self, args); } finally { smyn.where = previous; }
+            try {
+                const surface = kind && smyn.content ? "Replies" : "Messages";
+                if (!author || typeof author !== "object" || !("nick" in author) || !smynOn(surface)) return author;
+                const user = kind ? args[0] && args[0].author : args[0];
+                const channel = args[1];
+                const name = smynName(user, smynGuildOf(channel) || (kind && args[0] ? smynGuildOf(args[0].channel_id) : null));
+                return name === null ? author : Object.assign({}, author, {nick:name});
+            } catch (_) { return author; }
+        };
+    }
+    // Run a part of Discord with a "where am I" note, whatever happens inside.
+    function smynSurface(place) {
+        return (orig, self, args) => {
+            const previous = smyn.where;
+            smyn.where = place;
+            try { return orig.apply(self, args); } finally { smyn.where = previous; }
+        };
+    }
+    function smynMentions(orig, self, args) { return smynSurface("Mentions")(orig, self, args); }
+    // The message row builder: a name asked for in here with a message is the sender's, one with a replied-to message is the reply's.
+    function smynContent(orig, self, args) {
+        const previous = smyn.content;
+        smyn.content = true;
+        try { return orig.apply(self, args); } finally { smyn.content = previous; }
+    }
+    function smynMove(source) {
+        const list = smynOrderText(settings.showMeYourNameOrder).split(","), at = list.indexOf(source);
+        list.splice(at, 1);
+        list.splice(at === 0 ? list.length : at - 1, 0, source);
+        haptic("SELECTION");
+        animateLayout();
+        setSetting("showMeYourNameOrder", list.join(","));
+    }
+    // Give one person a name only you see: a sheet with a box for the name.
+    function smynCustomOpen(userId) {
+        const ui = reviewUI();
+        if (!enabled("showMeYourName") || typeof ui.showSheet !== "function") return;
+        const key = "VenusCustomName:" + userId;
+        try { ui.showSheet({key, content:el(SmynCustomSheet, {userId, sheetKey:key}), stackingBehavior:"stack"}); } catch (_) {}
+    }
+    function SmynCustomSheet(props) {
+        const ui = reviewUI(), Group = ui.TableRowGroup || RN.View, Row = ui.TableRow;
+        const saved = smynCustomMap()[props.userId] || "";
+        const [name, setName] = React.useState(saved);
+        const close = () => hideReviewSheet(ui, props.sheetKey);
+        const header = ui.Header ? el(ui.Header, {title:tr("Custom name"), trailing:ui.Close ? el(ui.Close, {onPress:close}) : undefined}) : undefined;
+        const save = value => { haptic("SELECTION"); smynCustomSet(props.userId, value); reviewToast(ui, "Saved on this phone", venusIcon(7144, "CircleCheckIcon")); close(); };
+        let real = "";
+        try { const user = smynStores().users.getUser(props.userId); real = user && (user.globalName || user.username) || ""; } catch (_) {}
+        const input = ui.TextInput ? el(ui.TextInput, {key:"name", value:name, onChange:text => setName(String(text || "")), placeholder:real, maxLength:32,
+            autoCorrect:false, returnKeyType:"done", autoFocus:true, accessibilityLabel:tr("Custom name"), onSubmitEditing:() => save(name)}) :
+            el(RN.TextInput, {key:"name", value:name, onChangeText:setName, placeholder:real, maxLength:32, style:{fontSize:16, padding:12, color:"#f2f3f5"}});
+        const content = el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:16}}, input,
+            Row ? el(Group, {key:"rows"}, [el(Row, {key:"save", label:tr("Save"), icon:rowIcon(7144, "CircleCheckIcon"), onPress:() => save(name)}),
+                saved ? el(Row, {key:"remove", label:tr("Remove custom name"), icon:rowIcon(11630, "RefreshIcon"), onPress:() => save("")}) : null]) : null,
+            footnote("only", "Only you see this"));
+        return serverEditScroll(ui, header, content);
+    }
+    // A person's ⋯ menu: a Custom name row, like the View raw data one.
+    function smynProfileMenu(orig, self, args) {
+        const rendered = orig.apply(self, args), props = args[0];
+        if (!enabled("showMeYourName") || !settings.showMeYourNameUseCustom || !React || !rendered || !props) return rendered;
+        const userId = String(props.userId || props.user && props.user.id || "");
+        const Menu = inspectedExport(9662, "ContextMenu");
+        if (!Menu || !rawId(userId)) return rendered;
+        const item = {label:tr("Custom name"), venusCustom:true, IconComponent:venusIcon(8640, "UserIcon"), action:() => later(() => smynCustomOpen(userId), 60)};
+        return cloneTree(rendered, (node, nodeProps) => {
+            if (node.type !== Menu || !Array.isArray(nodeProps.items) || nodeProps.items.some(entry => entry && entry.venusCustom)) return nodeProps;
+            const items = nodeProps.items, last = items[items.length - 1];
+            const danger = Array.isArray(last) && last.some(entry => entry && entry.variant === "destructive");
+            const grouped = items.some(Array.isArray);
+            const next = !grouped ? items.concat([item]) : danger ? items.slice(0, -1).concat([[item], last]) : items.concat([[item]]);
+            return Object.assign({}, nodeProps, {items:next});
+        }, 0);
+    }
+    function ShowMeYourNameSettings() {
+        useSettings("showMeYourName");
+        // The order and each place are separate settings; reading them here redraws the page when one changes.
+        useSettings("showMeYourNameOrder");
+        SMYN_PLACES.forEach(place => useSettings("showMeYourName" + place[0]));
+        const ui = reviewUI();
+        if (!React || !RN) return null;
+        const on = enabled("showMeYourName"), Group = ui.TableRowGroup || RN.View, Switch = ui.TableSwitchRow, Row = ui.TableRow;
+        const Icon = venusIcon(8640, "UserIcon");
+        const order = smynOrderText(settings.showMeYourNameOrder).split(",");
+        const groups = [
+            !on ? offCard("status", Icon, "showMeYourName") : null,
+            el(Group, {key:"order", title:tr("Order, first one found wins")},
+                order.map((source, index) => Row ? el(Row, {key:source, label:(index + 1) + ". " + tr(SMYN_LABELS[source][0]), subLabel:tr(SMYN_LABELS[source][1]),
+                    disabled:!on, onPress:() => smynMove(source)}) : null)),
+            footnote("orderNote", "Tap a name to move it up. The top one moves to the bottom. If someone has none of the first, the next one is used."),
+            el(Group, {key:"use", title:tr("Names to use")},
+                SMYN_SOURCES.map(source => switchRow(Switch, "showMeYourNameUse" + source.charAt(0).toUpperCase() + source.slice(1), SMYN_LABELS[source][0], SMYN_LABELS[source][1]))),
+            footnote("useNote", "A name you turn off here is never shown."),
+            footnote("customNote", "Open a person's \u22ef menu and tap Custom name to give anyone a name only you see."),
+            radioGroup(ui, "mode", "How many names", "showMeYourNameMode", on, [["all", "All of them, in this order", "For example: Nick [Display name] (@username)"],
+                ["first", "Only the first one found", "Shows just one name, the first the person has."]]),
+            el(Group, {key:"where", title:tr("Change names in")},
+                SMYN_PLACES.map(([place, label, hint, id, icon]) => switchRow(Switch, "showMeYourName" + place, label, hint, rowIcon(id, icon)))),
+            footnote("note", "Changes show after you close Discord and open it again.")];
+        return settingsBody(ui, groups);
+    }
+    const showPerms = {guilds:null, members:null, roles:null};
+    function showPermsList(guildId, userId) {
+        const guilds = showPerms.guilds || (showPerms.guilds = inspectedExport(2090, "default"));
+        const members = showPerms.members || (showPerms.members = inspectedExport(2128, "default"));
+        const roles = showPerms.roles || (showPerms.roles = inspectedExport(2122, "default"));
+        const table = inspectedExport(1098, "Permissions");
+        if (!guilds || !members || !roles || !table || typeof guilds.getGuild !== "function" || typeof members.getMember !== "function" ||
+            typeof roles.getRole !== "function") return null;
+        const guild = guilds.getGuild(guildId), member = guild ? members.getMember(guildId, userId) : null;
+        if (!guild) return null;
+        const zero = BigInt(0), owner = String(guild.ownerId) === String(userId);
+        if (!member && !owner) return null;
+        let bits = zero;
+        // Everyone in a server has the @everyone role, whose id is the server's id.
+        const everyone = roles.getRole(guildId, guildId), base = everyone && staffTagBits(everyone.permissions);
+        if (base != null) bits |= base;
+        const list = member && member.roles, held = [];
+        if (everyone && base != null) held.push({role:everyone, bits:base});
+        if (list && list.length) for (let i = 0; i < list.length; i++) {
+            const role = roles.getRole(guildId, list[i]), value = role && staffTagBits(role.permissions);
+            if (value != null) { bits |= value; held.push({role, bits:value}); }
+        }
+        const adminBit = staffTagBits(table.ADMINISTRATOR), admin = adminBit != null && (bits & adminBit) !== zero;
+        const granted = [], real = [], sources = {};
+        for (const name of Object.keys(table)) {
+            const bit = staffTagBits(table[name]);
+            // One bit each, so anything else in that object isn't a permission.
+            if (bit == null || bit === zero || (bit & (bit - BigInt(1))) !== zero) continue;
+            const from = held.filter(item => (item.bits & bit) !== zero).map(item => ({id:String(item.role.id), name:item.role.name, color:item.role.color || 0, position:item.role.position || 0}));
+            from.sort((a, b) => b.position - a.position);
+            if (from.length) { real.push(name); sources[name] = from; }
+            if (owner || admin || from.length) granted.push(name);
+        }
+        return {owner, admin, granted, real, sources};
+    }
+    function showPermsName(name) {
+        const words = String(name).toLowerCase().split("_").join(" ");
+        return words.charAt(0).toUpperCase() + words.slice(1);
+    }
+    function showPermsOpen(userId, guildId, perm) {
+        const ui = reviewUI();
+        if (!enabled("showPerms") || typeof ui.showSheet !== "function") return;
+        try { ui.showSheet({key:SHOW_PERMS_SHEET, content:el(ShowPermsSheet, {userId, guildId, perm}), stackingBehavior:"stack"}); } catch (_) {}
+    }
+    // What to list for a person: the settings decide how an administrator is shown and which way the list runs.
+    const SHOW_PERMS_MOD = ["KICK_MEMBERS", "BAN_MEMBERS", "MANAGE_MESSAGES", "MODERATE_MEMBERS", "MUTE_MEMBERS", "DEAFEN_MEMBERS", "MOVE_MEMBERS"];
+    const SHOW_PERMS_MANAGE = ["MANAGE_GUILD", "MANAGE_ROLES", "MANAGE_CHANNELS", "MANAGE_WEBHOOKS", "MANAGE_GUILD_EXPRESSIONS", "MANAGE_NICKNAMES", "MANAGE_EVENTS", "MANAGE_THREADS", "VIEW_AUDIT_LOG", "MENTION_EVERYONE"];
+    function showPermsElevated(name) { return name === "ADMINISTRATOR" || SHOW_PERMS_MOD.includes(name) || SHOW_PERMS_MANAGE.includes(name); }
+    function showPermsView(info) {
+        let names = info.admin && settings.showPermsOnlyAdmin ? ["ADMINISTRATOR"] : (info.owner || info.admin) && !settings.showPermsAdminAll ? info.real : info.granted;
+        const rank = name => { const from = info.sources[name]; return from && from.length ? from[0].position : -1; };
+        names = names.slice().sort((a, b) => rank(b) - rank(a));
+        return settings.showPermsInvert ? names.reverse() : names;
+    }
+    function showPermsColor(color) { return color ? "#" + Number(color).toString(16).padStart(6, "0") : "#99aab5"; }
+    function ShowPermsSheet(props) {
+        useSettings("showPerms");
+        const ui = reviewUI(), Group = ui.TableRowGroup || RN.View, Row = ui.TableRow;
+        const [perm, setPerm] = React.useState(props.perm || null);
+        const close = () => perm ? setPerm(null) : hideReviewSheet(ui, SHOW_PERMS_SHEET);
+        const header = ui.Header ? el(ui.Header, {title:perm ? showPermsName(perm) : tr("Permissions"), trailing:ui.Close ? el(ui.Close, {onPress:close}) : undefined}) : null;
+        let info = null;
+        try { info = showPermsList(props.guildId, props.userId); } catch (_) {}
+        const dot = color => el(RN.View, {style:{width:10, height:10, borderRadius:5, backgroundColor:showPermsColor(color)}});
+        let body;
+        if (!info) body = footnote("none", "Permissions aren't available for this person right now.");
+        else if (perm) {
+            const from = info.sources[perm] || [];
+            body = el(React.Fragment, null,
+                info.owner ? footnote("owner", "Server owner: can do everything here.") : info.admin ? footnote("admin", "Administrator: can do everything here.") : null,
+                from.length && Row ? el(Group, {key:"roles", title:tr("Given by these roles")}, from.map(role => el(Row, {key:role.id, label:role.name, icon:dot(role.color)}))) :
+                    footnote("noroles", "No role gives this permission."));
+        } else if (!info.granted.length || !Row) body = footnote("empty", "No special permissions in this server.");
+        else {
+            const names = showPermsView(info);
+            body = el(React.Fragment, null,
+                info.owner || info.admin ? footnote("all", info.owner ? "Server owner: can do everything here." : "Administrator: can do everything here.") : null,
+                el(Group, {key:"list"}, names.map(name => el(Row, {key:name, label:showPermsName(name), subLabel:showPermsElevated(name) ? tr("Elevated") : undefined,
+                    icon:rowIcon(showPermsElevated(name) ? 10733 : 6473, showPermsElevated(name) ? "ShieldIcon" : "CheckmarkLargeIcon"), onPress:() => { haptic("SELECTION"); setPerm(name); }}))),
+                footnote("tap", "Tap a permission to see which roles give it."),
+                info.owner || info.admin ? null : footnote("note", "Only the server's role permissions. Channel settings can change them."));
+        }
+        const content = el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:16}}, body);
+        return serverEditScroll(ui, header, content);
+    }
+    // The server a profile was opened from: what the menu is given, then the channel it was opened in, then the server on screen.
+    function showPermsGuild(props) {
+        let id = props.guildId || props.contextualGuildId || "";
+        if (rawId(String(id))) return String(id);
+        try {
+            const channels = inspectedExport(2068, "default"), channelId = props.contextualChannelId || props.channelId || props.channel && props.channel.id;
+            const channel = props.channel && props.channel.guild_id ? props.channel : channels && channelId ? channels.getChannel(String(channelId)) : null;
+            if (channel && rawId(String(channel.guild_id || ""))) return String(channel.guild_id);
+        } catch (_) {}
+        try {
+            const selected = inspectedExport(5034, "default"), current = selected && typeof selected.getGuildId === "function" ? selected.getGuildId() : "";
+            if (rawId(String(current || ""))) return String(current);
+        } catch (_) {}
+        return "";
+    }
+    // The card under a profile's roles: the first few permissions as chips and a button for the whole list.
+    const SHOW_PERMS_CHIPS = 8;
+    const SHOW_PERMS_DARK = {card:{backgroundColor:"#2b2d31", borderRadius:16, paddingHorizontal:16, paddingVertical:14, gap:10},
+        title:{color:"#dbdee1", fontSize:12, fontWeight:"600"}, chips:{flexDirection:"row", flexWrap:"wrap", gap:6},
+        chip:{flexDirection:"row", alignItems:"center", gap:4, borderRadius:8, borderWidth:1, borderColor:"#ffffff1f", paddingHorizontal:8, paddingVertical:4},
+        chipText:{color:"#dbdee1", fontSize:12}, strong:{backgroundColor:"#5865f229", borderColor:"#5865f2"}, danger:{backgroundColor:"#f2384029", borderColor:"#f23840"}};
+    function useShowPermsStyles() {
+        return useThemed("showPermsCard", c => ({card:Object.assign({}, SHOW_PERMS_DARK.card, {backgroundColor:c.CARD_BACKGROUND_DEFAULT || c.BACKGROUND_BASE_LOWER}),
+            title:Object.assign({}, SHOW_PERMS_DARK.title, {color:c.TEXT_DEFAULT}), chips:SHOW_PERMS_DARK.chips,
+            chip:Object.assign({}, SHOW_PERMS_DARK.chip, {borderColor:c.BORDER_SUBTLE || SHOW_PERMS_DARK.chip.borderColor}),
+            chipText:Object.assign({}, SHOW_PERMS_DARK.chipText, {color:c.TEXT_DEFAULT}), strong:SHOW_PERMS_DARK.strong, danger:SHOW_PERMS_DARK.danger}), SHOW_PERMS_DARK);
+    }
+    function ShowPermsCard(props) {
+        useSettings("showPerms");
+        ["Invert", "OnlyAdmin", "AdminAll", "Dot", "Count"].forEach(key => useSettings("showPerms" + key));
+        const s = useShowPermsStyles();
+        let info = null;
+        try { info = enabled("showPerms") ? showPermsList(props.guildId, props.userId) : null; } catch (_) {}
+        if (!info || !info.granted.length || !RN) return null;
+        const Press = RN.Pressable || RN.TouchableOpacity || RN.View, top = info.owner ? "Owner" : "";
+        const names = showPermsView(info), shown = names.slice(0, SHOW_PERMS_CHIPS - (top ? 1 : 0));
+        const chip = (key, label, strong, perm) => {
+            const from = perm && info.sources[perm], color = from && from.length ? from[0].color : 0, high = perm && showPermsElevated(perm);
+            return el(Press, {key, onPress:perm ? () => { haptic("SELECTION"); showPermsOpen(props.userId, props.guildId, perm); } : undefined, accessibilityRole:"button",
+                style:[s.chip, strong ? s.strong : null, high ? s.danger : null]},
+                settings.showPermsDot && from && from.length ? el(RN.View, {style:{width:8, height:8, borderRadius:4, backgroundColor:showPermsColor(color)}}) : null,
+                el(RN.Text, {style:s.chipText}, label));
+        };
+        const chips = (top ? [chip("top", tr("Owner"), true, null)] : []).concat(shown.map(name => chip(name, showPermsName(name), false, name)));
+        const open = () => { haptic("SELECTION"); showPermsOpen(props.userId, props.guildId); };
+        if (names.length > shown.length) chips.push(el(Press, {key:"more", onPress:open, accessibilityRole:"button", style:s.chip}, el(RN.Text, {style:s.chipText}, tr("Show all"))));
+        return el(RN.View, {style:s.card}, el(RN.Text, {style:s.title}, tr("Permissions") + (settings.showPermsCount ? " (" + names.length + ")" : "")), el(RN.View, {style:s.chips}, chips));
+    }
+    function ShowPermsSettings() {
+        useSettings("showPerms");
+        ["Invert", "OnlyAdmin", "AdminAll", "Dot", "Count"].forEach(key => useSettings("showPerms" + key));
+        const ui = reviewUI();
+        if (!React || !RN) return null;
+        const on = enabled("showPerms"), Group = ui.TableRowGroup || RN.View, Switch = ui.TableSwitchRow;
+        return settingsBody(ui, [
+            !on ? offCard("status", venusIcon(10733, "ShieldIcon"), "showPerms") : null,
+            el(Group, {key:"admin", title:tr("Administrators")},
+                switchRow(Switch, "showPermsOnlyAdmin", "Show only Administrator", "If the person is an administrator, list just the Administrator permission. This wins over the next one."),
+                switchRow(Switch, "showPermsAdminAll", "Show all permissions for administrators", "List every permission when at least one of their roles is an administrator.")),
+            el(Group, {key:"look", title:tr("Look")},
+                switchRow(Switch, "showPermsInvert", "Invert order", "List permissions from the lowest role to the highest."),
+                switchRow(Switch, "showPermsDot", "Show role dot", "A dot in the color of the highest role that gives the permission."),
+                switchRow(Switch, "showPermsCount", "Show permission count", "Put the number of permissions next to the title.")),
+            footnote("mark", "Permissions that can moderate or manage a server are marked in red."),
+            footnote("tap", "Tap a permission on a profile to see which roles give it.")]);
+    }
+    function showPermsRolesCard(orig, self, args) {
+        const rendered = orig.apply(self, args), props = args[0];
+        if (!enabled("showPerms") || !React || !RN || !rendered || !props || !("guildMemberRoleIds" in props || "roles" in props || "guildId" in props)) return rendered;
+        const userId = String(props.userId || props.user && props.user.id || ""), guildId = showPermsGuild(props);
+        if (!rawId(userId) || !rawId(guildId)) return rendered;
+        return el(React.Fragment, null, rendered, el(ShowPermsCard, {key:"venus-show-perms", userId, guildId}));
+    }
+    // Markdown bar: a row of formatting buttons above the message box while you type. The box is a native view, so Discord's own
+    // commands do the editing: ChatInputNativeComponent (12337) reports the text and where the cursor is (onSelectionOrTextChange)
+    // and when it gets or loses focus, and the chat input's ref (from useChatInputRefs, 12848) has replaceRange({location, length,
+    // text}). Every button is one or two replaceRange calls. The cursor lands after whatever was inserted last, so a pair of markers
+    // goes in closing one first, which leaves the cursor between them. Pressing a button again takes the markers off. The bar sits
+    // under the message box, which is given the room for it while the bar is up.
+    const mdBar = {text:"", start:0, end:0, focused:false, api:null, timer:undefined, listeners:new Set(), wrapped:new WeakMap(), noop:{}};
+    function mdBarNotify() { mdBar.listeners.forEach(fn => { try { fn(); } catch (_) {} }); }
+    function mdBarSelection(event) {
+        const e = event && event.nativeEvent;
+        if (!e || typeof e.text !== "string") return;
+        mdBar.text = e.text;
+        mdBar.start = typeof e.start === "number" ? e.start : e.text.length;
+        mdBar.end = typeof e.end === "number" ? e.end : mdBar.start;
+    }
+    function mdBarFocus() {
+        if (mdBar.timer !== undefined && global.clearTimeout) global.clearTimeout(mdBar.timer);
+        mdBar.timer = undefined;
+        if (!mdBar.focused) { mdBar.focused = true; if (settings.debugLog) dlog("I", "markdown", "message box focused, commands " + (mdBar.api ? "ready" : "missing")); mdBarNotify(); }
+    }
+    function mdBarBlur() {
+        if (mdBar.timer !== undefined && global.clearTimeout) global.clearTimeout(mdBar.timer);
+        // A little later, so pressing a button on the bar doesn't take the bar away before the press is read.
+        mdBar.timer = later(() => { mdBar.timer = undefined; if (mdBar.focused) { mdBar.focused = false; mdBarNotify(); } }, 400, false);
+    }
+    function mdBarWrap(orig, hook, slot) {
+        let table = typeof orig === "function" ? mdBar.wrapped : mdBar.noop, key = typeof orig === "function" ? orig : slot;
+        let wrapped = typeof orig === "function" ? table.get(key) : table[key];
+        if (!wrapped) {
+            wrapped = function (event) {
+                try { hook(event); } catch (_) {}
+                return typeof orig === "function" ? orig.apply(this, arguments) : undefined;
+            };
+            if (typeof orig === "function") table.set(key, wrapped); else table[key] = wrapped;
+        }
+        return wrapped;
+    }
+    function markdownBarProps(props) {
+        if (!props || !enabled("markdownBar")) return props;
+        return Object.assign({}, props, {
+            onSelectionOrTextChange:mdBarWrap(props.onSelectionOrTextChange, mdBarSelection, "selection"),
+            onBeginFocus:mdBarWrap(props.onBeginFocus, mdBarFocus, "begin"),
+            onEndBlur:mdBarWrap(props.onEndBlur, mdBarBlur, "end")});
+    }
+    function chatInputProps(props) { return markdownBarProps(clickableMentionsProps(props)); }
+    // The chat input's ref (replaceRange and friends) is made by Discord's useChatInputRefs hook (12848) and handed on inside
+    // ChatInput, so it's taken from that hook's result.
+    function markdownBarRefs(orig, self, args) {
+        const out = orig.apply(self, args);
+        try {
+            const api = out && out.chatInputRef;
+            if (api && typeof api.replaceRange === "function" && mdBar.api !== api) {
+                mdBar.api = api;
+                if (settings.debugLog) dlog("I", "markdown", "got the message box's commands");
+                mdBarNotify();
+            }
+        } catch (_) {}
+        return out;
+    }
+    function mdBarFindApi(props) {
+        if (!props || typeof props !== "object") return null;
+        const names = ["chatInputRef", "chatInputRefObject", "inputRef", "ref"];
+        const keys = names.concat(Object.keys(props).filter(key => names.indexOf(key) < 0));
+        for (let i = 0; i < keys.length; i++) {
+            const value = props[keys[i]];
+            if (!value || typeof value !== "object" && typeof value !== "function") continue;
+            if (typeof value.replaceRange === "function") return value;
+            const current = value.current;
+            if (current && typeof current === "object" && typeof current.replaceRange === "function") return current;
+        }
+        return null;
+    }
+    // The bar is added to the message bar's rounded box (the one view in ChatInput that listens for touches, the same place the
+    // expand button goes), as its last child. It floats above that box, so nothing else in the chat input moves. It is never
+    // added to ChatInput's outermost view: its children are counted by the native side, and a stray one crashes Discord.
+    const MD_BAR_HEIGHT = 44;
+    function mdBarOpen() { return enabled("markdownBar") && !!mdBar.api; }
+    function markdownBarChatInput(orig, self, args) {
+        const tree = orig.apply(self, args);
+        // Redraw the message bar when the bar comes or goes, since the box makes room for it.
+        const [, redraw] = React.useReducer(n => n + 1, 0);
+        React.useEffect(() => { mdBar.listeners.add(redraw); return () => { mdBar.listeners.delete(redraw); }; }, []);
+        if (!enabled("markdownBar") || !React || !RN || !tree) return tree;
+        try {
+            const api = mdBarFindApi(args[0]) || (mdBar.api ? null : gestureChatInputRef(null));
+            if (api && typeof api.replaceRange === "function") mdBar.api = api;
+            let added = false;
+            const next = cloneTree(tree, (node, props) => {
+                if (added || !("onStartShouldSetResponder" in props) || !("onResponderRelease" in props) || !("accessibilityElementsHidden" in props) || props.collapsable !== false) return props;
+                added = true;
+                const kids = Array.isArray(props.children) ? props.children : props.children == null ? [] : [props.children];
+                // The box rounds its corners, and a view can clip what sticks out of it, so the bar (which floats above the box)
+                // is given room to show.
+                return Object.assign({}, props, {style:[props.style, {overflow:"visible", zIndex:20}, mdBarOpen() ? {marginBottom:MD_BAR_HEIGHT} : null], children:kids.concat([el(MarkdownBar, {key:"venus-markdown-bar"})])});
+            }, 0, () => added);
+            if (mdBar.boxFound !== added) { mdBar.boxFound = added; if (settings.debugLog) dlog(added ? "I" : "W", "markdown", added ? "added the bar to the message box" : "the message box wasn't found, so there's no bar"); }
+            return next;
+        } catch (_) { return tree; }
+    }
+    // What each button does. wrap: markers around the selection; line: a prefix on each line it touches (kind says which prefixes
+    // replace each other); block: a fenced code block; link: [text](url).
+    const MD_BUTTONS = [
+        {id:"bold", label:"B", text:{fontWeight:"700"}, wrap:["**", "**"]},
+        {id:"italic", label:"I", text:{fontStyle:"italic"}, wrap:["*", "*"]},
+        {id:"underline", label:"U", text:{textDecorationLine:"underline"}, wrap:["__", "__"]},
+        {id:"strike", label:"S", text:{textDecorationLine:"line-through"}, wrap:["~~", "~~"]},
+        {id:"spoiler", label:"||", wrap:["||", "||"]},
+        {id:"code", label:"</>", wrap:["`", "`"]},
+        null,
+        {id:"h1", label:"H1", text:{fontWeight:"700"}, line:"# ", kind:"heading"},
+        {id:"h2", label:"H2", text:{fontWeight:"700"}, line:"## ", kind:"heading"},
+        {id:"h3", label:"H3", text:{fontWeight:"700"}, line:"### ", kind:"heading"},
+        {id:"sub", label:"-#", line:"-# ", kind:"heading"},
+        null,
+        {id:"list", label:"•", line:"- ", kind:"list"},
+        {id:"numbers", label:"1.", line:"1. ", kind:"numbers"},
+        {id:"quote", label:">", line:"> ", kind:"quote"},
+        null,
+        {id:"block", label:"{ }", block:true},
+        {id:"link", label:"[ ]", link:true}];
+    const MD_STRIP = {heading:/^(?:#{1,3} |-# )/, list:/^(?:[-*] |\d+\. )/, numbers:/^(?:[-*] |\d+\. )/, quote:/^> /};
+    function mdBarWrapEdits(open, close, text, a, b) {
+        const sel = text.slice(a, b), ol = open.length, cl = close.length;
+        const before = a >= ol ? text.slice(a - ol, a) : "", after = text.slice(b, b + cl);
+        // One-character markers: *x* is not inside **x**.
+        const inside = ol === 1 && (text.charAt(a - 2) === open || text.charAt(b + 1) === close);
+        const done = (edits, cursor) => { edits.cursor = cursor; return edits; };
+        if (before === open && after === close && !inside) return done([{location:a - ol, length:b - a + ol + cl, text:sel}], a - ol + sel.length);
+        if (sel) return done([{location:a, length:b - a, text:open + sel + close}], a + ol + sel.length + cl);
+        // The cursor lands after whatever was inserted last, so the closing marker goes in first and the opening one after it.
+        return done([{location:a, length:0, text:close}, {location:a, length:0, text:open}], a + ol);
+    }
+    function mdBarLineEdits(button, text, a, b) {
+        const from = text.lastIndexOf("\n", a - 1) + 1;
+        let to = text.indexOf("\n", b > a && text.charAt(b - 1) === "\n" ? b - 1 : b);
+        if (to < 0) to = text.length;
+        const lines = text.slice(from, to).split("\n"), strip = MD_STRIP[button.kind];
+        const has = line => button.kind === "numbers" ? /^\d+\. /.test(line) : line.indexOf(button.line) === 0;
+        const filled = lines.filter(line => line.trim());
+        const remove = filled.length > 0 && filled.every(has);
+        let n = 0;
+        const out = lines.map(line => {
+            if (!line.trim() && lines.length > 1) return line;
+            const bare = line.replace(strip, "");
+            n++;
+            return remove ? bare : (button.kind === "numbers" ? n + ". " : button.line) + bare;
+        }).join("\n");
+        if (out === text.slice(from, to)) return [];
+        const edits = [{location:from, length:to - from, text:out}];
+        edits.cursor = from + out.length;
+        return edits;
+    }
+    function mdBarEdits(button, text, a, b) {
+        const sel = text.slice(a, b);
+        if (button.wrap) return mdBarWrapEdits(button.wrap[0], button.wrap[1], text, a, b);
+        if (button.line) return mdBarLineEdits(button, text, a, b);
+        const done = (edits, cursor) => { edits.cursor = cursor; return edits; };
+        if (button.block) {
+            if (sel) return done([{location:a, length:b - a, text:"```\n" + sel + "\n```"}], a + sel.length + 8);
+            return done([{location:a, length:0, text:"\n```"}, {location:a, length:0, text:"```\n"}], a + 4);
+        }
+        if (button.link) {
+            // The cursor ends inside the brackets for the address.
+            if (sel) return done([{location:b, length:0, text:")"}, {location:a, length:b - a, text:"[" + sel + "]("}], a + sel.length + 3);
+            return done([{location:a, length:0, text:")"}, {location:a, length:0, text:"[link]("}], a + 7);
+        }
+        return [];
+    }
+    // setSelectedRange takes either (start, end) or (location, length), and the commands don't say which. So the first time, it's
+    // tried as (start, end); Discord reports where the cursor went, and if that isn't a plain cursor at the place asked for, it's
+    // (location, length), and the call is repeated that way. What was learned is kept for the next time.
+    function mdBarCursor(api, at) {
+        if (typeof api.setSelectedRange !== "function") return;
+        const call = mode => { try { api.setSelectedRange(at, mode === "length" ? 0 : at); } catch (_) {} };
+        const probe = !mdBar.rangeMode;
+        later(() => {
+            call(mdBar.rangeMode || "end");
+            if (!probe) return;
+            later(() => {
+                if (mdBar.start === at && mdBar.end === at) mdBar.rangeMode = "end";
+                else if (mdBar.start === at) { mdBar.rangeMode = "length"; call("length"); }
+                if (settings.debugLog) dlog("I", "markdown", "cursor placing: " + (mdBar.rangeMode || "unknown") + " (asked " + at + ", got " + mdBar.start + "-" + mdBar.end + ")");
+            }, 120);
+        }, 60);
+    }
+    function mdBarRun(button) {
+        const api = mdBar.api;
+        if (!api || typeof api.replaceRange !== "function") return;
+        let text = mdBar.text, a = Math.min(mdBar.start, mdBar.end), b = Math.max(mdBar.start, mdBar.end), cursor = b;
+        if (a < 0 || b > text.length) { a = b = text.length; }
+        const edits = mdBarEdits(button, text, a, b);
+        if (!edits.length) return;
+        haptic("SELECTION");
+        try {
+            for (let i = 0; i < edits.length; i++) {
+                const edit = edits[i];
+                api.replaceRange(edit);
+                // Keep what the bar knows in step, in case a second press comes before Discord reports the change.
+                text = text.slice(0, edit.location) + edit.text + text.slice(edit.location + edit.length);
+                cursor = edit.location + edit.text.length;
+            }
+            if (typeof edits.cursor === "number") cursor = edits.cursor;
+            mdBar.text = text; mdBar.start = mdBar.end = Math.min(cursor, text.length);
+            if (typeof api.focus === "function") later(() => { try { api.focus(); } catch (_) {} }, 0);
+            // replaceRange leaves the cursor at the end, so it's put where the button wants it (between the markers, say).
+            mdBarCursor(api, mdBar.start);
+        } catch (_) {}
+    }
+    const MD_BAR_DARK = {bar:{height:44, backgroundColor:"#1e1f22", borderTopWidth:1, borderColor:"#ffffff14"},
+        row:{alignItems:"center", paddingHorizontal:8, gap:2}, button:{minWidth:40, height:36, borderRadius:8, alignItems:"center", justifyContent:"center", paddingHorizontal:8},
+        pressed:{backgroundColor:"#ffffff1f"}, label:{color:"#dbdee1", fontSize:15}, divider:{width:1, height:20, backgroundColor:"#ffffff1f", marginHorizontal:6}};
+    function useMarkdownBarStyles() {
+        return useThemed("markdownBar", c => ({bar:Object.assign({}, MD_BAR_DARK.bar, {backgroundColor:c.BACKGROUND_BASE_LOWER, borderColor:c.BORDER_SUBTLE}),
+            row:MD_BAR_DARK.row, button:MD_BAR_DARK.button, pressed:{backgroundColor:c.BACKGROUND_MOD_MUTED || MD_BAR_DARK.pressed.backgroundColor},
+            label:Object.assign({}, MD_BAR_DARK.label, {color:c.TEXT_DEFAULT}), divider:Object.assign({}, MD_BAR_DARK.divider, {backgroundColor:c.BORDER_SUBTLE})}), MD_BAR_DARK);
+    }
+    function MarkdownBar() {
+        useSettings("markdownBar");
+        const [, redraw] = React.useReducer(n => n + 1, 0);
+        React.useEffect(() => { mdBar.listeners.add(redraw); return () => { mdBar.listeners.delete(redraw); }; }, []);
+        const s = useMarkdownBarStyles();
+        if (!mdBarOpen() || !RN) return null;
+        const Press = RN.Pressable, Scroll = RN.ScrollView;
+        if (!Press || !Scroll) return null;
+        const items = MD_BUTTONS.map((button, index) => button ?
+            el(Press, {key:button.id, onPress:() => mdBarRun(button), accessibilityRole:"button", style:state => [s.button, state && state.pressed ? s.pressed : null]},
+                el(RN.Text, {style:[s.label, button.text]}, button.label)) :
+            el(RN.View, {key:"divider" + index, style:s.divider}));
+        const logged = event => { if (settings.debugLog && !mdBar.laid) { mdBar.laid = true; try { dlog("I", "markdown", "bar laid out " + JSON.stringify(event.nativeEvent.layout)); } catch (_) {} } };
+        return el(RN.View, {onLayout:logged, style:[s.bar, {position:"absolute", left:0, right:0, top:"100%", zIndex:20, elevation:4}]},
+            el(Scroll, {horizontal:true, showsHorizontalScrollIndicator:false, keyboardShouldPersistTaps:"always", contentContainerStyle:s.row}, items));
     }
     // Platform spoof: the gateway sign-in (IDENTIFY) carries the client's properties, and Discord decides from them whether
     // you show as mobile, desktop or web. GatewaySocketSingleton (14713) builds the sign-in with socket.handleIdentify.
@@ -22835,7 +24281,12 @@
                 exports = hookExport(exports, "DisplayName", platformName);
                 return hookComponent(exports, (orig, self, args) => wrapProfileTree(orig.apply(self, args), displayNameType, platformName, platformWrappers));
             case 13788: return features.platformIndicators ? hookComponent(exports, platformHeader) : exports;
-            case 17165: return features.platformIndicators ? hookComponent(exports, platformDmRow) : exports;
+            case 17165: {
+                let dmRow = exports;
+                if (features.platformIndicators) dmRow = hookComponent(dmRow, platformDmRow);
+                if (features.dmCategories) dmRow = hookComponent(dmRow, dmcRow);
+                return dmRow;
+            }
             // User list rows (UserRow, default export) and voice panel rows (FormComponents' named MemberRowItem).
             case 10531: return features.platformIndicators ? hookComponent(exports, platformPlacementHook("piUserList")) : exports;
             case 9069: return features.platformIndicators ? hookComponent(exports, platformPlacementHook("piUserList"), "MemberRowItem") : exports;
@@ -22888,7 +24339,9 @@
             case 7098: return features.systemEmoji && exports && exports.default ? replaceValue(exports, "default", propsComponent(exports.default, systemEmojiProps)) : exports;
             case 15602: exports.SETTING_RENDERER_CONFIG = nativeRegistry(exports.SETTING_RENDERER_CONFIG); return exports;
             case 11084: return hookExport(exports, "createList", settingsSections);
-            case 15733: SettingsList = exports.SettingsList; return exports;
+            case 15733: SettingsList = exports.SettingsList; if (features.restartButton) { exports = hookComponent(exports, settingsHeaderList, "SettingsList"); exports = hookComponent(exports, settingsHeaderSearchable, "SearchableSettingsList"); } return exports;
+            case 17174: return features.dmCategories ? hookExport(exports, "default", dmcDataCapture) : exports;
+            case 17160: return features.dmCategories ? dmcRows(exports) : exports;
             case 10940: return features.copyBios ? hookComponent(exports, copyBio) : exports;
             case 5521:
                 if (!features.hiddenChannels && !features.cleanChannels) return exports;
@@ -22896,10 +24349,31 @@
                 return hookExport(exports, "default", useChannelLabel);
             case 5512: return features.cleanChannels ? hookExport(exports, "getChannel", mentionChannelInfo) : exports;
             case 7635:
-                if (!features.cleanChannels) return exports;
-                exports = hookExport(exports, "createParserState", parserStateChannels);
-                if (exports && exports.default) exports = replaceValue(exports, "default", hookExport(exports.default, "createParserState", parserStateChannels));
+                if (features.cleanChannels) {
+                    exports = hookExport(exports, "createParserState", parserStateChannels);
+                    if (exports && exports.default) exports = replaceValue(exports, "default", hookExport(exports.default, "createParserState", parserStateChannels));
+                }
+                if (features.showMeYourName) {
+                    exports = hookExport(exports, "parseAndRebuild", smynMentions);
+                    exports = hookExport(exports, "default", smynMentions);
+                }
                 return exports;
+            case 5509:
+                if (!features.showMeYourName) return exports;
+                exports = hookExport(exports, "getName", smynNicknameName);
+                return hookExport(exports, "useName", smynNicknameName);
+            case 5883:
+                if (!features.showMeYourName) return exports;
+                exports = hookExport(exports, "getUserAuthor", smynAuthor("Messages", 0));
+                exports = hookExport(exports, "useNullableUserAuthor", smynAuthor("Messages", 0));
+                exports = hookExport(exports, "useUserNickAndColor", smynAuthor("Messages", 0));
+                exports = hookExport(exports, "getMessageAuthor", smynAuthor("Replies", 1));
+                return hookExport(exports, "useNullableMessageAuthor", smynAuthor("Replies", 1));
+            case 12827: return features.showMeYourName ? hookExport(exports, "default", smynSurface("Typing")) : exports;
+            case 10523: return features.showMeYourName ? hookExport(exports, "default", smynSurface("Members")) : exports;
+            case 11163: return features.showMeYourName ? hookComponent(exports, smynSurface("Members")) : exports;
+            case 5502: return features.showMeYourName ? hookExport(exports, "hydrateUserMention", smynMentions) : exports;
+            case 8150: return features.showMeYourName ? hookExport(exports, "default", smynContent) : exports;
             case 13989: return features.favouriteAnything ? hookComponent(exports, favouriteButton) : exports;
             case 1297: return features.tenorGifs && exports && exports.HTTP ? (hookExport(hookExport(exports.HTTP, "get", tenorGet), "post", tenorPost), exports) : exports;
             case 6145: if (features.voiceOptions && exports && exports.default) hookExport(exports.default, "disconnect", voiceLeave); return exports;
@@ -22912,12 +24386,19 @@
             case 12849: return features.noTyping ? replaceValue(exports, "default", hookExport(hookExport(exports.default, "startTyping", typing), "stopTyping", typing)) : exports;
             case 10596:
                 if (features.fastDeleteChannels) exports = hookComponent(exports, fastDeleteSheet);
+                if (features.dmCategories) exports = hookComponent(exports, dmcSheet);
                 return features.viewRaw ? hookComponent(exports, viewRawChannelMenu) : exports;
             case 17245: return features.viewRaw ? hookComponent(exports, viewRawThreadMenu) : exports;
             case 10780: return features.viewRaw ? hookComponent(exports, viewRawPostMenu) : exports;
-            case 14015: return features.viewRaw ? hookComponent(exports, viewRawProfileMenu) : exports;
-            case 7158: return features.viewRaw ? hookComponent(exports, viewRawRolesCard) : exports;
-            case 7167: return features.viewRaw ? hookExport(exports, "showSimpleActionSheet", viewRawSimpleSheet) : exports;
+            case 10842: return features.customStatusPresets ? hookComponent(exports, cspModal) : exports;
+            case 14015: {
+                let menu = features.viewRaw ? hookComponent(exports, viewRawProfileMenu) : exports;
+                return features.showMeYourName ? hookComponent(menu, smynProfileMenu) : menu;
+            }
+            case 7158:
+                if (features.viewRaw || features.betterRoleContext) exports = hookComponent(exports, viewRawRolesCard);
+                return features.showPerms ? hookComponent(exports, showPermsRolesCard) : exports;
+            case 7167: return features.viewRaw || features.betterRoleContext ? hookExport(exports, "showSimpleActionSheet", viewRawSimpleSheet) : exports;
             case 1128: if (features.quickDelete || features.noConfirmPin || features.fastDeleteChannels) locale = exports; return exports;
             case 14082: return features.listenAlong ? hookComponent(exports, listenAlongButton, "PlayOnSpotifyButton") : exports;
             case 9990: return features.quietReplies ? hookExport(hookExport(exports, "createPendingReply", quietReplyCreate), "createShallowPendingReply", quietReplyCreate) : exports;
@@ -22926,7 +24407,7 @@
             case 14755: return features.fakeDeafen && exports && exports.default ? fakeDeafAttach(exports) : exports;
             case 18341: return features.fakeDeafen ? hookComponent(exports, fakeDeafSwitch, "DeafenSwitch") : exports;
             case 1392:
-                if (exports && exports.default && (features.validUser || features.splitMessages || features.fixEmbeds || features.translate || features.userNotif || features.removedAlerts || features.accountSwitcher || features.appIcons || features.nitroThemes || features.messageHighlight || features.serverInfo || features.noDelete || features.reviewDB || features.platformIndicators || features.hiddenChannels || features.gestures || features.freeNitro || features.badges || features.bulkDelete || features.experiments || features.quietReplies || features.silentEdit || features.silentDelete || features.localEdit))
+                if (exports && exports.default && (features.validUser || features.splitMessages || features.fixEmbeds || features.translate || features.userNotif || features.removedAlerts || features.accountSwitcher || features.appIcons || features.nitroThemes || features.messageHighlight || features.serverInfo || features.noDelete || features.reviewDB || features.platformIndicators || features.hiddenChannels || features.gestures || features.freeNitro || features.badges || features.bulkDelete || features.experiments || features.quietReplies || features.silentEdit || features.silentDelete || features.localEdit || features.dmCategories))
                     userStore = exports.default;
                 if (features.noDelete || features.reviewDB || features.platformIndicators || features.hiddenChannels) restoreDeleted();
                 return exports;
@@ -22948,12 +24429,15 @@
             case 13422: return features.guildLurk ? hookComponent(exports, invitePreviewDetails) : exports;
             case 7290: return features.silentLeave && exports && exports.default ? replaceValue(exports, "default", hookExport(exports.default, "closePrivateChannel", silentLeaveClose)) : exports;
             case 12337: {
-                if (features.clickableMentions && exports && exports.default) exports = replaceValue(exports, "default", propsComponent(exports.default, clickableMentionsProps));
+                if ((features.clickableMentions || features.markdownBar) && exports && exports.default) exports = replaceValue(exports, "default", propsComponent(exports.default, chatInputProps));
                 return features.expandBar && exports && typeof exports.default === "function" ? replaceValue(exports, "default", expandBarWrap(exports.default)) : exports;
             }
             case 12338: return features.expandBar ? expandBarHeights(exports) : exports;
             case 12887: return features.expandBar ? hookExport(exports, "default", expandBarHeightHook) : exports;
-            case 12818: return features.expandBar ? hookComponent(exports, expandBarPill) : exports;
+            case 12848: return features.markdownBar ? hookExport(exports, "default", markdownBarRefs) : exports;
+            case 12818:
+                if (features.expandBar) exports = hookComponent(exports, expandBarPill);
+                return features.markdownBar ? hookComponent(exports, markdownBarChatInput) : exports;
             case 7293: return features.removedAlerts ? hookRemovedMine(exports, ["removeFriend", "removeRelationship"]) : exports;
             case 6377: return features.removedAlerts ? hookRemovedMine(exports, ["deleteGuild"]) : exports;
             case 8910: return features.removedAlerts ? hookRemovedMine(exports, ["leaveGuild", "deleteGuild"]) : exports;
