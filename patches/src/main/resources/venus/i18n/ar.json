@@ -2378,6 +2378,9 @@
     "The phone badge is replaced by the ring.": "أيقونة الموبايل تنستبدل بالحلقة.",
     "The ring shows online, idle, do not disturb, offline and streaming. Someone typing still shows Discord's own bubble.": "الحلقة تبين أونلاين، خامل، مشغول، أوفلاين وبث. واللي يكتب تبقى تبين فقاعة ديسكورد الأصلية.",
     "Thicker ring": "حلقة أسمك",
-    "Reset colors": "رجّع الألوان الأصلية"
+    "Reset colors": "رجّع الألوان الأصلية",
+    "Also draw the ring on the avatars next to messages.": "ارسم الحلقة بعد على الأفاتارات اللي جنب الرسائل.",
+    "Rings in chat": "حلقات بالشات",
+    "Streaming (live on Twitch or YouTube) and VR rings win over the normal status color. VR shows for someone online on a VR headset.": "حلقة البث (مباشر على Twitch أو YouTube) وحلقة VR تغلب لون الحالة العادي. VR تبين للي أونلاين بنظارة VR."
   }
 }

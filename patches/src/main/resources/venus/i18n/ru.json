@@ -2192,6 +2192,9 @@
     "The phone badge is replaced by the ring.": "The phone badge is replaced by the ring.",
     "The ring shows online, idle, do not disturb, offline and streaming. Someone typing still shows Discord's own bubble.": "The ring shows online, idle, do not disturb, offline and streaming. Someone typing still shows Discord's own bubble.",
     "Thicker ring": "Thicker ring",
-    "Reset colors": "Reset colors"
+    "Reset colors": "Reset colors",
+    "Also draw the ring on the avatars next to messages.": "Also draw the ring on the avatars next to messages.",
+    "Rings in chat": "Rings in chat",
+    "Streaming (live on Twitch or YouTube) and VR rings win over the normal status color. VR shows for someone online on a VR headset.": "Streaming (live on Twitch or YouTube) and VR rings win over the normal status color. VR shows for someone online on a VR headset."
   }
 }
