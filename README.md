@@ -68,6 +68,7 @@ You can also import `patches-<version>.mpp` from [Releases](https://github.com/V
 | | HypeSquad house | Join or leave a HypeSquad house |
 | | Custom idle time | Choose when you go Idle, or never |
 | | Mutual group DMs | Group DMs you share with someone, on their profile |
+| | Radial status | Shows a person's status as a colored ring around their avatar instead of a dot. |
 | | Text replace | Swap words or links for others automatically, in messages you send and in messages you read. |
 | | Custom status presets | Save custom statuses as presets and set one with a single tap. |
 | | Better role menu | Hold a role on a profile to copy its color or open its icon. |
