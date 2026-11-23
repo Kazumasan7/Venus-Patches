@@ -22212,7 +22212,7 @@
             el(Group, {key:"look", title:tr("Look")},
                 switchRow(Switch, "radialStatusGap", "Gap around the avatar", "Leave a little room between the avatar and the ring."),
                 switchRow(Switch, "radialStatusThick", "Thicker ring"),
-                switchRow(Switch, "radialStatusChat", "Rings in chat", "Also draw the ring on the avatars next to messages."),
+                switchRow(Switch, "radialStatusChat", "Rings on other avatars", "Also draw the ring on avatars that come without a status. Avatars next to chat messages are drawn by Discord's native code and can't get a ring."),
                 switchRow(Switch, "radialStatusOffline", "Ring for offline people", "Show a gray ring when someone is offline. Off draws a plain avatar.")),
             el(RN.View, {key:"colors", style:{gap:4}}, groupTitle("colorsTitle", "Colors"),
                 [["online", "Online"], ["idle", "Idle"], ["dnd", "Do not disturb"], ["offline", "Offline"], ["streaming", "Streaming"], ["vr", "VR"]].map(item =>
