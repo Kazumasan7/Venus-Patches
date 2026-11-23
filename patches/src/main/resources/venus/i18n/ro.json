@@ -2190,6 +2190,8 @@
     "Reset colors": "Reset colors",
     "Also draw the ring on the avatars next to messages.": "Also draw the ring on the avatars next to messages.",
     "Rings in chat": "Rings in chat",
-    "Streaming (live on Twitch or YouTube) and VR rings win over the normal status color. VR shows for someone online on a VR headset.": "Streaming (live on Twitch or YouTube) and VR rings win over the normal status color. VR shows for someone online on a VR headset."
+    "Streaming (live on Twitch or YouTube) and VR rings win over the normal status color. VR shows for someone online on a VR headset.": "Streaming (live on Twitch or YouTube) and VR rings win over the normal status color. VR shows for someone online on a VR headset.",
+    "Rings on other avatars": "Rings on other avatars",
+    "Also draw the ring on avatars that come without a status. Avatars next to chat messages are drawn by Discord's native code and can't get a ring.": "Also draw the ring on avatars that come without a status. Avatars next to chat messages are drawn by Discord's native code and can't get a ring."
   }
 }

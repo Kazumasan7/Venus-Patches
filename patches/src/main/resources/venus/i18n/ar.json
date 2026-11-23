@@ -2381,6 +2381,8 @@
     "Reset colors": "رجّع الألوان الأصلية",
     "Also draw the ring on the avatars next to messages.": "ارسم الحلقة بعد على الأفاتارات اللي جنب الرسائل.",
     "Rings in chat": "حلقات بالشات",
-    "Streaming (live on Twitch or YouTube) and VR rings win over the normal status color. VR shows for someone online on a VR headset.": "حلقة البث (مباشر على Twitch أو YouTube) وحلقة VR تغلب لون الحالة العادي. VR تبين للي أونلاين بنظارة VR."
+    "Streaming (live on Twitch or YouTube) and VR rings win over the normal status color. VR shows for someone online on a VR headset.": "حلقة البث (مباشر على Twitch أو YouTube) وحلقة VR تغلب لون الحالة العادي. VR تبين للي أونلاين بنظارة VR.",
+    "Rings on other avatars": "حلقات على أفاتارات ثانية",
+    "Also draw the ring on avatars that come without a status. Avatars next to chat messages are drawn by Discord's native code and can't get a ring.": "ارسم الحلقة بعد على الأفاتارات اللي تجي بدون حالة. أفاتارات الشات يرسمها كود ديسكورد الأصلي ما تكدر ياخذ حلقة."
   }
 }
