@@ -66,6 +66,7 @@
     if (features.betterRoleContext) selectModules([7158, 7167]);
     if (features.customStatusPresets) selectModules([10842]);
     if (features.textReplace) selectModules([7445, 8013]);
+    if (features.radialStatus) selectModules([15194]);
     if (features.dmCategories) selectModules([17165, 2068, 1392, 10596, 17174, 17160]);
     if (features.showMeYourName) selectModules([14015, 5509, 5883, 12827, 10523, 11163, 5502, 7635, 8150]);
     if (features.markdownBar) selectModules([12337, 12818, 12848]);
@@ -105,7 +106,7 @@
         accountSwitcher:false, accountSwitcherYouBar:true, accountSwitcherShare:false, accountSwitcherNotify:true, appIcons:false, nitroThemes:false, customThemes:false, customThemesBackground:true, materialYou:false, materialYouColor:"wallpaper", materialYouTint:"balanced",
         iconPacks:false, iconPacksTheme:true,
         messageHighlight:false, messageHighlightThickness:2, messageHighlightBrightness:50, messageHighlightPingColor:"default", serverInfo:false, serverInfoFriends:true, serverEdit:false,
-        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", textReplace:false, textReplaceRules:"[]", restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
+        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", textReplace:false, textReplaceRules:"[]", radialStatus:false, radialStatusColors:"{}", radialStatusOffline:true, radialStatusGap:true, radialStatusThick:false, restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
         hypeSquad:false, customIdle:false, customIdleMinutes:10, pauseInvites:false, fastDeleteChannels:false, fastDeleteChannelsConfirm:true, fastDeleteChannelsMenu:true, mutualGroupDMs:false, platformSpoof:false, platformSpoofDevice:"desktop" };
     // The settings every feature starts from, for Reset to defaults on the Backup page.
     let DEFAULT_SETTINGS = null;
@@ -123,7 +124,7 @@
             accountSwitcher: false, accountSwitcherYouBar: true, accountSwitcherShare: false, accountSwitcherNotify: true, appIcons: false, nitroThemes: false, customThemes: false, customThemesBackground: true, materialYou: false, materialYouColor: "wallpaper", materialYouTint: "balanced",
             iconPacks: false, iconPacksTheme: true,
             messageHighlight: false, messageHighlightThickness: 2, messageHighlightBrightness: 50, messageHighlightPingColor: "default", serverInfo: false, serverInfoFriends: true, serverEdit: false,
-            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", textReplace: false, textReplaceRules: "[]", restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
+            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", textReplace: false, textReplaceRules: "[]", radialStatus: false, radialStatusColors: "{}", radialStatusOffline: true, radialStatusGap: true, radialStatusThick: false, restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
             hypeSquad: false, customIdle: false, customIdleMinutes: 10, pauseInvites: false, fastDeleteChannels: false, fastDeleteChannelsConfirm: true, fastDeleteChannelsMenu: true, mutualGroupDMs: false, platformSpoof: false, platformSpoofDevice: "desktop"
         }));
     }
@@ -476,6 +477,7 @@
         if (key === "showMeYourNameCustom") return smynCustomText(value);
         if (key === "customStatusPresetsList") return cspText(value);
         if (key === "textReplaceRules") return rtrText(value);
+        if (key === "radialStatusColors") return rsColorsText(value);
         if (key === "dmCategoriesList") return dmcText(value);
         if (key === "showMeYourNameMode") return value === "all" || value === "first" ? value : undefined;
         if (key === "hiddenFeatures") return hiddenFeaturesText(value);
@@ -522,7 +524,7 @@
             settings.readAllMode = value; dirty.add(key); save(); notify(key); return true;
         }
         // Showmeyourname: the order of the four names and how many to show are text settings, not switches.
-        if (key === "showMeYourNameOrder" || key === "showMeYourNameMode" || key === "showMeYourNameCustom" || key === "customStatusPresetsList" || key === "dmCategoriesList" || key === "textReplaceRules") {
+        if (key === "showMeYourNameOrder" || key === "showMeYourNameMode" || key === "showMeYourNameCustom" || key === "customStatusPresetsList" || key === "dmCategoriesList" || key === "textReplaceRules" || key === "radialStatusColors") {
             const clean = acceptedSetting(key, value);
             if (clean === undefined) return false;
             if (settings[key] === clean && status.storage !== "loading" && status.storage !== "waiting") return true;
@@ -1201,7 +1203,7 @@
     const featureFor = key => {
         const cached = featureTable[key];
         if (cached !== undefined) return cached;
-        return featureTable[key] = key === "reviewWarning" ? "reviewDB" : key === "emojis" || key === "stickers" || key === "hyperlinks" ? "freeNitro" : /^noDelete[A-Z]/.test(key) ? "noDelete" : /^pi[A-Z]/.test(key) ? "platformIndicators" : key === "pastelAll" || key === "pastelContent" ? "pastelize" : key === "readAllMode" ? "readAll" : /^compressUploads[A-Z]/.test(key) ? "compressUploads" : /^quests[A-Z]/.test(key) ? "quests" : /^badges[A-Z]/.test(key) ? "badges" : /^gesture[A-Z]/.test(key) ? "gestures" : /^translate[A-Z]/.test(key) ? "translate" : /^removedAlerts[A-Z]/.test(key) ? "removedAlerts" : /^userNotif[A-Z]/.test(key) ? "userNotif" : /^accountSwitcher[A-Z]/.test(key) ? "accountSwitcher" : /^hiddenChannels[A-Z]/.test(key) ? "hiddenChannels" : /^customThemes[A-Z]/.test(key) ? "customThemes" : /^materialYou[A-Z]/.test(key) ? "materialYou" : /^iconPacks[A-Z]/.test(key) ? "iconPacks" : /^messageHighlight[A-Z]/.test(key) ? "messageHighlight" : /^serverInfo[A-Z]/.test(key) ? "serverInfo" : /^fixEmbeds[A-Z]/.test(key) ? "fixEmbeds" : /^tenorGifs[A-Z]/.test(key) ? "tenorGifs" : /^hideBlocked[A-Z]/.test(key) ? "hideBlocked" : /^bulkDelete[A-Z]/.test(key) ? "bulkDelete" : /^expandBar[A-Z]/.test(key) ? "expandBar" : key === "systemFontSource" ? "systemFont" : key === "systemEmojiSource" ? "systemEmoji" : /^cleanChannels[A-Z]/.test(key) ? "cleanChannels" : /^voiceOptions[A-Z]/.test(key) ? "voiceOptions" : /^anonFiles[A-Z]/.test(key) ? "anonFiles" : /^staffTag[A-Z]/.test(key) ? "staffTag" : /^fullImages[A-Z]/.test(key) ? "fullImages" : /^alwaysTrust[A-Z]/.test(key) ? "alwaysTrust" : /^quietReplies[A-Z]/.test(key) ? "quietReplies" : /^viewRaw[A-Z]/.test(key) ? "viewRaw" : /^hideAnything[A-Z]/.test(key) ? "hideAnything" : /^guildLurk[A-Z]/.test(key) ? "guildLurk" : /^customIdle[A-Z]/.test(key) ? "customIdle" : /^fastDeleteChannels[A-Z]/.test(key) ? "fastDeleteChannels" : /^platformSpoof[A-Z]/.test(key) ? "platformSpoof" : /^silentEdit[A-Z]/.test(key) ? "silentEdit" : /^localEdit[A-Z]/.test(key) ? "localEdit" : /^listenAlong[A-Z]/.test(key) ? "listenAlong" : /^backgroundMedia[A-Z]/.test(key) ? "backgroundMedia" : /^fakeDeafen[A-Z]/.test(key) ? "fakeDeafen" : /^showMeYourName[A-Z]/.test(key) ? "showMeYourName" : /^customStatusPresets[A-Z]/.test(key) ? "customStatusPresets" : /^restartButton[A-Z]/.test(key) ? "restartButton" : /^showToken[A-Z]/.test(key) ? "showToken" : /^dmCategories[A-Z]/.test(key) ? "dmCategories" : /^showPerms[A-Z]/.test(key) ? "showPerms" : /^textReplace[A-Z]/.test(key) ? "textReplace" : key;
+        return featureTable[key] = key === "reviewWarning" ? "reviewDB" : key === "emojis" || key === "stickers" || key === "hyperlinks" ? "freeNitro" : /^noDelete[A-Z]/.test(key) ? "noDelete" : /^pi[A-Z]/.test(key) ? "platformIndicators" : key === "pastelAll" || key === "pastelContent" ? "pastelize" : key === "readAllMode" ? "readAll" : /^compressUploads[A-Z]/.test(key) ? "compressUploads" : /^quests[A-Z]/.test(key) ? "quests" : /^badges[A-Z]/.test(key) ? "badges" : /^gesture[A-Z]/.test(key) ? "gestures" : /^translate[A-Z]/.test(key) ? "translate" : /^removedAlerts[A-Z]/.test(key) ? "removedAlerts" : /^userNotif[A-Z]/.test(key) ? "userNotif" : /^accountSwitcher[A-Z]/.test(key) ? "accountSwitcher" : /^hiddenChannels[A-Z]/.test(key) ? "hiddenChannels" : /^customThemes[A-Z]/.test(key) ? "customThemes" : /^materialYou[A-Z]/.test(key) ? "materialYou" : /^iconPacks[A-Z]/.test(key) ? "iconPacks" : /^messageHighlight[A-Z]/.test(key) ? "messageHighlight" : /^serverInfo[A-Z]/.test(key) ? "serverInfo" : /^fixEmbeds[A-Z]/.test(key) ? "fixEmbeds" : /^tenorGifs[A-Z]/.test(key) ? "tenorGifs" : /^hideBlocked[A-Z]/.test(key) ? "hideBlocked" : /^bulkDelete[A-Z]/.test(key) ? "bulkDelete" : /^expandBar[A-Z]/.test(key) ? "expandBar" : key === "systemFontSource" ? "systemFont" : key === "systemEmojiSource" ? "systemEmoji" : /^cleanChannels[A-Z]/.test(key) ? "cleanChannels" : /^voiceOptions[A-Z]/.test(key) ? "voiceOptions" : /^anonFiles[A-Z]/.test(key) ? "anonFiles" : /^staffTag[A-Z]/.test(key) ? "staffTag" : /^fullImages[A-Z]/.test(key) ? "fullImages" : /^alwaysTrust[A-Z]/.test(key) ? "alwaysTrust" : /^quietReplies[A-Z]/.test(key) ? "quietReplies" : /^viewRaw[A-Z]/.test(key) ? "viewRaw" : /^hideAnything[A-Z]/.test(key) ? "hideAnything" : /^guildLurk[A-Z]/.test(key) ? "guildLurk" : /^customIdle[A-Z]/.test(key) ? "customIdle" : /^fastDeleteChannels[A-Z]/.test(key) ? "fastDeleteChannels" : /^platformSpoof[A-Z]/.test(key) ? "platformSpoof" : /^silentEdit[A-Z]/.test(key) ? "silentEdit" : /^localEdit[A-Z]/.test(key) ? "localEdit" : /^listenAlong[A-Z]/.test(key) ? "listenAlong" : /^backgroundMedia[A-Z]/.test(key) ? "backgroundMedia" : /^fakeDeafen[A-Z]/.test(key) ? "fakeDeafen" : /^showMeYourName[A-Z]/.test(key) ? "showMeYourName" : /^customStatusPresets[A-Z]/.test(key) ? "customStatusPresets" : /^restartButton[A-Z]/.test(key) ? "restartButton" : /^showToken[A-Z]/.test(key) ? "showToken" : /^dmCategories[A-Z]/.test(key) ? "dmCategories" : /^showPerms[A-Z]/.test(key) ? "showPerms" : /^textReplace[A-Z]/.test(key) ? "textReplace" : /^radialStatus[A-Z]/.test(key) ? "radialStatus" : key;
     };
     // Section titles are read whenever Discord draws the list, so they follow the language too. "Venus" is a name.
     function section(label, keys) {
@@ -1237,7 +1239,7 @@
         youBarSettings:[7368, "SettingsIcon"], quests:[13929, "QuestsIcon"],
         badges:[9211, "TrophyIcon"], userNotif:[9045, "BellIcon"], accountSwitcher:[8489, "GroupIcon"], appIcons:[8506, "AppsIcon"],
         compressUploads:[11636, "FileUpIcon"], customThemes:[16412, "EyeDropperIcon"], iconPacks:[11449, "ImageSparkleIcon"], messageHighlight:[17627, "PaintbrushThinIcon"], serverInfo:[5145, "CircleInformationIcon"], serverEdit:[10023, "PencilIcon"], fixEmbeds:[13836, "EmbedIcon"], tenorGifs:[10051, "GifIcon"], nitroThemes:[11733, "SparklesIcon"], materialYou:[16320, "PaintPaletteIcon"], hideBlocked:[11619, "ChatShieldIcon"], bulkDelete:[7144, "CircleCheckIcon"], experiments:[16650, "BeakerIcon"], cleanChannels:[12158, "MagicWandIcon"], noHandsfree:[13214, "HeadphonesIcon"], voiceOptions:[8501, "VoiceNormalIcon"], staffTag:[10563, "CrownIcon"], removedAlerts:[5135, "UserMinusIcon"], hideAnything:[10561, "XLargeIcon"], fullImages:[12328, "ImagesIcon"], alwaysTrust:[10733, "ShieldIcon"], noConfirmPin:[10641, "PinIcon"], clickableMentions:[8490, "AtIcon"], expandBar:[16089, "FullscreenEnterIcon"], quietReplies:[10654, "BellSlashIcon"], viewRaw:[12003, "FileIcon"], timeoutDuration:[5150, "ClockIcon"], dndBanners:[13603, "BellZIcon"], voiceDownload:[5143, "DownloadIcon"], cloneExpressions:[11657, "ImagePlusIcon"], listenAlong:[13214, "HeadphonesIcon"], backgroundMedia:[8674, "PlayIcon"], landscapeFull:[16089, "FullscreenEnterIcon"], silentLeave:[11384, "DoorExitIcon"], guildLurk:[6929, "EyeIcon"], silentEdit:[13745, "PencilSparkleIcon"], silentDelete:[5148, "TrashIcon"], localEdit:[10023, "PencilIcon"],
-        hypeSquad:[18747, "HomeIcon"], customIdle:[14205, "UserClockIcon"], pauseInvites:[8676, "PauseIcon"], fastDeleteChannels:[18679, "ChannelListIcon"], mutualGroupDMs:[8489, "GroupIcon"], showPerms:[10733, "ShieldIcon"], markdownBar:[8480, "TextIcon"], showMeYourName:[8640, "UserIcon"], betterRoleContext:[8895, "ShieldUserIcon"], customStatusPresets:[9252, "ReactionIcon"], textReplace:[18573, "ArrowsLeftRightIcon"], platformSpoof:[5133, "UserPlatformIcon"], restartButton:[11632, "RetryIcon"], showToken:[8495, "LockIcon"], dmCategories:[9365, "TagIcon"]};
+        hypeSquad:[18747, "HomeIcon"], customIdle:[14205, "UserClockIcon"], pauseInvites:[8676, "PauseIcon"], fastDeleteChannels:[18679, "ChannelListIcon"], mutualGroupDMs:[8489, "GroupIcon"], showPerms:[10733, "ShieldIcon"], markdownBar:[8480, "TextIcon"], showMeYourName:[8640, "UserIcon"], betterRoleContext:[8895, "ShieldUserIcon"], customStatusPresets:[9252, "ReactionIcon"], textReplace:[18573, "ArrowsLeftRightIcon"], radialStatus:[7144, "CircleCheckIcon"], platformSpoof:[5133, "UserPlatformIcon"], restartButton:[11632, "RetryIcon"], showToken:[8495, "LockIcon"], dmCategories:[9365, "TagIcon"]};
     const venusIcons = new Map();
     function venusIcon(id, name, fallback) {
         const slot = id + ":" + name;
@@ -1296,6 +1298,7 @@
         fastDeleteChannels:["Delete channel", "Fast delete", "Remove channel", "Skip confirmation"],
         mutualGroupDMs:["Mutual group DMs", "Shared groups", "Mutual groups", "Group chats"],
         showPerms:["Show permissions", "Permissions", "Perms", "Roles", "Admin", "Moderator", "Member", "Server"],
+        radialStatus:["Radial status", "Status ring", "Avatar ring", "Online", "Idle", "Do not disturb", "Presence", "Circle"],
         textReplace:["Text replace", "Replace", "Find and replace", "Words", "Autocorrect", "Regex", "Links", "Swap"],
         customStatusPresets:["Custom status presets", "Status", "Custom status", "Presets", "Emoji status", "Saved statuses"],
         restartButton:["Restart button", "Restart", "Reload", "Reopen", "Close app", "Refresh"],
@@ -1814,6 +1817,7 @@
         toggle("people", "mutualGroupDMs", "Mutual group DMs", "Profiles show the group DMs you share with that person.");
         withOptions("people", "showPerms", "VENUS_SHOWPERMS", "Show permissions", "See what a person is allowed to do in a server, from the menu on their profile.", "Show permissions", ShowPermsSettings);
         withOptions("people", "betterRoleContext", "VENUS_BETTERROLE", "Better role menu", "Hold a role on a profile to copy its color or open its icon.", "Better role menu", BetterRoleMenuSettings);
+        withOptions("people", "radialStatus", "VENUS_RADIALSTATUS", "Radial status", "Shows a person's status as a colored ring around their avatar instead of a dot.", "Radial status", RadialStatusSettings);
         withOptions("messages", "textReplace", "VENUS_TEXTREPLACE", "Text replace", "Swap words or links for others automatically, in messages you send and in messages you read.", "Text replace", TextReplaceSettings);
         withOptions("people", "customStatusPresets", "VENUS_STATUSPRESETS", "Custom status presets", "Save custom statuses as presets and set one with a single tap.", "Custom status presets", CustomStatusPresetsSettings);
         withOptions("people", "dmCategories", "VENUS_DMCATEGORIES", "DM categories", "Sort your DMs into your own categories: hold a chat and tap Set Category.", "DM categories", DmCategoriesSettings);
@@ -22078,6 +22082,107 @@
             footnote("shown", "Shown and Embeds only change how messages look on this phone."),
             footnote("order", "Rules run from the top down, each on the result of the one before.")]);
     }
+    // Radial status (an idea from the RadialStatus theme by DiscordStyles): the status dot on an avatar becomes a colored ring around it.
+    // Discord's Avatar (15194) takes status, streaming, isMobileOnline and size ("small", "normal", ...). The hook draws the avatar without
+    // its dot and without the notch the dot cuts out, shrinks it a little, and draws the ring in the room that leaves. The component keeps
+    // its size, so nothing in a list moves. Avatars that show someone typing, or a size not listed here, are left as Discord draws them.
+    const RS_SIZES = {xxsmall10:10, size16:16, xxsmall:18, xsmall20:20, xsmall:24, tabs22:22, small:30, refreshMedium32:32, normal:40, large48:48, large:50, youBar60:60, xlarge:64, xlarge72:72, xxlarge:80, profile:128};
+    const RS_COLORS = {online:"#23a55a", idle:"#f0b232", dnd:"#f23f43", offline:"#80848e", invisible:"#80848e", streaming:"#593695"};
+    const RS_NO_DOT = {status:undefined, isMobileOnline:false, isVROnline:false, streaming:false, autoStatusCutout:false, statusStyle:undefined, statusSizeOverride:undefined};
+    const RS_NAMES = ["online", "idle", "dnd", "offline", "streaming"], RS_HEX = /^#[0-9a-fA-F]{6}$/;
+    // Your own colors for the statuses, as JSON {online:"#23a55a", ...}. Anything that isn't a #RRGGBB color is dropped.
+    function rsColorsText(value) {
+        let raw = null;
+        try { raw = typeof value === "string" ? JSON.parse(value) : null; } catch (_) {}
+        if (!raw || typeof raw !== "object" || Array.isArray(raw)) return undefined;
+        const out = {};
+        RS_NAMES.forEach(name => { if (typeof raw[name] === "string" && RS_HEX.test(raw[name])) out[name] = raw[name].toLowerCase(); });
+        return JSON.stringify(out);
+    }
+    const rsCache = {text:null, map:{}};
+    function rsPalette() {
+        if (rsCache.text !== settings.radialStatusColors) {
+            let own = {};
+            try { own = JSON.parse(settings.radialStatusColors) || {}; } catch (_) {}
+            rsCache.text = settings.radialStatusColors; rsCache.map = Object.assign({}, RS_COLORS, {invisible:own.offline || RS_COLORS.invisible}, own);
+        }
+        return rsCache.map;
+    }
+    function rsName(props) {
+        if (props.streaming) return "streaming";
+        const key = typeof props.status === "string" ? props.status.toLowerCase() : "";
+        return Object.prototype.hasOwnProperty.call(RS_COLORS, key) ? key : null;
+    }
+    // Thickness of the ring and the room it takes (ring + gap), for an avatar of px.
+    function rsMetrics(px) {
+        let width = px <= 24 ? 1.5 : px <= 40 ? 2 : px <= 64 ? 2.5 : 3;
+        if (settings.radialStatusThick) width *= 1.5;
+        const gap = settings.radialStatusGap ? (px <= 24 ? 1 : px <= 64 ? 2 : 3) : 0;
+        return {width, inset:width + gap};
+    }
+    // child (an avatar of px x px) with the ring drawn around it.
+    function rsRing(px, color, child, style) {
+        const m = rsMetrics(px), scale = Math.max(0.3, (px - 2 * m.inset) / px);
+        return el(RN.View, {style:[style, {width:px, height:px}]},
+            el(RN.View, {style:{width:px, height:px, transform:[{scale}]}}, child),
+            el(RN.View, {pointerEvents:"none", style:{position:"absolute", left:0, top:0, width:px, height:px, borderRadius:px / 2, borderWidth:m.width, borderColor:color}}));
+    }
+    function radialAvatar(orig, self, args) {
+        if (React) useSettings("radialStatus");
+        const props = args[0];
+        if (!enabled("radialStatus") || !React || !RN || !props || typeof props !== "object" || props.typing) return orig.apply(self, args);
+        const name = rsName(props);
+        if (!name) return orig.apply(self, args);
+        const color = rsPalette()[name];
+        const px = typeof props.size === "number" ? props.size : RS_SIZES[props.size];
+        if (!px || px < 16 || px > 140) return orig.apply(self, args);
+        const hidden = (name === "offline" || name === "invisible") && !settings.radialStatusOffline;
+        const next = Array.from(args); next[0] = Object.assign({}, props, RS_NO_DOT, hidden ? {} : {style:undefined});
+        const inner = orig.apply(self, next);
+        if (hidden || !inner) return inner;
+        return rsRing(px, color, inner, props.style);
+    }
+    // One status color: a swatch and a #RRGGBB box. Only a complete color is kept; the box shows the default when none is set.
+    function RsColorRow(props) {
+        const ui = reviewUI(), own = (() => { try { return JSON.parse(settings.radialStatusColors) || {}; } catch (_) { return {}; } })();
+        const shown = own[props.name] || RS_COLORS[props.name];
+        const [draft, setDraft] = React.useState(shown);
+        const valid = RS_HEX.test(draft), Text = inspectedExport(5187, "Text");
+        const commit = text => {
+            setDraft(text);
+            if (!RS_HEX.test(text)) return;
+            const next = Object.assign({}, own, {[props.name]:text.toLowerCase()});
+            if (text.toLowerCase() === RS_COLORS[props.name]) delete next[props.name];
+            setSetting("radialStatusColors", JSON.stringify(next));
+        };
+        return el(RN.View, {key:props.name, style:{flexDirection:"row", alignItems:"center", paddingHorizontal:16, paddingVertical:6, gap:12}},
+            el(RN.View, {style:{width:28, height:28, borderRadius:14, borderWidth:3, borderColor:valid ? draft : shown}}),
+            Text ? el(Text, {variant:"text-md/medium", color:"text-default", style:{flex:1}}, tr(props.label)) : el(RN.Text, {style:{flex:1, color:"#dbdee1", fontSize:16}}, tr(props.label)),
+            el(RN.View, {style:{width:130}}, rtrField(ui, "hex", draft, commit, "#RRGGBB", 7)));
+    }
+    function RadialStatusSettings() {
+        useSettings("radialStatus");
+        useSettings("radialStatusColors");
+        ["Offline", "Gap", "Thick"].forEach(key => useSettings("radialStatus" + key));
+        const ui = reviewUI();
+        if (!React || !RN) return null;
+        const on = enabled("radialStatus"), Group = ui.TableRowGroup || RN.View, Switch = ui.TableSwitchRow;
+        const sample = (key, color) => rsRing(56, color, el(RN.View, {style:{width:56, height:56, borderRadius:28, backgroundColor:"#5865f2"}}), {key});
+        return settingsBody(ui, [
+            !on ? offCard("status", venusIcon(7144, "CircleCheckIcon"), "radialStatus") : null,
+            el(RN.View, {key:"preview", style:{flexDirection:"row", justifyContent:"space-around", paddingVertical:18}},
+                sample("online", rsPalette().online), sample("idle", rsPalette().idle), sample("dnd", rsPalette().dnd), sample("offline", rsPalette().offline)),
+            el(Group, {key:"look", title:tr("Look")},
+                switchRow(Switch, "radialStatusGap", "Gap around the avatar", "Leave a little room between the avatar and the ring."),
+                switchRow(Switch, "radialStatusThick", "Thicker ring"),
+                switchRow(Switch, "radialStatusOffline", "Ring for offline people", "Show a gray ring when someone is offline. Off draws a plain avatar.")),
+            el(RN.View, {key:"colors", style:{gap:4}}, groupTitle("colorsTitle", "Colors"),
+                [["online", "Online"], ["idle", "Idle"], ["dnd", "Do not disturb"], ["offline", "Offline"], ["streaming", "Streaming"]].map(item =>
+                    el(RsColorRow, {key:item[0] + (settings.radialStatusColors || ""), name:item[0], label:item[1]})),
+                settings.radialStatusColors !== "{}" ? el(Group, {key:"reset"}, ui.TableRow ? el(ui.TableRow, {key:"resetRow", label:tr("Reset colors"), onPress:() => setSetting("radialStatusColors", "{}")}) : null) : null),
+            footnote("what", "The ring shows online, idle, do not disturb, offline and streaming. Someone typing still shows Discord's own bubble."),
+            footnote("phone", "The phone badge is replaced by the ring.")]);
+    }
     // Better role menu's page: a little profile that plays what the feature does (hold a role, tap Copy Role Color).
     const ROLE_PREVIEW_COLOR = "#e67e22";
     function RoleMenuPreview(props) {
@@ -24535,6 +24640,7 @@
                 }) : exports;
             // Plain status dot on avatars: avatar Status (design/void/Status,
             // 15185) draws a phone badge when isMobileOnline; show the plain dot instead.
+            case 15194: return features.radialStatus ? hookComponent(exports, radialAvatar) : exports;
             case 15185: {
                 if (!features.platformIndicators) return exports;
                 const plain = (orig, self, args) => {
