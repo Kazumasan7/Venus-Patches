@@ -2098,6 +2098,16 @@
     "Changes how messages look on this phone only. Nobody else sees it.": "Changes how messages look on this phone only. Nobody else sees it.",
     "Same as Shown, for the titles and texts of embeds.": "Same as Shown, for the titles and texts of embeds.",
     "For everyone to see the new words, turn on Outgoing and turn off Shown and Embeds.": "For everyone to see the new words, turn on Outgoing and turn off Shown and Embeds.",
-    "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find.": "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find."
+    "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find.": "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find.",
+    "Gap around the avatar": "Gap around the avatar",
+    "Leave a little room between the avatar and the ring.": "Leave a little room between the avatar and the ring.",
+    "Radial status": "Radial status",
+    "Ring for offline people": "Ring for offline people",
+    "Show a gray ring when someone is offline. Off draws a plain avatar.": "Show a gray ring when someone is offline. Off draws a plain avatar.",
+    "Shows a person's status as a colored ring around their avatar instead of a dot.": "Shows a person's status as a colored ring around their avatar instead of a dot.",
+    "The phone badge is replaced by the ring.": "The phone badge is replaced by the ring.",
+    "The ring shows online, idle, do not disturb, offline and streaming. Someone typing still shows Discord's own bubble.": "The ring shows online, idle, do not disturb, offline and streaming. Someone typing still shows Discord's own bubble.",
+    "Thicker ring": "Thicker ring",
+    "Reset colors": "Reset colors"
   }
 }

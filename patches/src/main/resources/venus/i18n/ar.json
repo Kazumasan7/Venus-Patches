@@ -2368,6 +2368,16 @@
     "Changes how messages look on this phone only. Nobody else sees it.": "تغيّر شكل الرسائل على هذا الجهاز بس. محد ثاني يشوفها.",
     "Same as Shown, for the titles and texts of embeds.": "مثل المعروضة، بس لعناوين ونصوص الإمبدات.",
     "For everyone to see the new words, turn on Outgoing and turn off Shown and Embeds.": "حتى الكل يشوف الكلمات الجديدة، شغّل المرسلة وطفّي المعروضة والإمبدات.",
-    "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find.": "القاعدة تشتغل وين ما جانت داخل النص، حتى وسط كلمة ثانية. حتى تشتغل على الرسالة كلها بس، شغّل Regex واكتب ^الكلمة$ بحقل ابحث عن."
+    "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find.": "القاعدة تشتغل وين ما جانت داخل النص، حتى وسط كلمة ثانية. حتى تشتغل على الرسالة كلها بس، شغّل Regex واكتب ^الكلمة$ بحقل ابحث عن.",
+    "Gap around the avatar": "فراغ حول الأفاتار",
+    "Leave a little room between the avatar and the ring.": "اترك مسافة صغيرة بين الأفاتار والحلقة.",
+    "Radial status": "حالة دائرية",
+    "Ring for offline people": "حلقة للأشخاص الأوفلاين",
+    "Show a gray ring when someone is offline. Off draws a plain avatar.": "اعرض حلقة رمادية لما الشخص يكون أوفلاين. إذا طفّيته يظهر الأفاتار عادي.",
+    "Shows a person's status as a colored ring around their avatar instead of a dot.": "يعرض حالة الشخص كحلقة ملونة حول الأفاتار بدل النقطة.",
+    "The phone badge is replaced by the ring.": "أيقونة الموبايل تنستبدل بالحلقة.",
+    "The ring shows online, idle, do not disturb, offline and streaming. Someone typing still shows Discord's own bubble.": "الحلقة تبين أونلاين، خامل، مشغول، أوفلاين وبث. واللي يكتب تبقى تبين فقاعة ديسكورد الأصلية.",
+    "Thicker ring": "حلقة أسمك",
+    "Reset colors": "رجّع الألوان الأصلية"
   }
 }
