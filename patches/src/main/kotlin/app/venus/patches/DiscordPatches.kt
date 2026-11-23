@@ -76,7 +76,7 @@ private val runtimeAssets = rawResourcePatch {
             "{picker:$pickerSelected,voice:$voiceSelected,copyBios:$copyBiosSelected," +
                 "favouriteAnything:$favouriteAnythingSelected,freeNitro:$freeNitroSelected," +
                 listOf("noTyping", "quickDelete", "noDelete", "jumpToTop", "hiddenChannels", "pastelize", "platformIndicators", "reviewDB", "readAll", "quests", "badges", "systemFont",
-                    "systemEmoji", "gestures", "validUser", "youBarSettings", "splitMessages", "translate", "userNotif", "accountSwitcher", "appIcons", "nitroThemes", "customThemes", "materialYou", "iconPacks", "messageHighlight", "serverInfo", "serverEdit", "fixEmbeds", "tenorGifs", "hideBlocked", "bulkDelete", "experiments", "cleanChannels", "noHandsfree", "voiceOptions", "anonFiles", "staffTag", "removedAlerts", "fullImages", "hideAnything", "alwaysTrust", "noConfirmPin", "clickableMentions", "expandBar", "quietReplies", "silentLeave", "guildLurk", "compressUploads", "timeoutDuration", "dndBanners", "landscapeFull", "voiceDownload", "cloneExpressions", "listenAlong", "silentEdit", "silentDelete", "localEdit", "hypeSquad", "customIdle", "mutualGroupDMs", "fastDeleteChannels", "pauseInvites", "platformSpoof", "backgroundMedia", "viewRaw", "fakeDeafen", "showPerms", "markdownBar", "showMeYourName", "betterRoleContext", "customStatusPresets", "textReplace", "restartButton", "showToken", "dmCategories")
+                    "systemEmoji", "gestures", "validUser", "youBarSettings", "splitMessages", "translate", "userNotif", "accountSwitcher", "appIcons", "nitroThemes", "customThemes", "materialYou", "iconPacks", "messageHighlight", "serverInfo", "serverEdit", "fixEmbeds", "tenorGifs", "hideBlocked", "bulkDelete", "experiments", "cleanChannels", "noHandsfree", "voiceOptions", "anonFiles", "staffTag", "removedAlerts", "fullImages", "hideAnything", "alwaysTrust", "noConfirmPin", "clickableMentions", "expandBar", "quietReplies", "silentLeave", "guildLurk", "compressUploads", "timeoutDuration", "dndBanners", "landscapeFull", "voiceDownload", "cloneExpressions", "listenAlong", "silentEdit", "silentDelete", "localEdit", "hypeSquad", "customIdle", "mutualGroupDMs", "fastDeleteChannels", "pauseInvites", "platformSpoof", "backgroundMedia", "viewRaw", "fakeDeafen", "showPerms", "markdownBar", "showMeYourName", "betterRoleContext", "customStatusPresets", "textReplace", "radialStatus", "restartButton", "showToken", "dmCategories")
                     .joinToString(",") { "$it:${it in additionalSelections}" } + "}"
         )
         asset.writeText(selected)
@@ -368,6 +368,10 @@ val mutualGroupDMs = bundledPlugin("mutualGroupDMs", "Mutual group DMs",
 @Suppress("unused")
 val showPerms = bundledPlugin("showPerms", "Show permissions",
     "See what a person is allowed to do in a server, from the menu on their profile.")
+
+@Suppress("unused")
+val radialStatus = bundledPlugin("radialStatus", "Radial status",
+    "Shows a person's status as a colored ring around their avatar instead of a dot.")
 
 @Suppress("unused")
 val textReplace = bundledPlugin("textReplace", "Text replace",
