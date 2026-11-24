@@ -275,6 +275,40 @@
       "options": []
     },
     {
+      "name": "Chat export",
+      "description": "Save a chat or channel as a text or JSON file, for a date range you choose. It reads slowly on purpose to keep your account safe.",
+      "default": true,
+      "category": "Features",
+      "dependencies": [
+        "BytecodePatch"
+      ],
+      "compatiblePackages": [
+        {
+          "packageName": "com.discord",
+          "name": "Discord",
+          "description": null,
+          "apkFileType": "APKM",
+          "appIconColor": "#5865F2",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "351.11 - Stable",
+              "versionCodes": {
+                "ARM64_V8A": 351011,
+                "ARMEABI_V7A": 351011,
+                "X86_64": 351011,
+                "X86": 351011
+              },
+              "isExperimental": false,
+              "minSdk": 26,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
       "name": "Clean channel names",
       "description": "Removes emoji and symbols from channel names, and can show spaces instead of dashes.",
       "default": true,
