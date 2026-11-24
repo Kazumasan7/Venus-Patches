@@ -2151,6 +2151,14 @@
     "Do not disturb": "Do not disturb",
     "Streaming": "Streaming",
     "VR": "VR",
-    "Only messages containing (optional)": "Only messages containing (optional)"
+    "Only messages containing (optional)": "Only messages containing (optional)",
+    "Keep images in the file": "Keep images in the file",
+    "Saves each image inside the HTML so it never expires. Takes longer and makes the file bigger.": "Saves each image inside the HTML so it never expires. Takes longer and makes the file bigger.",
+    "Saving images…": "Saving images…",
+    "{n} image saved": "{n} image saved",
+    "{n} image couldn't be saved": "{n} image couldn't be saved",
+    "Long chats are saved as several files, each named with the dates it covers. In an HTML file, images are saved inside it (up to 3 MB each); videos and other files stay as links that stop working after a while.": "Long chats are saved as several files, each named with the dates it covers. In an HTML file, images are saved inside it (up to 3 MB each); videos and other files stay as links that stop working after a while.",
+    "{n} images saved": "{n} images saved",
+    "{n} images couldn't be saved": "{n} images couldn't be saved"
   }
 }

@@ -2435,6 +2435,28 @@
     "Do not disturb": "مشغول",
     "Streaming": "بث",
     "VR": "VR",
-    "Only messages containing (optional)": "الرسائل اللي تحتوي هذا النص بس (اختياري)"
+    "Only messages containing (optional)": "الرسائل اللي تحتوي هذا النص بس (اختياري)",
+    "Keep images in the file": "احفظ الصور داخل الملف",
+    "Saves each image inside the HTML so it never expires. Takes longer and makes the file bigger.": "يحفظ كل صورة داخل ملف HTML حتى ما تنتهي صلاحيتها. ياخذ وكت أكثر ويكبّر الملف.",
+    "Saving images…": "قاعد يحفظ الصور…",
+    "{n} image saved": "انحفظت {n} صورة",
+    "{n} image couldn't be saved": "{n} صورة ما انحفظت",
+    "Long chats are saved as several files, each named with the dates it covers. In an HTML file, images are saved inside it (up to 3 MB each); videos and other files stay as links that stop working after a while.": "المحادثات الطويلة تنحفظ بعدة ملفات، كل ملف اسمه فيه التواريخ اللي يغطيها. بملف HTML الصور تنحفظ داخله (لحد 3 ميغا للصورة)، أما الفيديوهات والملفات الثانية تبقى روابط وتتوقف بعد فترة.",
+    "{n} images saved": {
+      "zero": "انحفظت {n} صور",
+      "one": "انحفظت {n} صورة",
+      "two": "انحفظت {n} صورتين",
+      "few": "انحفظت {n} صور",
+      "many": "انحفظت {n} صورة",
+      "other": "انحفظت {n} صورة"
+    },
+    "{n} images couldn't be saved": {
+      "zero": "{n} صور ما انحفظت",
+      "one": "{n} صورة ما انحفظت",
+      "two": "{n} صورتين ما انحفظت",
+      "few": "{n} صور ما انحفظت",
+      "many": "{n} صورة ما انحفظت",
+      "other": "{n} صورة ما انحفظت"
+    }
   }
 }
