@@ -107,7 +107,7 @@
         accountSwitcher:false, accountSwitcherYouBar:true, accountSwitcherShare:false, accountSwitcherNotify:true, appIcons:false, nitroThemes:false, customThemes:false, customThemesBackground:true, materialYou:false, materialYouColor:"wallpaper", materialYouTint:"balanced",
         iconPacks:false, iconPacksTheme:true,
         messageHighlight:false, messageHighlightThickness:2, messageHighlightBrightness:50, messageHighlightPingColor:"default", serverInfo:false, serverInfoFriends:true, serverEdit:false,
-        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", textReplace:false, textReplaceRules:"[]", chatExport:false, radialStatus:false, radialStatusColors:"{}", radialStatusOffline:true, radialStatusChat:true, radialStatusGap:true, radialStatusThick:false, restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
+        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", textReplace:false, textReplaceRules:"[]", chatExport:false, chatExportPrefs:"{}", radialStatus:false, radialStatusColors:"{}", radialStatusOffline:true, radialStatusChat:true, radialStatusGap:true, radialStatusThick:false, restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
         hypeSquad:false, customIdle:false, customIdleMinutes:10, pauseInvites:false, fastDeleteChannels:false, fastDeleteChannelsConfirm:true, fastDeleteChannelsMenu:true, mutualGroupDMs:false, platformSpoof:false, platformSpoofDevice:"desktop" };
     // The settings every feature starts from, for Reset to defaults on the Backup page.
     let DEFAULT_SETTINGS = null;
@@ -125,7 +125,7 @@
             accountSwitcher: false, accountSwitcherYouBar: true, accountSwitcherShare: false, accountSwitcherNotify: true, appIcons: false, nitroThemes: false, customThemes: false, customThemesBackground: true, materialYou: false, materialYouColor: "wallpaper", materialYouTint: "balanced",
             iconPacks: false, iconPacksTheme: true,
             messageHighlight: false, messageHighlightThickness: 2, messageHighlightBrightness: 50, messageHighlightPingColor: "default", serverInfo: false, serverInfoFriends: true, serverEdit: false,
-            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", textReplace: false, textReplaceRules: "[]", chatExport: false, radialStatus: false, radialStatusColors: "{}", radialStatusOffline: true, radialStatusChat: true, radialStatusGap: true, radialStatusThick: false, restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
+            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", textReplace: false, textReplaceRules: "[]", chatExport: false, chatExportPrefs: "{}", radialStatus: false, radialStatusColors: "{}", radialStatusOffline: true, radialStatusChat: true, radialStatusGap: true, radialStatusThick: false, restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
             hypeSquad: false, customIdle: false, customIdleMinutes: 10, pauseInvites: false, fastDeleteChannels: false, fastDeleteChannelsConfirm: true, fastDeleteChannelsMenu: true, mutualGroupDMs: false, platformSpoof: false, platformSpoofDevice: "desktop"
         }));
     }
@@ -479,6 +479,7 @@
         if (key === "customStatusPresetsList") return cspText(value);
         if (key === "textReplaceRules") return rtrText(value);
         if (key === "radialStatusColors") return rsColorsText(value);
+        if (key === "chatExportPrefs") return cexPrefsText(value);
         if (key === "dmCategoriesList") return dmcText(value);
         if (key === "showMeYourNameMode") return value === "all" || value === "first" ? value : undefined;
         if (key === "hiddenFeatures") return hiddenFeaturesText(value);
@@ -525,7 +526,7 @@
             settings.readAllMode = value; dirty.add(key); save(); notify(key); return true;
         }
         // Showmeyourname: the order of the four names and how many to show are text settings, not switches.
-        if (key === "showMeYourNameOrder" || key === "showMeYourNameMode" || key === "showMeYourNameCustom" || key === "customStatusPresetsList" || key === "dmCategoriesList" || key === "textReplaceRules" || key === "radialStatusColors") {
+        if (key === "showMeYourNameOrder" || key === "showMeYourNameMode" || key === "showMeYourNameCustom" || key === "customStatusPresetsList" || key === "dmCategoriesList" || key === "textReplaceRules" || key === "radialStatusColors" || key === "chatExportPrefs") {
             const clean = acceptedSetting(key, value);
             if (clean === undefined) return false;
             if (settings[key] === clean && status.storage !== "loading" && status.storage !== "waiting") return true;
@@ -22230,8 +22231,29 @@
     // slow down, and can be stopped at any moment. Messages are written to files as it goes (a part about every 1.2 million characters),
     // so a long chat never sits whole in memory. The parts are then saved through Android's Save screen.
     const CEX_PAGE = 100, CEX_PART = 1200000, CEX_EPOCH = 1420070400000;
-    const cex = {running:false, stop:false, cancel:false, phase:"", count:0, last:"", error:"", parts:[], channelId:"", saved:0, prefs:{format:"txt", range:"all", limit:5000, from:"", to:"",
-        text:true, images:true, videos:true, files:true, links:true, embeds:true}};
+    const cex = {loaded:false, at:0, span:null, running:false, stop:false, cancel:false, phase:"", count:0, last:"", error:"", parts:[], channelId:"", saved:0, prefs:{keyword:"", format:"txt", range:"all", limit:5000, from:"", to:"",
+        text:true, images:true, videos:true, files:true, links:true, embeds:true, reactions:true}};
+    // What you chose last time, kept as JSON: only values that make sense are accepted.
+    function cexPrefsText(value) {
+        let raw = null;
+        try { raw = typeof value === "string" ? JSON.parse(value) : null; } catch (_) {}
+        if (!raw || typeof raw !== "object" || Array.isArray(raw)) return undefined;
+        const out = {};
+        if (raw.format === "txt" || raw.format === "json" || raw.format === "html") out.format = raw.format;
+        if (["all", "day", "week", "month", "custom"].indexOf(raw.range) >= 0) out.range = raw.range;
+        if ([1000, 5000, 20000, 0].indexOf(raw.limit) >= 0) out.limit = raw.limit;
+        if (typeof raw.from === "string") out.from = raw.from.slice(0, 10);
+        if (typeof raw.to === "string") out.to = raw.to.slice(0, 10);
+        if (typeof raw.keyword === "string") out.keyword = raw.keyword.slice(0, 60);
+        ["text", "images", "videos", "files", "links", "embeds", "reactions"].forEach(k => { if (typeof raw[k] === "boolean") out[k] = raw[k]; });
+        return JSON.stringify(out);
+    }
+    function cexLoadPrefs() {
+        if (cex.loaded) return;
+        cex.loaded = true;
+        try { const saved = JSON.parse(settings.chatExportPrefs); if (saved && typeof saved === "object") Object.assign(cex.prefs, saved); } catch (_) {}
+    }
+    function cexSavePrefs() { try { setSetting("chatExportPrefs", JSON.stringify(cex.prefs)); } catch (_) {} }
     const CEX_RANGES = ["all", "day", "week", "month", "custom"], CEX_LIMITS = [1000, 5000, 20000, 0];
     const CEX_RANGE_LABEL = {all:"All time", day:"Last 24 hours", week:"Last 7 days", month:"Last 30 days", custom:"Custom range"};
     function cexSleep(ms) { return new Promise(resolve => later(resolve, ms)); }
@@ -22277,40 +22299,127 @@
         if (type.indexOf("video/") === 0 || CEX_VIDEO.test(name)) return "videos";
         return "files";
     }
-    // One message as {time, who, text, attachments, embeds} with only what the filters keep, or null when nothing is left.
-    function cexKeep(message, prefs) {
+    // Discord's raw text made readable: mentions, channels, custom emoji and timestamps become words.
+    function cexClean(text, message, names) {
+        if (!text) return text;
+        const people = {};
+        (message.mentions || []).forEach(user => { if (user && user.id) people[user.id] = user.global_name || user.username || user.id; });
+        return text
+            .replace(/<@!?(\d+)>/g, (m, id) => "@" + (people[id] || "user"))
+            .replace(/<@&(\d+)>/g, "@role")
+            .replace(/<#(\d+)>/g, (m, id) => { let c = null; try { c = names && names.getChannel(id); } catch (_) {} return "#" + (c && c.name || "channel"); })
+            .replace(/<a?:(\w+):\d+>/g, ":$1:")
+            .replace(/<t:(\d+)(?::[a-zA-Z])?>/g, (m, sec) => cexStamp(Number(sec) * 1000));
+    }
+    // One message as {id, time, edited, who, userId, text, replyTo, attachments, embeds, stickers, reactions, links} with only what the filters
+    // keep, or null when nothing is left.
+    function cexKeep(message, prefs, names) {
         const content = typeof message.content === "string" ? message.content : "";
-        const out = {id:message.id, time:message.timestamp, edited:message.edited_timestamp || null,
-            who:message.author && (message.author.global_name || message.author.username) || "?", userId:message.author && message.author.id || null,
-            text:"", attachments:[], embeds:[], links:[]};
-        if (prefs.text) out.text = content;
+        const author = message.author || {}, ref = message.referenced_message;
+        const out = {id:message.id, time:message.timestamp, edited:message.edited_timestamp || null, who:author.global_name || author.username || "?", userId:author.id || null,
+            text:"", replyTo:ref && ref.author ? {id:ref.id, who:ref.author.global_name || ref.author.username || "?"} : null,
+            attachments:[], embeds:[], stickers:[], reactions:[], links:[]};
+        if (prefs.text) out.text = cexClean(content, message, names);
         else if (prefs.links) out.links = content.match(CEX_URL) || [];
         (message.attachments || []).forEach(file => { if (file && file.url && prefs[cexKind(file)]) out.attachments.push({name:file.filename || "", url:file.url, size:file.size || 0, kind:cexKind(file)}); });
+        if (prefs.images) (message.sticker_items || []).forEach(sticker => { if (sticker && sticker.name) out.stickers.push(sticker.name); });
         if (prefs.embeds) (message.embeds || []).forEach(embed => {
-            if (embed && (embed.title || embed.description || embed.url)) out.embeds.push({title:embed.title || "", description:embed.description || "", url:embed.url || ""});
+            if (embed && (embed.title || embed.description || embed.url)) out.embeds.push({title:embed.title || "", description:cexClean(embed.description || "", message, names), url:embed.url || ""});
         });
-        return out.text || out.attachments.length || out.embeds.length || out.links.length ? out : null;
+        const hasContent = out.text || out.attachments.length || out.embeds.length || out.links.length || out.stickers.length;
+        if (!hasContent) return null;
+        // Reactions only ride along with a message that is kept.
+        if (prefs.reactions) (message.reactions || []).forEach(reaction => { if (reaction && reaction.emoji) out.reactions.push({emoji:reaction.emoji.name || "?", count:reaction.count || 0}); });
+        return out;
     }
     function cexStamp(iso) {
         const d = new Date(iso), pad = n => (n < 10 ? "0" : "") + n;
         return isNaN(d.getTime()) ? String(iso) : d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()) + " " + pad(d.getHours()) + ":" + pad(d.getMinutes());
     }
-    function cexLine(item) {
-        let line = "[" + cexStamp(item.time) + "] " + item.who + ": " + item.text.replace(/\r?\n/g, "\n    ") + (item.edited ? " (edited)" : "");
-        item.links.forEach(url => { line += "\n    " + url; });
-        item.attachments.forEach(file => { line += "\n    [" + file.kind + "] " + file.name + " " + file.url; });
-        item.embeds.forEach(embed => { line += "\n    [embed] " + [embed.title, embed.description.replace(/\r?\n/g, " "), embed.url].filter(Boolean).join(" | "); });
-        return line;
+    const CEX_HTML_CSS = "body{margin:0;background:#313338;color:#dbdee1;font:15px/1.45 system-ui,sans-serif}main{max-width:820px;margin:0 auto;padding:16px}" +
+        "h1{font-size:20px;color:#f2f3f5;margin:8px 0}.meta{color:#949ba4;font-size:13px;margin-bottom:16px}.day{margin:22px 0 8px;text-align:center;color:#949ba4;font-size:12px;border-top:1px solid #3f4147;padding-top:8px}" +
+        ".msg{padding:2px 0 2px 8px;border-left:3px solid transparent}.msg.first{margin-top:12px}.who{color:#f2f3f5;font-weight:600}.time{color:#949ba4;font-size:12px;margin-left:6px}" +
+        ".reply{color:#949ba4;font-size:13px}.text{white-space:pre-wrap;word-wrap:break-word}a{color:#00a8fc}img{max-width:100%;max-height:320px;border-radius:6px;display:block;margin:4px 0}" +
+        ".embed{border-left:4px solid #4e5058;background:#2b2d31;padding:6px 10px;margin:4px 0;border-radius:4px}.embed b{display:block;color:#f2f3f5}.react{display:inline-block;background:#2b2d31;border-radius:8px;padding:0 6px;margin:2px 4px 0 0;font-size:13px}" +
+        ".file{color:#b5bac1;font-size:13px}";
+    function cexEsc(text) { return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+    function cexLink(text) {
+        let out = "", last = 0;
+        String(text).replace(CEX_URL, (url, at) => { out += cexEsc(text.slice(last, at)) + '<a href="' + cexEsc(url) + '">' + cexEsc(url) + "</a>"; last = at + url.length; return url; });
+        return out + cexEsc(String(text).slice(last));
     }
-    // Writes the buffered messages as one self-contained file named after the dates it covers. Returns the file's name.
+    // The whole page for one part: dark like Discord, images shown, links clickable. Opens in any browser.
+    function cexHtml(items, meta) {
+        const out = ["<!doctype html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>" + cexEsc(meta.chat.name) + "</title><style>" + CEX_HTML_CSS + "</style></head><body><main>",
+            "<h1>" + cexEsc(meta.chat.name) + "</h1><div class=\"meta\">Part " + meta.part + " \u00b7 " + meta.messages + " messages \u00b7 " + cexEsc(cexStamp(meta.from)) + " to " + cexEsc(cexStamp(meta.to)) + " \u00b7 times are in your phone's time zone</div>"];
+        let day = "", who = "";
+        items.forEach(item => {
+            const d = backupDate(new Date(item.time).getTime()), first = d !== day || item.who !== who;
+            if (d !== day) { day = d; out.push('<div class="day">' + d + "</div>"); }
+            who = item.who;
+            let html = '<div class="msg' + (first ? " first" : "") + '">';
+            if (first) html += '<span class="who">' + cexEsc(item.who) + '</span><span class="time">' + cexEsc(cexClock(item.time)) + (item.edited ? " (edited)" : "") + "</span>";
+            if (item.replyTo) html += '<div class="reply">\u21b3 in reply to ' + cexEsc(item.replyTo.who) + "</div>";
+            if (item.text) html += '<div class="text" dir="auto">' + cexLink(item.text) + "</div>";
+            item.links.forEach(url => { html += '<div class="text"><a href="' + cexEsc(url) + '">' + cexEsc(url) + "</a></div>"; });
+            item.attachments.forEach(file => {
+                html += file.kind === "images" ? '<a href="' + cexEsc(file.url) + '"><img loading="lazy" src="' + cexEsc(file.url) + '" alt="' + cexEsc(file.name) + '"></a>' :
+                    '<div class="file">' + file.kind.replace(/s$/, "") + ': <a href="' + cexEsc(file.url) + '">' + cexEsc(file.name) + "</a> (" + cexSize(file.size) + ")</div>";
+            });
+            item.stickers.forEach(name => { html += '<div class="file">sticker: ' + cexEsc(name) + "</div>"; });
+            item.embeds.forEach(embed => { html += '<div class="embed" dir="auto">' + (embed.title ? "<b>" + cexEsc(embed.title) + "</b>" : "") + (embed.description ? cexLink(embed.description) : "") + (embed.url ? '<div><a href="' + cexEsc(embed.url) + '">' + cexEsc(embed.url) + "</a></div>" : "") + "</div>"; });
+            item.reactions.forEach(r => { html += '<span class="react">' + cexEsc(r.emoji) + " " + r.count + "</span>"; });
+            out.push(html + "</div>");
+        });
+        out.push("</main></body></html>");
+        return out.join("\n");
+    }
+    function cexClock(iso) {
+        const d = new Date(iso), pad = n => (n < 10 ? "0" : "") + n;
+        return isNaN(d.getTime()) ? "" : pad(d.getHours()) + ":" + pad(d.getMinutes());
+    }
+    // One message for the text file: a time and a name, then the words, then what was attached, indented under it.
+    function cexLine(item) {
+        const pad = "    ", lines = [];
+        const head = "[" + cexClock(item.time) + "] " + item.who + (item.edited ? " (edited)" : "") + ":";
+        if (item.replyTo) lines.push(pad + "\u21b3 in reply to " + item.replyTo.who);
+        const text = item.text ? item.text.replace(/\r?\n/g, "\n" + pad) : "";
+        let first = head + (text ? " " + text : "");
+        if (!text && !item.replyTo && (item.attachments.length || item.embeds.length || item.links.length || item.stickers.length)) first = head;
+        const extra = [];
+        item.links.forEach(url => extra.push(pad + url));
+        item.attachments.forEach(file => extra.push(pad + "[" + file.kind.replace(/s$/, "") + "] " + file.name + (file.size ? " (" + cexSize(file.size) + ")" : "") + "\n" + pad + "  " + file.url));
+        item.stickers.forEach(name => extra.push(pad + "[sticker] " + name));
+        item.embeds.forEach(embed => extra.push(pad + "[embed] " + [embed.title, embed.description.replace(/\r?\n/g, " "), embed.url].filter(Boolean).join(" | ")));
+        if (item.reactions.length) extra.push(pad + "reactions: " + item.reactions.map(r => r.emoji + " " + r.count).join("  "));
+        return (item.replyTo ? lines[0] + "\n" : "") + first + (extra.length ? "\n" + extra.join("\n") : "");
+    }
+    function cexSize(bytes) { return bytes >= 1048576 ? (bytes / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(bytes / 1024)) + " KB"; }
+    // The text file's body: a heading for each day, and a blank line when the same person stops talking.
+    function cexBody(items) {
+        const out = []; let day = "", who = "";
+        items.forEach(item => {
+            const d = backupDate(new Date(item.time).getTime());
+            if (d !== day) { day = d; who = ""; out.push((out.length ? "\n" : "") + "== " + d + " ==\n"); }
+            else if (item.who !== who && out.length) out.push("");
+            who = item.who;
+            out.push(cexLine(item));
+        });
+        return out.join("\n");
+    }
+    // Writes the buffered messages as one self-contained file named after the dates it covers.
     async function cexFlush(buffer, info) {
         if (!buffer.items.length) return;
         const first = buffer.items[0], last = buffer.items[buffer.items.length - 1], number = cex.parts.length + 1;
-        const day = iso => backupDate(new Date(iso).getTime()), ext = cex.prefs.format === "json" ? "json" : "txt";
+        const day = iso => backupDate(new Date(iso).getTime()), ext = cex.prefs.format === "json" ? "json" : cex.prefs.format === "html" ? "html" : "txt";
         const name = "chat-" + info.name + "-" + day(first.time) + "_" + day(last.time) + "-p" + (number < 10 ? "0" : "") + number + "." + ext;
+        const meta = {app:"Venus Chat export", chat:{id:info.id, name:info.title, type:info.type, guildId:info.guild}, part:number, messages:buffer.items.length,
+            from:first.time, to:last.time, exportedAt:new Date().toISOString(), includes:["text", "images", "videos", "files", "links", "embeds", "reactions"].filter(k => cex.prefs[k])};
         let text;
-        if (ext === "json") text = '{"channel":' + JSON.stringify({id:info.id, name:info.title}) + ',"part":' + number + ',"messages":[\n' + buffer.items.map(item => JSON.stringify(item)).join(",\n") + "\n]}";
-        else text = (number === 1 ? "Chat export: " + info.title + "\n" + "=".repeat(24) + "\n\n" : "") + buffer.items.map(cexLine).join("\n") + "\n";
+        if (ext === "json") text = '{"meta":' + JSON.stringify(meta) + ',"messages":[\n' + buffer.items.map(item => JSON.stringify(item)).join(",\n") + "\n]}";
+        else if (ext === "html") text = cexHtml(buffer.items, meta);
+        else text = "Chat export: " + info.title + "\nPart " + number + " \u00b7 " + buffer.items.length + " messages \u00b7 " + cexStamp(first.time) + " to " + cexStamp(last.time) +
+            "\nTimes are in your phone's time zone.\n" + "=".repeat(32) + "\n\n" + cexBody(buffer.items) + "\n";
         await files.writeFile("cache", name, text, "utf8");
         cex.parts.push(name);
         buffer.items = []; buffer.size = 0;
@@ -22326,8 +22435,8 @@
         return cex.prefs.limit || Infinity;
     }
     async function cexRun(channelId) {
-        const prefs = Object.assign({}, cex.prefs), span = cexSpan(prefs), info = Object.assign({id:channelId}, cexName(channelId)), limit = cexLimits();
-        cex.running = true; cex.stop = false; cex.cancel = false; cex.error = ""; cex.count = 0; cex.last = ""; cex.parts = []; cex.saved = 0; cex.channelId = channelId; cex.phase = "reading";
+        const prefs = Object.assign({}, cex.prefs), keyword = String(cex.prefs.keyword || "").trim().toLowerCase(), names = inspectedExport(2068, "default"), span = cexSpan(prefs), info = Object.assign({id:channelId}, cexName(channelId)), limit = cexLimits();
+        cex.running = true; cex.stop = false; cex.cancel = false; cex.error = ""; cex.count = 0; cex.last = ""; cex.at = 0; cex.span = span; cex.parts = []; cex.saved = 0; cex.channelId = channelId; cex.phase = "reading";
         notify("chatExport");
         const buffer = {items:[], size:0};
         let after = cexSnowflake(span.from), finished = false, failures = 0, tooMany = 0, scanned = 0;
@@ -22364,10 +22473,11 @@
                     if (at > span.to) { finished = true; break; }
                     if (at < span.from) continue;
                     scanned++;
-                    const item = cexKeep(message, prefs);
+                    if (keyword && String(message.content || "").toLowerCase().indexOf(keyword) < 0) continue;
+                    const item = cexKeep(message, prefs, names);
                     if (!item) continue;
-                    buffer.items.push(item); buffer.size += cex.prefs.format === "json" ? JSON.stringify(item).length : cexLine(item).length;
-                    cex.count++; cex.last = backupDate(at);
+                    buffer.items.push(item); buffer.size += cex.prefs.format === "json" ? JSON.stringify(item).length : cex.prefs.format === "html" ? cexLine(item).length * 3 : cexLine(item).length;
+                    cex.count++; cex.last = backupDate(at); cex.at = at;
                     if (cex.count >= limit) { finished = true; break; }
                 }
                 if (buffer.size >= CEX_PART) { cex.phase = "writing"; notify("chatExport"); await cexFlush(buffer, info); cex.phase = "reading"; }
@@ -22389,7 +22499,7 @@
     async function cexDeliver() {
         const saveDocuments = inspectedExport(11600, "saveDocuments"), dir = cacheDir(), ui = reviewUI();
         if (!files || typeof saveDocuments !== "function" || !dir) { cex.error = "Saving files isn't available here."; notify("chatExport"); return; }
-        const mime = cex.prefs.format === "json" ? "application/json" : "text/plain", names = cex.parts.slice();
+        const mime = cex.prefs.format === "json" ? "application/json" : cex.prefs.format === "html" ? "text/html" : "text/plain", names = cex.parts.slice();
         const attempt = list => saveDocuments(list.length === 1 ? {sourceUris:["file://" + dir + "/" + list[0]], fileName:list[0], mimeType:mime} : {sourceUris:list.map(n => "file://" + dir + "/" + n), mimeType:mime});
         try {
             let ok = false;
@@ -22423,6 +22533,13 @@
         if (!channel || (channel.type !== 0 && channel.type !== 1 && channel.type !== 3 && channel.type !== 5)) return tree;
         return sheetAddRow(tree, props, "venus-chat-export", tr("Export chat"), venusIcon(12367, "SaveIcon"), () => cexOpen(String(channel.id)), "ChannelLongPress-" + channelId);
     });
+    // How far through the dates it has read: a thin bar, only when the dates have a start.
+    function cexBar() {
+        const span = cex.span, end = span.to === Infinity ? Date.now() : span.to, total = Math.max(1, end - span.from);
+        const percent = Math.max(2, Math.min(100, Math.round((cex.at - span.from) / total * 100)));
+        return el(RN.View, {key:"bar", style:{height:6, borderRadius:3, backgroundColor:"#4e5058", overflow:"hidden", marginHorizontal:4}},
+            el(RN.View, {style:{height:6, width:percent + "%", borderRadius:3, backgroundColor:"#23a55a"}}));
+    }
     function cexCycle(list, value) { return list[(list.indexOf(value) + 1) % list.length]; }
     function cexLimitLabel(limit) { return limit ? pl(limit, "{n} message", "{n} messages") : tr("No limit"); }
     function ChatExportSheet(props) {
@@ -22431,7 +22548,8 @@
         const [, update] = React.useState(0);
         if (!React || !RN) return null;
         const prefs = cex.prefs, close = () => hideReviewSheet(ui, CEX_SHEET), busy = cex.running, mine = cex.channelId === props.channelId;
-        const set = patch => { Object.assign(prefs, patch); update(n => n + 1); };
+        cexLoadPrefs();
+        const set = patch => { Object.assign(prefs, patch); cexSavePrefs(); update(n => n + 1); };
         const span = cexSpan(prefs), info = cexName(props.channelId);
         const header = ui.Header ? el(ui.Header, {title:tr("Export chat"), trailing:ui.Close ? el(ui.Close, {onPress:close}) : undefined}) : null;
         const toggle = (key, label) => Switch ? el(Switch, {key, label:tr(label), value:!!prefs[key], disabled:busy, onValueChange:value => set({[key]:!!value})}) : null;
@@ -22448,11 +22566,13 @@
         const content = el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:12}},
             el(Group, {key:"top"},
                 Row ? el(Row, {key:"chat", label:info.title, subLabel:tr("Chat to export"), icon:rowIcon(12367, "SaveIcon")}) : null,
-                Row ? el(Row, {key:"format", label:tr("Format"), subLabel:prefs.format === "json" ? "JSON" : "TXT", disabled:busy, onPress:() => { haptic("SELECTION"); set({format:prefs.format === "json" ? "txt" : "json"}); }}) : null,
+                Row ? el(Row, {key:"format", label:tr("Format"), subLabel:prefs.format === "json" ? "JSON" : prefs.format === "html" ? "HTML" : "TXT", disabled:busy, onPress:() => { haptic("SELECTION"); set({format:cexCycle(["txt", "html", "json"], prefs.format)}); }}) : null,
                 Row ? el(Row, {key:"range", label:tr("Dates"), subLabel:tr(CEX_RANGE_LABEL[prefs.range]), disabled:busy, onPress:() => { haptic("SELECTION"); set({range:cexCycle(CEX_RANGES, prefs.range)}); }}) : null,
                 Row ? el(Row, {key:"limit", label:tr("Up to"), subLabel:cexLimitLabel(prefs.limit), disabled:busy, onPress:() => { haptic("SELECTION"); set({limit:cexCycle(CEX_LIMITS, prefs.limit)}); }}) : null),
             prefs.range === "custom" ? el(RN.View, {key:"custom", style:{gap:8}}, rtrField(ui, "from", prefs.from, v => set({from:v}), tr("From (YYYY-MM-DD)"), 10), rtrField(ui, "to", prefs.to, v => set({to:v}), tr("To (YYYY-MM-DD)"), 10)) : null,
-            Switch ? el(Group, {key:"what", title:tr("Include")}, toggle("text", "Message text"), toggle("images", "Images"), toggle("videos", "Videos"), toggle("files", "Files"), toggle("links", "Links"), toggle("embeds", "Embeds")) : null,
+            rtrField(ui, "keyword", prefs.keyword || "", v => set({keyword:v}), tr("Only messages containing (optional)"), 60),
+            Switch ? el(Group, {key:"what", title:tr("Include")}, toggle("text", "Message text"), toggle("images", "Images"), toggle("videos", "Videos"), toggle("files", "Files"), toggle("links", "Links"), toggle("embeds", "Embeds"), toggle("reactions", "Reactions")) : null,
+            busy && mine && cex.span && cex.span.from > 0 && cex.at ? cexBar() : null,
             status ? el(RN.Text, {key:"status", style:{color:cex.error && !busy ? "#f23f43" : "#b5bac1", fontSize:15, paddingHorizontal:4}}, status) : null,
             Row ? el(Group, {key:"go"},
                 busy ? el(Row, {key:"stop", label:tr("Stop and save"), icon:rowIcon(7144, "CircleCheckIcon"), onPress:() => { cex.stop = true; notify("chatExport"); }}) :
