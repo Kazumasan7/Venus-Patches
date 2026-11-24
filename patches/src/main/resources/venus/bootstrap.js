@@ -22317,6 +22317,7 @@
         const content = typeof message.content === "string" ? message.content : "";
         const author = message.author || {}, ref = message.referenced_message;
         const out = {id:message.id, time:message.timestamp, edited:message.edited_timestamp || null, who:author.global_name || author.username || "?", userId:author.id || null,
+            avatar:author.id && author.avatar ? "https://cdn.discordapp.com/avatars/" + author.id + "/" + author.avatar + ".webp?size=64" : null,
             text:"", replyTo:ref && ref.author ? {id:ref.id, who:ref.author.global_name || ref.author.username || "?"} : null,
             attachments:[], embeds:[], stickers:[], reactions:[], links:[]};
         if (prefs.text) out.text = cexClean(content, message, names);
@@ -22336,42 +22337,52 @@
         const d = new Date(iso), pad = n => (n < 10 ? "0" : "") + n;
         return isNaN(d.getTime()) ? String(iso) : d.getFullYear() + "-" + pad(d.getMonth() + 1) + "-" + pad(d.getDate()) + " " + pad(d.getHours()) + ":" + pad(d.getMinutes());
     }
-    const CEX_HTML_CSS = "body{margin:0;background:#313338;color:#dbdee1;font:15px/1.45 system-ui,sans-serif}main{max-width:820px;margin:0 auto;padding:16px}" +
-        "h1{font-size:20px;color:#f2f3f5;margin:8px 0}.meta{color:#949ba4;font-size:13px;margin-bottom:16px}.day{margin:22px 0 8px;text-align:center;color:#949ba4;font-size:12px;border-top:1px solid #3f4147;padding-top:8px}" +
-        ".msg{padding:2px 0 2px 8px;border-left:3px solid transparent}.msg.first{margin-top:12px}.who{color:#f2f3f5;font-weight:600}.time{color:#949ba4;font-size:12px;margin-left:6px}" +
-        ".reply{color:#949ba4;font-size:13px}.text{white-space:pre-wrap;word-wrap:break-word}a{color:#00a8fc}img{max-width:100%;max-height:320px;border-radius:6px;display:block;margin:4px 0}" +
-        ".embed{border-left:4px solid #4e5058;background:#2b2d31;padding:6px 10px;margin:4px 0;border-radius:4px}.embed b{display:block;color:#f2f3f5}.react{display:inline-block;background:#2b2d31;border-radius:8px;padding:0 6px;margin:2px 4px 0 0;font-size:13px}" +
-        ".file{color:#b5bac1;font-size:13px}";
+    const CEX_HTML_CSS = ":root{--bg:#1b1c20;--card:#25262b;--line:#34363d;--text:#e3e5e8;--muted:#8e939c;--accent:#6c7cff}*{box-sizing:border-box}" +
+        "body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,'Segoe UI',Tahoma,sans-serif}" +
+        "header{position:sticky;top:0;z-index:1;background:var(--card);border-bottom:1px solid var(--line);padding:14px 18px}header h1{margin:0 0 4px;font-size:18px}header p{margin:0;color:var(--muted);font-size:12px}" +
+        ".chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.chips span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:12px}" +
+        "input[type=search]{width:100%;max-width:380px;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--text);font-size:15px}" +
+        "ul{list-style:none;margin:0 auto;padding:12px;max-width:860px}li{display:flex;gap:12px;padding:8px;border-radius:8px}li:hover{background:var(--card)}li.hide{display:none}" +
+        ".avatar{width:36px;height:36px;border-radius:50%;flex:none;background:var(--line)}.body{min-width:0;flex:1}.who{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}time{color:var(--muted);font-size:11px}" +
+        ".reply{color:var(--muted);font-size:12px}.text{white-space:pre-wrap;word-break:break-word}.text a,.file a{color:var(--accent)}mark{background:#6c7cff55;color:inherit;border-radius:3px}" +
+        ".media{display:block;max-width:360px;max-height:260px;margin-top:6px;border-radius:8px}.file{margin:6px 0 0;font-size:12px;color:var(--muted)}" +
+        ".embed{border-left:4px solid var(--line);background:var(--card);padding:6px 10px;margin:6px 0;border-radius:4px}.embed b{display:block}.react{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:0 6px;margin:4px 4px 0 0;font-size:12px}" +
+        "#none{display:none;text-align:center;color:var(--muted);padding:30px}";
+    const CEX_HTML_JS = "const box=document.getElementById('q'),rows=[...document.querySelectorAll('#list li')],none=document.getElementById('none'),count=document.getElementById('shown');" +
+        "box.addEventListener('input',()=>{const q=box.value.trim().toLowerCase();let n=0;for(const li of rows){const ok=!q||li.dataset.q.includes(q);li.classList.toggle('hide',!ok);if(ok)n++}" +
+        "none.style.display=n?'none':'block';count.textContent=q?n+' shown':''});";
     function cexEsc(text) { return String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
     function cexLink(text) {
         let out = "", last = 0;
         String(text).replace(CEX_URL, (url, at) => { out += cexEsc(text.slice(last, at)) + '<a href="' + cexEsc(url) + '">' + cexEsc(url) + "</a>"; last = at + url.length; return url; });
         return out + cexEsc(String(text).slice(last));
     }
-    // The whole page for one part: dark like Discord, images shown, links clickable. Opens in any browser.
+    // The whole page for one part, like a bot's transcript: a sticky header with counts and a search box that filters the messages by
+    // text, name or file name. Images show inline (as links to Discord's copy, which stops working after a while). Opens in any browser.
     function cexHtml(items, meta) {
-        const out = ["<!doctype html><html><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>" + cexEsc(meta.chat.name) + "</title><style>" + CEX_HTML_CSS + "</style></head><body><main>",
-            "<h1>" + cexEsc(meta.chat.name) + "</h1><div class=\"meta\">Part " + meta.part + " \u00b7 " + meta.messages + " messages \u00b7 " + cexEsc(cexStamp(meta.from)) + " to " + cexEsc(cexStamp(meta.to)) + " \u00b7 times are in your phone's time zone</div>"];
-        let day = "", who = "";
+        let images = 0, videos = 0;
+        items.forEach(item => item.attachments.forEach(file => { if (file.kind === "images") images++; else if (file.kind === "videos") videos++; }));
+        const out = ['<!doctype html><html lang="en" dir="auto"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + cexEsc(meta.chat.name) + " \u2014 chat export</title><style>" + CEX_HTML_CSS + "</style></head><body>",
+            "<header><h1>" + cexEsc(meta.chat.name) + "</h1><p>Chat export \u00b7 times are in your phone's time zone</p><div class=\"chips\"><span>" + meta.messages + " messages</span><span>Part " + meta.part + "</span><span>" +
+            cexEsc(cexStamp(meta.from)) + " \u2192 " + cexEsc(cexStamp(meta.to)) + "</span><span>" + images + " image(s)</span><span>" + videos + " video(s)</span><span id=\"shown\"></span></div>" +
+            '<input type="search" id="q" placeholder="Search text or author"></header><ul id="list">'];
         items.forEach(item => {
-            const d = backupDate(new Date(item.time).getTime()), first = d !== day || item.who !== who;
-            if (d !== day) { day = d; out.push('<div class="day">' + d + "</div>"); }
-            who = item.who;
-            let html = '<div class="msg' + (first ? " first" : "") + '">';
-            if (first) html += '<span class="who">' + cexEsc(item.who) + '</span><span class="time">' + cexEsc(cexClock(item.time)) + (item.edited ? " (edited)" : "") + "</span>";
+            const key = [item.text, item.who, item.attachments.map(f => f.name).join(" "), item.embeds.map(e => e.title + " " + e.description).join(" "), item.links.join(" ")].join(" ").toLowerCase();
+            let html = '<li data-q="' + cexEsc(key) + '">' + (item.avatar ? '<img class="avatar" src="' + cexEsc(item.avatar) + '" alt="" loading="lazy">' : '<span class="avatar"></span>') + '<div class="body"><div class="who"><b>' + cexEsc(item.who) + "</b><time>" +
+                cexEsc(cexStamp(item.time)) + (item.edited ? " (edited)" : "") + "</time></div>";
             if (item.replyTo) html += '<div class="reply">\u21b3 in reply to ' + cexEsc(item.replyTo.who) + "</div>";
             if (item.text) html += '<div class="text" dir="auto">' + cexLink(item.text) + "</div>";
             item.links.forEach(url => { html += '<div class="text"><a href="' + cexEsc(url) + '">' + cexEsc(url) + "</a></div>"; });
             item.attachments.forEach(file => {
-                html += file.kind === "images" ? '<a href="' + cexEsc(file.url) + '"><img loading="lazy" src="' + cexEsc(file.url) + '" alt="' + cexEsc(file.name) + '"></a>' :
+                html += file.kind === "images" ? '<a href="' + cexEsc(file.url) + '"><img class="media" loading="lazy" src="' + cexEsc(file.url) + '" alt="' + cexEsc(file.name) + '"></a>' :
                     '<div class="file">' + file.kind.replace(/s$/, "") + ': <a href="' + cexEsc(file.url) + '">' + cexEsc(file.name) + "</a> (" + cexSize(file.size) + ")</div>";
             });
             item.stickers.forEach(name => { html += '<div class="file">sticker: ' + cexEsc(name) + "</div>"; });
             item.embeds.forEach(embed => { html += '<div class="embed" dir="auto">' + (embed.title ? "<b>" + cexEsc(embed.title) + "</b>" : "") + (embed.description ? cexLink(embed.description) : "") + (embed.url ? '<div><a href="' + cexEsc(embed.url) + '">' + cexEsc(embed.url) + "</a></div>" : "") + "</div>"; });
             item.reactions.forEach(r => { html += '<span class="react">' + cexEsc(r.emoji) + " " + r.count + "</span>"; });
-            out.push(html + "</div>");
+            out.push(html + "</div></li>");
         });
-        out.push("</main></body></html>");
+        out.push('</ul><div id="none">No match</div><script>' + CEX_HTML_JS + "</script></body></html>");
         return out.join("\n");
     }
     function cexClock(iso) {
