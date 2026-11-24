@@ -2227,6 +2227,14 @@
     "Saved {n} file": "Saved {n} file",
     "{n} message": "{n} message",
     "Saved {n} files": "Saved {n} files",
-    "{n} messages": "{n} messages"
+    "{n} messages": "{n} messages",
+    "Message text": "Message text",
+    "Images": "Images",
+    "Files": "Files",
+    "Reactions": "Reactions",
+    "Do not disturb": "Do not disturb",
+    "Streaming": "Streaming",
+    "VR": "VR",
+    "Only messages containing (optional)": "Only messages containing (optional)"
   }
 }

@@ -2427,6 +2427,14 @@
       "few": "{n} رسائل",
       "many": "{n} رسالة",
       "other": "{n} رسالة"
-    }
+    },
+    "Message text": "نص الرسائل",
+    "Images": "صور",
+    "Files": "ملفات",
+    "Reactions": "التفاعلات",
+    "Do not disturb": "مشغول",
+    "Streaming": "بث",
+    "VR": "VR",
+    "Only messages containing (optional)": "الرسائل اللي تحتوي هذا النص بس (اختياري)"
   }
 }
