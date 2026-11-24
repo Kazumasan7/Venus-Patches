@@ -22230,8 +22230,8 @@
     // back, one page of 100 at a time, oldest first, slowly (about one page every 1-1.6 s), waits as long as Discord asks when it says
     // slow down, and can be stopped at any moment. Messages are written to files as it goes (a part about every 1.2 million characters),
     // so a long chat never sits whole in memory. The parts are then saved through Android's Save screen.
-    const CEX_PAGE = 100, CEX_PART = 1200000, CEX_EPOCH = 1420070400000;
-    const cex = {loaded:false, at:0, span:null, running:false, stop:false, cancel:false, phase:"", count:0, last:"", error:"", parts:[], channelId:"", saved:0, prefs:{keyword:"", format:"txt", range:"all", limit:5000, from:"", to:"",
+    const CEX_PAGE = 100, CEX_PART = 1200000, CEX_PART_IMAGES = 6000000, CEX_IMAGE_CAP = 3145728, CEX_EPOCH = 1420070400000;
+    const cex = {images:0, imageFailed:0, avatars:new Map(), loaded:false, at:0, span:null, running:false, stop:false, cancel:false, phase:"", count:0, last:"", error:"", parts:[], channelId:"", saved:0, prefs:{embedImages:true, keyword:"", format:"txt", range:"all", limit:5000, from:"", to:"",
         text:true, images:true, videos:true, files:true, links:true, embeds:true, reactions:true}};
     // What you chose last time, kept as JSON: only values that make sense are accepted.
     function cexPrefsText(value) {
@@ -22245,7 +22245,7 @@
         if (typeof raw.from === "string") out.from = raw.from.slice(0, 10);
         if (typeof raw.to === "string") out.to = raw.to.slice(0, 10);
         if (typeof raw.keyword === "string") out.keyword = raw.keyword.slice(0, 60);
-        ["text", "images", "videos", "files", "links", "embeds", "reactions"].forEach(k => { if (typeof raw[k] === "boolean") out[k] = raw[k]; });
+        ["text", "images", "videos", "files", "links", "embeds", "reactions", "embedImages"].forEach(k => { if (typeof raw[k] === "boolean") out[k] = raw[k]; });
         return JSON.stringify(out);
     }
     function cexLoadPrefs() {
@@ -22362,19 +22362,24 @@
     function cexHtml(items, meta) {
         let images = 0, videos = 0;
         items.forEach(item => item.attachments.forEach(file => { if (file.kind === "images") images++; else if (file.kind === "videos") videos++; }));
-        const out = ['<!doctype html><html lang="en" dir="auto"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + cexEsc(meta.chat.name) + " \u2014 chat export</title><style>" + CEX_HTML_CSS + "</style></head><body>",
+        // Each picture is stored once, as a style, however many messages the person wrote.
+        const avatarNames = [];
+        items.forEach(item => { if (item.avatar && cex.avatars.get(item.avatar) && avatarNames.indexOf(item.avatar) < 0) avatarNames.push(item.avatar); });
+        const avatarCss = avatarNames.map((url, index) => ".a" + index + '{background:url("' + cex.avatars.get(url) + '") center/cover}').join("");
+        const out = ['<!doctype html><html lang="en" dir="auto"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>' + cexEsc(meta.chat.name) + " \u2014 chat export</title><style>" + CEX_HTML_CSS + avatarCss + "</style></head><body>",
             "<header><h1>" + cexEsc(meta.chat.name) + "</h1><p>Chat export \u00b7 times are in your phone's time zone</p><div class=\"chips\"><span>" + meta.messages + " messages</span><span>Part " + meta.part + "</span><span>" +
             cexEsc(cexStamp(meta.from)) + " \u2192 " + cexEsc(cexStamp(meta.to)) + "</span><span>" + images + " image(s)</span><span>" + videos + " video(s)</span><span id=\"shown\"></span></div>" +
             '<input type="search" id="q" placeholder="Search text or author"></header><ul id="list">'];
         items.forEach(item => {
             const key = [item.text, item.who, item.attachments.map(f => f.name).join(" "), item.embeds.map(e => e.title + " " + e.description).join(" "), item.links.join(" ")].join(" ").toLowerCase();
-            let html = '<li data-q="' + cexEsc(key) + '">' + (item.avatar ? '<img class="avatar" src="' + cexEsc(item.avatar) + '" alt="" loading="lazy">' : '<span class="avatar"></span>') + '<div class="body"><div class="who"><b>' + cexEsc(item.who) + "</b><time>" +
+            const avatarData = item.avatar && cex.avatars.get(item.avatar), avatarClass = avatarData ? "a" + avatarNames.indexOf(item.avatar) : "";
+            let html = '<li data-q="' + cexEsc(key) + '">' + (avatarClass ? '<span class="avatar ' + avatarClass + '"></span>' : item.avatar ? '<img class="avatar" src="' + cexEsc(item.avatar) + '" alt="" loading="lazy">' : '<span class="avatar"></span>') + '<div class="body"><div class="who"><b>' + cexEsc(item.who) + "</b><time>" +
                 cexEsc(cexStamp(item.time)) + (item.edited ? " (edited)" : "") + "</time></div>";
             if (item.replyTo) html += '<div class="reply">\u21b3 in reply to ' + cexEsc(item.replyTo.who) + "</div>";
             if (item.text) html += '<div class="text" dir="auto">' + cexLink(item.text) + "</div>";
             item.links.forEach(url => { html += '<div class="text"><a href="' + cexEsc(url) + '">' + cexEsc(url) + "</a></div>"; });
             item.attachments.forEach(file => {
-                html += file.kind === "images" ? '<a href="' + cexEsc(file.url) + '"><img class="media" loading="lazy" src="' + cexEsc(file.url) + '" alt="' + cexEsc(file.name) + '"></a>' :
+                html += file.kind === "images" ? '<a href="' + cexEsc(file.url) + '"><img class="media" loading="lazy" src="' + cexEsc(file.data || file.url) + '" alt="' + cexEsc(file.name) + '"></a>' :
                     '<div class="file">' + file.kind.replace(/s$/, "") + ': <a href="' + cexEsc(file.url) + '">' + cexEsc(file.name) + "</a> (" + cexSize(file.size) + ")</div>";
             });
             item.stickers.forEach(name => { html += '<div class="file">sticker: ' + cexEsc(name) + "</div>"; });
@@ -22384,6 +22389,57 @@
         });
         out.push('</ul><div id="none">No match</div><script>' + CEX_HTML_JS + "</script></body></html>");
         return out.join("\n");
+    }
+    const CEX_MIME = {png:"image/png", jpg:"image/jpeg", jpeg:"image/jpeg", gif:"image/gif", webp:"image/webp", bmp:"image/bmp", avif:"image/avif", heic:"image/heic"};
+    function cexBase64(bytes) {
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", parts = [];
+        for (let i = 0; i < bytes.length; i += 3) {
+            const n = bytes[i] << 16 | (bytes[i + 1] || 0) << 8 | (bytes[i + 2] || 0);
+            parts.push(chars[n >> 18 & 63] + chars[n >> 12 & 63] + (i + 1 < bytes.length ? chars[n >> 6 & 63] : "=") + (i + 2 < bytes.length ? chars[n & 63] : "="));
+        }
+        return parts.join("");
+    }
+    // One image as a data: address (so the file keeps it for good), or null when it can't be read or is too big. Goes through the phone's
+    // own network, to Discord's CDN, one image at a time.
+    async function cexFetchData(url, name) {
+        if (typeof global.fetch !== "function") return null;
+        const response = await global.fetch(url, {method:"GET", credentials:"omit"});
+        if (!response || !response.ok) return null;
+        const length = Number(response.headers && typeof response.headers.get === "function" ? response.headers.get("content-length") : 0);
+        if (length && length > CEX_IMAGE_CAP) return null;
+        const ext = (/\.([a-z0-9]+)(?:\?|$)/i.exec(name || url) || [])[1], guess = CEX_MIME[String(ext || "").toLowerCase()] || "image/png";
+        if (typeof response.blob === "function" && typeof global.FileReader === "function") {
+            const blob = await response.blob();
+            if (!blob || blob.size > CEX_IMAGE_CAP) return null;
+            const data = await new Promise(resolve => { const reader = new global.FileReader(); reader.onloadend = () => resolve(typeof reader.result === "string" ? reader.result : null); reader.onerror = () => resolve(null); reader.readAsDataURL(blob); });
+            if (!data) return null;
+            return /^data:(application\/octet-stream|;)/.test(data) ? "data:" + guess + data.slice(data.indexOf(";")) : data;
+        }
+        if (typeof response.arrayBuffer === "function") {
+            const buffer = await response.arrayBuffer();
+            if (!buffer || buffer.byteLength > CEX_IMAGE_CAP) return null;
+            return "data:" + guess + ";base64," + cexBase64(new Uint8Array(buffer));
+        }
+        return null;
+    }
+    // Saves the images of one message (and the author's picture, once per person) inside the item.
+    async function cexEmbed(item) {
+        for (let i = 0; i < item.attachments.length; i++) {
+            const file = item.attachments[i];
+            if (file.kind !== "images" || cex.stop || cex.cancel) continue;
+            cex.phase = "images"; notify("chatExport");
+            let data = null;
+            try { data = await cexFetchData(file.url, file.name); } catch (_) { data = null; }
+            if (data) { file.data = data; cex.images++; } else cex.imageFailed++;
+            await cexSleep(250 + Math.floor(Math.random() * 200));
+        }
+        if (item.avatar && !cex.avatars.has(item.avatar) && !cex.stop && !cex.cancel) {
+            let data = null;
+            try { data = await cexFetchData(item.avatar, "a.webp"); } catch (_) { data = null; }
+            cex.avatars.set(item.avatar, data);
+            await cexSleep(150);
+        }
+        cex.phase = "reading";
     }
     function cexClock(iso) {
         const d = new Date(iso), pad = n => (n < 10 ? "0" : "") + n;
@@ -22427,7 +22483,7 @@
         const meta = {app:"Venus Chat export", chat:{id:info.id, name:info.title, type:info.type, guildId:info.guild}, part:number, messages:buffer.items.length,
             from:first.time, to:last.time, exportedAt:new Date().toISOString(), includes:["text", "images", "videos", "files", "links", "embeds", "reactions"].filter(k => cex.prefs[k])};
         let text;
-        if (ext === "json") text = '{"meta":' + JSON.stringify(meta) + ',"messages":[\n' + buffer.items.map(item => JSON.stringify(item)).join(",\n") + "\n]}";
+        if (ext === "json") text = '{"meta":' + JSON.stringify(meta) + ',"messages":[\n' + buffer.items.map(item => JSON.stringify(item, (key, value) => key === "data" ? undefined : value)).join(",\n") + "\n]}";
         else if (ext === "html") text = cexHtml(buffer.items, meta);
         else text = "Chat export: " + info.title + "\nPart " + number + " \u00b7 " + buffer.items.length + " messages \u00b7 " + cexStamp(first.time) + " to " + cexStamp(last.time) +
             "\nTimes are in your phone's time zone.\n" + "=".repeat(32) + "\n\n" + cexBody(buffer.items) + "\n";
@@ -22446,8 +22502,8 @@
         return cex.prefs.limit || Infinity;
     }
     async function cexRun(channelId) {
-        const prefs = Object.assign({}, cex.prefs), keyword = String(cex.prefs.keyword || "").trim().toLowerCase(), names = inspectedExport(2068, "default"), span = cexSpan(prefs), info = Object.assign({id:channelId}, cexName(channelId)), limit = cexLimits();
-        cex.running = true; cex.stop = false; cex.cancel = false; cex.error = ""; cex.count = 0; cex.last = ""; cex.at = 0; cex.span = span; cex.parts = []; cex.saved = 0; cex.channelId = channelId; cex.phase = "reading";
+        const prefs = Object.assign({}, cex.prefs), embed = cex.prefs.format === "html" && cex.prefs.embedImages !== false, partSize = embed ? CEX_PART_IMAGES : CEX_PART, keyword = String(cex.prefs.keyword || "").trim().toLowerCase(), names = inspectedExport(2068, "default"), span = cexSpan(prefs), info = Object.assign({id:channelId}, cexName(channelId)), limit = cexLimits();
+        cex.running = true; cex.stop = false; cex.cancel = false; cex.error = ""; cex.count = 0; cex.images = 0; cex.imageFailed = 0; cex.avatars = new Map(); cex.last = ""; cex.at = 0; cex.span = span; cex.parts = []; cex.saved = 0; cex.channelId = channelId; cex.phase = "reading";
         notify("chatExport");
         const buffer = {items:[], size:0};
         let after = cexSnowflake(span.from), finished = false, failures = 0, tooMany = 0, scanned = 0;
@@ -22480,6 +22536,7 @@
                 const ordered = page.slice().reverse();
                 after = ordered[ordered.length - 1].id;
                 for (let i = 0; i < ordered.length; i++) {
+                    if (cex.stop || cex.cancel) { finished = true; break; }
                     const message = ordered[i], at = new Date(message.timestamp).getTime();
                     if (at > span.to) { finished = true; break; }
                     if (at < span.from) continue;
@@ -22487,11 +22544,14 @@
                     if (keyword && String(message.content || "").toLowerCase().indexOf(keyword) < 0) continue;
                     const item = cexKeep(message, prefs, names);
                     if (!item) continue;
-                    buffer.items.push(item); buffer.size += cex.prefs.format === "json" ? JSON.stringify(item).length : cex.prefs.format === "html" ? cexLine(item).length * 3 : cexLine(item).length;
+                    if (embed) await cexEmbed(item);
+                    buffer.items.push(item); if (embed) item.attachments.forEach(file => { if (file.data) buffer.size += file.data.length; }); buffer.size += cex.prefs.format === "json" ? JSON.stringify(item).length : cex.prefs.format === "html" ? cexLine(item).length * 3 : cexLine(item).length;
                     cex.count++; cex.last = backupDate(at); cex.at = at;
                     if (cex.count >= limit) { finished = true; break; }
+                    if (buffer.size >= partSize) { cex.phase = "writing"; notify("chatExport"); await cexFlush(buffer, info); cex.phase = "reading"; }
+                    notify("chatExport");
                 }
-                if (buffer.size >= CEX_PART) { cex.phase = "writing"; notify("chatExport"); await cexFlush(buffer, info); cex.phase = "reading"; }
+                if (buffer.size >= partSize) { cex.phase = "writing"; notify("chatExport"); await cexFlush(buffer, info); cex.phase = "reading"; }
                 notify("chatExport");
                 if (page.length < CEX_PAGE) finished = true;
                 if (!finished && !cex.stop && !cex.cancel) await cexSleep(1100 + Math.floor(Math.random() * 500));
@@ -22565,9 +22625,9 @@
         const header = ui.Header ? el(ui.Header, {title:tr("Export chat"), trailing:ui.Close ? el(ui.Close, {onPress:close}) : undefined}) : null;
         const toggle = (key, label) => Switch ? el(Switch, {key, label:tr(label), value:!!prefs[key], disabled:busy, onValueChange:value => set({[key]:!!value})}) : null;
         const progress = (busy || cex.phase === "done" || cex.error) && mine;
-        const status = !progress ? null : busy ? (cex.phase === "waiting" ? tr("Discord asked to slow down. Waiting a moment…") : cex.phase === "writing" ? tr("Writing the file…") : tr("Reading…")) + "\n" +
-                pl(cex.count, "{n} message", "{n} messages") + (cex.last ? " · " + tr("Reached {date}", {date:cex.last}) : "") :
-            cex.error ? tr(cex.error) + (cex.count ? "\n" + pl(cex.count, "{n} message", "{n} messages") : "") : cex.saved ? pl(cex.saved, "Saved {n} file", "Saved {n} files") + " · " + pl(cex.count, "{n} message", "{n} messages") : null;
+        const status = !progress ? null : busy ? (cex.phase === "waiting" ? tr("Discord asked to slow down. Waiting a moment…") : cex.phase === "writing" ? tr("Writing the file…") : cex.phase === "images" ? tr("Saving images…") : tr("Reading…")) + "\n" +
+                pl(cex.count, "{n} message", "{n} messages") + (cex.last ? " · " + tr("Reached {date}", {date:cex.last}) : "") + (cex.images ? "\n" + pl(cex.images, "{n} image saved", "{n} images saved") : "") + (cex.imageFailed ? " · " + pl(cex.imageFailed, "{n} image couldn't be saved", "{n} images couldn't be saved") : "") :
+            cex.error ? tr(cex.error) + (cex.count ? "\n" + pl(cex.count, "{n} message", "{n} messages") : "") : cex.saved ? pl(cex.saved, "Saved {n} file", "Saved {n} files") + " · " + pl(cex.count, "{n} message", "{n} messages") + (cex.imageFailed ? "\n" + pl(cex.imageFailed, "{n} image couldn't be saved", "{n} images couldn't be saved") : "") : null;
         const start = () => {
             if (!span) { showProblem("Check the dates", tr("Write dates like 2026-11-23, with From before To.")); return; }
             haptic("SELECTION");
@@ -22582,6 +22642,7 @@
                 Row ? el(Row, {key:"limit", label:tr("Up to"), subLabel:cexLimitLabel(prefs.limit), disabled:busy, onPress:() => { haptic("SELECTION"); set({limit:cexCycle(CEX_LIMITS, prefs.limit)}); }}) : null),
             prefs.range === "custom" ? el(RN.View, {key:"custom", style:{gap:8}}, rtrField(ui, "from", prefs.from, v => set({from:v}), tr("From (YYYY-MM-DD)"), 10), rtrField(ui, "to", prefs.to, v => set({to:v}), tr("To (YYYY-MM-DD)"), 10)) : null,
             rtrField(ui, "keyword", prefs.keyword || "", v => set({keyword:v}), tr("Only messages containing (optional)"), 60),
+            prefs.format === "html" && Switch ? el(Group, {key:"keep"}, el(Switch, {key:"embedImages", label:tr("Keep images in the file"), subLabel:tr("Saves each image inside the HTML so it never expires. Takes longer and makes the file bigger."), value:prefs.embedImages !== false, disabled:busy, onValueChange:value => set({embedImages:!!value})})) : null,
             Switch ? el(Group, {key:"what", title:tr("Include")}, toggle("text", "Message text"), toggle("images", "Images"), toggle("videos", "Videos"), toggle("files", "Files"), toggle("links", "Links"), toggle("embeds", "Embeds"), toggle("reactions", "Reactions")) : null,
             busy && mine && cex.span && cex.span.from > 0 && cex.at ? cexBar() : null,
             status ? el(RN.Text, {key:"status", style:{color:cex.error && !busy ? "#f23f43" : "#b5bac1", fontSize:15, paddingHorizontal:4}}, status) : null,
@@ -22603,7 +22664,7 @@
             footnote("how", "Hold a chat in your DM list, or a text channel in a server, and tap Export chat."),
             footnote("what", "You choose TXT or JSON, the dates, how many messages, and what to include. It goes slowly and you can stop it at any time."),
             footnote("limits", "Reading many messages from your own account is not something Discord allows in bulk, so keep exports small and rare. Use it at your own risk."),
-            footnote("parts", "Long chats are saved as several files, each named with the dates it covers. Media is saved as links, not as the files themselves.")]);
+            footnote("parts", "Long chats are saved as several files, each named with the dates it covers. In an HTML file, images are saved inside it (up to 3 MB each); videos and other files stay as links that stop working after a while.")]);
     }
     // Better role menu's page: a little profile that plays what the feature does (hold a role, tap Copy Role Color).
     const ROLE_PREVIEW_COLOR = "#e67e22";
