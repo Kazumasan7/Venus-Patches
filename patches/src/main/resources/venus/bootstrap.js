@@ -4206,8 +4206,15 @@
             const merged = flat.slice(0, at).concat([arrow], flat.slice(at));
             return Object.assign({}, p, {children:flat === p.children ? merged : [merged]});
         }, 0, () => added);
-        if (added) jumpHeaderPlaced.add(channelId);
-        return added ? next : tree;
+        if (added) { jumpHeaderPlaced.add(channelId); return next; }
+        // No search button to copy (text channels draw theirs elsewhere): put an arrow of our own in front of the whole row.
+        const Press = RN.Pressable || RN.TouchableOpacity || RN.View, Icon = venusIcon(10796, "ArrowLargeUpIcon");
+        if (!Icon) return tree;
+        jumpHeaderPlaced.add(channelId);
+        return el(RN.View, {style:{flexDirection:"row", alignItems:"center"}},
+            el(Press, {key:"venus-jump-top", onPress:() => { haptic("SELECTION"); jumpToStart(channelId); }, hitSlop:8, accessibilityRole:"button",
+                accessibilityLabel:tr("Jump to top"), style:{paddingHorizontal:8, paddingVertical:8}}, el(Icon, {size:"md", color:"#b5bac1"})),
+            tree);
     }
     function jumpButton(orig, self, args) {
         if (React) useSettings("jumpToTop");
