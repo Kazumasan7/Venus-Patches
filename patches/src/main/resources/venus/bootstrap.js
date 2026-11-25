@@ -23451,22 +23451,12 @@
         }
         return [];
     }
-    // setSelectedRange takes either (start, end) or (location, length), and the commands don't say which. So the first time, it's
-    // tried as (start, end); Discord reports where the cursor went, and if that isn't a plain cursor at the place asked for, it's
-    // (location, length), and the call is repeated that way. What was learned is kept for the next time.
+    // setSelectedRange takes (location, length): setSelectedRange(at, at) selected `at` characters from `at`, which swallowed the
+    // closing markers (typing then deleted them). A cursor is a selection of length 0.
     function mdBarCursor(api, at) {
         if (typeof api.setSelectedRange !== "function") return;
-        const call = mode => { try { api.setSelectedRange(at, mode === "length" ? 0 : at); } catch (_) {} };
-        const probe = !mdBar.rangeMode;
-        later(() => {
-            call(mdBar.rangeMode || "end");
-            if (!probe) return;
-            later(() => {
-                if (mdBar.start === at && mdBar.end === at) mdBar.rangeMode = "end";
-                else if (mdBar.start === at) { mdBar.rangeMode = "length"; call("length"); }
-                if (settings.debugLog) dlog("I", "markdown", "cursor placing: " + (mdBar.rangeMode || "unknown") + " (asked " + at + ", got " + mdBar.start + "-" + mdBar.end + ")");
-            }, 120);
-        }, 60);
+        const place = () => { try { api.setSelectedRange(at, 0); } catch (_) {} };
+        later(place, 60);
     }
     function mdBarRun(button) {
         const api = mdBar.api;
