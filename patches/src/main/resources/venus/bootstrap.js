@@ -67,7 +67,7 @@
     if (features.customStatusPresets) selectModules([10842]);
     if (features.textReplace) selectModules([7445, 8013]);
     if (features.radialStatus) selectModules([15194, 5207]);
-    if (features.chatExport) selectModules([10596]);
+    if (features.chatExport) selectModules([10596, 17245, 10780]);
     if (features.dmCategories) selectModules([17165, 2068, 1392, 10596, 17174, 17160]);
     if (features.showMeYourName) selectModules([14015, 5509, 5883, 12827, 10523, 11163, 5502, 7635, 8150]);
     if (features.markdownBar) selectModules([12337, 12818, 12848]);
@@ -107,7 +107,7 @@
         accountSwitcher:false, accountSwitcherYouBar:true, accountSwitcherShare:false, accountSwitcherNotify:true, appIcons:false, nitroThemes:false, customThemes:false, customThemesBackground:true, materialYou:false, materialYouColor:"wallpaper", materialYouTint:"balanced",
         iconPacks:false, iconPacksTheme:true,
         messageHighlight:false, messageHighlightThickness:2, messageHighlightBrightness:50, messageHighlightPingColor:"default", serverInfo:false, serverInfoFriends:true, serverEdit:false,
-        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", textReplace:false, textReplaceRules:"[]", chatExport:false, chatExportPrefs:"{}", radialStatus:false, radialStatusColors:"{}", radialStatusOffline:true, radialStatusChat:true, radialStatusGap:true, radialStatusThick:false, restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
+        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, showPermsOnlyKey:false, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", textReplace:false, textReplaceRules:"[]", textReplaceCode:true, chatExport:false, chatExportPrefs:"{}", radialStatus:false, radialStatusColors:"{}", radialStatusOffline:true, radialStatusChat:true, radialStatusGap:true, radialStatusThick:false, restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
         hypeSquad:false, customIdle:false, customIdleMinutes:10, pauseInvites:false, fastDeleteChannels:false, fastDeleteChannelsConfirm:true, fastDeleteChannelsMenu:true, mutualGroupDMs:false, platformSpoof:false, platformSpoofDevice:"desktop" };
     // The settings every feature starts from, for Reset to defaults on the Backup page.
     let DEFAULT_SETTINGS = null;
@@ -125,7 +125,7 @@
             accountSwitcher: false, accountSwitcherYouBar: true, accountSwitcherShare: false, accountSwitcherNotify: true, appIcons: false, nitroThemes: false, customThemes: false, customThemesBackground: true, materialYou: false, materialYouColor: "wallpaper", materialYouTint: "balanced",
             iconPacks: false, iconPacksTheme: true,
             messageHighlight: false, messageHighlightThickness: 2, messageHighlightBrightness: 50, messageHighlightPingColor: "default", serverInfo: false, serverInfoFriends: true, serverEdit: false,
-            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", textReplace: false, textReplaceRules: "[]", chatExport: false, chatExportPrefs: "{}", radialStatus: false, radialStatusColors: "{}", radialStatusOffline: true, radialStatusChat: true, radialStatusGap: true, radialStatusThick: false, restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
+            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, showPermsOnlyKey: false, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", textReplace: false, textReplaceRules: "[]", textReplaceCode: true, chatExport: false, chatExportPrefs: "{}", radialStatus: false, radialStatusColors: "{}", radialStatusOffline: true, radialStatusChat: true, radialStatusGap: true, radialStatusThick: false, restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
             hypeSquad: false, customIdle: false, customIdleMinutes: 10, pauseInvites: false, fastDeleteChannels: false, fastDeleteChannelsConfirm: true, fastDeleteChannelsMenu: true, mutualGroupDMs: false, platformSpoof: false, platformSpoofDevice: "desktop"
         }));
     }
@@ -21361,6 +21361,17 @@
         const on = enabled("customStatusPresets");
         return settingsBody(ui, [
             !on ? offCard("status", venusIcon(9252, "ReactionIcon"), "customStatusPresets") : null,
+            el(ui.TableRowGroup || RN.View, {key:"quick"},
+                actionRow(ui, "random", "Random preset", "Sets one of your presets, picked at random.", () => {
+                    const list = cspList();
+                    if (!list.length) { reviewToast(ui, "No presets yet", venusIcon(9252, "ReactionIcon")); return; }
+                    haptic("SELECTION");
+                    reviewToast(ui, cspApply(list[Math.floor(Math.random() * list.length)]) ? "Status set" : "Couldn't set the status", venusIcon(9252, "ReactionIcon"));
+                }, !on, false, rowIcon(9252, "ReactionIcon")),
+                actionRow(ui, "clear", "Clear my status", "Removes your custom status.", () => {
+                    haptic("SELECTION");
+                    reviewToast(ui, cspApply({text:"", emoji:null}) ? "Status cleared" : "Couldn't set the status", venusIcon(5148, "TrashIcon"));
+                }, !on, false, rowIcon(5148, "TrashIcon"))),
             el(RN.View, {key:"list", style:{gap:4}}, groupTitle("listTitle", "Your presets"), el(CspSection, {page:true})),
             el(CspAddForm, {key:"form"}),
             footnote("where", "Your presets also show at the bottom of Discord's Custom Status screen. Tap one to set it, or hold it to remove it."),
@@ -21822,6 +21833,18 @@
                 if (!item || item.color === color) return;
                 item.color = color; haptic("SELECTION"); dmcSave(next);
             };
+            const move = step => {
+                const next = dmcList(), at = next.findIndex(other => other.id === current.id), to = at + step;
+                if (at < 0 || to < 0 || to >= next.length) return;
+                next.splice(to, 0, next.splice(at, 1)[0]); haptic("SELECTION");
+                toast(dmcSave(next) ? "Category moved" : "Couldn't save the category");
+            };
+            const empty = () => {
+                const next = dmcList(), item = next.find(other => other.id === current.id);
+                if (!item) return;
+                item.channels = []; haptic("SELECTION");
+                toast(dmcSave(next) ? "Chats taken out" : "Couldn't save the category");
+            };
             const drop = () => confirmAction("Delete category?", "The chats stay where they are. Only the category goes.", "Delete category",
                 () => { dmcSave(dmcList().filter(other => other.id !== current.id)); setEditing(null); setText(""); });
             const swatches = el(RN.View, {key:"swatches", style:{flexDirection:"row", flexWrap:"wrap", gap:10, paddingHorizontal:16}},
@@ -21838,6 +21861,10 @@
                         label:(current.channels.indexOf(String(channel.id)) >= 0 ? "\u2713 " : "") + dmcName(channel),
                         onPress:() => { haptic("SELECTION"); dmcToggle(current.id, channel.id); }}))) : footnote("none", "No chats yet")),
                 footnote("how", "Tap a chat to add it to this category or take it out. A chat can only be in one category."),
+                el(Group, {key:"arrange", title:tr("Arrange")},
+                    actionRow(ui, "up", "Move up", null, () => move(-1), false, false, rowIcon(9365, "TagIcon")),
+                    actionRow(ui, "down", "Move down", null, () => move(1), false, false, rowIcon(9365, "TagIcon")),
+                    actionRow(ui, "empty", "Take all chats out", "The category stays, with no chats in it.", empty, !current.channels.length, false, rowIcon(5148, "TrashIcon"))),
                 el(Group, {key:"danger"}, actionRow(ui, "delete", "Delete category", null, drop, false, true, rowIcon(5148, "TrashIcon")))]);
         }
         const add = () => {
@@ -21913,14 +21940,18 @@
         const next = rule.regex ? text.replace(re, rule.to.replace(/\$\{(\w+)\}/g, "$<$1>")) : text.replace(re, () => rule.to);
         return next.length > RTR_TEXT ? text : next;
     }
-    // text with every rule of that kind applied, in order.
-    // skipSent: leave out the rules that already changed this text when it was sent (your own messages), so nothing is replaced twice.
+    // text with every rule of that kind applied, in order. Code blocks and `inline code` are left alone unless "Skip code blocks" is off.
     function rtrApply(text, kind, skipSent) {
         if (typeof text !== "string" || !text || text.length > RTR_TEXT) return text;
+        const list = rtrList(), code = settings.textReplaceCode !== false && text.indexOf("`") >= 0 ? text.split(/(```[\s\S]*?```|`[^`\n]+`)/) : null;
         let out = text;
-        const list = rtrList();
-        for (let i = 0; i < list.length; i++) { const rule = list[i]; if (rule.on && rule[kind] && !(skipSent && rule.outgoing)) out = rtrOne(out, rule); }
-        return out;
+        for (let i = 0; i < list.length; i++) {
+            const rule = list[i];
+            if (!rule.on || !rule[kind] || skipSent && rule.outgoing) continue;
+            if (code) { for (let p = 0; p < code.length; p += 2) code[p] = rtrOne(code[p], rule); }
+            else out = rtrOne(out, rule);
+        }
+        return code ? code.join("") : out;
     }
     function rtrActive(kind) { return enabled("textReplace") && rtrList().some(rule => rule.on && rule[kind]); }
     function rtrSend(orig, self, args) {
@@ -22030,17 +22061,33 @@
             close();
         };
         const remove = () => { haptic("IMPACT_LIGHT"); rtrSave(rtrList().filter(item => item.id !== rule.id)); close(); };
+        const duplicate = () => {
+            const list = rtrList().slice(), at = list.findIndex(item => item.id === rule.id);
+            if (at < 0 || list.length >= RTR_MAX) return;
+            haptic("SELECTION"); list.splice(at + 1, 0, Object.assign({}, old, {id:Math.random().toString(36).slice(2, 8)}));
+            rtrSave(list); reviewToast(ui, "Rule duplicated", venusIcon(7144, "CircleCheckIcon")); close();
+        };
+        // Rules run from the top down, so their order matters: move one a step up or down.
+        const move = step => {
+            const list = rtrList().slice(), at = list.findIndex(item => item.id === rule.id), to = at + step;
+            if (at < 0 || to < 0 || to >= list.length) return;
+            haptic("SELECTION"); const item = list.splice(at, 1)[0]; list.splice(to, 0, item); rtrSave(list);
+            reviewToast(ui, "Rule moved", venusIcon(7144, "CircleCheckIcon"));
+        };
         const header = ui.Header ? el(ui.Header, {title:tr(old ? "Edit rule" : "New rule"), trailing:ui.Close ? el(ui.Close, {onPress:close}) : undefined}) : null;
         const toggle = (key, label, hint) => Switch ? el(Switch, {key, label:tr(label), subLabel:hint ? tr(hint) : undefined, value:!!rule[key], onValueChange:value => set({[key]:!!value})}) : null;
         const content = el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:12}},
             el(RN.View, {style:{gap:8}}, rtrField(ui, "from", rule.from, from => set({from}), tr("Find"), RTR_FROM), rtrField(ui, "to", rule.to, to => set({to}), tr("Replace with"), RTR_TO)),
             broken ? footnote("broken", "That isn't a valid regex.") : null,
             footnote("anywhere", "A rule works anywhere inside the text, even in the middle of another word. To match only a whole message, turn on Regex and write ^word$ in Find."),
-            Switch ? el(Group, {key:"how"}, toggle("regex", "Regex", "Read Find as a regular expression. Use $1 in Replace with for a group."), toggle("ignoreCase", "Ignore case")) : null,
+            Switch ? el(Group, {key:"how"}, toggle("on", "Rule is on"), toggle("regex", "Regex", "Read Find as a regular expression. Use $1 in Replace with for a group."), toggle("ignoreCase", "Ignore case")) : null,
             Switch ? el(Group, {key:"where", title:tr("Where")}, toggle("outgoing", "Outgoing", "Changed before it is sent, so everyone sees the new words. Turn on only this one to change what you send."),
                 toggle("shown", "Shown", "Changes how messages look on this phone only. Nobody else sees it."), toggle("embeds", "Embeds", "Same as Shown, for the titles and texts of embeds.")) : null,
             footnote("everyone", "For everyone to see the new words, turn on Outgoing and turn off Shown and Embeds."),
             Row ? el(Group, {key:"actions"}, el(Row, {key:"save", label:tr("Save"), icon:rowIcon(7144, "CircleCheckIcon"), disabled:!rule.from || broken, onPress:save}),
+                old ? el(Row, {key:"duplicate", label:tr("Duplicate rule"), icon:rowIcon(5141, "CopyIcon"), onPress:duplicate}) : null,
+                old ? el(Row, {key:"up", label:tr("Move up"), onPress:() => move(-1)}) : null,
+                old ? el(Row, {key:"down", label:tr("Move down"), onPress:() => move(1)}) : null,
                 old ? el(Row, {key:"remove", label:tr("Delete rule"), icon:rowIcon(5148, "TrashIcon"), variant:"danger", onPress:remove}) : null) : null);
         return serverEditScroll(ui, header, content);
     }
@@ -22064,6 +22111,7 @@
     function TextReplaceSettings() {
         useSettings("textReplace");
         useSettings("textReplaceRules");
+        useSettings("textReplaceCode");
         const ui = reviewUI();
         const [sample, setSample] = React.useState("");
         if (!React || !RN) return null;
@@ -22079,6 +22127,7 @@
             Row ? el(Group, {key:"actions"}, el(Row, {key:"add", label:tr("Add rule"), icon:rowIcon(10621, "PlusLargeIcon"), onPress:() => { haptic("SELECTION"); rtrOpen(null); }}),
                 el(Row, {key:"import", label:tr("Import from clipboard"), subLabel:tr("Your own rules, or rules exported from Aliucord's TextReplace."), icon:rowIcon(6393, "ClipboardListIcon"), onPress:rtrImport}),
                 list.length ? el(Row, {key:"export", label:tr("Copy rules"), icon:rowIcon(5141, "CopyIcon"), onPress:rtrExport}) : null) : null,
+            ui.TableSwitchRow ? el(Group, {key:"options"}, switchRow(ui.TableSwitchRow, "textReplaceCode", "Skip code blocks", "Text inside code blocks and `inline code` is left alone.")) : null,
             el(RN.View, {key:"try", style:{gap:8}}, groupTitle("tryTitle", "Try it"),
                 el(RN.View, {style:{paddingHorizontal:16, gap:8}}, rtrField(ui, "sample", sample, setSample, tr("Type a message to test"), 300),
                     sample ? (Text ? el(Text, {variant:"text-md/medium", color:"text-default"}, shownText || "​") : el(RN.Text, {style:{color:"#dbdee1", fontSize:15}}, shownText || "​")) : null)),
@@ -22230,8 +22279,8 @@
     // back, one page of 100 at a time, oldest first, slowly (about one page every 1-1.6 s), waits as long as Discord asks when it says
     // slow down, and can be stopped at any moment. Messages are written to files as it goes (a part about every 1.2 million characters),
     // so a long chat never sits whole in memory. The parts are then saved through Android's Save screen.
-    const CEX_PAGE = 100, CEX_PART = 1200000, CEX_PART_IMAGES = 6000000, CEX_IMAGE_CAP = 3145728, CEX_EPOCH = 1420070400000;
-    const cex = {images:0, imageFailed:0, avatars:new Map(), loaded:false, at:0, span:null, running:false, stop:false, cancel:false, phase:"", count:0, last:"", error:"", parts:[], channelId:"", saved:0, prefs:{embedImages:true, keyword:"", format:"txt", range:"all", limit:5000, from:"", to:"",
+    const CEX_PAGE = 100, CEX_PART = 1200000, CEX_PART_IMAGES = 6000000, CEX_IMAGE_CAP = 3145728, CEX_VIDEO_CAP = 8388608, CEX_EPOCH = 1420070400000;
+    const cex = {images:0, imageFailed:0, avatars:new Map(), loaded:false, at:0, span:null, running:false, stop:false, cancel:false, phase:"", count:0, last:"", error:"", parts:[], channelId:"", saved:0, prefs:{author:"all", embedImages:true, embedVideos:false, partSize:"normal", keyword:"", format:"txt", range:"all", limit:5000, from:"", to:"",
         text:true, images:true, videos:true, files:true, links:true, embeds:true, reactions:true}};
     // What you chose last time, kept as JSON: only values that make sense are accepted.
     function cexPrefsText(value) {
@@ -22245,7 +22294,9 @@
         if (typeof raw.from === "string") out.from = raw.from.slice(0, 10);
         if (typeof raw.to === "string") out.to = raw.to.slice(0, 10);
         if (typeof raw.keyword === "string") out.keyword = raw.keyword.slice(0, 60);
-        ["text", "images", "videos", "files", "links", "embeds", "reactions", "embedImages"].forEach(k => { if (typeof raw[k] === "boolean") out[k] = raw[k]; });
+        if (raw.partSize === "normal" || raw.partSize === "large" || raw.partSize === "one") out.partSize = raw.partSize;
+        if (raw.author === "all" || raw.author === "me" || raw.author === "others") out.author = raw.author;
+        ["text", "images", "videos", "files", "links", "embeds", "reactions", "embedImages", "embedVideos"].forEach(k => { if (typeof raw[k] === "boolean") out[k] = raw[k]; });
         return JSON.stringify(out);
     }
     function cexLoadPrefs() {
@@ -22263,10 +22314,12 @@
         return (BigInt(Math.floor(at)) * BigInt(4194304)).toString();
     }
     function cexDay(text, end) {
-        const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(text).trim());
+        const m = /^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})$/.exec(String(text).trim());
         if (!m) return null;
-        const ms = new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]), end ? 23 : 0, end ? 59 : 0, end ? 59 : 0, end ? 999 : 0).getTime();
-        return isNaN(ms) ? null : ms;
+        const y = Number(m[1]), mo = Number(m[2]), d = Number(m[3]), date = new Date(y, mo - 1, d, end ? 23 : 0, end ? 59 : 0, end ? 59 : 0, end ? 999 : 0);
+        // 2026-2-31 would roll over to March: not a date.
+        if (isNaN(date.getTime()) || date.getMonth() !== mo - 1 || date.getDate() !== d) return null;
+        return date.getTime();
     }
     // The span asked for, as {from, to} in ms ({0, Infinity} for everything), or null when a custom date isn't a date.
     function cexSpan(prefs) {
@@ -22379,7 +22432,9 @@
             if (item.text) html += '<div class="text" dir="auto">' + cexLink(item.text) + "</div>";
             item.links.forEach(url => { html += '<div class="text"><a href="' + cexEsc(url) + '">' + cexEsc(url) + "</a></div>"; });
             item.attachments.forEach(file => {
-                html += file.kind === "images" ? '<a href="' + cexEsc(file.url) + '"><img class="media" loading="lazy" src="' + cexEsc(file.data || file.url) + '" alt="' + cexEsc(file.name) + '"></a>' :
+                html += file.kind === "videos" ? '<video class="media" controls preload="metadata" src="' + cexEsc(file.data || file.url) + '"></video><div class="file">video: <a href="' + cexEsc(file.url) + '">' + cexEsc(file.name) + "</a> (" + cexSize(file.size) + ")</div>" :
+                    /\.(mp3|ogg|oga|wav|m4a|aac|opus|flac)(\?|$)/i.test(String(file.name || file.url)) ? '<audio controls preload="none" src="' + cexEsc(file.url) + '"></audio><div class="file">audio: <a href="' + cexEsc(file.url) + '">' + cexEsc(file.name) + "</a> (" + cexSize(file.size) + ")</div>" :
+                    file.kind === "images" ? '<a href="' + cexEsc(file.url) + '"><img class="media" loading="lazy" src="' + cexEsc(file.data || file.url) + '" alt="' + cexEsc(file.name) + '"></a>' :
                     '<div class="file">' + file.kind.replace(/s$/, "") + ': <a href="' + cexEsc(file.url) + '">' + cexEsc(file.name) + "</a> (" + cexSize(file.size) + ")</div>";
             });
             item.stickers.forEach(name => { html += '<div class="file">sticker: ' + cexEsc(name) + "</div>"; });
@@ -22390,7 +22445,7 @@
         out.push('</ul><div id="none">No match</div><script>' + CEX_HTML_JS + "</script></body></html>");
         return out.join("\n");
     }
-    const CEX_MIME = {png:"image/png", jpg:"image/jpeg", jpeg:"image/jpeg", gif:"image/gif", webp:"image/webp", bmp:"image/bmp", avif:"image/avif", heic:"image/heic"};
+    const CEX_MIME = {png:"image/png", jpg:"image/jpeg", jpeg:"image/jpeg", gif:"image/gif", webp:"image/webp", bmp:"image/bmp", avif:"image/avif", heic:"image/heic", mp4:"video/mp4", m4v:"video/mp4", mov:"video/quicktime", webm:"video/webm", mkv:"video/x-matroska"};
     function cexBase64(bytes) {
         const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", parts = [];
         for (let i = 0; i < bytes.length; i += 3) {
@@ -22401,23 +22456,24 @@
     }
     // One image as a data: address (so the file keeps it for good), or null when it can't be read or is too big. Goes through the phone's
     // own network, to Discord's CDN, one image at a time.
-    async function cexFetchData(url, name) {
+    async function cexFetchData(url, name, cap) {
+        cap = cap || CEX_IMAGE_CAP;
         if (typeof global.fetch !== "function") return null;
         const response = await global.fetch(url, {method:"GET", credentials:"omit"});
         if (!response || !response.ok) return null;
         const length = Number(response.headers && typeof response.headers.get === "function" ? response.headers.get("content-length") : 0);
-        if (length && length > CEX_IMAGE_CAP) return null;
+        if (length && length > cap) return null;
         const ext = (/\.([a-z0-9]+)(?:\?|$)/i.exec(name || url) || [])[1], guess = CEX_MIME[String(ext || "").toLowerCase()] || "image/png";
         if (typeof response.blob === "function" && typeof global.FileReader === "function") {
             const blob = await response.blob();
-            if (!blob || blob.size > CEX_IMAGE_CAP) return null;
+            if (!blob || blob.size > cap) return null;
             const data = await new Promise(resolve => { const reader = new global.FileReader(); reader.onloadend = () => resolve(typeof reader.result === "string" ? reader.result : null); reader.onerror = () => resolve(null); reader.readAsDataURL(blob); });
             if (!data) return null;
             return /^data:(application\/octet-stream|;)/.test(data) ? "data:" + guess + data.slice(data.indexOf(";")) : data;
         }
         if (typeof response.arrayBuffer === "function") {
             const buffer = await response.arrayBuffer();
-            if (!buffer || buffer.byteLength > CEX_IMAGE_CAP) return null;
+            if (!buffer || buffer.byteLength > cap) return null;
             return "data:" + guess + ";base64," + cexBase64(new Uint8Array(buffer));
         }
         return null;
@@ -22426,10 +22482,11 @@
     async function cexEmbed(item) {
         for (let i = 0; i < item.attachments.length; i++) {
             const file = item.attachments[i];
-            if (file.kind !== "images" || cex.stop || cex.cancel) continue;
+            const video = file.kind === "videos" && cex.prefs.embedVideos === true;
+            if ((file.kind !== "images" && !video) || cex.stop || cex.cancel) continue;
             cex.phase = "images"; notify("chatExport");
             let data = null;
-            try { data = await cexFetchData(file.url, file.name); } catch (_) { data = null; }
+            try { data = await cexFetchData(file.url, file.name, video ? CEX_VIDEO_CAP : CEX_IMAGE_CAP); } catch (_) { data = null; }
             if (data) { file.data = data; cex.images++; } else cex.imageFailed++;
             await cexSleep(250 + Math.floor(Math.random() * 200));
         }
@@ -22502,7 +22559,7 @@
         return cex.prefs.limit || Infinity;
     }
     async function cexRun(channelId) {
-        const prefs = Object.assign({}, cex.prefs), embed = cex.prefs.format === "html" && cex.prefs.embedImages !== false, partSize = embed ? CEX_PART_IMAGES : CEX_PART, keyword = String(cex.prefs.keyword || "").trim().toLowerCase(), names = inspectedExport(2068, "default"), span = cexSpan(prefs), info = Object.assign({id:channelId}, cexName(channelId)), limit = cexLimits();
+        const prefs = Object.assign({}, cex.prefs), me = currentUser(), mine = me && me.id && prefs.author !== "all" ? me.id : null, embed = cex.prefs.format === "html" && cex.prefs.embedImages !== false, partSize = (embed ? (cex.prefs.embedVideos === true ? CEX_PART_IMAGES * 2 : CEX_PART_IMAGES) : CEX_PART) * (prefs.partSize === "one" ? 30 : prefs.partSize === "large" ? 4 : 1), keyword = String(cex.prefs.keyword || "").trim().toLowerCase(), names = inspectedExport(2068, "default"), span = cexSpan(prefs), info = Object.assign({id:channelId}, cexName(channelId)), limit = cexLimits();
         cex.running = true; cex.stop = false; cex.cancel = false; cex.error = ""; cex.count = 0; cex.images = 0; cex.imageFailed = 0; cex.avatars = new Map(); cex.last = ""; cex.at = 0; cex.span = span; cex.parts = []; cex.saved = 0; cex.channelId = channelId; cex.phase = "reading";
         notify("chatExport");
         const buffer = {items:[], size:0};
@@ -22542,6 +22599,7 @@
                     if (at < span.from) continue;
                     scanned++;
                     if (keyword && String(message.content || "").toLowerCase().indexOf(keyword) < 0) continue;
+                    if (mine && (prefs.author === "me") !== (message.author && message.author.id === mine) && prefs.author !== "all") continue;
                     const item = cexKeep(message, prefs, names);
                     if (!item) continue;
                     if (embed) await cexEmbed(item);
@@ -22594,23 +22652,23 @@
         if (!cex.running) { cex.error = ""; cex.phase = cex.phase === "done" ? "" : cex.phase; cex.saved = 0; }
         try { ui.showSheet({key:CEX_SHEET, content:el(ChatExportSheet, {channelId}), stackingBehavior:"stack"}); } catch (_) {}
     }
-    const cexSheet = sheetInnerHook(function (tree, props) {
-        if (!enabled("chatExport") || !React || !tree || !props) return tree;
-        const channelId = props.channelId || props.channel && props.channel.id;
-        if (!channelId) return tree;
-        let channel = null, store = inspectedExport(2068, "default");
-        try { channel = store && store.getChannel(String(channelId)); } catch (_) {}
-        // DMs and group DMs, text and announcement channels.
-        if (!channel || (channel.type !== 0 && channel.type !== 1 && channel.type !== 3 && channel.type !== 5)) return tree;
-        return sheetAddRow(tree, props, "venus-chat-export", tr("Export chat"), venusIcon(12367, "SaveIcon"), () => cexOpen(String(channel.id)), "ChannelLongPress-" + channelId);
-    });
-    // How far through the dates it has read: a thin bar, only when the dates have a start.
-    function cexBar() {
-        const span = cex.span, end = span.to === Infinity ? Date.now() : span.to, total = Math.max(1, end - span.from);
-        const percent = Math.max(2, Math.min(100, Math.round((cex.at - span.from) / total * 100)));
-        return el(RN.View, {key:"bar", style:{height:6, borderRadius:3, backgroundColor:"#4e5058", overflow:"hidden", marginHorizontal:4}},
-            el(RN.View, {style:{height:6, width:percent + "%", borderRadius:3, backgroundColor:"#23a55a"}}));
+    // The menu row, for DMs and group DMs, text and announcement channels (the channel menu) and threads and forum posts (their own menus).
+    function cexHook(sheetKey, types) {
+        return sheetInnerHook(function (tree, props) {
+            if (!enabled("chatExport") || !React || !tree || !props) return tree;
+            const given = props.channel || props.thread || props.post, channelId = props.channelId || given && given.id;
+            if (!channelId) return tree;
+            let channel = null, store = inspectedExport(2068, "default");
+            try { channel = store && store.getChannel(String(channelId)); } catch (_) {}
+            if (!channel || types.indexOf(channel.type) < 0) return tree;
+            return sheetAddRow(tree, props, "venus-chat-export", tr("Export chat"), venusIcon(12367, "SaveIcon"), () => cexOpen(String(channel.id)), sheetKey(channelId));
+        });
     }
+    const cexSheet = cexHook(id => "ChannelLongPress-" + id, [0, 1, 3, 5]);
+    const cexThreadSheet = cexHook(() => "ThreadLongPressActionSheet", [10, 11, 12]);
+    const cexPostSheet = cexHook(() => "ForumPostLongPressActionSheet", [10, 11, 12]);
+    const CEX_PART_SIZES = ["normal", "large", "one"], CEX_PART_LABEL = {normal:"Normal parts", large:"Larger parts", one:"One big file"};
+    const CEX_AUTHORS = ["all", "me", "others"], CEX_AUTHOR_LABEL = {all:"Everyone", me:"Only me", others:"Only others"};
     function cexCycle(list, value) { return list[(list.indexOf(value) + 1) % list.length]; }
     function cexLimitLabel(limit) { return limit ? pl(limit, "{n} message", "{n} messages") : tr("No limit"); }
     function ChatExportSheet(props) {
@@ -22639,10 +22697,12 @@
                 Row ? el(Row, {key:"chat", label:info.title, subLabel:tr("Chat to export"), icon:rowIcon(12367, "SaveIcon")}) : null,
                 Row ? el(Row, {key:"format", label:tr("Format"), subLabel:prefs.format === "json" ? "JSON" : prefs.format === "html" ? "HTML" : "TXT", disabled:busy, onPress:() => { haptic("SELECTION"); set({format:cexCycle(["txt", "html", "json"], prefs.format)}); }}) : null,
                 Row ? el(Row, {key:"range", label:tr("Dates"), subLabel:tr(CEX_RANGE_LABEL[prefs.range]), disabled:busy, onPress:() => { haptic("SELECTION"); set({range:cexCycle(CEX_RANGES, prefs.range)}); }}) : null,
+                Row ? el(Row, {key:"author", label:tr("Messages from"), subLabel:tr(CEX_AUTHOR_LABEL[prefs.author || "all"]), disabled:busy, onPress:() => { haptic("SELECTION"); set({author:cexCycle(CEX_AUTHORS, prefs.author || "all")}); }}) : null,
                 Row ? el(Row, {key:"limit", label:tr("Up to"), subLabel:cexLimitLabel(prefs.limit), disabled:busy, onPress:() => { haptic("SELECTION"); set({limit:cexCycle(CEX_LIMITS, prefs.limit)}); }}) : null),
             prefs.range === "custom" ? el(RN.View, {key:"custom", style:{gap:8}}, rtrField(ui, "from", prefs.from, v => set({from:v}), tr("From (YYYY-MM-DD)"), 10), rtrField(ui, "to", prefs.to, v => set({to:v}), tr("To (YYYY-MM-DD)"), 10)) : null,
             rtrField(ui, "keyword", prefs.keyword || "", v => set({keyword:v}), tr("Only messages containing (optional)"), 60),
-            prefs.format === "html" && Switch ? el(Group, {key:"keep"}, el(Switch, {key:"embedImages", label:tr("Keep images in the file"), subLabel:tr("Saves each image inside the HTML so it never expires. Takes longer and makes the file bigger."), value:prefs.embedImages !== false, disabled:busy, onValueChange:value => set({embedImages:!!value})})) : null,
+            Row ? el(Row, {key:"partSize", label:tr("File size"), subLabel:tr(CEX_PART_LABEL[prefs.partSize || "normal"]), disabled:busy, onPress:() => { haptic("SELECTION"); set({partSize:cexCycle(CEX_PART_SIZES, prefs.partSize || "normal")}); }}) : null,
+            prefs.format === "html" && Switch ? el(Group, {key:"keep"}, el(Switch, {key:"embedVideos", label:tr("Keep small videos"), subLabel:tr("Saves videos under 8 MB inside the HTML too. Bigger videos stay as links."), value:prefs.embedVideos === true, disabled:busy || prefs.embedImages === false, onValueChange:value => set({embedVideos:!!value})}), el(Switch, {key:"embedImages", label:tr("Keep images in the file"), subLabel:tr("Saves each image inside the HTML so it never expires. Takes longer and makes the file bigger."), value:prefs.embedImages !== false, disabled:busy, onValueChange:value => set({embedImages:!!value})})) : null,
             Switch ? el(Group, {key:"what", title:tr("Include")}, toggle("text", "Message text"), toggle("images", "Images"), toggle("videos", "Videos"), toggle("files", "Files"), toggle("links", "Links"), toggle("embeds", "Embeds"), toggle("reactions", "Reactions")) : null,
             busy && mine && cex.span && cex.span.from > 0 && cex.at ? cexBar() : null,
             status ? el(RN.Text, {key:"status", style:{color:cex.error && !busy ? "#f23f43" : "#b5bac1", fontSize:15, paddingHorizontal:4}}, status) : null,
@@ -22744,6 +22804,8 @@
         // Better role menu: Discord's own menu has Copy Role ID (and the icon when there is one). Without Developer Mode it has nothing.
         if (better) {
             if (!native) extra.push({label:tr("Copy Role ID"), icon:icon ? venusIcon(5141, "CopyIcon") : undefined, onPress:() => later(() => roleCopy(id, "Copied"), 60)});
+            if (/^\d{5,25}$/.test(id)) extra.push({label:tr("Copy Role Mention"), icon:icon ? venusIcon(5141, "CopyIcon") : undefined, onPress:() => later(() => roleCopy("<@&" + id + ">", "Copied"), 60)});
+            if (typeof role.name === "string" && role.name) extra.push({label:tr("Copy Role Name"), icon:icon ? venusIcon(5141, "CopyIcon") : undefined, onPress:() => later(() => roleCopy(role.name, "Copied"), 60)});
             const color = roleColorText(role);
             if (color) extra.push({label:tr("Copy Role Color"), icon:icon ? venusIcon(5141, "CopyIcon") : undefined, onPress:() => later(() => roleCopy(color, "Copied"), 60)});
             if (native < 2 && typeof role.icon === "string" && /^[\w-]{3,64}$/.test(role.icon))
@@ -23011,14 +23073,22 @@
         useSettings("showMeYourName");
         // The order and each place are separate settings; reading them here redraws the page when one changes.
         useSettings("showMeYourNameOrder");
+        useSettings("showMeYourNameCustom");
+        useSettings("showMeYourNameMode");
+        SMYN_SOURCES.forEach(source => useSettings("showMeYourNameUse" + source.charAt(0).toUpperCase() + source.slice(1)));
         SMYN_PLACES.forEach(place => useSettings("showMeYourName" + place[0]));
         const ui = reviewUI();
         if (!React || !RN) return null;
         const on = enabled("showMeYourName"), Group = ui.TableRowGroup || RN.View, Switch = ui.TableSwitchRow, Row = ui.TableRow;
         const Icon = venusIcon(8640, "UserIcon");
         const order = smynOrderText(settings.showMeYourNameOrder).split(",");
+        // What your own name looks like with these choices, and who has a custom name.
+        let sample = null, customIds = [];
+        try { sample = smynName(currentUser(), null); customIds = Object.keys(smynCustomMap()); } catch (_) {}
+        const customName = id => { try { const user = smynStores().users.getUser(id); return user && (user.globalName || user.username) || id; } catch (_) { return id; } };
         const groups = [
             !on ? offCard("status", Icon, "showMeYourName") : null,
+            sample && Row ? el(Group, {key:"sample", title:tr("Preview")}, el(Row, {key:"sampleRow", label:sample, subLabel:tr("How your own name looks with these choices."), icon:Icon})) : null,
             el(Group, {key:"order", title:tr("Order, first one found wins")},
                 order.map((source, index) => Row ? el(Row, {key:source, label:(index + 1) + ". " + tr(SMYN_LABELS[source][0]), subLabel:tr(SMYN_LABELS[source][1]),
                     disabled:!on, onPress:() => smynMove(source)}) : null)),
@@ -23026,6 +23096,10 @@
             el(Group, {key:"use", title:tr("Names to use")},
                 SMYN_SOURCES.map(source => switchRow(Switch, "showMeYourNameUse" + source.charAt(0).toUpperCase() + source.slice(1), SMYN_LABELS[source][0], SMYN_LABELS[source][1]))),
             footnote("useNote", "A name you turn off here is never shown."),
+            customIds.length && Row ? el(Group, {key:"customs", title:tr("Custom names")},
+                customIds.slice(0, 50).map(id => el(Row, {key:id, label:smynCustomMap()[id], subLabel:customName(id), icon:rowIcon(10023, "PencilIcon"), disabled:!on,
+                    onPress:() => confirmAction("Remove custom name?", "The person goes back to their normal name.", "Remove", () => { haptic("SELECTION"); smynCustomSet(id, ""); })})).concat([
+                    actionRow(ui, "clearAll", "Remove all custom names", null, () => confirmAction("Remove all custom names?", "Everyone goes back to their normal name.", "Remove all", () => { haptic("SELECTION"); setSetting("showMeYourNameCustom", "{}"); }), !on, true, rowIcon(5148, "TrashIcon"))])) : null,
             footnote("customNote", "Open a person's \u22ef menu and tap Custom name to give anyone a name only you see."),
             radioGroup(ui, "mode", "How many names", "showMeYourNameMode", on, [["all", "All of them, in this order", "For example: Nick [Display name] (@username)"],
                 ["first", "Only the first one found", "Shows just one name, the first the person has."]]),
@@ -23085,6 +23159,7 @@
     function showPermsView(info) {
         let names = info.admin && settings.showPermsOnlyAdmin ? ["ADMINISTRATOR"] : (info.owner || info.admin) && !settings.showPermsAdminAll ? info.real : info.granted;
         const rank = name => { const from = info.sources[name]; return from && from.length ? from[0].position : -1; };
+        if (settings.showPermsOnlyKey) names = names.filter(name => showPermsElevated(name));
         names = names.slice().sort((a, b) => rank(b) - rank(a));
         return settings.showPermsInvert ? names.reverse() : names;
     }
@@ -23113,6 +23188,8 @@
                 info.owner || info.admin ? footnote("all", info.owner ? "Server owner: can do everything here." : "Administrator: can do everything here.") : null,
                 el(Group, {key:"list"}, names.map(name => el(Row, {key:name, label:showPermsName(name), subLabel:showPermsElevated(name) ? tr("Elevated") : undefined,
                     icon:rowIcon(showPermsElevated(name) ? 10733 : 6473, showPermsElevated(name) ? "ShieldIcon" : "CheckmarkLargeIcon"), onPress:() => { haptic("SELECTION"); setPerm(name); }}))),
+                Row ? el(Group, {key:"copy"}, el(Row, {key:"copyRow", label:tr("Copy permissions"), icon:venusIcon(5141, "CopyIcon"),
+                    onPress:() => { haptic("SELECTION"); roleCopy(names.map(showPermsName).join(", "), "Copied"); }})) : null,
                 footnote("tap", "Tap a permission to see which roles give it."),
                 info.owner || info.admin ? null : footnote("note", "Only the server's role permissions. Channel settings can change them."));
         }
@@ -23148,7 +23225,7 @@
     }
     function ShowPermsCard(props) {
         useSettings("showPerms");
-        ["Invert", "OnlyAdmin", "AdminAll", "Dot", "Count"].forEach(key => useSettings("showPerms" + key));
+        ["Invert", "OnlyAdmin", "AdminAll", "Dot", "Count", "OnlyKey"].forEach(key => useSettings("showPerms" + key));
         const s = useShowPermsStyles();
         let info = null;
         try { info = enabled("showPerms") ? showPermsList(props.guildId, props.userId) : null; } catch (_) {}
@@ -23169,7 +23246,7 @@
     }
     function ShowPermsSettings() {
         useSettings("showPerms");
-        ["Invert", "OnlyAdmin", "AdminAll", "Dot", "Count"].forEach(key => useSettings("showPerms" + key));
+        ["Invert", "OnlyAdmin", "AdminAll", "Dot", "Count", "OnlyKey"].forEach(key => useSettings("showPerms" + key));
         const ui = reviewUI();
         if (!React || !RN) return null;
         const on = enabled("showPerms"), Group = ui.TableRowGroup || RN.View, Switch = ui.TableSwitchRow;
@@ -23181,6 +23258,7 @@
             el(Group, {key:"look", title:tr("Look")},
                 switchRow(Switch, "showPermsInvert", "Invert order", "List permissions from the lowest role to the highest."),
                 switchRow(Switch, "showPermsDot", "Show role dot", "A dot in the color of the highest role that gives the permission."),
+                switchRow(Switch, "showPermsOnlyKey", "Only moderation and management", "Hide ordinary permissions like Send messages. Only the ones marked in red stay."),
                 switchRow(Switch, "showPermsCount", "Show permission count", "Put the number of permissions next to the title.")),
             footnote("mark", "Permissions that can moderate or manage a server are marked in red."),
             footnote("tap", "Tap a permission on a profile to see which roles give it.")]);
@@ -23296,6 +23374,7 @@
     const MD_BUTTONS = [
         {id:"bold", label:"B", text:{fontWeight:"700"}, wrap:["**", "**"]},
         {id:"italic", label:"I", text:{fontStyle:"italic"}, wrap:["*", "*"]},
+        {id:"bolditalic", label:"BI", text:{fontWeight:"700", fontStyle:"italic"}, wrap:["***", "***"]},
         {id:"underline", label:"U", text:{textDecorationLine:"underline"}, wrap:["__", "__"]},
         {id:"strike", label:"S", text:{textDecorationLine:"line-through"}, wrap:["~~", "~~"]},
         {id:"spoiler", label:"||", wrap:["||", "||"]},
@@ -23311,7 +23390,9 @@
         {id:"quote", label:">", line:"> ", kind:"quote"},
         null,
         {id:"block", label:"{ }", block:true},
-        {id:"link", label:"[ ]", link:true}];
+        {id:"link", label:"[ ]", link:true},
+        null,
+        {id:"clear", label:"Tx", clear:true}];
     const MD_STRIP = {heading:/^(?:#{1,3} |-# )/, list:/^(?:[-*] |\d+\. )/, numbers:/^(?:[-*] |\d+\. )/, quote:/^> /};
     function mdBarWrapEdits(open, close, text, a, b) {
         const sel = text.slice(a, b), ol = open.length, cl = close.length;
@@ -23349,6 +23430,16 @@
         if (button.wrap) return mdBarWrapEdits(button.wrap[0], button.wrap[1], text, a, b);
         if (button.line) return mdBarLineEdits(button, text, a, b);
         const done = (edits, cursor) => { edits.cursor = cursor; return edits; };
+        if (button.clear) {
+            // Takes the formatting off the selection, or off the whole line when nothing is selected.
+            let from = a, to = b;
+            if (a === b) { from = text.lastIndexOf("\n", a - 1) + 1; to = text.indexOf("\n", a); if (to < 0) to = text.length; }
+            const old = text.slice(from, to);
+            const bare = old.split("\n").map(line => line.replace(/^(?:#{1,3} |-# |> |[-*] |\d+\. )/, "")).join("\n")
+                .replace(/(\*{1,3}|__|~~|\|\||`)([^\n]*?)\1/g, "$2");
+            if (bare === old) return [];
+            return done([{location:from, length:to - from, text:bare}], from + bare.length);
+        }
         if (button.block) {
             if (sel) return done([{location:a, length:b - a, text:"```\n" + sel + "\n```"}], a + sel.length + 8);
             return done([{location:a, length:0, text:"\n```"}, {location:a, length:0, text:"```\n"}], a + 4);
@@ -25207,8 +25298,14 @@
                 if (features.dmCategories) exports = hookComponent(exports, dmcSheet);
                 if (features.chatExport) exports = hookComponent(exports, cexSheet);
                 return features.viewRaw ? hookComponent(exports, viewRawChannelMenu) : exports;
-            case 17245: return features.viewRaw ? hookComponent(exports, viewRawThreadMenu) : exports;
-            case 10780: return features.viewRaw ? hookComponent(exports, viewRawPostMenu) : exports;
+            case 17245: {
+                const menu = features.chatExport ? hookComponent(exports, cexThreadSheet) : exports;
+                return features.viewRaw ? hookComponent(menu, viewRawThreadMenu) : menu;
+            }
+            case 10780: {
+                const menu = features.chatExport ? hookComponent(exports, cexPostSheet) : exports;
+                return features.viewRaw ? hookComponent(menu, viewRawPostMenu) : menu;
+            }
             case 10842: return features.customStatusPresets ? hookComponent(exports, cspModal) : exports;
             case 14015: {
                 let menu = features.viewRaw ? hookComponent(exports, viewRawProfileMenu) : exports;
