@@ -21,7 +21,7 @@
     if (features.fakeDeafen) selectModules([14755, 18341]);
     if (features.quickDelete) selectModules([5400, 1128]);
     if (features.noDelete) selectModules([584, 5532, 5534, 1392, 2068, 7445, 8013, 9978, 11114]);
-    if (features.jumpToTop) selectModules([12920, 12921, 12922, 9683, 7445, 5532]);
+    if (features.jumpToTop) selectModules([12920, 12921, 12922, 9683, 7445, 5532, 9611, 13780]);
     if (features.hiddenChannels) selectModules([1087, 1098, 1114, 2068, 2119, 4843, 7517, 4845, 5521, 7445, 584, 1392, 17357, 8495, 6291, 6362, 14975, 7748, 14788, 17190, 8727]);
     if (features.pastelize) selectModules([8013, 1266, 2128]);
     if (features.platformIndicators) selectModules([5207, 5211, 1392, 2068, 10858, 10531, 13788, 17165, 9069, 15185, 14076]);
@@ -4154,14 +4154,70 @@
         return orig.apply(self, args);
     }
     const JUMP_GROUP_STYLE = {gap:8}, JUMP_FLIP_STYLE = {transform:[{scaleY:-1}]};
+    // Chats whose header already carries the arrow: the floating button above the composer stays away from those.
+    const jumpHeaderPlaced = new Set();
+    function jumpToStart(channelId) {
+        if (!msgActions) return;
+        let returnMessageId;
+        try {
+            const msgs = msgStore && typeof msgStore.getMessages === "function" ? msgStore.getMessages(channelId) : null;
+            const last = msgs && typeof msgs.last === "function" ? msgs.last() : null;
+            if (last && last.id) returnMessageId = last.id;
+        } catch (_) {}
+        msgActions.jumpToMessage({channelId, messageId:channelId, flash:true, jumpType:"ANIMATED", returnMessageId});
+    }
+    // The header's action row (ChannelActions 9611 for servers, PrivateChannelButtons 13780 for DMs): an up arrow is
+    // copied from the search button, right before it, so it sits beside the channel name like Discord's own icons.
+    function jumpHeaderActions(orig, self, args) {
+        if (React) useSettings("jumpToTop");
+        const tree = orig.apply(self, args), props = args[0] || {};
+        if (!enabled("jumpToTop") || !React || !RN || !tree || !msgActions) return tree;
+        const channelId = String(props.channelId || props.channel && props.channel.id || "");
+        if (!channelId || hiddenChannel(channelId)) return tree;
+        const search = inspectedExport(7017, "MagnifyingGlassIcon"), up = inspectedExport(10796, "ArrowLargeUpIcon");
+        if (!search || !up) return tree;
+        const hasSearch = (node, depth) => {
+            if (!node || typeof node !== "object" || depth > 3) return false;
+            if (Array.isArray(node)) return node.some(child => hasSearch(child, depth));
+            if (node.type === search) return true;
+            const p = node.props;
+            return !!p && (p.IconComponent === search || hasSearch(p.icon, depth + 1) || hasSearch(p.children, depth + 1));
+        };
+        const remake = (node, depth) => {
+            if (!node || typeof node !== "object" || depth > 4) return node;
+            if (Array.isArray(node)) return node.map(child => remake(child, depth));
+            if (!node.props) return node;
+            if (node.type === search) return el(up, node.props);
+            const p = node.props, change = {};
+            if (p.IconComponent === search) change.IconComponent = up;
+            if (typeof p.onPress === "function") { change.onPress = () => { haptic("SELECTION"); jumpToStart(channelId); }; change.accessibilityLabel = tr("Jump to top"); }
+            if (p.icon && typeof p.icon === "object") change.icon = remake(p.icon, depth + 1);
+            if (p.children && typeof p.children === "object") change.children = remake(p.children, depth + 1);
+            return React.cloneElement(node, change);
+        };
+        let added = false;
+        const next = cloneTree(tree, (node, p) => {
+            if (added || !Array.isArray(p.children)) return p;
+            const flat = p.children.length === 1 && Array.isArray(p.children[0]) ? p.children[0] : p.children;
+            const at = flat.findIndex(child => child && typeof child === "object" && child.props && hasSearch(child, 0));
+            if (at < 0 || flat.some(child => child && child.key === "venus-jump-top")) return p;
+            added = true;
+            const arrow = React.cloneElement(remake(flat[at], 0), {key:"venus-jump-top"});
+            const merged = flat.slice(0, at).concat([arrow], flat.slice(at));
+            return Object.assign({}, p, {children:flat === p.children ? merged : [merged]});
+        }, 0, () => added);
+        if (added) jumpHeaderPlaced.add(channelId);
+        return added ? next : tree;
+    }
     function jumpButton(orig, self, args) {
         if (React) useSettings("jumpToTop");
         const props = args[0], screenIndex = props && props.screenIndex;
+        const placed = props && props.channelId && jumpHeaderPlaced.has(String(props.channelId));
         // Same native hooks as JumpToPresent; respects composer resizing and suggestion bars.
         const inputHeight = chatHeight && chatHeight.useChatInputContainerHeight(screenIndex);
         const suggestionHeight = chatHeight && chatHeight.useSmallSuggestionBarHeight(screenIndex);
         const result = orig.apply(self, args);
-        if (!enabled("jumpToTop") || !React || !RN || !props || !props.channelId || !msgActions) return result;
+        if (!enabled("jumpToTop") || !React || !RN || !props || !props.channelId || !msgActions || placed) return result;
         const channelId = props.channelId;
         if (hiddenChannel(channelId)) return result;
         let returnMessageId;
@@ -25589,6 +25645,7 @@
             }
             module.exports = activatePlugins(id, module.exports);
             if (features.hideAnything && HIDE_HOOKED[id]) module.exports = hideAnythingHooks(id, module.exports);
+            if (features.jumpToTop && (id === 9611 || id === 13780)) module.exports = hookComponent(module.exports, jumpHeaderActions);
             if (INSTRUMENTED_MODULES.has(id)) module.exports = instrument(module.exports, 0);
         } catch (error) {
             status.audioError = "Hook unavailable: " + String(error);
