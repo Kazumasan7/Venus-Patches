@@ -4168,6 +4168,26 @@
     }
     // The header's action row (ChannelActions 9611 for servers, PrivateChannelButtons 13780 for DMs): an up arrow is
     // copied from the search button, right before it, so it sits beside the channel name like Discord's own icons.
+    // The arrow takes the header icon colour of the current theme (custom themes included).
+    function JumpHeaderButton(props) {
+        const look = useThemed("jumpHeaderIcon", c => ({icon:{color:c.MOBILE_HEADER_ICON_DEFAULT || c.HEADER_PRIMARY || c.INTERACTIVE_NORMAL || "#b5bac1"}}), {icon:{color:"#b5bac1"}});
+        const Press = RN.Pressable || RN.TouchableOpacity || RN.View, Icon = venusIcon(10796, "ArrowLargeUpIcon");
+        return el(Press, {onPress:() => { haptic("SELECTION"); jumpToStart(props.channelId); }, hitSlop:8, accessibilityRole:"button",
+            accessibilityLabel:tr("Jump to top"), style:{paddingHorizontal:8, paddingVertical:8}}, el(Icon, {size:"md", color:look.icon && look.icon.color}));
+    }
+    // In a DM the server row (9611) wraps the DM buttons (13780), which add their own arrow, so the outer row stays out of it.
+    function jumpHeaderServer(orig, self, args) {
+        const props = args[0] || {};
+        let type = props.channel && props.channel.type;
+        if (type == null) {
+            try {
+                const store = inspectedExport(2068, "default"), channel = store && store.getChannel(String(props.channelId || ""));
+                type = channel && channel.type;
+            } catch (_) {}
+        }
+        if (type === 1 || type === 3) return orig.apply(self, args);
+        return jumpHeaderActions(orig, self, args);
+    }
     function jumpHeaderActions(orig, self, args) {
         if (React) useSettings("jumpToTop");
         const tree = orig.apply(self, args), props = args[0] || {};
@@ -4208,13 +4228,9 @@
         }, 0, () => added);
         if (added) { jumpHeaderPlaced.add(channelId); return next; }
         // No search button to copy (text channels draw theirs elsewhere): put an arrow of our own in front of the whole row.
-        const Press = RN.Pressable || RN.TouchableOpacity || RN.View, Icon = venusIcon(10796, "ArrowLargeUpIcon");
-        if (!Icon) return tree;
+        if (!venusIcon(10796, "ArrowLargeUpIcon")) return tree;
         jumpHeaderPlaced.add(channelId);
-        return el(RN.View, {style:{flexDirection:"row", alignItems:"center"}},
-            el(Press, {key:"venus-jump-top", onPress:() => { haptic("SELECTION"); jumpToStart(channelId); }, hitSlop:8, accessibilityRole:"button",
-                accessibilityLabel:tr("Jump to top"), style:{paddingHorizontal:8, paddingVertical:8}}, el(Icon, {size:"md", color:"#b5bac1"})),
-            tree);
+        return el(RN.View, {style:{flexDirection:"row", alignItems:"center"}}, el(JumpHeaderButton, {key:"venus-jump-top", channelId}), tree);
     }
     function jumpButton(orig, self, args) {
         if (React) useSettings("jumpToTop");
@@ -25652,7 +25668,7 @@
             }
             module.exports = activatePlugins(id, module.exports);
             if (features.hideAnything && HIDE_HOOKED[id]) module.exports = hideAnythingHooks(id, module.exports);
-            if (features.jumpToTop && (id === 9611 || id === 13780)) module.exports = hookComponent(module.exports, jumpHeaderActions);
+            if (features.jumpToTop && (id === 9611 || id === 13780)) module.exports = hookComponent(module.exports, id === 9611 ? jumpHeaderServer : jumpHeaderActions);
             if (INSTRUMENTED_MODULES.has(id)) module.exports = instrument(module.exports, 0);
         } catch (error) {
             status.audioError = "Hook unavailable: " + String(error);
