@@ -4185,13 +4185,13 @@
                 type = channel && channel.type;
             } catch (_) {}
         }
-        if (type === 1 || type === 3) return orig.apply(self, args);
-        return jumpHeaderActions(orig, self, args);
+        return jumpHeaderActions(orig, self, args, type === 1 || type === 3);
     }
-    function jumpHeaderActions(orig, self, args) {
+    // Always the same hooks in the same order (skipping the arrow must not change them), or React crashes on a rerender.
+    function jumpHeaderActions(orig, self, args, skip) {
         if (React) useSettings("jumpToTop");
         const tree = orig.apply(self, args), props = args[0] || {};
-        if (!enabled("jumpToTop") || !React || !RN || !tree || !msgActions) return tree;
+        if (skip || !enabled("jumpToTop") || !React || !RN || !tree || !msgActions) return tree;
         const channelId = String(props.channelId || props.channel && props.channel.id || "");
         if (!channelId || hiddenChannel(channelId)) return tree;
         const search = inspectedExport(7017, "MagnifyingGlassIcon"), up = inspectedExport(10796, "ArrowLargeUpIcon");
