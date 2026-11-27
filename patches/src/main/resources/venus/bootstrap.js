@@ -22224,11 +22224,11 @@
     // An RPC is {id, on, name, type, details, state, appId, large, largeText, small, smallText, b1l, b1u, b2l, b2u, ts, tsText, anchor,
     // started, partySize, partyMax, stream}.
     const CRPC_MAX = 5, CRPC_TEXT = 128, CRPC_URL = 512, CRPC_TYPES = [0, 1, 2, 3, 5], CRPC_TYPE_LABEL = {0:"Playing", 1:"Streaming", 2:"Listening to", 3:"Watching", 5:"Competing in"};
-    const CRPC_TS = ["since", "elapsed", "remaining", "off"], CRPC_TS_LABEL = {since:"Since turned on", elapsed:"Custom elapsed time", remaining:"Time remaining", off:"No time"};
+    const CRPC_TS = ["since", "midnight", "elapsed", "remaining", "off"], CRPC_TS_LABEL = {since:"Since turned on", midnight:"Same as your clock (since midnight)", elapsed:"Custom elapsed time", remaining:"Time remaining", off:"No time"};
     function crpcStr(value, max) { return typeof value === "string" ? value.trim().slice(0, max) : ""; }
     function crpcNew() {
         return {id:Math.random().toString(36).slice(2, 8), on:true, name:"", type:0, details:"", state:"", appId:"", large:"", largeText:"", small:"", smallText:"",
-            b1l:"", b1u:"", b2l:"", b2u:"", ts:"since", tsText:"", anchor:0, started:Date.now(), partySize:"", partyMax:"", stream:""};
+            b1l:"", b1u:"", b2l:"", b2u:"", ts:"since", tsText:"", anchor:0, started:Date.now(), partySize:"", partyMax:"", stream:"", detailsUrl:"", stateUrl:"", largeUrl:"", smallUrl:""};
     }
     function crpcText(value) {
         let raw = null;
@@ -22245,7 +22245,8 @@
                 appId:/^\d{17,20}$/.test(t(item.appId, 30)) ? t(item.appId, 30) : "", large:t(item.large, CRPC_URL), largeText:t(item.largeText, CRPC_TEXT), small:t(item.small, CRPC_URL), smallText:t(item.smallText, CRPC_TEXT),
                 b1l:t(item.b1l, 32), b1u:t(item.b1u, CRPC_URL), b2l:t(item.b2l, 32), b2u:t(item.b2u, CRPC_URL), ts:CRPC_TS.indexOf(item.ts) >= 0 ? item.ts : "since", tsText:t(item.tsText, 20),
                 anchor:typeof item.anchor === "number" && isFinite(item.anchor) ? item.anchor : 0, started:typeof item.started === "number" && item.started > 0 ? item.started : Date.now(),
-                partySize:num(item.partySize), partyMax:num(item.partyMax), stream:t(item.stream, CRPC_URL)});
+                partySize:num(item.partySize), partyMax:num(item.partyMax), stream:t(item.stream, CRPC_URL), detailsUrl:t(item.detailsUrl, CRPC_URL), stateUrl:t(item.stateUrl, CRPC_URL),
+                largeUrl:t(item.largeUrl, CRPC_URL), smallUrl:t(item.smallUrl, CRPC_URL)});
         });
         return JSON.stringify(out);
     }
@@ -22292,19 +22293,22 @@
         return null;
     }
     function crpcActivity(p, now) {
-        const appId = p.appId || null, a = {name:p.name || "Custom RPC", type:p.type, flags:0, created_at:p.started || now};
-        if (appId) a.application_id = appId;
+        const appId = p.appId || null, a = {name:p.name || "Custom RPC", type:p.type, flags:1, created_at:p.started || now, application_id:appId || "0"};
         if (p.details) a.details = p.details;
         if (p.state) a.state = p.state;
+        if (crpcWebUrl(p.detailsUrl)) a.details_url = p.detailsUrl;
+        if (crpcWebUrl(p.stateUrl)) a.state_url = p.stateUrl;
         if (p.ts === "since") a.timestamps = {start:p.started || now};
+        else if (p.ts === "midnight") { const day = new Date(now); day.setHours(0, 0, 0, 0); a.timestamps = {start:day.getTime()}; }
         else if (p.ts === "elapsed" && p.anchor > 0) a.timestamps = {start:p.anchor};
         else if (p.ts === "remaining" && p.anchor > now) a.timestamps = {end:p.anchor};
         const large = crpcAsset(appId, p.large);
         if (large) {
             a.assets = {large_image:large};
             if (p.largeText) a.assets.large_text = p.largeText;
+            if (crpcWebUrl(p.largeUrl)) a.assets.large_url = p.largeUrl;
             const small = crpcAsset(appId, p.small);
-            if (small) { a.assets.small_image = small; if (p.smallText) a.assets.small_text = p.smallText; }
+            if (small) { a.assets.small_image = small; if (p.smallText) a.assets.small_text = p.smallText; if (crpcWebUrl(p.smallUrl)) a.assets.small_url = p.smallUrl; }
         }
         const buttons = [[p.b1l, p.b1u], [p.b2l, p.b2u]].filter(pair => pair[0] && crpcWebUrl(pair[1]));
         if (appId && buttons.length) { a.buttons = buttons.map(pair => pair[0]); a.metadata = {button_urls:buttons.map(pair => pair[1])}; }
@@ -22313,12 +22317,11 @@
         if (p.type === 1 && /^https?:\/\/([a-z0-9-]+\.)*(twitch\.tv|youtube\.com)\/|^https?:\/\/youtu\.be\//i.test(p.stream)) a.url = p.stream;
         return a;
     }
-    function crpcPid(id) { let n = 7; for (let i = 0; i < id.length; i++) n = (n * 31 + id.charCodeAt(i)) % 90000; return 10000 + n; }
     let crpcSent = new Set(), crpcTimer = null;
     function crpcSend(id, activity) {
         const flux = inspectedExport(584, "default");
         if (!flux || typeof flux.dispatch !== "function") return false;
-        try { flux.dispatch({type:"LOCAL_ACTIVITY_UPDATE", activity, pid:crpcPid(id), socketId:"venus-rpc-" + id}); return true; } catch (_) { return false; }
+        try { flux.dispatch({type:"LOCAL_ACTIVITY_UPDATE", activity, socketId:"venus-rpc-" + id}); return true; } catch (_) { return false; }
     }
     // Sends every RPC that is on, and takes down the ones that were turned off, deleted, or belong to a feature that is off.
     function crpcApply() {
@@ -22346,6 +22349,7 @@
         const [rpc, setRpc] = React.useState(() => old ? Object.assign({}, old) : crpcNew());
         if (!React || !RN) return null;
         const close = () => hideReviewSheet(ui, CRPC_SHEET), set = patch => setRpc(Object.assign({}, rpc, patch));
+        const badImage = v => /https?:\/\/(cdn|media)\.discordapp\.(com|net)\//i.test(v || "") || /https?:\/\/(www\.)?imgur\.com\//i.test(v || "");
         const wrongTime = (rpc.ts === "elapsed" || rpc.ts === "remaining") && !!rpc.tsText && !crpcDuration(rpc.tsText);
         const save = () => {
             if (wrongTime) return;
@@ -22374,11 +22378,14 @@
         const content = el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:14}},
             Switch ? el(Group, {key:"on"}, el(Switch, {key:"onRow", label:tr("RPC is on"), value:!!rpc.on, onValueChange:value => set({on:!!value})})) : null,
             Row ? el(Group, {key:"type"}, el(Row, {key:"typeRow", label:tr("Type"), subLabel:tr(CRPC_TYPE_LABEL[rpc.type] || "Playing"), onPress:() => { haptic("SELECTION"); set({type:CRPC_TYPES[(CRPC_TYPES.indexOf(rpc.type) + 1) % CRPC_TYPES.length]}); }})) : null,
-            rpcBlock("main", "Text", field("name", "Name (what you are playing)"), field("details", "Details"), field("state", "State")),
+            rpcBlock("main", "Text", field("name", "Name (what you are playing)"), field("details", "Details"), field("detailsUrl", "Details link (optional)", CRPC_URL), field("state", "State"), field("stateUrl", "State link (optional)", CRPC_URL),
+                footnote("uniNote", "Fancy letters (𝖑𝖎𝖐𝖊 𝖙𝖍𝖎𝖘) can stop the activity from showing. Use normal letters.")),
             rpc.type === 1 ? rpcBlock("stream", "Stream link", field("stream", "Twitch or YouTube link", CRPC_URL), footnote("streamNote", "Discord shows Streaming only for Twitch and YouTube links.")) : null,
             rpcBlock("app", "Application ID", field("appId", "Application ID (17 to 20 digits)", 20), footnote("appNote", "Needed for images from links and for buttons. Create an application at discord.com/developers and copy its ID.")),
-            rpcBlock("images", "Images", field("large", "Large image (link or asset name)", CRPC_URL), field("largeText", "Large image text"), field("small", "Small image (link or asset name)", CRPC_URL), field("smallText", "Small image text"),
-                footnote("imgNote", "The small image shows only on top of a large one.")),
+            rpcBlock("images", "Images", field("large", "Large image (link or asset name)", CRPC_URL), field("largeText", "Large image text"), field("largeUrl", "Large image click link (optional)", CRPC_URL),
+                field("small", "Small image (link or asset name)", CRPC_URL), field("smallText", "Small image text"), field("smallUrl", "Small image click link (optional)", CRPC_URL),
+                footnote("imgNote", "The small image shows only on top of a large one."),
+                badImage(rpc.large) || badImage(rpc.small) ? footnote("imgBad", "Discord links and Imgur pages don't work. Upload the image to a host like Imgur and use the direct image link (i.imgur.com/...).") : null),
             rpcBlock("buttons", "Buttons", field("b1l", "Button 1 label", 32), field("b1u", "Button 1 link", CRPC_URL), field("b2l", "Button 2 label", 32), field("b2u", "Button 2 link", CRPC_URL),
                 footnote("btnNote", "Buttons need an application ID. Other people can see them; you can't see yours.")),
             Row ? el(Group, {key:"time", title:tr("Time")}, el(Row, {key:"tsRow", label:tr("Timer"), subLabel:tr(CRPC_TS_LABEL[rpc.ts] || "Since turned on"), onPress:() => { haptic("SELECTION"); set({ts:CRPC_TS[(CRPC_TS.indexOf(rpc.ts) + 1) % CRPC_TS.length]}); }})) : null,
