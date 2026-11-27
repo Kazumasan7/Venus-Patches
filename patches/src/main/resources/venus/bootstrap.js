@@ -22292,8 +22292,10 @@
         }).catch(() => {});
         return null;
     }
+    // Discord treats RPCs with the same application as one, so an RPC without an application ID gets an ID of its own.
+    function crpcFakeApp(id) { let h = 7, out = "1"; for (let i = 0; out.length < 18; i++) { h = (h * 31 + id.charCodeAt(i % id.length) + i) % 1000003; out += String(h % 10); } return out; }
     function crpcActivity(p, now) {
-        const appId = p.appId || null, a = {name:p.name || "Custom RPC", type:p.type, flags:1, created_at:p.started || now, application_id:appId || "0"};
+        const appId = p.appId || null, a = {name:p.name || "Custom RPC", type:p.type, flags:1, created_at:p.started || now, application_id:appId || crpcFakeApp(p.id)};
         if (p.details) a.details = p.details;
         if (p.state) a.state = p.state;
         if (crpcWebUrl(p.detailsUrl)) a.details_url = p.detailsUrl;
@@ -22317,20 +22319,34 @@
         if (p.type === 1 && /^https?:\/\/([a-z0-9-]+\.)*(twitch\.tv|youtube\.com)\/|^https?:\/\/youtu\.be\//i.test(p.stream)) a.url = p.stream;
         return a;
     }
-    let crpcSent = new Set(), crpcTimer = null;
+    let crpcSent = new Set(), crpcTimer = null, crpcRun = 0;
     function crpcSend(id, activity) {
         const flux = inspectedExport(584, "default");
         if (!flux || typeof flux.dispatch !== "function") return false;
         try { flux.dispatch({type:"LOCAL_ACTIVITY_UPDATE", activity, socketId:"venus-rpc-" + id}); return true; } catch (_) { return false; }
     }
-    // Sends every RPC that is on, and takes down the ones that were turned off, deleted, or belong to a feature that is off.
+    // Sends only what changed, one RPC at a time with a pause between them: every update is a presence update to Discord's gateway, which
+    // limits how many it takes. Sending all of them again on every change used to hit that limit, and then none of them showed.
+    const crpcLast = new Map();
     function crpcApply() {
-        const now = Date.now(), live = new Set(), on = enabled("customRpc");
-        let ok = true;
-        if (on) crpcList().forEach(p => { if (p.on) { live.add(p.id); ok = crpcSend(p.id, crpcActivity(p, now)) && ok; } });
-        crpcSent.forEach(id => { if (!live.has(id)) crpcSend(id, null); });
+        const flux = inspectedExport(584, "default");
+        if (!flux || typeof flux.dispatch !== "function") return false;
+        const now = Date.now(), live = new Set(), jobs = [], on = enabled("customRpc");
+        if (on) crpcList().forEach(p => {
+            if (!p.on) return;
+            live.add(p.id);
+            const activity = crpcActivity(p, now), json = JSON.stringify(activity);
+            if (crpcLast.get(p.id) !== json) jobs.push([p.id, activity, json]);
+        });
+        crpcSent.forEach(id => { if (!live.has(id)) jobs.push([id, null, null]); });
         crpcSent = live;
-        return ok;
+        crpcRun += 1;
+        const run = crpcRun;
+        jobs.forEach((job, index) => later(() => {
+            if (run !== crpcRun) return;
+            if (crpcSend(job[0], job[1])) { if (job[2] === null) crpcLast.delete(job[0]); else crpcLast.set(job[0], job[2]); }
+        }, index * 500));
+        return true;
     }
     function crpcSoon() { if (crpcTimer) clearTimeout(crpcTimer); crpcTimer = setTimeout(() => { crpcTimer = null; crpcApply(); }, 300); }
     // Once the store is up (a few seconds after launch), retrying while Discord's dispatcher isn't ready yet.
@@ -22407,11 +22423,13 @@
             Switch ? el(Switch, {key:"on", label:tr(CRPC_TYPE_LABEL[p.type] || "Playing") + (p.details || p.state ? " · " + (p.details || p.state) : ""), icon:rowIcon(9514, "GameControllerIcon"), value:!!p.on, disabled:!on, onValueChange:value => flip(p, value)}) : null,
             Row ? el(Row, {key:"edit", label:tr("Edit"), onPress:() => { haptic("SELECTION"); crpcOpen(p.id); }}) : null));
         const shown = list.filter(p => p.on).length;
+        const onList = list.filter(p => p.on), clash = onList.some((p, i) => onList.some((q, j) => j > i && (p.appId && p.appId === q.appId || (p.name || "").toLowerCase() === (q.name || "").toLowerCase())));
         return settingsBody(ui, [
             !on ? offCard("status", venusIcon(9514, "GameControllerIcon"), "customRpc") : null,
             rows.length ? el(RN.View, {key:"list", style:{gap:12}}, rows) : footnote("none", "No RPCs yet. Add one to start."),
             Row ? el(Group, {key:"actions"}, el(Row, {key:"add", label:tr("Add RPC"), icon:rowIcon(10621, "PlusLargeIcon"), disabled:list.length >= CRPC_MAX, onPress:() => { haptic("SELECTION"); crpcOpen(null); }}),
                 shown ? el(Row, {key:"off", label:tr("Turn all off"), icon:rowIcon(6573, "CircleXIcon"), onPress:() => { haptic("SELECTION"); crpcSave(crpcList().map(item => Object.assign({}, item, {on:false}))); }}) : null) : null,
+            clash ? footnote("clash", "Two RPCs that are on share an application ID or a name. Discord may show them as one. Give each its own.") : null,
             footnote("many", "Every RPC that is on shows at the same time, up to 5. Discord shows the first few on your profile."),
             footnote("privacy", "Your activity is only shared if \"Display current activity\" is on in Discord's Activity Privacy settings.")]);
     }
