@@ -13,6 +13,7 @@ const FORMS = {};
 'bg da de el es fi hu it nl no sv tr fr pt-BR hi'.split(' ').forEach(c => FORMS[c] = ['one', 'other']);
 'ja ko zh-CN zh-TW th vi id'.split(' ').forEach(c => FORMS[c] = ['other']);
 'ru uk pl'.split(' ').forEach(c => FORMS[c] = ['one', 'few', 'many']);
+FORMS.ar = ['zero', 'one', 'two', 'few', 'many', 'other'];
 'hr cs lt ro'.split(' ').forEach(c => FORMS[c] = ['one', 'few', 'other']);
 const SAMPLE = {one: 1, few: 2, many: 5}, OTHER = {cs: 5, hr: 5, lt: 10, ro: 20};
 const JUST_NOW = {bg:'току-що', cs:'právě teď', da:'lige nu', de:'gerade eben', el:'μόλις τώρα', es:'justo ahora', fi:'juuri nyt', fr:'à l’instant',
