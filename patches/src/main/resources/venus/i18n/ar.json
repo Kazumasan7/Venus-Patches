@@ -2554,6 +2554,13 @@
     "Turn all off": "طفّي الكل",
     "Edit": "تعديل",
     "Every RPC that is on shows at the same time, up to 5. Discord shows the first few on your profile.": "كل RPC شغّال يظهر بنفس الوقت، لحد 5. Discord يعرض أول كم واحد ببروفايلك.",
-    "Your activity is only shared if \"Display current activity\" is on in Discord's Activity Privacy settings.": "نشاطك ينعرض بس إذا \"Display current activity\" شغّال بإعدادات خصوصية النشاط بـ Discord."
+    "Your activity is only shared if \"Display current activity\" is on in Discord's Activity Privacy settings.": "نشاطك ينعرض بس إذا \"Display current activity\" شغّال بإعدادات خصوصية النشاط بـ Discord.",
+    "Same as your clock (since midnight)": "حسب ساعتك (من منتصف الليل)",
+    "Details link (optional)": "رابط التفاصيل (اختياري)",
+    "State link (optional)": "رابط الحالة (اختياري)",
+    "Large image click link (optional)": "رابط الضغط على الصورة الكبيرة (اختياري)",
+    "Small image click link (optional)": "رابط الضغط على الصورة الصغيرة (اختياري)",
+    "Fancy letters (𝖑𝖎𝖐𝖊 𝖙𝖍𝖎𝖘) can stop the activity from showing. Use normal letters.": "الحروف المزخرفة (مثل 𝖑𝖎𝖐𝖊 𝖙𝖍𝖎𝖘) ممكن توقف ظهور النشاط. استخدم حروف عادية.",
+    "Discord links and Imgur pages don't work. Upload the image to a host like Imgur and use the direct image link (i.imgur.com/...).": "روابط Discord وصفحات Imgur ما تشتغل. ارفع الصورة على موقع مثل Imgur واستخدم الرابط المباشر للصورة (i.imgur.com/...)."
   }
 }

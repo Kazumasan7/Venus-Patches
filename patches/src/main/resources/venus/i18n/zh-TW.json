@@ -2093,6 +2093,13 @@
     "Turn all off": "Turn all off",
     "Edit": "Edit",
     "Every RPC that is on shows at the same time, up to 5. Discord shows the first few on your profile.": "Every RPC that is on shows at the same time, up to 5. Discord shows the first few on your profile.",
-    "Your activity is only shared if \"Display current activity\" is on in Discord's Activity Privacy settings.": "Your activity is only shared if \"Display current activity\" is on in Discord's Activity Privacy settings."
+    "Your activity is only shared if \"Display current activity\" is on in Discord's Activity Privacy settings.": "Your activity is only shared if \"Display current activity\" is on in Discord's Activity Privacy settings.",
+    "Same as your clock (since midnight)": "Same as your clock (since midnight)",
+    "Details link (optional)": "Details link (optional)",
+    "State link (optional)": "State link (optional)",
+    "Large image click link (optional)": "Large image click link (optional)",
+    "Small image click link (optional)": "Small image click link (optional)",
+    "Fancy letters (𝖑𝖎𝖐𝖊 𝖙𝖍𝖎𝖘) can stop the activity from showing. Use normal letters.": "Fancy letters (𝖑𝖎𝖐𝖊 𝖙𝖍𝖎𝖘) can stop the activity from showing. Use normal letters.",
+    "Discord links and Imgur pages don't work. Upload the image to a host like Imgur and use the direct image link (i.imgur.com/...).": "Discord links and Imgur pages don't work. Upload the image to a host like Imgur and use the direct image link (i.imgur.com/...)."
   }
 }
