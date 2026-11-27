@@ -2100,6 +2100,7 @@
     "Large image click link (optional)": "Large image click link (optional)",
     "Small image click link (optional)": "Small image click link (optional)",
     "Fancy letters (𝖑𝖎𝖐𝖊 𝖙𝖍𝖎𝖘) can stop the activity from showing. Use normal letters.": "Fancy letters (𝖑𝖎𝖐𝖊 𝖙𝖍𝖎𝖘) can stop the activity from showing. Use normal letters.",
-    "Discord links and Imgur pages don't work. Upload the image to a host like Imgur and use the direct image link (i.imgur.com/...).": "Discord links and Imgur pages don't work. Upload the image to a host like Imgur and use the direct image link (i.imgur.com/...)."
+    "Discord links and Imgur pages don't work. Upload the image to a host like Imgur and use the direct image link (i.imgur.com/...).": "Discord links and Imgur pages don't work. Upload the image to a host like Imgur and use the direct image link (i.imgur.com/...).",
+    "Two RPCs that are on share an application ID or a name. Discord may show them as one. Give each its own.": "Two RPCs that are on share an application ID or a name. Discord may show them as one. Give each its own."
   }
 }

@@ -2561,6 +2561,7 @@
     "Large image click link (optional)": "رابط الضغط على الصورة الكبيرة (اختياري)",
     "Small image click link (optional)": "رابط الضغط على الصورة الصغيرة (اختياري)",
     "Fancy letters (𝖑𝖎𝖐𝖊 𝖙𝖍𝖎𝖘) can stop the activity from showing. Use normal letters.": "الحروف المزخرفة (مثل 𝖑𝖎𝖐𝖊 𝖙𝖍𝖎𝖘) ممكن توقف ظهور النشاط. استخدم حروف عادية.",
-    "Discord links and Imgur pages don't work. Upload the image to a host like Imgur and use the direct image link (i.imgur.com/...).": "روابط Discord وصفحات Imgur ما تشتغل. ارفع الصورة على موقع مثل Imgur واستخدم الرابط المباشر للصورة (i.imgur.com/...)."
+    "Discord links and Imgur pages don't work. Upload the image to a host like Imgur and use the direct image link (i.imgur.com/...).": "روابط Discord وصفحات Imgur ما تشتغل. ارفع الصورة على موقع مثل Imgur واستخدم الرابط المباشر للصورة (i.imgur.com/...).",
+    "Two RPCs that are on share an application ID or a name. Discord may show them as one. Give each its own.": "RPCين شغّالين يشتركون بنفس معرّف التطبيق أو الاسم. Discord ممكن يعرضهم كواحد. عطي كل واحد معرّف واسم خاص بيه."
   }
 }
