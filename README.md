@@ -70,6 +70,7 @@ You can also import `patches-<version>.mpp` from [Releases](https://github.com/V
 | | Mutual group DMs | Group DMs you share with someone, on their profile |
 | | Chat export | Save a chat or channel as a text or JSON file, for a date range you choose. It reads slowly on purpose to keep your account safe. |
 | | Radial status | Shows a person's status as a colored ring around their avatar instead of a dot. |
+| | Custom RPC | Show your own activity on your profile, and run several at the same time. |
 | | Text replace | Swap words or links for others automatically, in messages you send and in messages you read. |
 | | Custom status presets | Save custom statuses as presets and set one with a single tap. |
 | | Better role menu | Hold a role on a profile to copy its color or open its icon. |
