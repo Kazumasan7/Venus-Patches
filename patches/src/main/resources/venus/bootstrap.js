@@ -66,6 +66,7 @@
     if (features.betterRoleContext) selectModules([7158, 7167]);
     if (features.customStatusPresets) selectModules([10842]);
     if (features.textReplace) selectModules([7445, 8013]);
+    if (features.customRpc) selectModules([10974]);
     if (features.radialStatus) selectModules([15194, 5207]);
     if (features.chatExport) selectModules([10596, 17245, 10780]);
     if (features.dmCategories) selectModules([17165, 2068, 1392, 10596, 17174, 17160]);
@@ -107,7 +108,7 @@
         accountSwitcher:false, accountSwitcherYouBar:true, accountSwitcherShare:false, accountSwitcherNotify:true, appIcons:false, nitroThemes:false, customThemes:false, customThemesBackground:true, materialYou:false, materialYouColor:"wallpaper", materialYouTint:"balanced",
         iconPacks:false, iconPacksTheme:true,
         messageHighlight:false, messageHighlightThickness:2, messageHighlightBrightness:50, messageHighlightPingColor:"default", serverInfo:false, serverInfoFriends:true, serverEdit:false,
-        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, showPermsOnlyKey:false, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", textReplace:false, textReplaceRules:"[]", textReplaceCode:true, chatExport:false, chatExportPrefs:"{}", radialStatus:false, radialStatusColors:"{}", radialStatusOffline:true, radialStatusChat:true, radialStatusGap:true, radialStatusThick:false, restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
+        fixEmbeds:false, fixEmbedsSites:"", fixEmbedsOptions:"", tenorGifs:false, tenorGifsSource:"both", hideBlocked:false, hideBlockedBlocked:true, hideBlockedIgnored:true, hideBlockedReplies:false, hideBlockedCloseDms:false, bulkDelete:false, bulkDeleteConfirm:true, bulkDeleteIncludeCached:true, experiments:false, noHandsfree:false, voiceOptions:false, voiceOptionsVolume:false, voiceOptionsVolumeLevel:50, voiceOptionsOutput:"default", voiceOptionsJoinSound:true, voiceOptionsLeaveSound:true, voiceOptionsSoundVolume:100, voiceOptionsExit:false, voiceOptionsExitSound:"", cleanChannels:false, cleanChannelsEmoji:true, cleanChannelsSymbols:true, cleanChannelsFonts:true, cleanChannelsSpaces:false, anonFiles:false, staffTag:false, staffTagOwner:true, staffTagAdmin:true, staffTagManager:true, staffTagMod:true, staffTagCrown:true, removedAlerts:false, removedAlertsFriends:true, removedAlertsServers:true, removedAlertsClosed:true, removedAlertsPush:false, fullImages:false, fullImagesChat:true, fullImagesViewer:true, fullImagesGifs:false, fullImagesAvatars:true, alwaysTrust:false, alwaysTrustLinks:true, alwaysTrustFiles:true, noConfirmPin:false, clickableMentions:false, expandBar:false, expandBarSending:true, expandBarChats:true, silentLeave:false, silentEdit:false, silentEditNotice:true, silentDelete:false, localEdit:false, localEditMark:true, guildLurk:false, guildLurkIds:"", quietReplies:false, viewRaw:false, viewRawMessages:true, viewRawChannels:true, viewRawServers:true, viewRawPeople:true, viewRawRoles:true, viewRawHideContact:true, viewRawWrap:true, timeoutDuration:false, dndBanners:false, voiceDownload:false, cloneExpressions:false, listenAlong:false, listenAlongOffset:0, backgroundMedia:false, backgroundMediaAudio:true, backgroundMediaVideo:true, backgroundMediaSkip:10, landscapeFull:false, quietRepliesGuilds:true, quietRepliesGroups:true, quietRepliesMentioned:false, compressUploads:false, compressUploadsPhotos:true, compressUploadsVideos:true, compressUploadsAudio:true, hideAnything:false, hideAnythingSpots:"", fakeDeafen:false, fakeDeafenMuteMic:true, showPerms:false, showPermsInvert:false, showPermsOnlyAdmin:false, showPermsAdminAll:true, showPermsDot:true, showPermsCount:true, showPermsOnlyKey:false, markdownBar:false, showMeYourName:false, betterRoleContext:false, customStatusPresets:false, customStatusPresetsList:"[]", textReplace:false, textReplaceRules:"[]", customRpc:false, customRpcList:"[]", textReplaceCode:true, chatExport:false, chatExportPrefs:"{}", radialStatus:false, radialStatusColors:"{}", radialStatusOffline:true, radialStatusChat:true, radialStatusGap:true, radialStatusThick:false, restartButton:false, restartButtonConfirm:true, showToken:false, showTokenConfirm:true, dmCategories:false, dmCategoriesList:"[]", dmCategoriesChip:false, dmCategoriesHeaders:false, showMeYourNameOrder:"custom,friend,server,display,username", showMeYourNameCustom:"{}", showMeYourNameUseCustom:true, showMeYourNameMode:"all", showMeYourNameUseServer:true, showMeYourNameUseFriend:true, showMeYourNameUseDisplay:true, showMeYourNameUseUsername:true, showMeYourNameMessages:true, showMeYourNameReplies:true, showMeYourNameMembers:true, showMeYourNameMentions:true, showMeYourNameTyping:true, showMeYourNameOther:true, language:"auto", hiddenFeatures:"",
         hypeSquad:false, customIdle:false, customIdleMinutes:10, pauseInvites:false, fastDeleteChannels:false, fastDeleteChannelsConfirm:true, fastDeleteChannelsMenu:true, mutualGroupDMs:false, platformSpoof:false, platformSpoofDevice:"desktop" };
     // The settings every feature starts from, for Reset to defaults on the Backup page.
     let DEFAULT_SETTINGS = null;
@@ -125,7 +126,7 @@
             accountSwitcher: false, accountSwitcherYouBar: true, accountSwitcherShare: false, accountSwitcherNotify: true, appIcons: false, nitroThemes: false, customThemes: false, customThemesBackground: true, materialYou: false, materialYouColor: "wallpaper", materialYouTint: "balanced",
             iconPacks: false, iconPacksTheme: true,
             messageHighlight: false, messageHighlightThickness: 2, messageHighlightBrightness: 50, messageHighlightPingColor: "default", serverInfo: false, serverInfoFriends: true, serverEdit: false,
-            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, showPermsOnlyKey: false, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", textReplace: false, textReplaceRules: "[]", textReplaceCode: true, chatExport: false, chatExportPrefs: "{}", radialStatus: false, radialStatusColors: "{}", radialStatusOffline: true, radialStatusChat: true, radialStatusGap: true, radialStatusThick: false, restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
+            fixEmbeds: false, fixEmbedsSites: "", fixEmbedsOptions: "", tenorGifs: false, tenorGifsSource: "both", hideBlocked: false, hideBlockedBlocked: true, hideBlockedIgnored: true, hideBlockedReplies: false, hideBlockedCloseDms: false, bulkDelete: false, bulkDeleteConfirm: true, bulkDeleteIncludeCached: true, experiments: false, noHandsfree: false, voiceOptions: false, voiceOptionsVolume: false, voiceOptionsVolumeLevel: 50, voiceOptionsOutput: "default", voiceOptionsJoinSound: true, voiceOptionsLeaveSound: true, voiceOptionsSoundVolume: 100, voiceOptionsExit: false, voiceOptionsExitSound: "", cleanChannels: false, cleanChannelsEmoji: true, cleanChannelsSymbols: true, cleanChannelsFonts: true, cleanChannelsSpaces: false, anonFiles: false, staffTag: false, staffTagOwner: true, staffTagAdmin: true, staffTagManager: true, staffTagMod: true, staffTagCrown: true, removedAlerts: false, removedAlertsFriends: true, removedAlertsServers: true, removedAlertsClosed: true, removedAlertsPush: false, fullImages: false, fullImagesChat: true, fullImagesViewer: true, fullImagesGifs: false, fullImagesAvatars: true, alwaysTrust: false, alwaysTrustLinks: true, alwaysTrustFiles: true, noConfirmPin: false, clickableMentions: false, expandBar: false, expandBarSending: true, expandBarChats: true, silentLeave: false, silentEdit: false, silentEditNotice: true, silentDelete: false, localEdit: false, localEditMark: true, guildLurk: false, guildLurkIds: "", quietReplies: false, viewRaw: false, viewRawMessages: true, viewRawChannels: true, viewRawServers: true, viewRawPeople: true, viewRawRoles: true, viewRawHideContact: true, viewRawWrap: true, timeoutDuration: false, dndBanners: false, voiceDownload: false, cloneExpressions: false, listenAlong: false, listenAlongOffset: 0, backgroundMedia: false, backgroundMediaAudio: true, backgroundMediaVideo: true, backgroundMediaSkip: 10, landscapeFull: false, quietRepliesGuilds: true, quietRepliesGroups: true, quietRepliesMentioned: false, compressUploads: false, compressUploadsPhotos: true, compressUploadsVideos: true, compressUploadsAudio: true, hideAnything: false, hideAnythingSpots: "", fakeDeafen: false, fakeDeafenMuteMic: true, showPerms: false, showPermsInvert: false, showPermsOnlyAdmin: false, showPermsAdminAll: true, showPermsDot: true, showPermsCount: true, showPermsOnlyKey: false, markdownBar: false, showMeYourName: false, betterRoleContext: false, customStatusPresets: false, customStatusPresetsList: "[]", textReplace: false, textReplaceRules: "[]", customRpc: false, customRpcList: "[]", textReplaceCode: true, chatExport: false, chatExportPrefs: "{}", radialStatus: false, radialStatusColors: "{}", radialStatusOffline: true, radialStatusChat: true, radialStatusGap: true, radialStatusThick: false, restartButton: false, restartButtonConfirm: true, showToken: false, showTokenConfirm: true, dmCategories: false, dmCategoriesList: "[]", dmCategoriesChip: false, dmCategoriesHeaders: false, showMeYourNameOrder: "custom,friend,server,display,username", showMeYourNameCustom: "{}", showMeYourNameUseCustom: true, showMeYourNameMode: "all", showMeYourNameUseServer: true, showMeYourNameUseFriend: true, showMeYourNameUseDisplay: true, showMeYourNameUseUsername: true, showMeYourNameMessages: true, showMeYourNameReplies: true, showMeYourNameMembers: true, showMeYourNameMentions: true, showMeYourNameTyping: true, showMeYourNameOther: true, language: "auto", hiddenFeatures: "",
             hypeSquad: false, customIdle: false, customIdleMinutes: 10, pauseInvites: false, fastDeleteChannels: false, fastDeleteChannelsConfirm: true, fastDeleteChannelsMenu: true, mutualGroupDMs: false, platformSpoof: false, platformSpoofDevice: "desktop"
         }));
     }
@@ -332,6 +333,7 @@
     const notify = key => {
         notifyCount++;
         const owner = key && key !== "*" ? featureFor(key) : null;
+        if (owner === "customRpc" && typeof crpcSoon === "function") crpcSoon();
         listeners.forEach(entry => {
             if (!entry.key || key === "*" || entry.key === key || owner && entry.key === owner) entry.fn();
         });
@@ -478,6 +480,7 @@
         if (key === "showMeYourNameCustom") return smynCustomText(value);
         if (key === "customStatusPresetsList") return cspText(value);
         if (key === "textReplaceRules") return rtrText(value);
+        if (key === "customRpcList") return crpcText(value);
         if (key === "radialStatusColors") return rsColorsText(value);
         if (key === "chatExportPrefs") return cexPrefsText(value);
         if (key === "dmCategoriesList") return dmcText(value);
@@ -526,7 +529,7 @@
             settings.readAllMode = value; dirty.add(key); save(); notify(key); return true;
         }
         // Showmeyourname: the order of the four names and how many to show are text settings, not switches.
-        if (key === "showMeYourNameOrder" || key === "showMeYourNameMode" || key === "showMeYourNameCustom" || key === "customStatusPresetsList" || key === "dmCategoriesList" || key === "textReplaceRules" || key === "radialStatusColors" || key === "chatExportPrefs") {
+        if (key === "showMeYourNameOrder" || key === "showMeYourNameMode" || key === "showMeYourNameCustom" || key === "customStatusPresetsList" || key === "dmCategoriesList" || key === "textReplaceRules" || key === "radialStatusColors" || key === "chatExportPrefs" || key === "customRpcList") {
             const clean = acceptedSetting(key, value);
             if (clean === undefined) return false;
             if (settings[key] === clean && status.storage !== "loading" && status.storage !== "waiting") return true;
@@ -1205,7 +1208,7 @@
     const featureFor = key => {
         const cached = featureTable[key];
         if (cached !== undefined) return cached;
-        return featureTable[key] = key === "reviewWarning" ? "reviewDB" : key === "emojis" || key === "stickers" || key === "hyperlinks" ? "freeNitro" : /^noDelete[A-Z]/.test(key) ? "noDelete" : /^pi[A-Z]/.test(key) ? "platformIndicators" : key === "pastelAll" || key === "pastelContent" ? "pastelize" : key === "readAllMode" ? "readAll" : /^compressUploads[A-Z]/.test(key) ? "compressUploads" : /^quests[A-Z]/.test(key) ? "quests" : /^badges[A-Z]/.test(key) ? "badges" : /^gesture[A-Z]/.test(key) ? "gestures" : /^translate[A-Z]/.test(key) ? "translate" : /^removedAlerts[A-Z]/.test(key) ? "removedAlerts" : /^userNotif[A-Z]/.test(key) ? "userNotif" : /^accountSwitcher[A-Z]/.test(key) ? "accountSwitcher" : /^hiddenChannels[A-Z]/.test(key) ? "hiddenChannels" : /^customThemes[A-Z]/.test(key) ? "customThemes" : /^materialYou[A-Z]/.test(key) ? "materialYou" : /^iconPacks[A-Z]/.test(key) ? "iconPacks" : /^messageHighlight[A-Z]/.test(key) ? "messageHighlight" : /^serverInfo[A-Z]/.test(key) ? "serverInfo" : /^fixEmbeds[A-Z]/.test(key) ? "fixEmbeds" : /^tenorGifs[A-Z]/.test(key) ? "tenorGifs" : /^hideBlocked[A-Z]/.test(key) ? "hideBlocked" : /^bulkDelete[A-Z]/.test(key) ? "bulkDelete" : /^expandBar[A-Z]/.test(key) ? "expandBar" : key === "systemFontSource" ? "systemFont" : key === "systemEmojiSource" ? "systemEmoji" : /^cleanChannels[A-Z]/.test(key) ? "cleanChannels" : /^voiceOptions[A-Z]/.test(key) ? "voiceOptions" : /^anonFiles[A-Z]/.test(key) ? "anonFiles" : /^staffTag[A-Z]/.test(key) ? "staffTag" : /^fullImages[A-Z]/.test(key) ? "fullImages" : /^alwaysTrust[A-Z]/.test(key) ? "alwaysTrust" : /^quietReplies[A-Z]/.test(key) ? "quietReplies" : /^viewRaw[A-Z]/.test(key) ? "viewRaw" : /^hideAnything[A-Z]/.test(key) ? "hideAnything" : /^guildLurk[A-Z]/.test(key) ? "guildLurk" : /^customIdle[A-Z]/.test(key) ? "customIdle" : /^fastDeleteChannels[A-Z]/.test(key) ? "fastDeleteChannels" : /^platformSpoof[A-Z]/.test(key) ? "platformSpoof" : /^silentEdit[A-Z]/.test(key) ? "silentEdit" : /^localEdit[A-Z]/.test(key) ? "localEdit" : /^listenAlong[A-Z]/.test(key) ? "listenAlong" : /^backgroundMedia[A-Z]/.test(key) ? "backgroundMedia" : /^fakeDeafen[A-Z]/.test(key) ? "fakeDeafen" : /^showMeYourName[A-Z]/.test(key) ? "showMeYourName" : /^customStatusPresets[A-Z]/.test(key) ? "customStatusPresets" : /^restartButton[A-Z]/.test(key) ? "restartButton" : /^showToken[A-Z]/.test(key) ? "showToken" : /^dmCategories[A-Z]/.test(key) ? "dmCategories" : /^showPerms[A-Z]/.test(key) ? "showPerms" : /^textReplace[A-Z]/.test(key) ? "textReplace" : /^radialStatus[A-Z]/.test(key) ? "radialStatus" : key;
+        return featureTable[key] = key === "reviewWarning" ? "reviewDB" : key === "emojis" || key === "stickers" || key === "hyperlinks" ? "freeNitro" : /^noDelete[A-Z]/.test(key) ? "noDelete" : /^pi[A-Z]/.test(key) ? "platformIndicators" : key === "pastelAll" || key === "pastelContent" ? "pastelize" : key === "readAllMode" ? "readAll" : /^compressUploads[A-Z]/.test(key) ? "compressUploads" : /^quests[A-Z]/.test(key) ? "quests" : /^badges[A-Z]/.test(key) ? "badges" : /^gesture[A-Z]/.test(key) ? "gestures" : /^translate[A-Z]/.test(key) ? "translate" : /^removedAlerts[A-Z]/.test(key) ? "removedAlerts" : /^userNotif[A-Z]/.test(key) ? "userNotif" : /^accountSwitcher[A-Z]/.test(key) ? "accountSwitcher" : /^hiddenChannels[A-Z]/.test(key) ? "hiddenChannels" : /^customThemes[A-Z]/.test(key) ? "customThemes" : /^materialYou[A-Z]/.test(key) ? "materialYou" : /^iconPacks[A-Z]/.test(key) ? "iconPacks" : /^messageHighlight[A-Z]/.test(key) ? "messageHighlight" : /^serverInfo[A-Z]/.test(key) ? "serverInfo" : /^fixEmbeds[A-Z]/.test(key) ? "fixEmbeds" : /^tenorGifs[A-Z]/.test(key) ? "tenorGifs" : /^hideBlocked[A-Z]/.test(key) ? "hideBlocked" : /^bulkDelete[A-Z]/.test(key) ? "bulkDelete" : /^expandBar[A-Z]/.test(key) ? "expandBar" : key === "systemFontSource" ? "systemFont" : key === "systemEmojiSource" ? "systemEmoji" : /^cleanChannels[A-Z]/.test(key) ? "cleanChannels" : /^voiceOptions[A-Z]/.test(key) ? "voiceOptions" : /^anonFiles[A-Z]/.test(key) ? "anonFiles" : /^staffTag[A-Z]/.test(key) ? "staffTag" : /^fullImages[A-Z]/.test(key) ? "fullImages" : /^alwaysTrust[A-Z]/.test(key) ? "alwaysTrust" : /^quietReplies[A-Z]/.test(key) ? "quietReplies" : /^viewRaw[A-Z]/.test(key) ? "viewRaw" : /^hideAnything[A-Z]/.test(key) ? "hideAnything" : /^guildLurk[A-Z]/.test(key) ? "guildLurk" : /^customIdle[A-Z]/.test(key) ? "customIdle" : /^fastDeleteChannels[A-Z]/.test(key) ? "fastDeleteChannels" : /^platformSpoof[A-Z]/.test(key) ? "platformSpoof" : /^silentEdit[A-Z]/.test(key) ? "silentEdit" : /^localEdit[A-Z]/.test(key) ? "localEdit" : /^listenAlong[A-Z]/.test(key) ? "listenAlong" : /^backgroundMedia[A-Z]/.test(key) ? "backgroundMedia" : /^fakeDeafen[A-Z]/.test(key) ? "fakeDeafen" : /^showMeYourName[A-Z]/.test(key) ? "showMeYourName" : /^customStatusPresets[A-Z]/.test(key) ? "customStatusPresets" : /^restartButton[A-Z]/.test(key) ? "restartButton" : /^showToken[A-Z]/.test(key) ? "showToken" : /^dmCategories[A-Z]/.test(key) ? "dmCategories" : /^showPerms[A-Z]/.test(key) ? "showPerms" : /^textReplace[A-Z]/.test(key) ? "textReplace" : /^customRpc[A-Z]/.test(key) ? "customRpc" : /^radialStatus[A-Z]/.test(key) ? "radialStatus" : key;
     };
     // Section titles are read whenever Discord draws the list, so they follow the language too. "Venus" is a name.
     function section(label, keys) {
@@ -1241,7 +1244,7 @@
         youBarSettings:[7368, "SettingsIcon"], quests:[13929, "QuestsIcon"],
         badges:[9211, "TrophyIcon"], userNotif:[9045, "BellIcon"], accountSwitcher:[8489, "GroupIcon"], appIcons:[8506, "AppsIcon"],
         compressUploads:[11636, "FileUpIcon"], customThemes:[16412, "EyeDropperIcon"], iconPacks:[11449, "ImageSparkleIcon"], messageHighlight:[17627, "PaintbrushThinIcon"], serverInfo:[5145, "CircleInformationIcon"], serverEdit:[10023, "PencilIcon"], fixEmbeds:[13836, "EmbedIcon"], tenorGifs:[10051, "GifIcon"], nitroThemes:[11733, "SparklesIcon"], materialYou:[16320, "PaintPaletteIcon"], hideBlocked:[11619, "ChatShieldIcon"], bulkDelete:[7144, "CircleCheckIcon"], experiments:[16650, "BeakerIcon"], cleanChannels:[12158, "MagicWandIcon"], noHandsfree:[13214, "HeadphonesIcon"], voiceOptions:[8501, "VoiceNormalIcon"], staffTag:[10563, "CrownIcon"], removedAlerts:[5135, "UserMinusIcon"], hideAnything:[10561, "XLargeIcon"], fullImages:[12328, "ImagesIcon"], alwaysTrust:[10733, "ShieldIcon"], noConfirmPin:[10641, "PinIcon"], clickableMentions:[8490, "AtIcon"], expandBar:[16089, "FullscreenEnterIcon"], quietReplies:[10654, "BellSlashIcon"], viewRaw:[12003, "FileIcon"], timeoutDuration:[5150, "ClockIcon"], dndBanners:[13603, "BellZIcon"], voiceDownload:[5143, "DownloadIcon"], cloneExpressions:[11657, "ImagePlusIcon"], listenAlong:[13214, "HeadphonesIcon"], backgroundMedia:[8674, "PlayIcon"], landscapeFull:[16089, "FullscreenEnterIcon"], silentLeave:[11384, "DoorExitIcon"], guildLurk:[6929, "EyeIcon"], silentEdit:[13745, "PencilSparkleIcon"], silentDelete:[5148, "TrashIcon"], localEdit:[10023, "PencilIcon"],
-        hypeSquad:[18747, "HomeIcon"], customIdle:[14205, "UserClockIcon"], pauseInvites:[8676, "PauseIcon"], fastDeleteChannels:[18679, "ChannelListIcon"], mutualGroupDMs:[8489, "GroupIcon"], showPerms:[10733, "ShieldIcon"], markdownBar:[8480, "TextIcon"], showMeYourName:[8640, "UserIcon"], betterRoleContext:[8895, "ShieldUserIcon"], customStatusPresets:[9252, "ReactionIcon"], textReplace:[18573, "ArrowsLeftRightIcon"], radialStatus:[7144, "CircleCheckIcon"], chatExport:[12367, "SaveIcon"], platformSpoof:[5133, "UserPlatformIcon"], restartButton:[11632, "RetryIcon"], showToken:[8495, "LockIcon"], dmCategories:[9365, "TagIcon"]};
+        hypeSquad:[18747, "HomeIcon"], customIdle:[14205, "UserClockIcon"], pauseInvites:[8676, "PauseIcon"], fastDeleteChannels:[18679, "ChannelListIcon"], mutualGroupDMs:[8489, "GroupIcon"], showPerms:[10733, "ShieldIcon"], markdownBar:[8480, "TextIcon"], showMeYourName:[8640, "UserIcon"], betterRoleContext:[8895, "ShieldUserIcon"], customStatusPresets:[9252, "ReactionIcon"], textReplace:[18573, "ArrowsLeftRightIcon"], customRpc:[9514, "GameControllerIcon"], radialStatus:[7144, "CircleCheckIcon"], chatExport:[12367, "SaveIcon"], platformSpoof:[5133, "UserPlatformIcon"], restartButton:[11632, "RetryIcon"], showToken:[8495, "LockIcon"], dmCategories:[9365, "TagIcon"]};
     const venusIcons = new Map();
     function venusIcon(id, name, fallback) {
         const slot = id + ":" + name;
@@ -1302,6 +1305,7 @@
         showPerms:["Show permissions", "Permissions", "Perms", "Roles", "Admin", "Moderator", "Member", "Server"],
         chatExport:["Chat export", "Export", "Save chat", "Backup messages", "Transcript", "History", "Download", "Archive", "TXT", "JSON"],
         radialStatus:["Radial status", "Status ring", "Avatar ring", "Online", "Idle", "Do not disturb", "Presence", "Circle"],
+        customRpc:["Custom RPC", "RPC", "Rich presence", "Activity", "Playing", "Watching", "Listening", "Game", "Status"],
         textReplace:["Text replace", "Replace", "Find and replace", "Words", "Autocorrect", "Regex", "Links", "Swap"],
         customStatusPresets:["Custom status presets", "Status", "Custom status", "Presets", "Emoji status", "Saved statuses"],
         restartButton:["Restart button", "Restart", "Reload", "Reopen", "Close app", "Refresh"],
@@ -1822,6 +1826,7 @@
         withOptions("people", "betterRoleContext", "VENUS_BETTERROLE", "Better role menu", "Hold a role on a profile to copy its color or open its icon.", "Better role menu", BetterRoleMenuSettings);
         withOptions("messages", "chatExport", "VENUS_CHATEXPORT", "Chat export", "Save a chat or channel as a text or JSON file, for a date range you choose. It reads slowly on purpose to keep your account safe.", "Chat export", ChatExportSettings);
         withOptions("people", "radialStatus", "VENUS_RADIALSTATUS", "Radial status", "Shows a person's status as a colored ring around their avatar instead of a dot.", "Radial status", RadialStatusSettings);
+        withOptions("people", "customRpc", "VENUS_CUSTOMRPC", "Custom RPC", "Show your own activity on your profile, and run several at the same time.", "Custom RPC", CustomRpcSettings);
         withOptions("messages", "textReplace", "VENUS_TEXTREPLACE", "Text replace", "Swap words or links for others automatically, in messages you send and in messages you read.", "Text replace", TextReplaceSettings);
         withOptions("people", "customStatusPresets", "VENUS_STATUSPRESETS", "Custom status presets", "Save custom statuses as presets and set one with a single tap.", "Custom status presets", CustomStatusPresetsSettings);
         withOptions("people", "dmCategories", "VENUS_DMCATEGORIES", "DM categories", "Sort your DMs into your own categories: hold a chat and tap Set Category.", "DM categories", DmCategoriesSettings);
@@ -22214,6 +22219,195 @@
             footnote("shown", "Shown and Embeds only change how messages look on this phone."),
             footnote("order", "Rules run from the top down, each on the result of the one before.")]);
     }
+    // Custom RPC (ported from the Aliucord plugin by yutaplug): shows your own activity ("Playing ...") on your profile. Unlike the original it
+    // keeps a list: each RPC is sent to Discord's LocalActivityStore under its own socketId, so several show at the same time.
+    // An RPC is {id, on, name, type, details, state, appId, large, largeText, small, smallText, b1l, b1u, b2l, b2u, ts, tsText, anchor,
+    // started, partySize, partyMax, stream}.
+    const CRPC_MAX = 5, CRPC_TEXT = 128, CRPC_URL = 512, CRPC_TYPES = [0, 1, 2, 3, 5], CRPC_TYPE_LABEL = {0:"Playing", 1:"Streaming", 2:"Listening to", 3:"Watching", 5:"Competing in"};
+    const CRPC_TS = ["since", "elapsed", "remaining", "off"], CRPC_TS_LABEL = {since:"Since turned on", elapsed:"Custom elapsed time", remaining:"Time remaining", off:"No time"};
+    function crpcStr(value, max) { return typeof value === "string" ? value.trim().slice(0, max) : ""; }
+    function crpcNew() {
+        return {id:Math.random().toString(36).slice(2, 8), on:true, name:"", type:0, details:"", state:"", appId:"", large:"", largeText:"", small:"", smallText:"",
+            b1l:"", b1u:"", b2l:"", b2u:"", ts:"since", tsText:"", anchor:0, started:Date.now(), partySize:"", partyMax:"", stream:""};
+    }
+    function crpcText(value) {
+        let raw = null;
+        try { raw = typeof value === "string" ? JSON.parse(value) : null; } catch (_) {}
+        if (!Array.isArray(raw)) return undefined;
+        const out = [], seen = new Set();
+        raw.forEach(item => {
+            if (out.length >= CRPC_MAX || !item || typeof item !== "object") return;
+            let id = typeof item.id === "string" && /^[a-z0-9]{4,12}$/.test(item.id) ? item.id : "";
+            while (!id || seen.has(id)) id = Math.random().toString(36).slice(2, 8);
+            seen.add(id);
+            const t = crpcStr, num = v => /^\d{1,6}$/.test(String(v == null ? "" : v).trim()) ? String(v).trim() : "";
+            out.push({id, on:item.on !== false, name:t(item.name, CRPC_TEXT), type:CRPC_TYPES.indexOf(item.type) >= 0 ? item.type : 0, details:t(item.details, CRPC_TEXT), state:t(item.state, CRPC_TEXT),
+                appId:/^\d{17,20}$/.test(t(item.appId, 30)) ? t(item.appId, 30) : "", large:t(item.large, CRPC_URL), largeText:t(item.largeText, CRPC_TEXT), small:t(item.small, CRPC_URL), smallText:t(item.smallText, CRPC_TEXT),
+                b1l:t(item.b1l, 32), b1u:t(item.b1u, CRPC_URL), b2l:t(item.b2l, 32), b2u:t(item.b2u, CRPC_URL), ts:CRPC_TS.indexOf(item.ts) >= 0 ? item.ts : "since", tsText:t(item.tsText, 20),
+                anchor:typeof item.anchor === "number" && isFinite(item.anchor) ? item.anchor : 0, started:typeof item.started === "number" && item.started > 0 ? item.started : Date.now(),
+                partySize:num(item.partySize), partyMax:num(item.partyMax), stream:t(item.stream, CRPC_URL)});
+        });
+        return JSON.stringify(out);
+    }
+    const crpcCache = {text:null, list:[]};
+    function crpcList() {
+        if (crpcCache.text === settings.customRpcList) return crpcCache.list;
+        let list = [];
+        try { const parsed = JSON.parse(settings.customRpcList); if (Array.isArray(parsed)) list = parsed; } catch (_) {}
+        crpcCache.text = settings.customRpcList; crpcCache.list = list;
+        return list;
+    }
+    function crpcSave(list) { return setSetting("customRpcList", JSON.stringify(list)); }
+    // "1h 30m", "2d", "90" (minutes), "1:30" (h:mm) or "1:30:00": milliseconds, or null when it isn't a positive duration.
+    function crpcDuration(input) {
+        const text = String(input || "").trim().toLowerCase();
+        let total = null, m;
+        if (/^\d{1,7}$/.test(text)) total = Number(text) * 60000;
+        else if ((m = /^(\d{1,6}):(\d{1,2})(?::(\d{1,2}))?$/.exec(text))) { if (Number(m[2]) > 59 || Number(m[3] || 0) > 59) return null; total = ((Number(m[1]) * 60 + Number(m[2])) * 60 + Number(m[3] || 0)) * 1000; }
+        else if (/^(\d{1,6}\s*[dhms]\s*)+$/.test(text)) {
+            const part = /(\d{1,6})\s*([dhms])/g; total = 0;
+            while ((m = part.exec(text))) total += Number(m[1]) * {d:86400000, h:3600000, m:60000, s:1000}[m[2]];
+        }
+        return total && total > 0 && total <= 3650 * 86400000 ? total : null;
+    }
+    function crpcWebUrl(text) { return /^https?:\/\/[^\s/@]+\.[^\s/@]+/i.test(text || ""); }
+    // An image field: a link is turned into one Discord can show ("mp:external/...") by its external-assets endpoint, which needs the
+    // application ID; anything else is taken as an asset name of that application. Null while a link is still being resolved.
+    const crpcAssets = new Map();
+    function crpcAsset(appId, value) {
+        const v = crpcStr(value, CRPC_URL);
+        if (!v) return null;
+        if (/^mp:/i.test(v)) return v;
+        if (!/^(https?:\/\/|www\.)/i.test(v)) return v;
+        const url = /^www\./i.test(v) ? "https://" + v : v;
+        if (!appId || !crpcWebUrl(url)) return null;
+        const key = appId + "|" + url, hit = crpcAssets.get(key);
+        if (typeof hit === "string") return hit;
+        if (hit && hit.until > Date.now()) return null;
+        crpcAssets.set(key, {until:Date.now() + 60000});
+        questRequest("/applications/" + appId + "/external-assets", {urls:[url]}).then(response => {
+            const body = response && response.body, item = Array.isArray(body) ? body[0] : null;
+            if (item && typeof item.external_asset_path === "string") { crpcAssets.set(key, "mp:" + item.external_asset_path); crpcSoon(); }
+        }).catch(() => {});
+        return null;
+    }
+    function crpcActivity(p, now) {
+        const appId = p.appId || null, a = {name:p.name || "Custom RPC", type:p.type, flags:0, created_at:p.started || now};
+        if (appId) a.application_id = appId;
+        if (p.details) a.details = p.details;
+        if (p.state) a.state = p.state;
+        if (p.ts === "since") a.timestamps = {start:p.started || now};
+        else if (p.ts === "elapsed" && p.anchor > 0) a.timestamps = {start:p.anchor};
+        else if (p.ts === "remaining" && p.anchor > now) a.timestamps = {end:p.anchor};
+        const large = crpcAsset(appId, p.large);
+        if (large) {
+            a.assets = {large_image:large};
+            if (p.largeText) a.assets.large_text = p.largeText;
+            const small = crpcAsset(appId, p.small);
+            if (small) { a.assets.small_image = small; if (p.smallText) a.assets.small_text = p.smallText; }
+        }
+        const buttons = [[p.b1l, p.b1u], [p.b2l, p.b2u]].filter(pair => pair[0] && crpcWebUrl(pair[1]));
+        if (appId && buttons.length) { a.buttons = buttons.map(pair => pair[0]); a.metadata = {button_urls:buttons.map(pair => pair[1])}; }
+        const size = Number(p.partySize), max = Number(p.partyMax);
+        if (p.partySize !== "" && p.partyMax !== "" && max > 0 && size >= 0 && size <= max) a.party = {id:"venus-rpc-" + p.id, size:[size, max]};
+        if (p.type === 1 && /^https?:\/\/([a-z0-9-]+\.)*(twitch\.tv|youtube\.com)\/|^https?:\/\/youtu\.be\//i.test(p.stream)) a.url = p.stream;
+        return a;
+    }
+    function crpcPid(id) { let n = 7; for (let i = 0; i < id.length; i++) n = (n * 31 + id.charCodeAt(i)) % 90000; return 10000 + n; }
+    let crpcSent = new Set(), crpcTimer = null;
+    function crpcSend(id, activity) {
+        const flux = inspectedExport(584, "default");
+        if (!flux || typeof flux.dispatch !== "function") return false;
+        try { flux.dispatch({type:"LOCAL_ACTIVITY_UPDATE", activity, pid:crpcPid(id), socketId:"venus-rpc-" + id}); return true; } catch (_) { return false; }
+    }
+    // Sends every RPC that is on, and takes down the ones that were turned off, deleted, or belong to a feature that is off.
+    function crpcApply() {
+        const now = Date.now(), live = new Set(), on = enabled("customRpc");
+        let ok = true;
+        if (on) crpcList().forEach(p => { if (p.on) { live.add(p.id); ok = crpcSend(p.id, crpcActivity(p, now)) && ok; } });
+        crpcSent.forEach(id => { if (!live.has(id)) crpcSend(id, null); });
+        crpcSent = live;
+        return ok;
+    }
+    function crpcSoon() { if (crpcTimer) clearTimeout(crpcTimer); crpcTimer = setTimeout(() => { crpcTimer = null; crpcApply(); }, 300); }
+    // Once the store is up (a few seconds after launch), retrying while Discord's dispatcher isn't ready yet.
+    function crpcBoot(tries) { later(() => { if (!crpcApply() && tries < 6) crpcBoot(tries + 1); }, 3000); }
+    const CRPC_SHEET = "VenusCustomRpc";
+    function crpcOpen(id) {
+        const ui = reviewUI();
+        if (!enabled("customRpc") || !React || !RN || typeof ui.showSheet !== "function") return;
+        try { ui.showSheet({key:CRPC_SHEET, content:el(CustomRpcSheet, {id}), stackingBehavior:"stack"}); } catch (_) {}
+    }
+    function crpcLabel(p) { return p.name || tr("Untitled RPC"); }
+    function CustomRpcSheet(props) {
+        useSettings("customRpc");
+        const ui = reviewUI(), Group = ui.TableRowGroup || RN.View, Row = ui.TableRow, Switch = ui.TableSwitchRow;
+        const old = crpcList().find(item => item.id === props.id) || null;
+        const [rpc, setRpc] = React.useState(() => old ? Object.assign({}, old) : crpcNew());
+        if (!React || !RN) return null;
+        const close = () => hideReviewSheet(ui, CRPC_SHEET), set = patch => setRpc(Object.assign({}, rpc, patch));
+        const wrongTime = (rpc.ts === "elapsed" || rpc.ts === "remaining") && !!rpc.tsText && !crpcDuration(rpc.tsText);
+        const save = () => {
+            if (wrongTime) return;
+            haptic("SELECTION");
+            const next = JSON.parse(crpcText(JSON.stringify([rpc])) || "[]")[0];
+            if (!next) return;
+            // The timer starts from the time you save; "since turned on" starts when you turn the RPC on.
+            const dur = crpcDuration(rpc.tsText);
+            if ((rpc.ts === "elapsed" || rpc.ts === "remaining") && dur && (!old || old.tsText !== rpc.tsText || old.ts !== rpc.ts)) next.anchor = rpc.ts === "elapsed" ? Date.now() - dur : Date.now() + dur;
+            if (old && !old.on && next.on) next.started = Date.now();
+            const list = crpcList().slice(), at = list.findIndex(item => item.id === next.id);
+            if (at >= 0) list[at] = next; else if (list.length >= CRPC_MAX) { reviewToast(ui, "You can have up to 5 RPCs.", venusIcon(6573, "CircleXIcon")); return; } else list.push(next);
+            reviewToast(ui, crpcSave(list) ? "RPC saved" : "Couldn't save the RPC", venusIcon(7144, "CircleCheckIcon"));
+            close();
+        };
+        const remove = () => { haptic("IMPACT_LIGHT"); crpcSave(crpcList().filter(item => item.id !== rpc.id)); close(); };
+        const duplicate = () => {
+            const list = crpcList().slice();
+            if (!old || list.length >= CRPC_MAX) { reviewToast(ui, "You can have up to 5 RPCs.", venusIcon(6573, "CircleXIcon")); return; }
+            haptic("SELECTION"); list.push(Object.assign({}, old, {id:Math.random().toString(36).slice(2, 8), on:false}));
+            crpcSave(list); reviewToast(ui, "RPC duplicated", venusIcon(7144, "CircleCheckIcon")); close();
+        };
+        const header = ui.Header ? el(ui.Header, {title:tr(old ? "Edit RPC" : "New RPC"), trailing:ui.Close ? el(ui.Close, {onPress:close}) : undefined}) : null;
+        const field = (key, placeholder, max) => rtrField(ui, key, String(rpc[key] == null ? "" : rpc[key]), value => set({[key]:value}), tr(placeholder), max || CRPC_TEXT);
+        const rpcBlock = (key, title, ...fields) => el(RN.View, {key, style:{gap:8}}, groupTitle(key + "T", title), el(RN.View, {style:{paddingHorizontal:4, gap:8}}, ...fields));
+        const content = el(RN.View, {style:{paddingHorizontal:12, paddingBottom:24, gap:14}},
+            Switch ? el(Group, {key:"on"}, el(Switch, {key:"onRow", label:tr("RPC is on"), value:!!rpc.on, onValueChange:value => set({on:!!value})})) : null,
+            Row ? el(Group, {key:"type"}, el(Row, {key:"typeRow", label:tr("Type"), subLabel:tr(CRPC_TYPE_LABEL[rpc.type] || "Playing"), onPress:() => { haptic("SELECTION"); set({type:CRPC_TYPES[(CRPC_TYPES.indexOf(rpc.type) + 1) % CRPC_TYPES.length]}); }})) : null,
+            rpcBlock("main", "Text", field("name", "Name (what you are playing)"), field("details", "Details"), field("state", "State")),
+            rpc.type === 1 ? rpcBlock("stream", "Stream link", field("stream", "Twitch or YouTube link", CRPC_URL), footnote("streamNote", "Discord shows Streaming only for Twitch and YouTube links.")) : null,
+            rpcBlock("app", "Application ID", field("appId", "Application ID (17 to 20 digits)", 20), footnote("appNote", "Needed for images from links and for buttons. Create an application at discord.com/developers and copy its ID.")),
+            rpcBlock("images", "Images", field("large", "Large image (link or asset name)", CRPC_URL), field("largeText", "Large image text"), field("small", "Small image (link or asset name)", CRPC_URL), field("smallText", "Small image text"),
+                footnote("imgNote", "The small image shows only on top of a large one.")),
+            rpcBlock("buttons", "Buttons", field("b1l", "Button 1 label", 32), field("b1u", "Button 1 link", CRPC_URL), field("b2l", "Button 2 label", 32), field("b2u", "Button 2 link", CRPC_URL),
+                footnote("btnNote", "Buttons need an application ID. Other people can see them; you can't see yours.")),
+            Row ? el(Group, {key:"time", title:tr("Time")}, el(Row, {key:"tsRow", label:tr("Timer"), subLabel:tr(CRPC_TS_LABEL[rpc.ts] || "Since turned on"), onPress:() => { haptic("SELECTION"); set({ts:CRPC_TS[(CRPC_TS.indexOf(rpc.ts) + 1) % CRPC_TS.length]}); }})) : null,
+            rpc.ts === "elapsed" || rpc.ts === "remaining" ? el(RN.View, {key:"dur", style:{paddingHorizontal:4, gap:8}}, field("tsText", "Duration, like 1h 30m or 1:30", 20), wrongTime ? footnote("durBad", "That isn't a duration. Try 1h 30m, 90 or 1:30.") : null) : null,
+            rpcBlock("party", "Party", field("partySize", "Current size", 6), field("partyMax", "Maximum size", 6), footnote("partyNote", "Both numbers show \"(2 of 4)\" after the state.")),
+            Row ? el(Group, {key:"actions"}, el(Row, {key:"save", label:tr("Save"), icon:rowIcon(7144, "CircleCheckIcon"), disabled:wrongTime, onPress:save}),
+                old ? el(Row, {key:"duplicate", label:tr("Duplicate RPC"), icon:rowIcon(5141, "CopyIcon"), onPress:duplicate}) : null,
+                old ? el(Row, {key:"remove", label:tr("Delete RPC"), icon:rowIcon(5148, "TrashIcon"), variant:"danger", onPress:remove}) : null) : null);
+        return serverEditScroll(ui, header, content);
+    }
+    function CustomRpcSettings() {
+        useSettings("customRpc");
+        useSettings("customRpcList");
+        const ui = reviewUI();
+        if (!React || !RN) return null;
+        const on = enabled("customRpc"), Group = ui.TableRowGroup || RN.View, Row = ui.TableRow, Switch = ui.TableSwitchRow, list = crpcList();
+        const flip = (p, value) => { haptic("SELECTION"); crpcSave(crpcList().map(item => item.id === p.id ? Object.assign({}, item, {on:!!value, started:value && !item.on ? Date.now() : item.started}) : item)); };
+        const rows = list.map(p => el(Group, {key:p.id, title:crpcLabel(p)},
+            Switch ? el(Switch, {key:"on", label:tr(CRPC_TYPE_LABEL[p.type] || "Playing") + (p.details || p.state ? " · " + (p.details || p.state) : ""), icon:rowIcon(9514, "GameControllerIcon"), value:!!p.on, disabled:!on, onValueChange:value => flip(p, value)}) : null,
+            Row ? el(Row, {key:"edit", label:tr("Edit"), onPress:() => { haptic("SELECTION"); crpcOpen(p.id); }}) : null));
+        const shown = list.filter(p => p.on).length;
+        return settingsBody(ui, [
+            !on ? offCard("status", venusIcon(9514, "GameControllerIcon"), "customRpc") : null,
+            rows.length ? el(RN.View, {key:"list", style:{gap:12}}, rows) : footnote("none", "No RPCs yet. Add one to start."),
+            Row ? el(Group, {key:"actions"}, el(Row, {key:"add", label:tr("Add RPC"), icon:rowIcon(10621, "PlusLargeIcon"), disabled:list.length >= CRPC_MAX, onPress:() => { haptic("SELECTION"); crpcOpen(null); }}),
+                shown ? el(Row, {key:"off", label:tr("Turn all off"), icon:rowIcon(6573, "CircleXIcon"), onPress:() => { haptic("SELECTION"); crpcSave(crpcList().map(item => Object.assign({}, item, {on:false}))); }}) : null) : null,
+            footnote("many", "Every RPC that is on shows at the same time, up to 5. Discord shows the first few on your profile."),
+            footnote("privacy", "Your activity is only shared if \"Display current activity\" is on in Discord's Activity Privacy settings.")]);
+    }
     // Radial status (an idea from the RadialStatus theme by DiscordStyles): the status dot on an avatar becomes a colored ring around it.
     // Discord's Avatar (15194) takes status, streaming, isMobileOnline and size ("small", "normal", ...). The hook draws the avatar without
     // its dot and without the notch the dot cuts out, shrinks it a little, and draws the ring in the room that leaves. The component keeps
@@ -25376,6 +25570,7 @@
                 return features.viewRaw ? hookComponent(menu, viewRawPostMenu) : menu;
             }
             case 10842: return features.customStatusPresets ? hookComponent(exports, cspModal) : exports;
+            case 10974: if (features.customRpc) crpcBoot(0); return exports;
             case 14015: {
                 let menu = features.viewRaw ? hookComponent(exports, viewRawProfileMenu) : exports;
                 return features.showMeYourName ? hookComponent(menu, smynProfileMenu) : menu;
